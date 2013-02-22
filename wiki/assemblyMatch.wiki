@@ -1,0 +1,24 @@
+h1. Assembly Match
+
+A class to represent an assembly.  
+
+h2. Version
+
+Available from version 1.4.3
+
+h2. Examples
+
+{code:xml|borderStyle=solid}
+<assemblyMatch expr="*.dll" />
+{code}
+
+
+h2. Configuration Elements
+
+|| Element || Description || Type || Required || Default || Version ||
+| expr | The name expression of the assembly, e.g. "\*.dll". Masks (? and \*) are allowed.   | String | Yes | _n/a_ | 1.4.3 |
+
+{info:title=Automatically Generated}
+Documentation generated on Saturday, 22 Jan 2011 at 12:14:23 AM
+Using assembly version 1.6.7979.1
+{info}

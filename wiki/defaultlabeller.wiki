@@ -1,0 +1,36 @@
+h1. Default Labeller
+
+By default, CCNet uses a plain incrementing build number as a build label. Some source controls (e.g. [Perforce Source Control Block]) require you to use a different naming scheme if you want CCNet to apply labels to source control on successful builds.  
+You can do this by specifying your own configuration of the default labeller in your project.  
+
+
+h2. Version
+
+Available from version 1.0
+
+h2. Examples
+
+{code:xml|borderStyle=solid}
+<labeller type="defaultlabeller">
+  <initialBuildLabel>1</initialBuildLabel>
+  <prefix>Foo-1-</prefix>
+  <incrementOnFailure>true</incrementOnFailure>
+  <labelFormat>00000</labelFormat>
+</labeller>
+{code}
+
+
+h2. Configuration Elements
+
+|| Element || Description || Type || Required || Default || Version ||
+| dynamicValues | The dynamic values to use for the labeller.   | [Dynamic Values] array | No | _None_ | 1.5 |
+| incrementOnFailure | If true, the label will be incremented even if the build fails. Otherwise it will only be incremented if the build succeeds.   | Boolean | No | false | 1.1 |
+| initialBuildLabel | Allows you to set the initial build number.   | Int32 | No | 1 | 1.5 |
+| labelFormat | A format applied to the buildnumber.   | String | No | 0 | 1.0 |
+| postfix | Any string to be put at the end of all labels.   | String | No | _None_ | 1.0 |
+| prefix | Any string to be put in front of all labels.   | String | No | _None_ | 1.0 |
+
+{info:title=Automatically Generated}
+Documentation generated on Saturday, 22 Jan 2011 at 12:14:14 AM
+Using assembly version 1.6.7979.1
+{info}

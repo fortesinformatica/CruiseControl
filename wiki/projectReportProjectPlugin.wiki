@@ -1,0 +1,23 @@
+h1. Project Report Project Plugin
+
+The Project Report Project Plugin shows you summary details for a specific project. Part of these details are any [External Links] you have specified in the project configuration.  
+
+h2. Version
+
+Available from version 1.0
+
+h2. Examples
+
+{code:xml|borderStyle=solid}
+<projectReportProjectPlugin />
+{code}
+
+
+h2. Configuration Elements
+
+There is no configuration for this plugin.
+
+{info:title=Automatically Generated}
+Documentation generated on Saturday, 22 Jan 2011 at 12:14:25 AM
+Using assembly version 1.6.7979.1
+{info}

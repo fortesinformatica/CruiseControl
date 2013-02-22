@@ -1,0 +1,26 @@
+h1. Mercurial Issue Tracker URL Builder
+
+Build a Mercurial URL.  
+
+h2. Version
+
+Available from version 1.5
+
+h2. Examples
+
+{code:xml|borderStyle=solid}
+<webUrlBuilder type="hgweb">
+  <url>http://hg.mycompany.com/hgwebdir.cgi/myproject/</url>
+</webUrlBuilder>
+{code}
+
+
+h2. Configuration Elements
+
+|| Element || Description || Type || Required || Default || Version ||
+| url | The base URL to use.   | String | Yes | _n/a_ | 1.5 |
+
+{info:title=Automatically Generated}
+Documentation generated on Saturday, 22 Jan 2011 at 12:14:17 AM
+Using assembly version 1.6.7979.1
+{info}

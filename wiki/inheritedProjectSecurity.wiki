@@ -1,0 +1,25 @@
+h1. Inherited Project Security
+
+Inherit the security settings for a project from the server settings.  
+
+h2. Version
+
+Available from version 1.5
+
+h2. Examples
+
+{code:xml|borderStyle=solid}
+<security type="inheritedProjectSecurity" />
+{code}
+
+
+h2. Configuration Elements
+
+|| Element || Description || Type || Required || Default || Version ||
+| type | The type of the project security. | String - must be inheritedProjectSecurity | Yes | _n/a_ | 1.5 |
+| guest | The name of the account to use for guests.   | String | No | _None_ | 1.5 |
+
+{info:title=Automatically Generated}
+Documentation generated on Saturday, 22 Jan 2011 at 12:14:16 AM
+Using assembly version 1.6.7979.1
+{info}

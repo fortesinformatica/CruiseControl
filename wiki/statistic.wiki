@@ -1,0 +1,20 @@
+h1. Statistic
+
+A generic statistic.  
+
+h2. Version
+
+Available from version 1.0
+
+h2. Configuration Elements
+
+|| Element || Description || Type || Required || Default || Version ||
+| generateGraph | Should a graph be generated for this statistic?   | Boolean | No | false | 1.3 |
+| include | Should this statistic be collected and published?   | Boolean | No | true | 1.3 |
+| name | The name of the statistic.   | String | Yes | _n/a_ | 1.0 |
+| xpath | The XML XPath to locate the value of this statistic.   | String | Yes | _n/a_ | 1.0 |
+
+{info:title=Automatically Generated}
+Documentation generated on Saturday, 22 Jan 2011 at 12:14:16 AM
+Using assembly version 1.6.7979.1
+{info}

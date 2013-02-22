@@ -1,0 +1,45 @@
+h1. Synergy Client Session
+
+A CM Synergy client session.  
+
+h2. Version
+
+Available from version 1.0
+
+h2. Examples
+
+{code:xml|borderStyle=solid}
+<connection>
+  <host>myserver</host>
+  <database>\\myserver\share\mydatabase</database>
+  <!-- store values in an environmental variable-->
+  <username>%CCM_USER%</username>
+  <password>%CCM_PWD%</password>
+  <role>build_mgr</role>
+  <homeDirectory>D:\cmsynergy\%CCM_USER%</homeDirectory>
+  <clientDatabaseDirectory>D:\cmsynergy\uidb</clientDatabaseDirectory>
+  <polling>true</polling>
+  <timeout>3600</timeout>
+</connection>
+{code}
+
+
+h2. Configuration Elements
+
+|| Element || Description || Type || Required || Default || Version ||
+| clientDatabaseDirectory | Path for the remote client session to copy database information to. Can include environmental variables to be replaced.   | String | No | %SystemDrive%\cmsynergy\uidb | 1.0 |
+| database | Network path to the Synergy database instance   | String | Yes | _n/a_ | 1.0 |
+| executable | The executable filename/path for the CM Synergy command line interface.  \\Can include environmental variables to be replaced.   | String | Yes | ccm.exe | 1.0 |
+| homeDirectory | The full physical path of the home directory for the associated Username on the client machine. Can include environmental variables to be replaced.  \\This role must have sufficient permissions to modify task folders, change reconfigure properties, and create baselines.   | String | No | %SystemDrive%\cmsynergy\%USERNAME% | 1.0 |
+| host | Hostname of the Synergy server   | String | Yes | _n/a_ | 1.0 |
+| password | The Synergy password for the associate  value.   | String | No | _None_ | 1.0 |
+| polling | Poll the server every minute when the ccm\_admin has protected the database for the purpose of issuing backup commands.  \\This is useful if a long runing inadventently enters the scheduled time window for routine downtime, generally for server maintenance jobs like backups.   | Boolean | No | false | 1.0 |
+| role | The role to use for the Synergy session.   | String | No | build\_mgr | 1.0 |
+| timeout | Timeout in seconds for all Synergy commands.   | Int32 | No | 3600 | 1.0 |
+| username | The username for the Synergy session. Can include environmental variables to be replaced.   | String | No | %USERNAME% | 1.0 |
+| workingDirectory | The directory to execute all CM Synergy commands from.  \\Can include environmental variables to be replaced.   | String | No | %PROGRAMFILES%\Telelogic\CM Synergy 6.3\bin | 1.0 |
+
+{info:title=Automatically Generated}
+Documentation generated on Saturday, 22 Jan 2011 at 12:14:19 AM
+Using assembly version 1.6.7979.1
+{info}

@@ -1,0 +1,52 @@
+h1. Modification Reader Task
+
+This tasks makes it possible to read back modifications made by the [Modification Writer Task].  
+
+
+h2. Version
+
+Available from version 1.4
+
+h2. Examples
+
+{code:xml|borderStyle=solid|titleBGColor=#ADD6FF|title=Minimalist example}
+<modificationReader />
+{code}
+{code:xml|borderStyle=solid|titleBGColor=#ADD6FF|title=Full example}
+<modificationReader>
+  <deleteAfterRead>true</deleteAfterRead>
+  <filename>last-mods.xml</filename>
+  <path>mods-path</path>
+</modificationReader>
+{code}
+
+
+h2. Configuration Elements
+
+|| Element || Description || Type || Required || Default || Version ||
+| deleteAfterRead | Delete the files after they have been read.   | Boolean | No | false | 1.4 |
+| description | Description used for the visualisation of the buildstage, if left empty the process name will be shown.   | String | No | The task/publisher name. | 1.5 |
+| dynamicValues | The dynamic values to use for the task.   | [Dynamic Values] array | No | _None_ | 1.5 |
+| environment |   A set of environment variables set for commands that are executed.  \\  Each variable should be specified as {code:xml|borderStyle=solid}
+<variable name="name" value="value" />
+{code}
+.   | [Environment Variable] array | No |  |  |
+| filename | The filename pattern for the file containing the modifications. CCnet with search in the path for files starting with this filename, and having the same extention. For example when filename is set to modifications.xml, ccnet will search for files like so: modifications\*.xml   | String | No | modifications.xml | 1.4 |
+| path | The directory to search the xml file(s) in.   | String | No | Project Artefact Directory | 1.4 |
+
+h2. Notes
+
+2 projects in CCNet  
+1) is a project that does the compile, test, ... stuff, and also writes the modifications using the ModificationWriterTask be sure to set the appendTimeStamp of the modificationWriter to true  
+2) is a project that deploys the result of project 1  
+\-\-> copies it to other servers, updates source control (binary references like a framework), ...  
+The reason for a second project is that this can be done on releases of milestones of project 1  
+The ModificationReaderTask can now easily read the modification file(s) made by project one, into it's own integration, making it possible that these can be used by the existing tasks/publishers of ccnet for project 2  
+It is best to place the modificationreader in the prebuild section, so all the other tasks / publisers know the read modifications also.  
+It is adivisable to keep these configuration elements of the modificationWriter and the modificationReader the same.  
+
+
+{info:title=Automatically Generated}
+Documentation generated on Saturday, 22 Jan 2011 at 12:14:21 AM
+Using assembly version 1.6.7979.1
+{info}

@@ -1,0 +1,74 @@
+h1. Boolean Parameter
+
+This will prompt the user to enter a boolean value when a force build is requested.  
+This parameter can then be used by a dynamic value in a task.  
+
+
+h2. Version
+
+Available from version 1.5
+
+h2. Examples
+
+{code:xml|borderStyle=solid|titleBGColor=#ADD6FF|title=Minimalist example}
+<booleanParameter>
+  <name>Target</name>
+  <true>Yes</true>
+  <false>No</false>
+</booleanParameter>
+{code}
+{code:xml|borderStyle=solid|titleBGColor=#ADD6FF|title=Full example}
+<booleanParameter>
+  <name>Target</name>
+  <true name="PROD">Yes</true>
+  <false name="DEV">No</false>
+  <display>Production Build</display>
+  <description>Do you want to generate a production build?</description>
+  <default>DEV</default>
+  <required>false</required>
+</booleanParameter>
+{code}
+{code:xml|borderStyle=solid|titleBGColor=#ADD6FF|title=Example in Context}
+<project name="Test Project">
+  <sourcecontrol type="svn">
+    <!-- Omitted for brevity -->
+  </sourcecontrol>
+  <triggers>
+    <intervalTrigger />
+  </triggers>
+  <tasks>
+    <!-- Omitted for brevity -->
+  </tasks>
+  <publishers>
+    <!-- Omitted for brevity -->
+  </publishers>
+  <parameters>
+    <booleanParameter>
+      <name>Target</name>
+      <true name="PROD">Yes</true>
+      <false name="DEV">No</false>
+      <display>Production Build</display>
+      <description>Do you want to generate a production build?</description>
+      <default>DEV</default>
+      <required>false</required>
+    </booleanParameter>
+  </parameters>
+</project>
+{code}
+
+
+h2. Configuration Elements
+
+|| Element || Description || Type || Required || Default || Version ||
+| default | The default value to use.   | String | No | _None_ | 1.5 |
+| description | The description of the parameter.   | String | No | _None_ | 1.5 |
+| display | The display name of the parameter.   | String | No | _None_ | 1.5 |
+| false | The value to use when the parameter is false. If the name attribute is set, then the user will see that as the selection value. Otherwise the actual value will be displayed.   | [Named Value] | Yes | _n/a_ | 1.5 |
+| required | Is the parameter required?   | Boolean | No | false | 1.5 |
+| name | The name of the parameter.   | String | Yes | _n/a_ | 1.5 |
+| true | The value to use when the parameter is true. If the name attribute is set, then the user will see that as the selection value. Otherwise the actual value will be displayed.   | [Named Value] | Yes | _n/a_ | 1.5 |
+
+{info:title=Automatically Generated}
+Documentation generated on Saturday, 22 Jan 2011 at 12:14:13 AM
+Using assembly version 1.6.7979.1
+{info}

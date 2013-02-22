@@ -1,0 +1,35 @@
+h1. Email User
+
+Defines a user who will receive e\-mails.  
+
+h2. Version
+
+Available from version 1.0
+
+h2. Examples
+
+{code:xml|borderStyle=solid}
+<user name="BuildGuru" group="buildmaster" address="buildguru@mycompany.com" />
+{code}
+
+
+h2. Configuration Elements
+
+|| Element || Description || Type || Required || Default || Version ||
+| address | The Internet\-style email address of the user (e.g., "joe@example.com").   | String | Yes | _n/a_ | 1.0 |
+| group | The group that the user is in. This needs to match the name of one of the <group> elements.   | String | No | _None_ | 1.3 |
+| name | The user name of a user. This should match the user name in Source Control.   | String | Yes | _n/a_ | 1.0 |
+
+h2. Notes
+
+Users do not need to belong to a group. If they are not in a group then they may still receive emails when they have committed changes that are part of the current build, depending on the setting of "modifierNotificationTypes" and the state of the build.  
+See the section on the <converters> setting for manipulations that can be done to transform a user name to an address if the address is not specified.  
+{warning}
+It is essential that the value of the name attribute matches the name for the user in the sourcecontrol system. This is the only way that CruiseControl.Net can reconcile the user that committed a change with the address to send the email to.  
+{warning}
+
+
+{info:title=Automatically Generated}
+Documentation generated on Saturday, 22 Jan 2011 at 12:14:15 AM
+Using assembly version 1.6.7979.1
+{info}

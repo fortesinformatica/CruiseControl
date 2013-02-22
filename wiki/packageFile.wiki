@@ -1,0 +1,15 @@
+h1. packageFile
+
+A file to include in the package.  
+
+h2. Configuration Elements
+
+|| Element || Description || Type || Required || Default || Version ||
+| sourceFile | The name and path of the file to store into the package  \\This is the path to the file that you wish to store in the package   | String | Yes |  |  |
+| targetFileName | The name of the file that is to be saved.  \\Use this attribute only if you wish to rename the file being saved to a different name.   | String | No |  |  |
+| targetFolder | The name of the folder in the package that the file will be saved under  \\Use this attribute if you wish to override the location of the file being saved in the package.   | String | No |  |  |
+
+{info:title=Automatically Generated}
+Documentation generated on Saturday, 22 Jan 2011 at 12:14:15 AM
+Using assembly version 1.6.7979.1
+{info}

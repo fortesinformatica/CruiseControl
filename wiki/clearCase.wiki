@@ -1,0 +1,91 @@
+h1. Rational ClearCase Source Control Block
+
+Rational ClearCase source control block.  
+
+h2. Version
+
+Available from version 1.0
+
+h2. Examples
+
+{code:xml|borderStyle=solid|titleBGColor=#ADD6FF|title=Minimalist example}
+<sourcecontrol type="clearCase">
+  <viewPath>C:\PATH\TO\SOURCE</viewPath>
+  <autoGetSource>true</autoGetSource>
+</sourcecontrol>
+{code}
+{code:xml|borderStyle=solid|titleBGColor=#ADD6FF|title=Full example}
+<sourcecontrol type="clearCase">
+  <viewPath>C:\PATH\TO\SOURCE</viewPath>
+  <branch>main</branch>
+  <autoGetSource>false</autoGetSource>
+  <useLabel>true</useLabel>
+  <useBaseline>false</useBaseline>
+  <projectVobName>PROJECT_VOB_NAME</projectVobName>
+  <viewName>PROJECT_VIEW_NAME</viewName>
+  <executable>cleartool.exe</executable>
+  <timeout>50000</timeout>
+</sourcecontrol>
+{code}
+
+
+h2. Configuration Elements
+
+|| Element || Description || Type || Required || Default || Version ||
+| type | The type of source control block. | String - must be clearCase | Yes | _n/a_ | 1.0 |
+| autoGetSource | Specifies whether the current version of the source should be retrieved from ClearCase.   | Boolean | No | true | 1.0 |
+| branch | The name of the branch that CCNet will monitor for modifications. Note that the config spec of the view being built from must also be set up to reference this branch.   | String | No | _None_ | 1.0 |
+| dynamicValues | The dynamic values to use for the source control block.   | [Dynamic Values] array | No | _None_ | 1.5 |
+| executable | Specifies the path to the ClearCase command line tool. You should only have to include this element if the tool isn't in your path. By default, the ClearCase client installation puts cleartool in your path.   | String | No | cleartool.exe | 1.0 |
+| issueUrlBuilder | Converts the comment (or parts from it) into an url pointing to the issue for this build. See [IssueUrlBuilder] for more details.   | [IssueUrlBuilder] | No | _None_ | 1.4 |
+| projectVobName | The name of the project VOB that the view path uses.  \\This is required if useBaseline="true".   | String | No | _None_ | 1.0 |
+| timeout | Sets the timeout period for the source control operation. See [Timeout Configuration] for details.   | [Timeout Configuration] | No | 10 minutes | 1.0 |
+| useBaseline | Specifies whether a baseline should be applied when the build is successful. Requires the VOB your view references to be a UCM VOB.  \\Requires that you specify viewName and projectVobName.   | Boolean | No | false | 1.0 |
+| useLabel | Specifies whether a label should be applied when the build is successful.   | Boolean | No | true | 1.0 |
+| viewName | The name of the view that you're using.  \\This is required if useBaseline="true".   | String | No | _None_ | 1.0 |
+| viewPath | The path that CCNet will check for modifications and use to apply the label.  \\Specifies a directory on your filesystem that CCNet monitors for changes. The path must be a versioned object. CCNet checks the actual VOB for changes, not the local filesystem. This doesn't have to be the root of the local ClearCase view. It may be any of the root's children or even a single object.   | String | No | _None_ | 1.0 |
+
+h2. Notes
+
+h4. Common Problems
+ *The build is initiated when users check in on private branches*
+By default, ClearCase returns a history for every file in every branch, even if the config spec limits to a single branch. You must specify <branch> in order to limit which changes CCNet can see.  
+ *After the build is successful I get a "Baseline not found" error message.*
+An example of this message is:  
+{code:None|borderStyle=solid}
+
+            ThoughtWorks.CruiseControl.Core.CruiseControlException: Source control operation failed:
+            cleartool: Error: Baseline not found: "CruiseControl.NETTemporaryBaseline_05-06-2004-16-34-15".
+            
+{code}
+This happens when <projectVobName> is not set to the project VOB. Typically this happens when the user specifies the UCM VOB instead of the project VOB.  
+To correct the problem, change the value in that element to the name of the project VOB.  
+h4. Known Bugs
+ *When I view my baselines, I see that they're called CruiseControl.NET\[something\] instead of v1.0.0.4.*
+This is a bug in ClearCase; Rational is aware of it. It only occurs if you're using baselines.  
+CCNet creates a temporary baseline with the prefix CruiseControl.NET before renaming it to the final value, such as v1.5.2.3. Depending on how you view baselines in ClearCase, you may see the temporary or real name.  
+For example, if you use the admin console, you'll see the old, temporary value. If use use cleartool lsbl, you'll see the correct one:  
+{code:None|borderStyle=solid}
+
+            M:\gsmith_GS_Project_int\GS_UCM_VOB>cleartool lsbl
+            06-May-04.16:28:27  v1.0.0.1  gsmith   "CruiseControlTemporaryBaseline_05-06-200
+            4-16-28-26"
+              stream: GS_Project_Integration@\GS_PVOB
+              component: GS_UCM_VOB@\GS_PVOB
+            06-May-04.16:34:16  v1.0.0.2  gsmith   "CruiseControl.NETTemporaryBaseline_05-06
+            -2004-16-34-15"
+              stream: GS_Project_Integration@\GS_PVOB
+              component: GS_UCM_VOB@\GS_PVOB
+            
+{code}
+ *CruiseControl.NET sees checkins on all branches, not just the one specified in my config spec*
+This is due to the fact that the ClearCase history command (lshist) returns a complete history for the file, not just the history that can be seen by the config spec.  
+The workaround is to make sure you include a <branch> element in your configuration. This will force ccnet to just see changes on that branch.  
+ *CruiseControl.NET doesn't see my changes*
+Make sure the clock of your build server is synchronised to the clock of your ClearCase server.  
+
+
+{info:title=Automatically Generated}
+Documentation generated on Saturday, 22 Jan 2011 at 12:14:17 AM
+Using assembly version 1.6.7979.1
+{info}

@@ -1,0 +1,28 @@
+h1. ActionFilter
+
+The ActionFilter can be used to filter modifications on the basis of the type of modification that was committed. Modification types are specific to each source control provider. Consult each source control provider for the list of actions to filter.  
+
+h2. Version
+
+Available from version 1.0
+
+h2. Examples
+
+{code:xml|borderStyle=solid}
+<actionFilter>
+  <actions>
+    <action>deleted</action>
+  </actions>
+</actionFilter>
+{code}
+
+
+h2. Configuration Elements
+
+|| Element || Description || Type || Required || Default || Version ||
+| actions | The actions to filter.   | String array | Yes | _n/a_ | 1.0 |
+
+{info:title=Automatically Generated}
+Documentation generated on Saturday, 22 Jan 2011 at 12:14:17 AM
+Using assembly version 1.6.7979.1
+{info}

@@ -1,0 +1,105 @@
+h1. Modification Writer Task
+
+This task writes the detected modifications for the current integration to a file as XML. This enables the modifications to be used by external programs, such as within a NAnt build script.  
+
+
+h2. Version
+
+Available from version 1.0
+
+h2. Examples
+
+{code:xml|borderStyle=solid|titleBGColor=#ADD6FF|title=Minimalist example}
+<modificationWriter />
+{code}
+{code:xml|borderStyle=solid|titleBGColor=#ADD6FF|title=Full example}
+<modificationWriter>
+  <filename>mods.xml</filename>
+  <path></path>
+  <appendTimeStamp>False</appendTimeStamp>
+</modificationWriter>
+{code}
+
+
+h2. Configuration Elements
+
+|| Element || Description || Type || Required || Default || Version ||
+| appendTimeStamp | Appends the integration start time to the filename, just before the extention. Making it possible to create a modification file per integration, without overwriting existing ones. Intended to be used with the [Modification Reader Task].   | Boolean | No | false | 1.0 |
+| description | Description used for the visualisation of the buildstage, if left empty the process name will be shown.   | String | No | The task/publisher name. | 1.5 |
+| dynamicValues | The dynamic values to use for the task.   | [Dynamic Values] array | No | _None_ | 1.5 |
+| environment |   A set of environment variables set for commands that are executed.  \\  Each variable should be specified as {code:xml|borderStyle=solid}
+<variable name="name" value="value" />
+{code}
+.   | [Environment Variable] array | No |  |  |
+| filename | The filename for the file containing the modifications.   | String | No | modifications.xml | 1.0 |
+| path | The directory to write the xml file to.   | String | No | Project Artefact Directory | 1.0 |
+
+h2. Notes
+
+h4. Output format
+The modifications are written as follows:  
+{code:xml|borderStyle=solid}
+<!-- Start of the group of modifications (even if just one). -->
+<ArrayOfModification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <!-- Start of one modification. -->
+  <Modification>
+    <!-- The change number. -->
+    <ChangeNumber>... value ...</ChangeNumber>
+    <!-- The comment. -->
+    <Comment>... value ...</Comment>
+    <!-- The user's email address. -->
+    <EmailAddress>... value ...</EmailAddress>
+    <!-- The affected file name. -->
+    <FileName>... value ...</FileName>
+    <!-- The affect file's folder name. -->
+    <FolderName>... value ...</FolderName>
+    <!-- The change timestamp, in yyyy-mm-ddThh:mm:ss.nnnn-hhmm format -->
+    <ModifiedTime>... value ...</ModifiedTime>
+    <!-- The operation type. -->
+    <Type>... value ...</Type>
+    <!-- The user name. -->
+    <UserName>... value ...</UserName>
+    <!-- The related URL. -->
+    <Url>... value ...</Url>
+    <!-- The file version. -->
+    <Version>... value ...</Version>
+    <!-- End of modification. -->
+  </Modification>
+  <!-- End of the group of modifications. -->
+</ArrayOfModification>
+{code}
+h4. Sample output
+{code:xml|borderStyle=solid}
+<ArrayOfModification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Modification>
+    <ChangeNumber>12245</ChangeNumber>
+    <Comment>New Project for testing stuff</Comment>
+    <EmailAddress>JUser@Example.Com</EmailAddress>
+    <FileName>AssemblyInfo.cs</FileName>
+    <FolderName>Dev\Server\Interface\Properties\</FolderName>
+    <ModifiedTime>2006-11-22T11:11:00-0500</ModifiedTime>
+    <Type>add</Type>
+    <UserName>joe_user</UserName>
+    <Url>http://www.example.com/index.html</Url>
+    <Version>5</Version>
+  </Modification>
+  <Modification>
+    <ChangeNumber>12244</ChangeNumber>
+    <Comment>New Project for accessing web services</Comment>
+    <EmailAddress>SSpade@Example.Com</EmailAddress>
+    <FileName>Interface</FileName>
+    <FolderName>Dev\Server\</FolderName>
+    <ModifiedTime>2006-11-22T11:10:44-0500</ModifiedTime>
+    <Type>add</Type>
+    <UserName>sam_spade</UserName>
+    <Url>http://www.example.com/index.html</Url>
+    <Version>4</Version>
+  </Modification>
+</ArrayOfModification>
+{code}
+
+
+{info:title=Automatically Generated}
+Documentation generated on Saturday, 22 Jan 2011 at 12:14:22 AM
+Using assembly version 1.6.7979.1
+{info}

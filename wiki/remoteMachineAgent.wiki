@@ -1,0 +1,14 @@
+h1. remoteMachineAgent
+
+A build agent to handle remote builds.  
+
+h2. Configuration Elements
+
+|| Element || Description || Type || Required || Default || Version ||
+| address | The address that this agent listens on.   | String | Yes | _n/a_ | 1.6 |
+| allowed | The number of builds that are allowed to run.   | Int32 | No | 5 | 1.6 |
+
+{info:title=Automatically Generated}
+Documentation generated on Tuesday, 16 Nov 2010 at 12:33:42 AM
+Using assembly version 1.6.7728.1
+{info}

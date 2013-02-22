@@ -1,0 +1,30 @@
+h1. XML File Audit Logger
+
+Sends audit logging information to a file. The information will be stored in an XML format.  
+
+h2. Version
+
+Available from version 1.5
+
+h2. Examples
+
+{code:xml|borderStyle=solid}
+<xmlFileAudit location="c:\Logs\ccnet_audit.log" />
+{code}
+
+
+h2. Configuration Elements
+
+|| Element || Description || Type || Required || Default || Version ||
+| location | The location to log the audit events.   | String | No | SecurityAudit.xml | 1.5 |
+| failure | Whether to log failed events or not.   | Boolean | No | true | 1.5 |
+| success | Whether to log successful events or not.   | Boolean | No | true | 1.5 |
+
+h2. Notes
+
+The actual file will not be correct XML as it will not have a single root element \- instead each line will be directly written to the file.  
+
+{info:title=Automatically Generated}
+Documentation generated on Saturday, 22 Jan 2011 at 12:14:16 AM
+Using assembly version 1.6.7979.1
+{info}

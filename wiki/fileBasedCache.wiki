@@ -1,0 +1,31 @@
+h1. File Based Security Cache
+
+Provides an in\-memory cache for sessions that is backed by a store on disk.  
+This cache will store the sessions details in memory for quick\-access. Whenever a session is changed it also writes a copy of the details to a file on the disk. Then when the security manager is restarted it loads all the sessions from disk.  
+
+
+h2. Version
+
+Available from version 1.5
+
+h2. Examples
+
+{code:xml|borderStyle=solid}
+<cache type="fileBasedCache" duration="10" mode="sliding" location="C:\sessions\" />
+{code}
+
+
+h2. Configuration Elements
+
+|| Element || Description || Type || Required || Default || Version ||
+| type | The type of security cache to use. | String - must be fileBasedCache | Yes | _n/a_ | 1.5 |
+| duration | The duration, in minutes, that a session is stored for.   | Int32 | No | 10 | 1.5 |
+| mode | The type of expiration period to use. Options are either Sliding (the expiry time is moved every time a security request is made) or Fixed (expiry time never changes).   | String - one of:
+* Fixed
+* Sliding | No | Sliding | 1.5 |
+| location | The location where the backing files are stored. If this is a relative folder, it will be relative to the program data folder for CruiseControl.NET.   | String | No | Sessions | 1.5 |
+
+{info:title=Automatically Generated}
+Documentation generated on Saturday, 22 Jan 2011 at 12:14:16 AM
+Using assembly version 1.6.7979.1
+{info}

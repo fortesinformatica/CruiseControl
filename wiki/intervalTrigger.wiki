@@ -1,0 +1,44 @@
+h1. Interval Trigger
+
+The Interval Trigger is used to specify that an integration should be run periodically, after a certain amount of time. By default, an integration will only be triggered if modifications have been detected since the last integration. The trigger can also be configured to force a build even if no changes have occurred to source control. The items to watch for modifications are specified with [Source Control Blocks].  
+{info}
+Like all triggers, the intervalTrigger must be enclosed within a triggers element in the appropriate [Project Configuration Block].  
+{info}
+
+
+h2. Version
+
+Available from version 1.0
+
+h2. Examples
+
+{code:xml|borderStyle=solid|titleBGColor=#ADD6FF|title=Minimalist example}
+<intervalTrigger />
+{code}
+{code:xml|borderStyle=solid|titleBGColor=#ADD6FF|title=Full example}
+<intervalTrigger name="continuous" seconds="30" buildCondition="ForceBuild" initialSeconds="30" />
+{code}
+
+
+h2. Configuration Elements
+
+|| Element || Description || Type || Required || Default || Version ||
+| buildCondition | The condition that should be used to launch the integration. By default, this value is  *IfModificationExists*, meaning that an integration will only be triggered if modifications have been detected. Set this attribute to  *ForceBuild* in order to ensure that a build should be launched regardless of whether new modifications are detected.   | String - one of:
+* NoBuild
+* IfModificationExists
+* ForceBuild | No | IfModificationExists | 1.0 |
+| initialSeconds | The delay (in seconds) from CCNet startup to the first check for modifications.   | Double | No | Defaults to the IntervalSettings value. | 1.4 |
+| seconds | The number of seconds after an integration cycle completes before triggering the next integration cycle.   | Double | No | 60 | 1.0 |
+| name | The name of the trigger. This name is passed to external tools as a means to identify the trigger that requested the build.   | String | No | IntervalTrigger | 1.1 |
+
+h2. Notes
+
+{warning}
+This trigger replaces the  *PollingIntervalTrigger* and the  *ForceBuildIntervalTrigger*.  
+{warning}
+
+
+{info:title=Automatically Generated}
+Documentation generated on Saturday, 22 Jan 2011 at 12:14:23 AM
+Using assembly version 1.6.7979.1
+{info}

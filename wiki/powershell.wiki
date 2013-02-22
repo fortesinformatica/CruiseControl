@@ -1,0 +1,56 @@
+h1.   PowerShell Task 
+
+Runs a PowerShell script.  
+
+
+h2. Version
+
+Available from version 1.5
+
+h2. Examples
+
+{code:xml|borderStyle=solid|titleBGColor=#ADD6FF|title=Minimalist example}
+<powershell>
+  <script>dosomething.ps</script>
+</powershell>
+{code}
+{code:xml|borderStyle=solid|titleBGColor=#ADD6FF|title=Full example}
+<powershell>
+  <script>dosomething.ps</script>
+  <executable>C:\program Files\PowerShell\PowerShell.exe</executable>
+  <scriptsDirectory>C:\Scripts</scriptsDirectory>
+  <buildArgs>-level=1</buildArgs>
+  <environment>
+    <variable name="EnvVar1" value="Some data" />
+  </environment>
+  <successExitCodes>1,2,3</successExitCodes>
+  <buildTimeoutSeconds>10</buildTimeoutSeconds>
+  <description>Example of how to run a PowerShell script.</description>
+</powershell>
+{code}
+
+
+h2. Configuration Elements
+
+|| Element || Description || Type || Required || Default || Version ||
+| buildArgs | Any arguments to pass into the script.   | String | No | _None_ | 1.5 |
+| buildTimeoutSeconds | The maximum number of seconds the build can take. If the build process takes longer than this period, it will be killed.  Specify this value as zero to disable process timeouts.   | Int32 | No | 600 | 1.5 |
+| scriptsDirectory | The directory that the PowerShell scripts are stored in.   | String | No | %Documents%\WindowsPowerShell | 1.5 |
+| description | Description used for the visualisation of the buildstage, if left empty the process name will be shown.   | String | No | The task/publisher name. | 1.5 |
+| dynamicValues | The dynamic values to use for the task.   | [Dynamic Values] array | No | _None_ | 1.5 |
+| environment | Any environment variables to pass into the script.   | [Environment Variable] array | No | _None_ | 1.5 |
+| executable | The PowerShell executable.   | String | No | PowerShell.exe | 1.5 |
+| priority | The priority class of the spawned process.   | String - one of:
+* Normal
+* Idle
+* High
+* RealTime
+* BelowNormal
+* AboveNormal | No | Normal | 1.5 |
+| script | The PowerShell script to run.   | String | Yes | _None_ | 1.5 |
+| successExitCodes | The exit codes that mark the script as being successful.   | String | No | 0 | 1.5 |
+
+{info:title=Automatically Generated}
+Documentation generated on Saturday, 22 Jan 2011 at 12:14:22 AM
+Using assembly version 1.6.7979.1
+{info}

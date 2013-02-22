@@ -1,0 +1,13 @@
+h1. modifications
+
+
+
+h2. Configuration Elements
+
+|| Element || Description || Type || Required || Default || Version ||
+| array | Gets or sets the modifications.   | MercurialModification array | Yes |  |  |
+
+{info:title=Automatically Generated}
+Documentation generated on Wednesday, 19 Jan 2011 at 7:53:15 AM
+Using assembly version 1.6.7961.1
+{info}

@@ -1,0 +1,55 @@
+h1.  CVS Source Control Block 
+
+Please refer to [Using CruiseControl.NET with CVS] for an overview of this block.  
+For CVS you must define where the CVS executable (if you give a relative path, it must be relative to the ccnet.exe application) is and the working directory for checked out code.  
+
+
+h2. Version
+
+Available from version 1.2
+
+h2. Examples
+
+{code:xml|borderStyle=solid|titleBGColor=#ADD6FF|title=pserver authentication example}
+<sourcecontrol type="cvs">
+  <executable>..\tools\cvs.exe</executable>
+  <cvsroot>:pserver:anonymous@cvs.sourceforge.net:/cvsroot/ccnet</cvsroot>
+  <module>ccnet</module>
+  <workingDirectory>c:\projects\ccnet</workingDirectory>
+</sourcecontrol>
+{code}
+{code:xml|borderStyle=solid|titleBGColor=#ADD6FF|title=SSH via putty example}
+<sourcecontrol type="cvs">
+  <executable>c:\putty\cvswithplinkrsh.bat</executable>
+  <cvsroot>:ext:mycvsserver:/cvsroot/myrepo</cvsroot>
+  <module>mymodule</module>
+  <workingDirectory>c:\fromcvs\myrepo</workingDirectory>
+</sourcecontrol>
+{code}
+
+
+h2. Configuration Elements
+
+|| Element || Description || Type || Required || Default || Version ||
+| type | The type of source control block. | String - must be cvs | Yes | _n/a_ | 1.2 |
+| autoGetSource | Specifies whether the current version of the source should be retrieved from CVS.   | Boolean | No | true | 1.2 |
+| branch | The branch to check for modifications on.   | String | No | _None_ | 1.2 |
+| cleanCopy | Specifies whether or not a clean copy should be retrieved.   | Boolean | No | true | 1.2 |
+| cvsroot | The cvs connection string. If this is unspecified and your working directory contains a previous checkout, then the CVS client will attempt to determine the correct root based on the CVS folder in your working directory. If the working directory does not contain the source, then this element must be specfied.   | String | Yes | _n/a_ | 1.2 |
+| dynamicValues | The dynamic values to use for the source control block.   | [Dynamic Values] array | No | _None_ | 1.5 |
+| executable | The location of the cvs.exe executable.   | String | No | cvs | 1.2 |
+| forceCheckout | Specifies whether the checkout command should be used instead of update.   | Boolean | No | false | 1.2 |
+| issueUrlBuilder | Converts the comment (or parts from it) into an url pointing to the issue for this build. See [IssueUrlBuilder] for more details.   | [IssueUrlBuilder] | No | _None_ | 1.4 |
+| labelOnSuccess | Specifies whether or not the repository should be labelled after a successful build.   | Boolean | No | false | 1.2 |
+| module | The cvs module to monitor. This element is used both when checking for modifications and when checking out the source into an empty working directory.   | String | Yes | _n/a_ | 1.2 |
+| restrictLogins | Only list modifications checked in by specified logins.   | String | No | _None_ | 1.2 |
+| suppressRevisionHeader | Suppresses headers that do not have revisions within the specified modification window. Setting this option to true will reduce the time that it takes for CCNet to poll CVS for changes. Only fairly recent versions of CVS support this option. Run cvs \-\-help log to see if the \-S option is listed.   | Boolean | No | false | 1.2 |
+| tagPrefix | By default the CVS tag name used when labelOnSuccess is set to true is ver\-BuildLabel. If you specify this property, the prefix ver\- will be replaced with the value you specify.   | String | No | ver\- | 1.2 |
+| timeout | Sets the timeout period for the source control operation. See [Timeout Configuration] for details.   | [Timeout Configuration] | No | 10 minutes | 1.2 |
+| webUrlBuilder | Converts the comment (or parts from it) into an url pointing to the issue for this build. See [IssueUrlBuilder] for more details   | [IssueUrlBuilder] | No | false | 1.2 |
+| workingDirectory | The folder that the source has been checked out into.   | String | No | Project Working Directory | 1.2 |
+
+{info:title=Automatically Generated}
+Documentation generated on Saturday, 22 Jan 2011 at 12:14:17 AM
+Using assembly version 1.6.7979.1
+{info}

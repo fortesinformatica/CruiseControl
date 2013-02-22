@@ -1,0 +1,47 @@
+h1. MKS Source Integrity Source Control Block
+
+MKS Source Integrity Source Control Block.  
+
+h2. Version
+
+Available from version 1.0
+
+h2. Examples
+
+{code:xml|borderStyle=solid}
+<sourceControl type="mks">
+  <executable>C:\MKS\bin\si.exe</executable>
+  <user>CCNetUser</user>
+  <password>CCNetPassword</password>
+  <hostname>hostname</hostname>
+  <port>8722</port>
+  <sandboxroot>C:\MyProject</sandboxroot>
+  <sandboxfile>myproject.pj</sandboxfile>
+  <autoGetSource>true</autoGetSource>
+  <timeout units="minutes">10</timeout>
+</sourceControl>
+{code}
+
+
+h2. Configuration Elements
+
+|| Element || Description || Type || Required || Default || Version ||
+| type | The type of source control block. | String - must be mks | Yes | _n/a_ | 1.0 |
+| autoDisconnect | Whether or not CCNet should automatically disconnect after the sourcecontrol operation has finished.   | Boolean | No | false | 1.0 |
+| autoGetSource | Instruct CCNet whether or not you want it to automatically retrieve the latest source from the repository.   | Boolean | No | true | 1.0 |
+| checkpointOnSuccess | Whether to set a checkpoint on success or not.   | Boolean | No | false | 1.0 |
+| dynamicValues | The dynamic values to use for the source control block.   | [Dynamic Values] array | No | _None_ | 1.5 |
+| executable | The local path for the MKS source integrity command\-line client (eg. c:\Mks\bin\si.exe).   | String | Yes | si.exe | 1.0 |
+| hostname | The IP address or machine name of the MKS Source Integrity server.   | String | Yes | _None_ | 1.0 |
+| issueUrlBuilder | Converts the comment (or parts from it) into an url pointing to the issue for this build. See [IssueUrlBuilder] for more details.   | [IssueUrlBuilder] | No | _None_ | 1.4 |
+| password | Password for the MKS Source Integrity user ID.   | String | No | _None_ | 1.0 |
+| port | The port on the MKS Source Integrity server to connect to.   | Int32 | No | 8722 | 1.0 |
+| sandboxfile | The project file.   | String | Yes | _n/a_ | 1.0 |
+| sandboxroot | The local path MKS Source Integrity sandbox root corresponds to.   | String | Yes | _n/a_ | 1.0 |
+| timeout | Sets the timeout period for the source control operation. See [Timeout Configuration] for details.   | [Timeout Configuration] | No | 10 minutes | 1.0 |
+| user | MKS Source Integrity user ID that CCNet should use.   | String | No | _None_ | 1.0 |
+
+{info:title=Automatically Generated}
+Documentation generated on Saturday, 22 Jan 2011 at 12:14:18 AM
+Using assembly version 1.6.7979.1
+{info}

@@ -1,0 +1,48 @@
+h1. General Security Permissions
+
+Defines a set of permissions.  
+
+h2. Configuration Elements
+
+|| Element || Description || Type || Required || Default || Version ||
+| changeProject | The right to change the configuration of projects.   | String - one of:
+* Allow
+* Deny
+* Inherit | No | Inherit | 1.5 |
+| defaultRight | The default right to use.   | String - one of:
+* Allow
+* Deny
+* Inherit | No | Inherit | 1.5 |
+| forceBuild | The right for force or abort builds.   | String - one of:
+* Allow
+* Deny
+* Inherit | No | Inherit | 1.5 |
+| modifySecurity | The right to modify security.   | String - one of:
+* Allow
+* Deny
+* Inherit | No | Inherit | 1.5 |
+| sendMessage | The right to send messages.   | String - one of:
+* Allow
+* Deny
+* Inherit | No | Inherit | 1.5 |
+| startProject | The right to stop and start projects.   | String - one of:
+* Allow
+* Deny
+* Inherit | No | Inherit | 1.5 |
+| viewConfiguration | The right to view configuration and logs.   | String - one of:
+* Allow
+* Deny
+* Inherit | No | Inherit | 1.5 |
+| viewProject | The right to view a project.   | String - one of:
+* Allow
+* Deny
+* Inherit | No | Inherit | 1.5 |
+| viewSecurity | The right to view security.   | String - one of:
+* Allow
+* Deny
+* Inherit | No | Inherit | 1.5 |
+
+{info:title=Automatically Generated}
+Documentation generated on Saturday, 22 Jan 2011 at 12:14:16 AM
+Using assembly version 1.6.7979.1
+{info}

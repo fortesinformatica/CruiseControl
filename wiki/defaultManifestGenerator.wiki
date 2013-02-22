@@ -1,0 +1,42 @@
+h1. Default Manifest Generator
+
+Generate a default manifest for a package.  
+
+h2. Version
+
+Available from version 1.4.4
+
+h2. Examples
+
+{code:xml|borderStyle=solid}
+<manifest type="defaultManifestGenerator" />
+{code}
+
+
+h2. Configuration Elements
+
+|| Element || Description || Type || Required || Default || Version ||
+| type | The type of generator. | String - must be defaultManifestGenerator | Yes | _n/a_ | 1.4.4 |
+
+h2. Notes
+
+The default manifest lists all the files that are included in the package, plus a list of all the modifications for the build.  
+The following is an example of the type of manifest generated:  
+{code:xml|borderStyle=solid}
+<manifest>
+  <header project="Test project" label="A Label" build="ForceBuild" status="Unknown">
+    <modification user="johnDoe" changeNumber="1" time="2009-01-01T00:00:00">
+      <comment>A comment</comment>
+      <file name="first file" type="Add" />
+      <file name="second file" type="Modify" />
+    </modification>
+  </header>
+  <file name="first file" />
+</manifest>
+{code}
+
+
+{info:title=Automatically Generated}
+Documentation generated on Saturday, 22 Jan 2011 at 12:14:15 AM
+Using assembly version 1.6.7979.1
+{info}

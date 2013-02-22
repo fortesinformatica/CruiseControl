@@ -1,0 +1,1415 @@
+<docGen command="publish" time="2011-01-21T18:14:25.6788750-06:00">
+<message type="Info" time="Fri, 21 Jan 2011 18:14:26 GMT">
+<![CDATA[Publishing Confluence items to http://confluence.public.thoughtworks.org/rpc/soap-axis/confluenceservice-v1]]>
+</message>
+<message type="Warning" time="Fri, 21 Jan 2011 18:14:37 GMT">
+<![CDATA[Missing source attribute for title=".bookmarks".]]>
+</message>
+<message type="Debug" time="Fri, 21 Jan 2011 18:14:37 GMT">
+<![CDATA[Publishing accurev.wiki to AccuRev Source Control Block[6342]]]>
+</message>
+<message type="Debug" time="Fri, 21 Jan 2011 18:14:37 GMT">
+<![CDATA[AccuRev Source Control Block unchanged, publish skipped]]>
+</message>
+<message type="Debug" time="Fri, 21 Jan 2011 18:14:37 GMT">
+<![CDATA[Publishing actionFilter.wiki to ActionFilter[31686687]]]>
+</message>
+<message type="Debug" time="Fri, 21 Jan 2011 18:14:37 GMT">
+<![CDATA[ActionFilter unchanged, publish skipped]]>
+</message>
+<message type="Debug" time="Fri, 21 Jan 2011 18:14:37 GMT">
+<![CDATA[Publishing alienbrain.wiki to Alienbrain Source Control Block[4909]]]>
+</message>
+<message type="Debug" time="Fri, 21 Jan 2011 18:14:38 GMT">
+<![CDATA[Alienbrain Source Control Block unchanged, publish skipped]]>
+</message>
+<message type="Debug" time="Fri, 21 Jan 2011 18:14:38 GMT">
+<![CDATA[Publishing andCondition.wiki to And Condition[34701722]]]>
+</message>
+<message type="Debug" time="Fri, 21 Jan 2011 18:14:38 GMT">
+<![CDATA[And Condition unchanged, publish skipped]]>
+</message>
+<message type="Debug" time="Fri, 21 Jan 2011 18:14:38 GMT">
+<![CDATA[Publishing artifactcleanup.wiki to Artifact Cleanup Publisher[5505061]]]>
+</message>
+<message type="Debug" time="Fri, 21 Jan 2011 18:14:38 GMT">
+<![CDATA[Artifact Cleanup Publisher unchanged, publish skipped]]>
+</message>
+<message type="Debug" time="Fri, 21 Jan 2011 18:14:38 GMT">
+<![CDATA[Publishing assemblyMatch.wiki to Assembly Match[31097597]]]>
+</message>
+<message type="Debug" time="Fri, 21 Jan 2011 18:14:38 GMT">
+<![CDATA[Assembly Match unchanged, publish skipped]]>
+</message>
+<message type="Debug" time="Fri, 21 Jan 2011 18:14:38 GMT">
+<![CDATA[Publishing assemblyVersionLabeller.wiki to Assembly Version Labeller[26247204]]]>
+</message>
+<message type="Debug" time="Fri, 21 Jan 2011 18:14:38 GMT">
+<![CDATA[Assembly Version Labeller unchanged, publish skipped]]>
+</message>
+<message type="Warning" time="Fri, 21 Jan 2011 18:14:38 GMT">
+<![CDATA[Missing source attribute for title="Basic Installation".]]>
+</message>
+<message type="Debug" time="Fri, 21 Jan 2011 18:14:38 GMT">
+<![CDATA[Publishing bitkeeper.wiki to BitKeeper Source Control Block[4448]]]>
+</message>
+<message type="Debug" time="Fri, 21 Jan 2011 18:14:38 GMT">
+<![CDATA[BitKeeper Source Control Block unchanged, publish skipped]]>
+</message>
+<message type="Debug" time="Fri, 21 Jan 2011 18:14:38 GMT">
+<![CDATA[Publishing booleanParameter.wiki to Boolean Parameter[28868637]]]>
+</message>
+<message type="Debug" time="Fri, 21 Jan 2011 18:14:38 GMT">
+<![CDATA[Boolean Parameter unchanged, publish skipped]]>
+</message>
+<message type="Debug" time="Fri, 21 Jan 2011 18:14:38 GMT">
+<![CDATA[Publishing buildCondition.wiki to Build Condition Condition[34701729]]]>
+</message>
+<message type="Debug" time="Fri, 21 Jan 2011 18:14:38 GMT">
+<![CDATA[Build Condition Condition unchanged, publish skipped]]>
+</message>
+<message type="Debug" time="Fri, 21 Jan 2011 18:14:38 GMT">
+<![CDATA[Publishing buildLogBuildPlugin.wiki to Build Log Build Plugin[3001]]]>
+</message>
+<message type="Debug" time="Fri, 21 Jan 2011 18:14:38 GMT">
+<![CDATA[Build Log Build Plugin unchanged, publish skipped]]>
+</message>
+<message type="Debug" time="Fri, 21 Jan 2011 18:14:38 GMT">
+<![CDATA[Publishing buildpublisher.wiki to Build Publisher[1798]]]>
+</message>
+<message type="Debug" time="Fri, 21 Jan 2011 18:14:38 GMT">
+<![CDATA[Build Publisher unchanged, publish skipped]]>
+</message>
+<message type="Debug" time="Fri, 21 Jan 2011 18:14:38 GMT">
+<![CDATA[Publishing buildReportBuildPlugin.wiki to Build Report Build Plugin[2998]]]>
+</message>
+<message type="Debug" time="Fri, 21 Jan 2011 18:14:38 GMT">
+<![CDATA[Build Report Build Plugin unchanged, publish skipped]]>
+</message>
+<message type="Warning" time="Fri, 21 Jan 2011 18:14:38 GMT">
+<![CDATA[Missing source attribute for title="Building Packages".]]>
+</message>
+<message type="Warning" time="Fri, 21 Jan 2011 18:14:38 GMT">
+<![CDATA[Missing source attribute for title="CCNet 0.6 Final Release Notes".]]>
+</message>
+<message type="Warning" time="Fri, 21 Jan 2011 18:14:38 GMT">
+<![CDATA[Missing source attribute for title="CCNet 0.6 RC1 Release Notes".]]>
+</message>
+<message type="Warning" time="Fri, 21 Jan 2011 18:14:38 GMT">
+<![CDATA[Missing source attribute for title="CCNet 0.6.1 Release Notes".]]>
+</message>
+<message type="Warning" time="Fri, 21 Jan 2011 18:14:38 GMT">
+<![CDATA[Missing source attribute for title="CCNet 0.7 RC-1 Release Notes".]]>
+</message>
+<message type="Warning" time="Fri, 21 Jan 2011 18:14:38 GMT">
+<![CDATA[Missing source attribute for title="CCNet 0.7 Release Notes".]]>
+</message>
+<message type="Warning" time="Fri, 21 Jan 2011 18:14:38 GMT">
+<![CDATA[Missing source attribute for title="CCNet 0.8 Release Notes".]]>
+</message>
+<message type="Warning" time="Fri, 21 Jan 2011 18:14:38 GMT">
+<![CDATA[Missing source attribute for title="CCNet 0.9 Release Notes".]]>
+</message>
+<message type="Warning" time="Fri, 21 Jan 2011 18:14:38 GMT">
+<![CDATA[Missing source attribute for title="CCNet 0.9.1 Release Notes".]]>
+</message>
+<message type="Warning" time="Fri, 21 Jan 2011 18:14:38 GMT">
+<![CDATA[Missing source attribute for title="CCNet 0.9.2 Release Notes".]]>
+</message>
+<message type="Warning" time="Fri, 21 Jan 2011 18:14:38 GMT">
+<![CDATA[Missing source attribute for title="CCNet 1.0 Final Release Notes".]]>
+</message>
+<message type="Warning" time="Fri, 21 Jan 2011 18:14:38 GMT">
+<![CDATA[Missing source attribute for title="CCNet 1.0 RC1 Release Notes".]]>
+</message>
+<message type="Warning" time="Fri, 21 Jan 2011 18:14:38 GMT">
+<![CDATA[Missing source attribute for title="CCNet 1.0 RC2 Release Notes".]]>
+</message>
+<message type="Warning" time="Fri, 21 Jan 2011 18:14:38 GMT">
+<![CDATA[Missing source attribute for title="CCNet 1.0.1 Release Notes".]]>
+</message>
+<message type="Warning" time="Fri, 21 Jan 2011 18:14:38 GMT">
+<![CDATA[Missing source attribute for title="CCNet 1.1 Final Release Notes".]]>
+</message>
+<message type="Warning" time="Fri, 21 Jan 2011 18:14:38 GMT">
+<![CDATA[Missing source attribute for title="CCNet 1.1.1 Final Release Notes".]]>
+</message>
+<message type="Warning" time="Fri, 21 Jan 2011 18:14:38 GMT">
+<![CDATA[Missing source attribute for title="CCNet 1.2 Release Notes".]]>
+</message>
+<message type="Warning" time="Fri, 21 Jan 2011 18:14:38 GMT">
+<![CDATA[Missing source attribute for title="CCNet 1.2.1 Release Notes".]]>
+</message>
+<message type="Warning" time="Fri, 21 Jan 2011 18:14:38 GMT">
+<![CDATA[Missing source attribute for title="CCNet 1.3 Release Notes".]]>
+</message>
+<message type="Warning" time="Fri, 21 Jan 2011 18:14:38 GMT">
+<![CDATA[Missing source attribute for title="CCNet 1.4 Release Notes".]]>
+</message>
+<message type="Warning" time="Fri, 21 Jan 2011 18:14:38 GMT">
+<![CDATA[Missing source attribute for title="CCNet 1.4.1 Release Notes".]]>
+</message>
+<message type="Warning" time="Fri, 21 Jan 2011 18:14:38 GMT">
+<![CDATA[Missing source attribute for title="CCNet 1.4.2 Release Notes".]]>
+</message>
+<message type="Warning" time="Fri, 21 Jan 2011 18:14:38 GMT">
+<![CDATA[Missing source attribute for title="CCNet 1.4.3 Release Notes".]]>
+</message>
+<message type="Warning" time="Fri, 21 Jan 2011 18:14:38 GMT">
+<![CDATA[Missing source attribute for title="CCNet 1.4.4 RC1 Release Notes".]]>
+</message>
+<message type="Warning" time="Fri, 21 Jan 2011 18:14:38 GMT">
+<![CDATA[Missing source attribute for title="CCNet 1.4.4 RC2 Release Notes".]]>
+</message>
+<message type="Warning" time="Fri, 21 Jan 2011 18:14:38 GMT">
+<![CDATA[Missing source attribute for title="CCNet 1.4.4 Release Notes".]]>
+</message>
+<message type="Warning" time="Fri, 21 Jan 2011 18:14:38 GMT">
+<![CDATA[Missing source attribute for title="CCNet 1.4.4 SP1 Release Notes".]]>
+</message>
+<message type="Warning" time="Fri, 21 Jan 2011 18:14:38 GMT">
+<![CDATA[Missing source attribute for title="CCNet 1.5 CTP Release Notes".]]>
+</message>
+<message type="Warning" time="Fri, 21 Jan 2011 18:14:38 GMT">
+<![CDATA[Missing source attribute for title="CCNet 1.5 RC1 Release Notes".]]>
+</message>
+<message type="Warning" time="Fri, 21 Jan 2011 18:14:38 GMT">
+<![CDATA[Missing source attribute for title="CCTray".]]>
+</message>
+<message type="Debug" time="Fri, 21 Jan 2011 18:14:38 GMT">
+<![CDATA[Publishing cctrayDownloadPlugin.wiki to CCTray Download Plugin[4390945]]]>
+</message>
+<message type="Debug" time="Fri, 21 Jan 2011 18:14:38 GMT">
+<![CDATA[CCTray Download Plugin unchanged, publish skipped]]>
+</message>
+<message type="Warning" time="Fri, 21 Jan 2011 18:14:38 GMT">
+<![CDATA[Missing source attribute for title="cctray-settings.xml".]]>
+</message>
+<message type="Warning" time="Fri, 21 Jan 2011 18:14:38 GMT">
+<![CDATA[Missing source attribute for title="CCValidator".]]>
+</message>
+<message type="Warning" time="Fri, 21 Jan 2011 18:14:38 GMT">
+<![CDATA[Missing source attribute for title="Channel Security".]]>
+</message>
+<message type="Debug" time="Fri, 21 Jan 2011 18:14:38 GMT">
+<![CDATA[Publishing codeItRight.wiki to CodeIt.Right Analysis Task[34701688]]]>
+</message>
+<message type="Debug" time="Fri, 21 Jan 2011 18:14:39 GMT">
+<![CDATA[CodeIt.Right Analysis Task unchanged, publish skipped]]>
+</message>
+<message type="Debug" time="Fri, 21 Jan 2011 18:14:39 GMT">
+<![CDATA[Publishing commentFilter.wiki to CommentFilter[31686689]]]>
+</message>
+<message type="Debug" time="Fri, 21 Jan 2011 18:14:39 GMT">
+<![CDATA[CommentFilter unchanged, publish skipped]]>
+</message>
+<message type="Warning" time="Fri, 21 Jan 2011 18:14:39 GMT">
+<![CDATA[Missing source attribute for title="Commit Process".]]>
+</message>
+<message type="Debug" time="Fri, 21 Jan 2011 18:14:39 GMT">
+<![CDATA[Publishing compareCondition.wiki to Compare Values Condition[34701727]]]>
+</message>
+<message type="Debug" time="Fri, 21 Jan 2011 18:14:39 GMT">
+<![CDATA[Compare Values Condition unchanged, publish skipped]]>
+</message>
+<message type="Debug" time="Fri, 21 Jan 2011 18:14:39 GMT">
+<![CDATA[Publishing conditionalPublisher.wiki to Conditional Publisher[28868660]]]>
+</message>
+<message type="Debug" time="Fri, 21 Jan 2011 18:14:39 GMT">
+<![CDATA[Conditional Publisher unchanged, publish skipped]]>
+</message>
+<message type="Debug" time="Fri, 21 Jan 2011 18:14:39 GMT">
+<![CDATA[Publishing conditional.wiki to Conditional Task[34701709]]]>
+</message>
+<message type="Debug" time="Fri, 21 Jan 2011 18:14:39 GMT">
+<![CDATA[Conditional Task unchanged, publish skipped]]>
+</message>
+<message type="Warning" time="Fri, 21 Jan 2011 18:14:39 GMT">
+<![CDATA[Missing source attribute for title="Configuration Preprocessor".]]>
+</message>
+<message type="Warning" time="Fri, 21 Jan 2011 18:14:39 GMT">
+<![CDATA[Missing source attribute for title="Configure CruiseControl.Net to Automatically Update its Config File".]]>
+</message>
+<message type="Warning" time="Fri, 21 Jan 2011 18:14:39 GMT">
+<![CDATA[Missing source attribute for title="Configuring the Server".]]>
+</message>
+<message type="Warning" time="Fri, 21 Jan 2011 18:14:39 GMT">
+<![CDATA[Missing source attribute for title="Configuring the Web Dashboard".]]>
+</message>
+<message type="Warning" time="Fri, 21 Jan 2011 18:14:39 GMT">
+<![CDATA[Missing source attribute for title="Contributor License Agreement".]]>
+</message>
+<message type="Debug" time="Fri, 21 Jan 2011 18:14:39 GMT">
+<![CDATA[Publishing coverageFilter.wiki to Coverage Filter[31097556]]]>
+</message>
+<message type="Debug" time="Fri, 21 Jan 2011 18:14:39 GMT">
+<![CDATA[Coverage Filter unchanged, publish skipped]]>
+</message>
+<message type="Debug" time="Fri, 21 Jan 2011 18:14:39 GMT">
+<![CDATA[Publishing coverageThreshold.wiki to Coverage Threshold[31097558]]]>
+</message>
+<message type="Debug" time="Fri, 21 Jan 2011 18:14:39 GMT">
+<![CDATA[Coverage Threshold unchanged, publish skipped]]>
+</message>
+<message type="Debug" time="Fri, 21 Jan 2011 18:14:39 GMT">
+<![CDATA[Publishing cronTrigger.wiki to Cron Trigger[36536816]]]>
+</message>
+<message type="Debug" time="Fri, 21 Jan 2011 18:14:39 GMT">
+<![CDATA[Cron Trigger unchanged, publish skipped]]>
+</message>
+<message type="Warning" time="Fri, 21 Jan 2011 18:14:39 GMT">
+<![CDATA[Missing source attribute for title="CruiseControl.NET Integration Process".]]>
+</message>
+<message type="Warning" time="Fri, 21 Jan 2011 18:14:39 GMT">
+<![CDATA[Missing source attribute for title="CruiseControl.NET Server".]]>
+</message>
+<message type="Debug" time="Fri, 21 Jan 2011 18:14:39 GMT">
+<![CDATA[Publishing controlAction.wiki to CruiseServer Control Action[31097528]]]>
+</message>
+<message type="Debug" time="Fri, 21 Jan 2011 18:14:39 GMT">
+<![CDATA[CruiseServer Control Action unchanged, publish skipped]]>
+</message>
+<message type="Debug" time="Fri, 21 Jan 2011 18:14:39 GMT">
+<![CDATA[Publishing cruiseServerControl.wiki to CruiseServer Control Task[28868702]]]>
+</message>
+<message type="Debug" time="Fri, 21 Jan 2011 18:14:39 GMT">
+<![CDATA[CruiseServer Control Task unchanged, publish skipped]]>
+</message>
+<message type="Warning" time="Fri, 21 Jan 2011 18:14:39 GMT">
+<![CDATA[Missing source attribute for title="Custom Builder Plug-in".]]>
+</message>
+<message type="Warning" time="Fri, 21 Jan 2011 18:14:39 GMT">
+<![CDATA[Missing source attribute for title="Custom templates".]]>
+</message>
+<message type="Debug" time="Fri, 21 Jan 2011 18:14:39 GMT">
+<![CDATA[Publishing cvs.wiki to CVS Source Control Block[315]]]>
+</message>
+<message type="Debug" time="Fri, 21 Jan 2011 18:14:39 GMT">
+<![CDATA[CVS Source Control Block unchanged, publish skipped]]>
+</message>
+<message type="Debug" time="Fri, 21 Jan 2011 18:14:39 GMT">
+<![CDATA[Publishing administrationPlugin.wiki to Dashboard Administration Plugin[26247259]]]>
+</message>
+<message type="Debug" time="Fri, 21 Jan 2011 18:14:39 GMT">
+<![CDATA[Dashboard Administration Plugin unchanged, publish skipped]]>
+</message>
+<message type="Warning" time="Fri, 21 Jan 2011 18:14:39 GMT">
+<![CDATA[Missing source attribute for title="Dashboard Configuration Block".]]>
+</message>
+<message type="Debug" time="Fri, 21 Jan 2011 18:14:39 GMT">
+<![CDATA[Publishing dateLabeller.wiki to Date Labeller[4487]]]>
+</message>
+<message type="Debug" time="Fri, 21 Jan 2011 18:14:40 GMT">
+<![CDATA[Date Labeller unchanged, publish skipped]]>
+</message>
+<message type="Debug" time="Fri, 21 Jan 2011 18:14:40 GMT">
+<![CDATA[Publishing dateParameter.wiki to Date Parameter[28868640]]]>
+</message>
+<message type="Debug" time="Fri, 21 Jan 2011 18:14:40 GMT">
+<![CDATA[Date Parameter unchanged, publish skipped]]>
+</message>
+<message type="Debug" time="Fri, 21 Jan 2011 18:14:40 GMT">
+<![CDATA[Publishing defaultIssueTracker.wiki to Default Issue Tracker URL Builder[31686713]]]>
+</message>
+<message type="Debug" time="Fri, 21 Jan 2011 18:14:40 GMT">
+<![CDATA[Default Issue Tracker URL Builder unchanged, publish skipped]]>
+</message>
+<message type="Debug" time="Fri, 21 Jan 2011 18:14:40 GMT">
+<![CDATA[Publishing defaultlabeller.wiki to Default Labeller[632]]]>
+</message>
+<message type="Debug" time="Fri, 21 Jan 2011 18:14:40 GMT">
+<![CDATA[Default Labeller unchanged, publish skipped]]>
+</message>
+<message type="Debug" time="Fri, 21 Jan 2011 18:14:40 GMT">
+<![CDATA[Publishing defaultManifestGenerator.wiki to Default Manifest Generator[26247214]]]>
+</message>
+<message type="Debug" time="Fri, 21 Jan 2011 18:14:40 GMT">
+<![CDATA[Default Manifest Generator unchanged, publish skipped]]>
+</message>
+<message type="Debug" time="Fri, 21 Jan 2011 18:14:40 GMT">
+<![CDATA[Publishing defaultProjectSecurity.wiki to Default Project Security[29130776]]]>
+</message>
+<message type="Debug" time="Fri, 21 Jan 2011 18:14:40 GMT">
+<![CDATA[Default Project Security unchanged, publish skipped]]>
+</message>
+<message type="Warning" time="Fri, 21 Jan 2011 18:14:40 GMT">
+<![CDATA[Missing source attribute for title="Developer Guidelines".]]>
+</message>
+<message type="Warning" time="Fri, 21 Jan 2011 18:14:40 GMT">
+<![CDATA[Missing source attribute for title="Developer Registration Process".]]>
+</message>
+<message type="Warning" time="Fri, 21 Jan 2011 18:14:40 GMT">
+<![CDATA[Missing source attribute for title="Developing Web Dashboard Plugins".]]>
+</message>
+<message type="Debug" time="Fri, 21 Jan 2011 18:14:40 GMT">
+<![CDATA[Publishing directValue.wiki to Direct Dynamic Value[28475458]]]>
+</message>
+<message type="Debug" time="Fri, 21 Jan 2011 18:14:40 GMT">
+<![CDATA[Direct Dynamic Value unchanged, publish skipped]]>
+</message>
+<message type="Warning" time="Fri, 21 Jan 2011 18:14:40 GMT">
+<![CDATA[Missing source attribute for title="Documentation".]]>
+</message>
+<message type="Warning" time="Fri, 21 Jan 2011 18:14:40 GMT">
+<![CDATA[Missing source attribute for title="Documentation Guidelines".]]>
+</message>
+<message type="Warning" time="Fri, 21 Jan 2011 18:14:40 GMT">
+<![CDATA[Missing source attribute for title="Download".]]>
+</message>
+<message type="Debug" time="Fri, 21 Jan 2011 18:14:40 GMT">
+<![CDATA[Publishing dupfinder.wiki to Duplicate Finder Task[31097605]]]>
+</message>
+<message type="Debug" time="Fri, 21 Jan 2011 18:14:40 GMT">
+<![CDATA[Duplicate Finder Task unchanged, publish skipped]]>
+</message>
+<message type="Warning" time="Fri, 21 Jan 2011 18:14:40 GMT">
+<![CDATA[Missing source attribute for title="Dynamic Parameters".]]>
+</message>
+<message type="Warning" time="Fri, 21 Jan 2011 18:14:40 GMT">
+<![CDATA[Missing source attribute for title="Dynamic Values".]]>
+</message>
+<message type="Warning" time="Fri, 21 Jan 2011 18:14:40 GMT">
+<![CDATA[Missing source attribute for title="Email Converter".]]>
+</message>
+<message type="Debug" time="Fri, 21 Jan 2011 18:14:40 GMT">
+<![CDATA[Publishing group.wiki to Email Group[31097625]]]>
+</message>
+<message type="Debug" time="Fri, 21 Jan 2011 18:14:40 GMT">
+<![CDATA[Email Group unchanged, publish skipped]]>
+</message>
+<message type="Debug" time="Fri, 21 Jan 2011 18:14:40 GMT">
+<![CDATA[Publishing email.wiki to Email Publisher[351]]]>
+</message>
+<message type="Debug" time="Fri, 21 Jan 2011 18:14:40 GMT">
+<![CDATA[Email Publisher unchanged, publish skipped]]>
+</message>
+<message type="Warning" time="Fri, 21 Jan 2011 18:14:40 GMT">
+<![CDATA[Missing source attribute for title="Email Subject".]]>
+</message>
+<message type="Warning" time="Fri, 21 Jan 2011 18:14:40 GMT">
+<![CDATA[Missing source attribute for title="Email User".]]>
+</message>
+<message type="Warning" time="Fri, 21 Jan 2011 18:14:40 GMT">
+<![CDATA[Missing source attribute for title="Encrypted Messages Channel".]]>
+</message>
+<message type="Warning" time="Fri, 21 Jan 2011 18:14:40 GMT">
+<![CDATA[Missing source attribute for title="Enterprise Continuous Integration with Binary Dependencies example".]]>
+</message>
+<message type="Warning" time="Fri, 21 Jan 2011 18:14:40 GMT">
+<![CDATA[Missing source attribute for title="Environment Variable".]]>
+</message>
+<message type="Warning" time="Fri, 21 Jan 2011 18:14:40 GMT">
+<![CDATA[Missing source attribute for title="Examples".]]>
+</message>
+<message type="Debug" time="Fri, 21 Jan 2011 18:14:40 GMT">
+<![CDATA[Publishing exec.wiki to Executable Task[1630]]]>
+</message>
+<message type="Debug" time="Fri, 21 Jan 2011 18:14:40 GMT">
+<![CDATA[Executable Task unchanged, publish skipped]]>
+</message>
+<message type="Debug" time="Fri, 21 Jan 2011 18:14:40 GMT">
+<![CDATA[Publishing externalFileSecurity.wiki to External File Server Security[28868733]]]>
+</message>
+<message type="Debug" time="Fri, 21 Jan 2011 18:14:40 GMT">
+<![CDATA[External File Server Security unchanged, publish skipped]]>
+</message>
+<message type="Debug" time="Fri, 21 Jan 2011 18:14:40 GMT">
+<![CDATA[Publishing externalLink.wiki to External Links[2827]]]>
+</message>
+<message type="Debug" time="Fri, 21 Jan 2011 18:14:41 GMT">
+<![CDATA[External Links unchanged, publish skipped]]>
+</message>
+<message type="Debug" time="Fri, 21 Jan 2011 18:14:41 GMT">
+<![CDATA[Publishing external.wiki to External Source Control[5865505]]]>
+</message>
+<message type="Debug" time="Fri, 21 Jan 2011 18:14:41 GMT">
+<![CDATA[External Source Control unchanged, publish skipped]]>
+</message>
+<message type="Debug" time="Fri, 21 Jan 2011 18:14:41 GMT">
+<![CDATA[Publishing fake.wiki to FAKE Task[36536800]]]>
+</message>
+<message type="Debug" time="Fri, 21 Jan 2011 18:14:41 GMT">
+<![CDATA[FAKE Task unchanged, publish skipped]]>
+</message>
+<message type="Warning" time="Fri, 21 Jan 2011 18:14:41 GMT">
+<![CDATA[Missing source attribute for title="FAQ".]]>
+</message>
+<message type="Debug" time="Fri, 21 Jan 2011 18:14:41 GMT">
+<![CDATA[Publishing farmReportFarmPlugin.wiki to Farm Report Farm Plugin[2981]]]>
+</message>
+<message type="Debug" time="Fri, 21 Jan 2011 18:14:43 GMT">
+<![CDATA[Farm Report Farm Plugin unchanged, publish skipped]]>
+</message>
+<message type="Debug" time="Fri, 21 Jan 2011 18:14:43 GMT">
+<![CDATA[Publishing FBVariable.wiki to FBVariable[31097603]]]>
+</message>
+<message type="Debug" time="Fri, 21 Jan 2011 18:14:43 GMT">
+<![CDATA[FBVariable unchanged, publish skipped]]>
+</message>
+<message type="Debug" time="Fri, 21 Jan 2011 18:14:43 GMT">
+<![CDATA[Publishing fileBasedCache.wiki to File Based Security Cache[28868757]]]>
+</message>
+<message type="Debug" time="Fri, 21 Jan 2011 18:14:43 GMT">
+<![CDATA[File Based Security Cache unchanged, publish skipped]]>
+</message>
+<message type="Debug" time="Fri, 21 Jan 2011 18:14:43 GMT">
+<![CDATA[Publishing fileExistsCondition.wiki to File Exists Condition[34701748]]]>
+</message>
+<message type="Debug" time="Fri, 21 Jan 2011 18:14:43 GMT">
+<![CDATA[File Exists Condition unchanged, publish skipped]]>
+</message>
+<message type="Debug" time="Fri, 21 Jan 2011 18:14:43 GMT">
+<![CDATA[Publishing fileLabeller.wiki to File Labeller[3997755]]]>
+</message>
+<message type="Debug" time="Fri, 21 Jan 2011 18:14:43 GMT">
+<![CDATA[File Labeller unchanged, publish skipped]]>
+</message>
+<message type="Debug" time="Fri, 21 Jan 2011 18:14:43 GMT">
+<![CDATA[Publishing merge.wiki to File Merge Task[271]]]>
+</message>
+<message type="Debug" time="Fri, 21 Jan 2011 18:14:44 GMT">
+<![CDATA[File Merge Task unchanged, publish skipped]]>
+</message>
+<message type="Warning" time="Fri, 21 Jan 2011 18:14:44 GMT">
+<![CDATA[Missing source attribute for title="File State Manager".]]>
+</message>
+<message type="Debug" time="Fri, 21 Jan 2011 18:14:44 GMT">
+<![CDATA[Publishing filesystem.wiki to Filesystem Source Control Block[347]]]>
+</message>
+<message type="Debug" time="Fri, 21 Jan 2011 18:14:44 GMT">
+<![CDATA[Filesystem Source Control Block unchanged, publish skipped]]>
+</message>
+<message type="Debug" time="Fri, 21 Jan 2011 18:14:44 GMT">
+<![CDATA[Publishing filterTrigger.wiki to Filter Trigger[2417]]]>
+</message>
+<message type="Debug" time="Fri, 21 Jan 2011 18:14:44 GMT">
+<![CDATA[Filter Trigger unchanged, publish skipped]]>
+</message>
+<message type="Debug" time="Fri, 21 Jan 2011 18:14:44 GMT">
+<![CDATA[Publishing filtered.wiki to Filtered Source Control Block[1068]]]>
+</message>
+<message type="Debug" time="Fri, 21 Jan 2011 18:14:44 GMT">
+<![CDATA[Filtered Source Control Block unchanged, publish skipped]]>
+</message>
+<message type="Warning" time="Fri, 21 Jan 2011 18:14:44 GMT">
+<![CDATA[Missing source attribute for title="FinalBuilder Task".]]>
+</message>
+<message type="Debug" time="Fri, 21 Jan 2011 18:14:44 GMT">
+<![CDATA[Publishing firstMatch.wiki to FirstMatch[31097499]]]>
+</message>
+<message type="Debug" time="Fri, 21 Jan 2011 18:14:44 GMT">
+<![CDATA[FirstMatch unchanged, publish skipped]]>
+</message>
+<message type="Debug" time="Fri, 21 Jan 2011 18:14:44 GMT">
+<![CDATA[Publishing folderExistsCondition.wiki to Folder Exists Condition[34701746]]]>
+</message>
+<message type="Debug" time="Fri, 21 Jan 2011 18:14:44 GMT">
+<![CDATA[Folder Exists Condition unchanged, publish skipped]]>
+</message>
+<message type="Debug" time="Fri, 21 Jan 2011 18:14:44 GMT">
+<![CDATA[Publishing forcebuild.wiki to ForceBuildPublisher[2340]]]>
+</message>
+<message type="Debug" time="Fri, 21 Jan 2011 18:14:44 GMT">
+<![CDATA[ForceBuildPublisher unchanged, publish skipped]]>
+</message>
+<message type="Debug" time="Fri, 21 Jan 2011 18:14:44 GMT">
+<![CDATA[Publishing ftpSourceControl.wiki to FTP Source control[29130765]]]>
+</message>
+<message type="Debug" time="Fri, 21 Jan 2011 18:14:44 GMT">
+<![CDATA[FTP Source control unchanged, publish skipped]]>
+</message>
+<message type="Debug" time="Fri, 21 Jan 2011 18:14:44 GMT">
+<![CDATA[Publishing ftp.wiki to Ftp task - Publisher[29130759]]]>
+</message>
+<message type="Debug" time="Fri, 21 Jan 2011 18:14:44 GMT">
+<![CDATA[Ftp task - Publisher unchanged, publish skipped]]>
+</message>
+<message type="Debug" time="Fri, 21 Jan 2011 18:14:44 GMT">
+<![CDATA[Publishing gendarme.wiki to Gendarme Task[25591881]]]>
+</message>
+<message type="Debug" time="Fri, 21 Jan 2011 18:14:44 GMT">
+<![CDATA[Gendarme Task unchanged, publish skipped]]>
+</message>
+<message type="Warning" time="Fri, 21 Jan 2011 18:14:44 GMT">
+<![CDATA[Missing source attribute for title="General Security".]]>
+</message>
+<message type="Warning" time="Fri, 21 Jan 2011 18:14:44 GMT">
+<![CDATA[Missing source attribute for title="General Security Permissions".]]>
+</message>
+<message type="Debug" time="Fri, 21 Jan 2011 18:14:44 GMT">
+<![CDATA[Publishing git.wiki to Git Source Control Block[28475426]]]>
+</message>
+<message type="Debug" time="Fri, 21 Jan 2011 18:14:44 GMT">
+<![CDATA[Git Source Control Block unchanged, publish skipped]]>
+</message>
+<message type="Warning" time="Fri, 21 Jan 2011 18:14:44 GMT">
+<![CDATA[Missing source attribute for title="How to force a CCNet build from a NAnt script".]]>
+</message>
+<message type="Debug" time="Fri, 21 Jan 2011 18:14:44 GMT">
+<![CDATA[Publishing htmlReportPlugin.wiki to HTML Report Plugin[32505931]]]>
+</message>
+<message type="Debug" time="Fri, 21 Jan 2011 18:14:44 GMT">
+<![CDATA[HTML Report Plugin unchanged, publish skipped]]>
+</message>
+<message type="Warning" time="Fri, 21 Jan 2011 18:14:44 GMT">
+<![CDATA[Missing source attribute for title="HTTP Request Header".]]>
+</message>
+<message type="Debug" time="Fri, 21 Jan 2011 18:14:44 GMT">
+<![CDATA[Publishing httpRequest.wiki to HTTP Settings[31097589]]]>
+</message>
+<message type="Debug" time="Fri, 21 Jan 2011 18:14:45 GMT">
+<![CDATA[HTTP Settings unchanged, publish skipped]]>
+</message>
+<message type="Warning" time="Fri, 21 Jan 2011 18:14:45 GMT">
+<![CDATA[Missing source attribute for title="HTTP Status Task".]]>
+</message>
+<message type="Debug" time="Fri, 21 Jan 2011 18:14:45 GMT">
+<![CDATA[Publishing impersonation.wiki to Impersonation[31490098]]]>
+</message>
+<message type="Debug" time="Fri, 21 Jan 2011 18:14:45 GMT">
+<![CDATA[Impersonation unchanged, publish skipped]]>
+</message>
+<message type="Debug" time="Fri, 21 Jan 2011 18:14:45 GMT">
+<![CDATA[Publishing inMemoryCache.wiki to In Memory Security Cache[28868759]]]>
+</message>
+<message type="Debug" time="Fri, 21 Jan 2011 18:14:45 GMT">
+<![CDATA[In Memory Security Cache unchanged, publish skipped]]>
+</message>
+<message type="Debug" time="Fri, 21 Jan 2011 18:14:45 GMT">
+<![CDATA[Publishing inheritedProjectSecurity.wiki to Inherited Project Security[28868770]]]>
+</message>
+<message type="Debug" time="Fri, 21 Jan 2011 18:14:45 GMT">
+<![CDATA[Inherited Project Security unchanged, publish skipped]]>
+</message>
+<message type="Warning" time="Fri, 21 Jan 2011 18:14:45 GMT">
+<![CDATA[Missing source attribute for title="Installation Prerequisites".]]>
+</message>
+<message type="Warning" time="Fri, 21 Jan 2011 18:14:45 GMT">
+<![CDATA[Missing source attribute for title="Installing the Web Dashboard".]]>
+</message>
+<message type="Warning" time="Fri, 21 Jan 2011 18:14:45 GMT">
+<![CDATA[Missing source attribute for title="Integration Properties".]]>
+</message>
+<message type="Warning" time="Fri, 21 Jan 2011 18:14:45 GMT">
+<![CDATA[Missing source attribute for title="Integration Queues".]]>
+</message>
+<message type="Debug" time="Fri, 21 Jan 2011 18:14:45 GMT">
+<![CDATA[Publishing internalSecurity.wiki to Internal Server Security[28868736]]]>
+</message>
+<message type="Debug" time="Fri, 21 Jan 2011 18:14:45 GMT">
+<![CDATA[Internal Server Security unchanged, publish skipped]]>
+</message>
+<message type="Debug" time="Fri, 21 Jan 2011 18:14:45 GMT">
+<![CDATA[Publishing intervalTrigger.wiki to Interval Trigger[2594]]]>
+</message>
+<message type="Debug" time="Fri, 21 Jan 2011 18:14:45 GMT">
+<![CDATA[Interval Trigger unchanged, publish skipped]]>
+</message>
+<message type="Warning" time="Fri, 21 Jan 2011 18:14:45 GMT">
+<![CDATA[Missing source attribute for title="Issues".]]>
+</message>
+<message type="Warning" time="Fri, 21 Jan 2011 18:14:45 GMT">
+<![CDATA[Missing source attribute for title="IssueUrlBuilder".]]>
+</message>
+<message type="Debug" time="Fri, 21 Jan 2011 18:14:45 GMT">
+<![CDATA[Publishing iterationlabeller.wiki to Iteration Labeller[4034]]]>
+</message>
+<message type="Debug" time="Fri, 21 Jan 2011 18:14:45 GMT">
+<![CDATA[Iteration Labeller unchanged, publish skipped]]>
+</message>
+<message type="Warning" time="Fri, 21 Jan 2011 18:14:45 GMT">
+<![CDATA[Missing source attribute for title="Labeller Blocks".]]>
+</message>
+<message type="Debug" time="Fri, 21 Jan 2011 18:14:45 GMT">
+<![CDATA[Publishing lastStatusCondition.wiki to Last Build Status Condition[34701768]]]>
+</message>
+<message type="Debug" time="Fri, 21 Jan 2011 18:14:45 GMT">
+<![CDATA[Last Build Status Condition unchanged, publish skipped]]>
+</message>
+<message type="Debug" time="Fri, 21 Jan 2011 18:14:45 GMT">
+<![CDATA[Publishing lastBuildTimeCondition.wiki to Last Build Time Condition[34701782]]]>
+</message>
+<message type="Debug" time="Fri, 21 Jan 2011 18:14:45 GMT">
+<![CDATA[Last Build Time Condition unchanged, publish skipped]]>
+</message>
+<message type="Debug" time="Fri, 21 Jan 2011 18:14:45 GMT">
+<![CDATA[Publishing lastChangeLabeller.wiki to Last Change Labeller[6345]]]>
+</message>
+<message type="Debug" time="Fri, 21 Jan 2011 18:14:45 GMT">
+<![CDATA[Last Change Labeller unchanged, publish skipped]]>
+</message>
+<message type="Debug" time="Fri, 21 Jan 2011 18:14:45 GMT">
+<![CDATA[Publishing latestBuildReportProjectPlugin.wiki to Latest Build Report Project Plugin[4440]]]>
+</message>
+<message type="Debug" time="Fri, 21 Jan 2011 18:14:45 GMT">
+<![CDATA[Latest Build Report Project Plugin unchanged, publish skipped]]>
+</message>
+<message type="Debug" time="Fri, 21 Jan 2011 18:14:45 GMT">
+<![CDATA[Publishing ldapConverter.wiki to LDAP Email Converter[31097618]]]>
+</message>
+<message type="Debug" time="Fri, 21 Jan 2011 18:14:45 GMT">
+<![CDATA[LDAP Email Converter unchanged, publish skipped]]>
+</message>
+<message type="Debug" time="Fri, 21 Jan 2011 18:14:45 GMT">
+<![CDATA[Publishing ldapUser.wiki to LDAP User Authentication[28868784]]]>
+</message>
+<message type="Debug" time="Fri, 21 Jan 2011 18:14:45 GMT">
+<![CDATA[LDAP User Authentication unchanged, publish skipped]]>
+</message>
+<message type="Warning" time="Fri, 21 Jan 2011 18:14:45 GMT">
+<![CDATA[Missing source attribute for title="License".]]>
+</message>
+<message type="Warning" time="Fri, 21 Jan 2011 18:14:45 GMT">
+<![CDATA[Missing source attribute for title="Mailing Lists".]]>
+</message>
+<message type="Warning" time="Fri, 21 Jan 2011 18:14:45 GMT">
+<![CDATA[Missing source attribute for title="Manifest Generators".]]>
+</message>
+<message type="Warning" time="Fri, 21 Jan 2011 18:14:45 GMT">
+<![CDATA[Missing source attribute for title="Manifest Importer".]]>
+</message>
+<message type="Debug" time="Fri, 21 Jan 2011 18:14:45 GMT">
+<![CDATA[Publishing hgweb.wiki to Mercurial Issue Tracker URL Builder[31686709]]]>
+</message>
+<message type="Debug" time="Fri, 21 Jan 2011 18:14:46 GMT">
+<![CDATA[Mercurial Issue Tracker URL Builder unchanged, publish skipped]]>
+</message>
+<message type="Debug" time="Fri, 21 Jan 2011 18:14:46 GMT">
+<![CDATA[Publishing hg.wiki to Mercurial Source Control Block[28278800]]]>
+</message>
+<message type="Debug" time="Fri, 21 Jan 2011 18:14:46 GMT">
+<![CDATA[Mercurial Source Control Block unchanged, publish skipped]]>
+</message>
+<message type="Warning" time="Fri, 21 Jan 2011 18:14:46 GMT">
+<![CDATA[Missing source attribute for title="Merge File".]]>
+</message>
+<message type="Debug" time="Fri, 21 Jan 2011 18:14:46 GMT">
+<![CDATA[Publishing mks.wiki to MKS Source Integrity Source Control Block[2869]]]>
+</message>
+<message type="Debug" time="Fri, 21 Jan 2011 18:14:46 GMT">
+<![CDATA[MKS Source Integrity Source Control Block unchanged, publish skipped]]>
+</message>
+<message type="Warning" time="Fri, 21 Jan 2011 18:14:46 GMT">
+<![CDATA[Missing source attribute for title="Modification Filters".]]>
+</message>
+<message type="Debug" time="Fri, 21 Jan 2011 18:14:46 GMT">
+<![CDATA[Publishing modificationReader.wiki to Modification Reader Task[21626918]]]>
+</message>
+<message type="Debug" time="Fri, 21 Jan 2011 18:14:46 GMT">
+<![CDATA[Modification Reader Task unchanged, publish skipped]]>
+</message>
+<message type="Debug" time="Fri, 21 Jan 2011 18:14:46 GMT">
+<![CDATA[Publishing modificationWriter.wiki to Modification Writer Task[3797]]]>
+</message>
+<message type="Debug" time="Fri, 21 Jan 2011 18:14:46 GMT">
+<![CDATA[Modification Writer Task unchanged, publish skipped]]>
+</message>
+<message type="Debug" time="Fri, 21 Jan 2011 18:14:46 GMT">
+<![CDATA[Publishing modificationHistory.wiki to ModificationHistory Publisher[3997789]]]>
+</message>
+<message type="Debug" time="Fri, 21 Jan 2011 18:14:46 GMT">
+<![CDATA[ModificationHistory Publisher unchanged, publish skipped]]>
+</message>
+<message type="Warning" time="Fri, 21 Jan 2011 18:14:46 GMT">
+<![CDATA[Missing source attribute for title="modificationHistoryProjectPlugin".]]>
+</message>
+<message type="Debug" time="Fri, 21 Jan 2011 18:14:46 GMT">
+<![CDATA[Publishing msbuild.wiki to MsBuild Task[4044]]]>
+</message>
+<message type="Debug" time="Fri, 21 Jan 2011 18:14:46 GMT">
+<![CDATA[MsBuild Task unchanged, publish skipped]]>
+</message>
+<message type="Debug" time="Fri, 21 Jan 2011 18:14:46 GMT">
+<![CDATA[Publishing multiIssueTracker.wiki to Multi Issue Tracker URL Builder[31686666]]]>
+</message>
+<message type="Debug" time="Fri, 21 Jan 2011 18:14:46 GMT">
+<![CDATA[Multi Issue Tracker URL Builder unchanged, publish skipped]]>
+</message>
+<message type="Debug" time="Fri, 21 Jan 2011 18:14:46 GMT">
+<![CDATA[Publishing multi.wiki to Multi Source Control Block[348]]]>
+</message>
+<message type="Debug" time="Fri, 21 Jan 2011 18:14:46 GMT">
+<![CDATA[Multi Source Control Block unchanged, publish skipped]]>
+</message>
+<message type="Warning" time="Fri, 21 Jan 2011 18:14:46 GMT">
+<![CDATA[Missing source attribute for title="Multiple Projects".]]>
+</message>
+<message type="Debug" time="Fri, 21 Jan 2011 18:14:46 GMT">
+<![CDATA[Publishing multiTrigger.wiki to Multiple Trigger[5069]]]>
+</message>
+<message type="Debug" time="Fri, 21 Jan 2011 18:14:46 GMT">
+<![CDATA[Multiple Trigger unchanged, publish skipped]]>
+</message>
+<message type="Warning" time="Fri, 21 Jan 2011 18:14:46 GMT">
+<![CDATA[Missing source attribute for title="Multiple XSL Report Build Plugin".]]>
+</message>
+<message type="Warning" time="Fri, 21 Jan 2011 18:14:46 GMT">
+<![CDATA[Missing source attribute for title="Named Value".]]>
+</message>
+<message type="Debug" time="Fri, 21 Jan 2011 18:14:46 GMT">
+<![CDATA[Publishing nant.wiki to NAnt Task[311]]]>
+</message>
+<message type="Debug" time="Fri, 21 Jan 2011 18:14:46 GMT">
+<![CDATA[NAnt Task unchanged, publish skipped]]>
+</message>
+<message type="Debug" time="Fri, 21 Jan 2011 18:14:46 GMT">
+<![CDATA[Publishing ncoverProfile.wiki to NCover Profiler Task[29130770]]]>
+</message>
+<message type="Debug" time="Fri, 21 Jan 2011 18:14:46 GMT">
+<![CDATA[NCover Profiler Task unchanged, publish skipped]]>
+</message>
+<message type="Debug" time="Fri, 21 Jan 2011 18:14:46 GMT">
+<![CDATA[Publishing ncoverReport.wiki to NCover Reporting Task[29130773]]]>
+</message>
+<message type="Debug" time="Fri, 21 Jan 2011 18:14:47 GMT">
+<![CDATA[NCover Reporting Task unchanged, publish skipped]]>
+</message>
+<message type="Debug" time="Fri, 21 Jan 2011 18:14:47 GMT">
+<![CDATA[Publishing ndepend.wiki to NDepend Task[26247297]]]>
+</message>
+<message type="Debug" time="Fri, 21 Jan 2011 18:14:47 GMT">
+<![CDATA[NDepend Task unchanged, publish skipped]]>
+</message>
+<message type="Warning" time="Fri, 21 Jan 2011 18:14:47 GMT">
+<![CDATA[Missing source attribute for title="NetReflector".]]>
+</message>
+<message type="Warning" time="Fri, 21 Jan 2011 18:14:47 GMT">
+<![CDATA[Missing source attribute for title="News".]]>
+</message>
+<message type="Warning" time="Fri, 21 Jan 2011 18:14:47 GMT">
+<![CDATA[Missing source attribute for title="Null Project Security".]]>
+</message>
+<message type="Warning" time="Fri, 21 Jan 2011 18:14:47 GMT">
+<![CDATA[Missing source attribute for title="Null Server Security".]]>
+</message>
+<message type="Debug" time="Fri, 21 Jan 2011 18:14:47 GMT">
+<![CDATA[Publishing nullSourceControl.wiki to Null Source Control Block[3041]]]>
+</message>
+<message type="Debug" time="Fri, 21 Jan 2011 18:14:47 GMT">
+<![CDATA[Null Source Control Block unchanged, publish skipped]]>
+</message>
+<message type="Debug" time="Fri, 21 Jan 2011 18:14:47 GMT">
+<![CDATA[Publishing nullTask.wiki to Null Task[4319]]]>
+</message>
+<message type="Debug" time="Fri, 21 Jan 2011 18:14:47 GMT">
+<![CDATA[Null Task unchanged, publish skipped]]>
+</message>
+<message type="Warning" time="Fri, 21 Jan 2011 18:14:47 GMT">
+<![CDATA[Missing source attribute for title="Numeric Parameter".]]>
+</message>
+<message type="Debug" time="Fri, 21 Jan 2011 18:14:47 GMT">
+<![CDATA[Publishing nunit.wiki to NUnit Task[625]]]>
+</message>
+<message type="Debug" time="Fri, 21 Jan 2011 18:14:47 GMT">
+<![CDATA[NUnit Task unchanged, publish skipped]]>
+</message>
+<message type="Debug" time="Fri, 21 Jan 2011 18:14:47 GMT">
+<![CDATA[Publishing ohlohProjectPlugin.wiki to Ohloh Project Plugin[34013214]]]>
+</message>
+<message type="Debug" time="Fri, 21 Jan 2011 18:14:47 GMT">
+<![CDATA[Ohloh Project Plugin unchanged, publish skipped]]>
+</message>
+<message type="Debug" time="Fri, 21 Jan 2011 18:14:47 GMT">
+<![CDATA[Publishing orCondition.wiki to Or Condition[34701717]]]>
+</message>
+<message type="Debug" time="Fri, 21 Jan 2011 18:14:47 GMT">
+<![CDATA[Or Condition unchanged, publish skipped]]>
+</message>
+<message type="Warning" time="Fri, 21 Jan 2011 18:14:47 GMT">
+<![CDATA[Missing source attribute for title="Package Publisher".]]>
+</message>
+<message type="Warning" time="Fri, 21 Jan 2011 18:14:47 GMT">
+<![CDATA[Missing source attribute for title="Packaging a Release".]]>
+</message>
+<message type="Warning" time="Fri, 21 Jan 2011 18:14:47 GMT">
+<![CDATA[Missing source attribute for title="Parallel Task".]]>
+</message>
+<message type="Warning" time="Fri, 21 Jan 2011 18:14:47 GMT">
+<![CDATA[Missing source attribute for title="Parameter Trigger".]]>
+</message>
+<message type="Warning" time="Fri, 21 Jan 2011 18:14:47 GMT">
+<![CDATA[Missing source attribute for title="Parameters".]]>
+</message>
+<message type="Warning" time="Fri, 21 Jan 2011 18:14:47 GMT">
+<![CDATA[Missing source attribute for title="PathFilter".]]>
+</message>
+<message type="Warning" time="Fri, 21 Jan 2011 18:14:47 GMT">
+<![CDATA[Missing source attribute for title="PathFilter Wildcards".]]>
+</message>
+<message type="Warning" time="Fri, 21 Jan 2011 18:14:47 GMT">
+<![CDATA[Missing source attribute for title="Perforce Source Control Block".]]>
+</message>
+<message type="Warning" time="Fri, 21 Jan 2011 18:14:47 GMT">
+<![CDATA[Missing source attribute for title="PlasticSCM Source Control Block".]]>
+</message>
+<message type="Warning" time="Fri, 21 Jan 2011 18:14:47 GMT">
+<![CDATA[Missing source attribute for title="Plugins Configuration Block".]]>
+</message>
+<message type="Warning" time="Fri, 21 Jan 2011 18:14:47 GMT">
+<![CDATA[Missing source attribute for title="PowerShell Task".]]>
+</message>
+<message type="Warning" time="Fri, 21 Jan 2011 18:14:47 GMT">
+<![CDATA[Missing source attribute for title="Project Configurable Build Plugin".]]>
+</message>
+<message type="Warning" time="Fri, 21 Jan 2011 18:14:47 GMT">
+<![CDATA[Missing source attribute for title="Project Configuration Block".]]>
+</message>
+<message type="Debug" time="Fri, 21 Jan 2011 18:14:47 GMT">
+<![CDATA[Publishing projectConfigurationServerPlugin.wiki to Project Configuration Server Plugin[32505910]]]>
+</message>
+<message type="Debug" time="Fri, 21 Jan 2011 18:14:47 GMT">
+<![CDATA[Project Configuration Server Plugin unchanged, publish skipped]]>
+</message>
+<message type="Warning" time="Fri, 21 Jan 2011 18:14:47 GMT">
+<![CDATA[Missing source attribute for title="Project Details".]]>
+</message>
+<message type="Warning" time="Fri, 21 Jan 2011 18:14:47 GMT">
+<![CDATA[Missing source attribute for title="Project Level Security".]]>
+</message>
+<message type="Debug" time="Fri, 21 Jan 2011 18:14:47 GMT">
+<![CDATA[Publishing projectReportProjectPlugin.wiki to Project Report Project Plugin[2985]]]>
+</message>
+<message type="Debug" time="Fri, 21 Jan 2011 18:14:47 GMT">
+<![CDATA[Project Report Project Plugin unchanged, publish skipped]]>
+</message>
+<message type="Warning" time="Fri, 21 Jan 2011 18:14:47 GMT">
+<![CDATA[Missing source attribute for title="Project Statistics Plugin".]]>
+</message>
+<message type="Debug" time="Fri, 21 Jan 2011 18:14:47 GMT">
+<![CDATA[Publishing viewProjectStatusPlugin.wiki to Project Status Plugin[32505924]]]>
+</message>
+<message type="Debug" time="Fri, 21 Jan 2011 18:14:47 GMT">
+<![CDATA[Project Status Plugin unchanged, publish skipped]]>
+</message>
+<message type="Warning" time="Fri, 21 Jan 2011 18:14:47 GMT">
+<![CDATA[Missing source attribute for title="Project Team".]]>
+</message>
+<message type="Debug" time="Fri, 21 Jan 2011 18:14:47 GMT">
+<![CDATA[Publishing projectTimelinePlugin.wiki to Project Timeline Plugin[32505922]]]>
+</message>
+<message type="Debug" time="Fri, 21 Jan 2011 18:14:47 GMT">
+<![CDATA[Project Timeline Plugin unchanged, publish skipped]]>
+</message>
+<message type="Warning" time="Fri, 21 Jan 2011 18:14:47 GMT">
+<![CDATA[Missing source attribute for title="Project Trigger".]]>
+</message>
+<message type="Warning" time="Fri, 21 Jan 2011 18:14:47 GMT">
+<![CDATA[Missing source attribute for title="PVCS Source Control Block".]]>
+</message>
+<message type="Warning" time="Fri, 21 Jan 2011 18:14:47 GMT">
+<![CDATA[Missing source attribute for title="Queue Configuration".]]>
+</message>
+<message type="Debug" time="Fri, 21 Jan 2011 18:14:47 GMT">
+<![CDATA[Publishing queueStatusServerPlugin.wiki to Queue Status Server Plugin[32505908]]]>
+</message>
+<message type="Debug" time="Fri, 21 Jan 2011 18:14:47 GMT">
+<![CDATA[Queue Status Server Plugin unchanged, publish skipped]]>
+</message>
+<message type="Warning" time="Fri, 21 Jan 2011 18:14:47 GMT">
+<![CDATA[Missing source attribute for title="Rake Task".]]>
+</message>
+<message type="Debug" time="Fri, 21 Jan 2011 18:14:47 GMT">
+<![CDATA[Publishing clearCase.wiki to Rational ClearCase Source Control Block[534]]]>
+</message>
+<message type="Debug" time="Fri, 21 Jan 2011 18:14:48 GMT">
+<![CDATA[Rational ClearCase Source Control Block unchanged, publish skipped]]>
+</message>
+<message type="Warning" time="Fri, 21 Jan 2011 18:14:48 GMT">
+<![CDATA[Missing source attribute for title="Regex Issue Tracker URL Builder".]]>
+</message>
+<message type="Warning" time="Fri, 21 Jan 2011 18:14:48 GMT">
+<![CDATA[Missing source attribute for title="Regular Expression Email Converter".]]>
+</message>
+<message type="Warning" time="Fri, 21 Jan 2011 18:14:48 GMT">
+<![CDATA[Missing source attribute for title="Remote Project Labeller".]]>
+</message>
+<message type="Warning" time="Fri, 21 Jan 2011 18:14:48 GMT">
+<![CDATA[Missing source attribute for title="Remote Services Configuration Block".]]>
+</message>
+<message type="Warning" time="Fri, 21 Jan 2011 18:14:48 GMT">
+<![CDATA[Missing source attribute for title="Replacement Dynamic Value".]]>
+</message>
+<message type="Warning" time="Fri, 21 Jan 2011 18:14:48 GMT">
+<![CDATA[Missing source attribute for title="Resources".]]>
+</message>
+<message type="Warning" time="Fri, 21 Jan 2011 18:14:48 GMT">
+<![CDATA[Missing source attribute for title="Roadmap".]]>
+</message>
+<message type="Warning" time="Fri, 21 Jan 2011 18:14:48 GMT">
+<![CDATA[Missing source attribute for title="RoboCopy Source Control Block".]]>
+</message>
+<message type="Debug" time="Fri, 21 Jan 2011 18:14:48 GMT">
+<![CDATA[Publishing rolePermission.wiki to Role Permission[31490139]]]>
+</message>
+<message type="Debug" time="Fri, 21 Jan 2011 18:14:48 GMT">
+<![CDATA[Role Permission unchanged, publish skipped]]>
+</message>
+<message type="Debug" time="Fri, 21 Jan 2011 18:14:48 GMT">
+<![CDATA[Publishing rollUpTrigger.wiki to Roll-up Trigger[34701686]]]>
+</message>
+<message type="Debug" time="Fri, 21 Jan 2011 18:14:48 GMT">
+<![CDATA[Roll-up Trigger unchanged, publish skipped]]>
+</message>
+<message type="Warning" time="Fri, 21 Jan 2011 18:14:48 GMT">
+<![CDATA[Missing source attribute for title="RSS Publisher".]]>
+</message>
+<message type="Warning" time="Fri, 21 Jan 2011 18:14:48 GMT">
+<![CDATA[Missing source attribute for title="RSSFeedProjectPlugin".]]>
+</message>
+<message type="Warning" time="Fri, 21 Jan 2011 18:14:48 GMT">
+<![CDATA[Missing source attribute for title="Scenario 1".]]>
+</message>
+<message type="Warning" time="Fri, 21 Jan 2011 18:14:48 GMT">
+<![CDATA[Missing source attribute for title="Scenario 1 - Full Example".]]>
+</message>
+<message type="Warning" time="Fri, 21 Jan 2011 18:14:48 GMT">
+<![CDATA[Missing source attribute for title="Scenario 2".]]>
+</message>
+<message type="Warning" time="Fri, 21 Jan 2011 18:14:48 GMT">
+<![CDATA[Missing source attribute for title="Scenario 2 - Full Example".]]>
+</message>
+<message type="Warning" time="Fri, 21 Jan 2011 18:14:48 GMT">
+<![CDATA[Missing source attribute for title="Scenario 3".]]>
+</message>
+<message type="Warning" time="Fri, 21 Jan 2011 18:14:48 GMT">
+<![CDATA[Missing source attribute for title="Scenario 3 - Full Example".]]>
+</message>
+<message type="Warning" time="Fri, 21 Jan 2011 18:14:48 GMT">
+<![CDATA[Missing source attribute for title="Schedule Trigger".]]>
+</message>
+<message type="Warning" time="Fri, 21 Jan 2011 18:14:48 GMT">
+<![CDATA[Missing source attribute for title="SCM Policy".]]>
+</message>
+<message type="Debug" time="Fri, 21 Jan 2011 18:14:48 GMT">
+<![CDATA[Publishing surround.wiki to Seapine Surround Source Control Block[4567]]]>
+</message>
+<message type="Debug" time="Fri, 21 Jan 2011 18:14:48 GMT">
+<![CDATA[Seapine Surround Source Control Block unchanged, publish skipped]]>
+</message>
+<message type="Warning" time="Fri, 21 Jan 2011 18:14:48 GMT">
+<![CDATA[Missing source attribute for title="Security".]]>
+</message>
+<message type="Warning" time="Fri, 21 Jan 2011 18:14:48 GMT">
+<![CDATA[Missing source attribute for title="Security Audit Loggers".]]>
+</message>
+<message type="Warning" time="Fri, 21 Jan 2011 18:14:48 GMT">
+<![CDATA[Missing source attribute for title="Security Audit Readers".]]>
+</message>
+<message type="Warning" time="Fri, 21 Jan 2011 18:14:48 GMT">
+<![CDATA[Missing source attribute for title="Security Caches".]]>
+</message>
+<message type="Warning" time="Fri, 21 Jan 2011 18:14:48 GMT">
+<![CDATA[Missing source attribute for title="Security Configuration".]]>
+</message>
+<message type="Warning" time="Fri, 21 Jan 2011 18:14:48 GMT">
+<![CDATA[Missing source attribute for title="Security Extension Points".]]>
+</message>
+<message type="Warning" time="Fri, 21 Jan 2011 18:14:48 GMT">
+<![CDATA[Missing source attribute for title="Security Permissions".]]>
+</message>
+<message type="Warning" time="Fri, 21 Jan 2011 18:14:48 GMT">
+<![CDATA[Missing source attribute for title="Security Scenarios".]]>
+</message>
+<message type="Warning" time="Fri, 21 Jan 2011 18:14:48 GMT">
+<![CDATA[Missing source attribute for title="Security Users".]]>
+</message>
+<message type="Warning" time="Fri, 21 Jan 2011 18:14:48 GMT">
+<![CDATA[Missing source attribute for title="Select Parameter".]]>
+</message>
+<message type="Warning" time="Fri, 21 Jan 2011 18:14:48 GMT">
+<![CDATA[Missing source attribute for title="Sequential Task".]]>
+</message>
+<message type="Warning" time="Fri, 21 Jan 2011 18:14:48 GMT">
+<![CDATA[Missing source attribute for title="Server Application Config File".]]>
+</message>
+<message type="Debug" time="Fri, 21 Jan 2011 18:14:48 GMT">
+<![CDATA[Publishing serverAuditHistoryProjectPlugin.wiki to Server Audit History Project Plugin[32505903]]]>
+</message>
+<message type="Debug" time="Fri, 21 Jan 2011 18:14:48 GMT">
+<![CDATA[Server Audit History Project Plugin unchanged, publish skipped]]>
+</message>
+<message type="Debug" time="Fri, 21 Jan 2011 18:14:48 GMT">
+<![CDATA[Publishing serverAuditHistoryServerPlugin.wiki to Server Audit History Server Plugin[32505905]]]>
+</message>
+<message type="Debug" time="Fri, 21 Jan 2011 18:14:48 GMT">
+<![CDATA[Server Audit History Server Plugin unchanged, publish skipped]]>
+</message>
+<message type="Warning" time="Fri, 21 Jan 2011 18:14:48 GMT">
+<![CDATA[Missing source attribute for title="Server Extensions".]]>
+</message>
+<message type="Debug" time="Fri, 21 Jan 2011 18:14:48 GMT">
+<![CDATA[Publishing serverInformationServerPlugin.wiki to Server Information Server Plugin[4004]]]>
+</message>
+<message type="Debug" time="Fri, 21 Jan 2011 18:14:48 GMT">
+<![CDATA[Server Information Server Plugin unchanged, publish skipped]]>
+</message>
+<message type="Warning" time="Fri, 21 Jan 2011 18:14:48 GMT">
+<![CDATA[Missing source attribute for title="Server Level Security".]]>
+</message>
+<message type="Debug" time="Fri, 21 Jan 2011 18:14:48 GMT">
+<![CDATA[Publishing serverLogProjectPlugin.wiki to Server Log Project Plugin[4390941]]]>
+</message>
+<message type="Debug" time="Fri, 21 Jan 2011 18:14:48 GMT">
+<![CDATA[Server Log Project Plugin unchanged, publish skipped]]>
+</message>
+<message type="Debug" time="Fri, 21 Jan 2011 18:14:48 GMT">
+<![CDATA[Publishing serverLogServerPlugin.wiki to Server Log Server Plugin[2983]]]>
+</message>
+<message type="Debug" time="Fri, 21 Jan 2011 18:14:48 GMT">
+<![CDATA[Server Log Server Plugin unchanged, publish skipped]]>
+</message>
+<message type="Debug" time="Fri, 21 Jan 2011 18:14:48 GMT">
+<![CDATA[Publishing serverReportServerPlugin.wiki to Server Report Server Plugin[2982]]]>
+</message>
+<message type="Debug" time="Fri, 21 Jan 2011 18:14:48 GMT">
+<![CDATA[Server Report Server Plugin unchanged, publish skipped]]>
+</message>
+<message type="Debug" time="Fri, 21 Jan 2011 18:14:48 GMT">
+<![CDATA[Publishing serverSecurityConfigurationProjectPlugin.wiki to Server Security Configuration Project Plugin[32505928]]]>
+</message>
+<message type="Debug" time="Fri, 21 Jan 2011 18:14:48 GMT">
+<![CDATA[Server Security Configuration Project Plugin unchanged, publish skipped]]>
+</message>
+<message type="Debug" time="Fri, 21 Jan 2011 18:14:48 GMT">
+<![CDATA[Publishing serverSecurityConfigurationServerPlugin.wiki to Server Security Configuration Server Plugin[32505926]]]>
+</message>
+<message type="Debug" time="Fri, 21 Jan 2011 18:14:48 GMT">
+<![CDATA[Server Security Configuration Server Plugin unchanged, publish skipped]]>
+</message>
+<message type="Warning" time="Fri, 21 Jan 2011 18:14:48 GMT">
+<![CDATA[Missing source attribute for title="Servers Configuration Block".]]>
+</message>
+<message type="Warning" time="Fri, 21 Jan 2011 18:14:48 GMT">
+<![CDATA[Missing source attribute for title="Setting up from scratch  Part 01".]]>
+</message>
+<message type="Debug" time="Fri, 21 Jan 2011 18:14:48 GMT">
+<![CDATA[Publishing simpleSecurity.wiki to Simple Security Plugin[32505916]]]>
+</message>
+<message type="Debug" time="Fri, 21 Jan 2011 18:14:49 GMT">
+<![CDATA[Simple Security Plugin unchanged, publish skipped]]>
+</message>
+<message type="Warning" time="Fri, 21 Jan 2011 18:14:49 GMT">
+<![CDATA[Missing source attribute for title="Site Index".]]>
+</message>
+<message type="Warning" time="Fri, 21 Jan 2011 18:14:49 GMT">
+<![CDATA[Missing source attribute for title="Solution Structure".]]>
+</message>
+<message type="Warning" time="Fri, 21 Jan 2011 18:14:49 GMT">
+<![CDATA[Missing source attribute for title="Source Control Blocks".]]>
+</message>
+<message type="Warning" time="Fri, 21 Jan 2011 18:14:49 GMT">
+<![CDATA[Missing source attribute for title="SourceAnywhere Standalone Source Control Block".]]>
+</message>
+<message type="Warning" time="Fri, 21 Jan 2011 18:14:49 GMT">
+<![CDATA[Missing source attribute for title="SourceGear Vault Source Control Block".]]>
+</message>
+<message type="Warning" time="Fri, 21 Jan 2011 18:14:49 GMT">
+<![CDATA[Missing source attribute for title="Splitting the build".]]>
+</message>
+<message type="Warning" time="Fri, 21 Jan 2011 18:14:49 GMT">
+<![CDATA[Missing source attribute for title="StarTeam Source Control Block".]]>
+</message>
+<message type="Warning" time="Fri, 21 Jan 2011 18:14:49 GMT">
+<![CDATA[Missing source attribute for title="State File Labeller".]]>
+</message>
+<message type="Warning" time="Fri, 21 Jan 2011 18:14:49 GMT">
+<![CDATA[Missing source attribute for title="State Manager Blocks".]]>
+</message>
+<message type="Warning" time="Fri, 21 Jan 2011 18:14:49 GMT">
+<![CDATA[Missing source attribute for title="Statistic".]]>
+</message>
+<message type="Warning" time="Fri, 21 Jan 2011 18:14:49 GMT">
+<![CDATA[Missing source attribute for title="Statistics".]]>
+</message>
+<message type="Debug" time="Fri, 21 Jan 2011 18:14:49 GMT">
+<![CDATA[Publishing statistics.wiki to Statistics Publisher[5413]]]>
+</message>
+<message type="Debug" time="Fri, 21 Jan 2011 18:14:49 GMT">
+<![CDATA[Statistics Publisher unchanged, publish skipped]]>
+</message>
+<message type="Debug" time="Fri, 21 Jan 2011 18:14:49 GMT">
+<![CDATA[Publishing statusCondition.wiki to Status Condition[34701714]]]>
+</message>
+<message type="Debug" time="Fri, 21 Jan 2011 18:14:49 GMT">
+<![CDATA[Status Condition unchanged, publish skipped]]>
+</message>
+<message type="Debug" time="Fri, 21 Jan 2011 18:14:49 GMT">
+<![CDATA[Publishing svn.wiki to Subversion Source Control Block[324]]]>
+</message>
+<message type="Debug" time="Fri, 21 Jan 2011 18:14:49 GMT">
+<![CDATA[Subversion Source Control Block unchanged, publish skipped]]>
+</message>
+<message type="Warning" time="Fri, 21 Jan 2011 18:14:49 GMT">
+<![CDATA[Missing source attribute for title="Support".]]>
+</message>
+<message type="Warning" time="Fri, 21 Jan 2011 18:14:49 GMT">
+<![CDATA[Missing source attribute for title="Synchronisation Context Task".]]>
+</message>
+<message type="Warning" time="Fri, 21 Jan 2011 18:14:49 GMT">
+<![CDATA[Missing source attribute for title="Synergy Client Session".]]>
+</message>
+<message type="Warning" time="Fri, 21 Jan 2011 18:14:49 GMT">
+<![CDATA[Missing source attribute for title="Synergy Issue Tracker URL Builder".]]>
+</message>
+<message type="Warning" time="Fri, 21 Jan 2011 18:14:49 GMT">
+<![CDATA[Missing source attribute for title="Synergy Project".]]>
+</message>
+<message type="Warning" time="Fri, 21 Jan 2011 18:14:49 GMT">
+<![CDATA[Missing source attribute for title="Task Blocks".]]>
+</message>
+<message type="Warning" time="Fri, 21 Jan 2011 18:14:49 GMT">
+<![CDATA[Missing source attribute for title="Task Condition Blocks".]]>
+</message>
+<message type="Warning" time="Fri, 21 Jan 2011 18:14:49 GMT">
+<![CDATA[Missing source attribute for title="Telelogic Synergy".]]>
+</message>
+<message type="Warning" time="Fri, 21 Jan 2011 18:14:49 GMT">
+<![CDATA[Missing source attribute for title="Text Parameter".]]>
+</message>
+<message type="Warning" time="Fri, 21 Jan 2011 18:14:49 GMT">
+<![CDATA[Missing source attribute for title="The CruiseControl Configuration Block".]]>
+</message>
+<message type="Warning" time="Fri, 21 Jan 2011 18:14:49 GMT">
+<![CDATA[Missing source attribute for title="The Server Console Application".]]>
+</message>
+<message type="Warning" time="Fri, 21 Jan 2011 18:14:49 GMT">
+<![CDATA[Missing source attribute for title="The Server Service Application".]]>
+</message>
+<message type="Warning" time="Fri, 21 Jan 2011 18:14:49 GMT">
+<![CDATA[Missing source attribute for title="ThoughtWorks".]]>
+</message>
+<message type="Warning" time="Fri, 21 Jan 2011 18:14:49 GMT">
+<![CDATA[Missing source attribute for title="Timeout Configuration".]]>
+</message>
+<message type="Warning" time="Fri, 21 Jan 2011 18:14:49 GMT">
+<![CDATA[Missing source attribute for title="Trigger Blocks".]]>
+</message>
+<message type="Warning" time="Fri, 21 Jan 2011 18:14:49 GMT">
+<![CDATA[Missing source attribute for title="Upgrading CCNet".]]>
+</message>
+<message type="Debug" time="Fri, 21 Jan 2011 18:14:49 GMT">
+<![CDATA[Publishing urlHeaderValueCondition.wiki to URL Header Value Condition[34701758]]]>
+</message>
+<message type="Debug" time="Fri, 21 Jan 2011 18:14:49 GMT">
+<![CDATA[URL Header Value Condition unchanged, publish skipped]]>
+</message>
+<message type="Debug" time="Fri, 21 Jan 2011 18:14:49 GMT">
+<![CDATA[Publishing urlPingCondition.wiki to URL Ping Condition[34701756]]]>
+</message>
+<message type="Debug" time="Fri, 21 Jan 2011 18:14:49 GMT">
+<![CDATA[URL Ping Condition unchanged, publish skipped]]>
+</message>
+<message type="Warning" time="Fri, 21 Jan 2011 18:14:49 GMT">
+<![CDATA[Missing source attribute for title="Url Trigger".]]>
+</message>
+<message type="Debug" time="Fri, 21 Jan 2011 18:14:49 GMT">
+<![CDATA[Publishing serverUserListProjectPlugin.wiki to User List Project Plugin[32505918]]]>
+</message>
+<message type="Debug" time="Fri, 21 Jan 2011 18:14:49 GMT">
+<![CDATA[User List Project Plugin unchanged, publish skipped]]>
+</message>
+<message type="Debug" time="Fri, 21 Jan 2011 18:14:49 GMT">
+<![CDATA[Publishing serverUserListServerPlugin.wiki to User List Server Plugin[32505914]]]>
+</message>
+<message type="Debug" time="Fri, 21 Jan 2011 18:14:49 GMT">
+<![CDATA[User List Server Plugin unchanged, publish skipped]]>
+</message>
+<message type="Warning" time="Fri, 21 Jan 2011 18:14:49 GMT">
+<![CDATA[Missing source attribute for title="User Name".]]>
+</message>
+<message type="Warning" time="Fri, 21 Jan 2011 18:14:49 GMT">
+<![CDATA[Missing source attribute for title="User Name Authentication".]]>
+</message>
+<message type="Warning" time="Fri, 21 Jan 2011 18:14:49 GMT">
+<![CDATA[Missing source attribute for title="User Password Authentication".]]>
+</message>
+<message type="Debug" time="Fri, 21 Jan 2011 18:14:49 GMT">
+<![CDATA[Publishing userPermission.wiki to User Permission[31490143]]]>
+</message>
+<message type="Debug" time="Fri, 21 Jan 2011 18:14:49 GMT">
+<![CDATA[User Permission unchanged, publish skipped]]>
+</message>
+<message type="Warning" time="Fri, 21 Jan 2011 18:14:49 GMT">
+<![CDATA[Missing source attribute for title="UserFilter".]]>
+</message>
+<message type="Warning" time="Fri, 21 Jan 2011 18:14:49 GMT">
+<![CDATA[Missing source attribute for title="Using CruiseControl.NET with AccuRev".]]>
+</message>
+<message type="Warning" time="Fri, 21 Jan 2011 18:14:49 GMT">
+<![CDATA[Missing source attribute for title="Using CruiseControl.NET with Alienbrain".]]>
+</message>
+<message type="Warning" time="Fri, 21 Jan 2011 18:14:49 GMT">
+<![CDATA[Missing source attribute for title="Using CruiseControl.NET with Ant".]]>
+</message>
+<message type="Warning" time="Fri, 21 Jan 2011 18:14:49 GMT">
+<![CDATA[Missing source attribute for title="Using CruiseControl.NET with CppUnit".]]>
+</message>
+<message type="Warning" time="Fri, 21 Jan 2011 18:14:49 GMT">
+<![CDATA[Missing source attribute for title="Using CruiseControl.NET with CVS".]]>
+</message>
+<message type="Warning" time="Fri, 21 Jan 2011 18:14:49 GMT">
+<![CDATA[Missing source attribute for title="Using CruiseControl.NET with FitNesse".]]>
+</message>
+<message type="Warning" time="Fri, 21 Jan 2011 18:14:49 GMT">
+<![CDATA[Missing source attribute for title="Using CruiseControl.NET with FxCop".]]>
+</message>
+<message type="Warning" time="Fri, 21 Jan 2011 18:14:49 GMT">
+<![CDATA[Missing source attribute for title="Using CruiseControl.NET with Gendarme".]]>
+</message>
+<message type="Warning" time="Fri, 21 Jan 2011 18:14:49 GMT">
+<![CDATA[Missing source attribute for title="Using CruiseControl.NET with Git".]]>
+</message>
+<message type="Warning" time="Fri, 21 Jan 2011 18:14:49 GMT">
+<![CDATA[Missing source attribute for title="Using CruiseControl.NET with InstallShield".]]>
+</message>
+<message type="Warning" time="Fri, 21 Jan 2011 18:14:49 GMT">
+<![CDATA[Missing source attribute for title="Using CruiseControl.NET with MBUnit".]]>
+</message>
+<message type="Warning" time="Fri, 21 Jan 2011 18:14:49 GMT">
+<![CDATA[Missing source attribute for title="Using CruiseControl.NET with MKS Source Integrity".]]>
+</message>
+<message type="Warning" time="Fri, 21 Jan 2011 18:14:49 GMT">
+<![CDATA[Missing source attribute for title="Using CruiseControl.NET with Mono".]]>
+</message>
+<message type="Warning" time="Fri, 21 Jan 2011 18:14:49 GMT">
+<![CDATA[Missing source attribute for title="Using CruiseControl.NET with MSBuild".]]>
+</message>
+<message type="Warning" time="Fri, 21 Jan 2011 18:14:49 GMT">
+<![CDATA[Missing source attribute for title="Using CruiseControl.NET with MSTest".]]>
+</message>
+<message type="Warning" time="Fri, 21 Jan 2011 18:14:49 GMT">
+<![CDATA[Missing source attribute for title="Using CruiseControl.NET with NAnt".]]>
+</message>
+<message type="Warning" time="Fri, 21 Jan 2011 18:14:49 GMT">
+<![CDATA[Missing source attribute for title="Using CruiseControl.NET with NCover".]]>
+</message>
+<message type="Warning" time="Fri, 21 Jan 2011 18:14:49 GMT">
+<![CDATA[Missing source attribute for title="Using CruiseControl.NET with NDepend".]]>
+</message>
+<message type="Warning" time="Fri, 21 Jan 2011 18:14:49 GMT">
+<![CDATA[Missing source attribute for title="Using CruiseControl.NET with NUnit".]]>
+</message>
+<message type="Warning" time="Fri, 21 Jan 2011 18:14:49 GMT">
+<![CDATA[Missing source attribute for title="Using CruiseControl.NET with other applications".]]>
+</message>
+<message type="Warning" time="Fri, 21 Jan 2011 18:14:49 GMT">
+<![CDATA[Missing source attribute for title="Using CruiseControl.NET with Other Build Tools".]]>
+</message>
+<message type="Warning" time="Fri, 21 Jan 2011 18:14:49 GMT">
+<![CDATA[Missing source attribute for title="Using CruiseControl.NET with PartCover".]]>
+</message>
+<message type="Warning" time="Fri, 21 Jan 2011 18:14:49 GMT">
+<![CDATA[Missing source attribute for title="Using CruiseControl.NET with Perforce".]]>
+</message>
+<message type="Warning" time="Fri, 21 Jan 2011 18:14:49 GMT">
+<![CDATA[Missing source attribute for title="Using CruiseControl.NET with PVCS".]]>
+</message>
+<message type="Warning" time="Fri, 21 Jan 2011 18:14:49 GMT">
+<![CDATA[Missing source attribute for title="Using CruiseControl.NET with Rational ClearCase".]]>
+</message>
+<message type="Warning" time="Fri, 21 Jan 2011 18:14:49 GMT">
+<![CDATA[Missing source attribute for title="Using CruiseControl.NET with Seapine Surround".]]>
+</message>
+<message type="Warning" time="Fri, 21 Jan 2011 18:14:49 GMT">
+<![CDATA[Missing source attribute for title="Using CruiseControl.NET with Simian".]]>
+</message>
+<message type="Warning" time="Fri, 21 Jan 2011 18:14:49 GMT">
+<![CDATA[Missing source attribute for title="Using CruiseControl.NET with SourceGear Vault".]]>
+</message>
+<message type="Warning" time="Fri, 21 Jan 2011 18:14:49 GMT">
+<![CDATA[Missing source attribute for title="Using CruiseControl.NET with StarTeam".]]>
+</message>
+<message type="Warning" time="Fri, 21 Jan 2011 18:14:49 GMT">
+<![CDATA[Missing source attribute for title="Using CruiseControl.NET with Subversion".]]>
+</message>
+<message type="Warning" time="Fri, 21 Jan 2011 18:14:49 GMT">
+<![CDATA[Missing source attribute for title="Using CruiseControl.NET with Telelogic Synergy".]]>
+</message>
+<message type="Warning" time="Fri, 21 Jan 2011 18:14:49 GMT">
+<![CDATA[Missing source attribute for title="Using CruiseControl.NET with Vil".]]>
+</message>
+<message type="Warning" time="Fri, 21 Jan 2011 18:14:49 GMT">
+<![CDATA[Missing source attribute for title="Using CruiseControl.NET with Visual Source Safe".]]>
+</message>
+<message type="Warning" time="Fri, 21 Jan 2011 18:14:49 GMT">
+<![CDATA[Missing source attribute for title="Using CruiseControl.NET with Visual Studio .NET".]]>
+</message>
+<message type="Warning" time="Fri, 21 Jan 2011 18:14:49 GMT">
+<![CDATA[Missing source attribute for title="Using the Web Dashboard".]]>
+</message>
+<message type="Debug" time="Fri, 21 Jan 2011 18:14:49 GMT">
+<![CDATA[Publishing viewAllBuildsProjectPlugin.wiki to View All Builds Project Plugin[2996]]]>
+</message>
+<message type="Debug" time="Fri, 21 Jan 2011 18:14:49 GMT">
+<![CDATA[View All Builds Project Plugin unchanged, publish skipped]]>
+</message>
+<message type="Debug" time="Fri, 21 Jan 2011 18:14:49 GMT">
+<![CDATA[Publishing viewConfigurationProjectPlugin.wiki to View Configuration Project Plugin[4390943]]]>
+</message>
+<message type="Debug" time="Fri, 21 Jan 2011 18:14:49 GMT">
+<![CDATA[View Configuration Project Plugin unchanged, publish skipped]]>
+</message>
+<message type="Warning" time="Fri, 21 Jan 2011 18:14:49 GMT">
+<![CDATA[Missing source attribute for title="ViewCVS URL Builder".]]>
+</message>
+<message type="Warning" time="Fri, 21 Jan 2011 18:14:49 GMT">
+<![CDATA[Missing source attribute for title="ViewServerQueue Server Plugin".]]>
+</message>
+<message type="Warning" time="Fri, 21 Jan 2011 18:14:49 GMT">
+<![CDATA[Missing source attribute for title="Visual Source Safe Source Control Block".]]>
+</message>
+<message type="Debug" time="Fri, 21 Jan 2011 18:14:49 GMT">
+<![CDATA[Publishing devenv.wiki to Visual Studio Task[525]]]>
+</message>
+<message type="Debug" time="Fri, 21 Jan 2011 18:14:49 GMT">
+<![CDATA[Visual Studio Task unchanged, publish skipped]]>
+</message>
+<message type="Warning" time="Fri, 21 Jan 2011 18:14:49 GMT">
+<![CDATA[Missing source attribute for title="Visual Studio Team Foundation Server Plugin".]]>
+</message>
+<message type="Warning" time="Fri, 21 Jan 2011 18:14:49 GMT">
+<![CDATA[Missing source attribute for title="VSTS Team Foundation Server Source Control Block".]]>
+</message>
+<message type="Warning" time="Fri, 21 Jan 2011 18:14:49 GMT">
+<![CDATA[Missing source attribute for title="Web Dashboard".]]>
+</message>
+<message type="Warning" time="Fri, 21 Jan 2011 18:14:49 GMT">
+<![CDATA[Missing source attribute for title="WebSVN URL Builder".]]>
+</message>
+<message type="Warning" time="Fri, 21 Jan 2011 18:14:49 GMT">
+<![CDATA[Missing source attribute for title="Welcome to CruiseControl.NET".]]>
+</message>
+<message type="Warning" time="Fri, 21 Jan 2011 18:14:49 GMT">
+<![CDATA[Missing source attribute for title="What is Continuous Integration".]]>
+</message>
+<message type="Warning" time="Fri, 21 Jan 2011 18:14:49 GMT">
+<![CDATA[Missing source attribute for title="What is CruiseControl.NET".]]>
+</message>
+<message type="Warning" time="Fri, 21 Jan 2011 18:14:49 GMT">
+<![CDATA[Missing source attribute for title="Why CruiseControl.NET".]]>
+</message>
+<message type="Warning" time="Fri, 21 Jan 2011 18:14:49 GMT">
+<![CDATA[Missing source attribute for title="Wildcards in User Names".]]>
+</message>
+<message type="Warning" time="Fri, 21 Jan 2011 18:14:49 GMT">
+<![CDATA[Missing source attribute for title="XML File Audit Logger".]]>
+</message>
+<message type="Warning" time="Fri, 21 Jan 2011 18:14:49 GMT">
+<![CDATA[Missing source attribute for title="XML File Audit Reader".]]>
+</message>
+<message type="Warning" time="Fri, 21 Jan 2011 18:14:49 GMT">
+<![CDATA[Missing source attribute for title="Xml Log Publisher".]]>
+</message>
+<message type="Warning" time="Fri, 21 Jan 2011 18:14:49 GMT">
+<![CDATA[Missing source attribute for title="XSL Files".]]>
+</message>
+<message type="Warning" time="Fri, 21 Jan 2011 18:14:49 GMT">
+<![CDATA[Missing source attribute for title="XSL Report Build Plugin".]]>
+</message>
+<message type="Warning" time="Fri, 21 Jan 2011 18:14:49 GMT">
+<![CDATA[Missing source attribute for title="XSL Report Project Plugin".]]>
+</message>
+<message type="Info" time="Fri, 21 Jan 2011 18:14:50 GMT">
+<![CDATA[0 confluence items updated in 23.52s]]>
+</message>
+</docGen>

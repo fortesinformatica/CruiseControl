@@ -1,0 +1,25 @@
+h1. Environment Variable
+
+An environment variable.  
+
+h2. Version
+
+Available from version 1.0
+
+h2. Examples
+
+{code:xml|borderStyle=solid}
+<variable name="TestVar" value="TextValue" />
+{code}
+
+
+h2. Configuration Elements
+
+|| Element || Description || Type || Required || Default || Version ||
+| name | The name of the environment variable.   | String | Yes | _n/a_ | 1.0 |
+| value | The value of the environment variable.   | String | No | _None_ | 1.0 |
+
+{info:title=Automatically Generated}
+Documentation generated on Saturday, 22 Jan 2011 at 12:14:23 AM
+Using assembly version 1.6.7979.1
+{info}

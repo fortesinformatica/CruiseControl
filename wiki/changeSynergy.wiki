@@ -1,0 +1,40 @@
+h1. Synergy Issue Tracker URL Builder
+
+A URL builder to link each modification to the ChangeSynergy task details form.  
+
+h2. Version
+
+Available from version 1.0
+
+h2. Examples
+
+{code:xml|borderStyle=solid}
+<changeSynergy>
+  <role>User</role>
+  <url>http://myserver:8060</url>
+  <username>%CS_USER%</username>
+  <password>%CS_PWD%</password>
+</changeSynergy>
+{code}
+
+
+h2. Configuration Elements
+
+|| Element || Description || Type || Required || Default || Version ||
+| database | Network path to the Synergy database instance   | String | No | _None_ | 1.0 |
+| password | The Synergy password for the associate Username" value.  \\Support environment variable expansion.   | String | No | _None_ | 1.0 |
+| role | The role to use for the Synergy session.  \\If Username is specified to allow anonymous access to ChangeSynergy, you should specify a role with minimum read\-only permissions.   | String | No | User | 1.0 |
+| url | The root path to the ChangeSynergy installation.   | String | Yes | _n/a_ | 1.0 |
+| username | The username to use for ChangeSynergy access. Can include environmental variables to be replaced.  \\The ChangeSynergy username should be different from the one specified for the CM Synergy server.  Ideally, you should specify a user with read\-only permissions for ChangeSynergy.  This will prevent someone from modifying objects through ChangeSynergy.  If you specify an impersonation account with write permissions, a malicious user could bypass auditing in ChangeSynergy.   | String | No | _None_ | 1.0 |
+
+h2. Notes
+
+If you specify values for the optional properties Username> and Password, make sure that the user has read\-only permissions within your ChangeSynergy lifecycle definition.  This is necessary, since the Uri for  each modification will allow anonymous access to ChangeSynergy, possibily exposing vulnerabilities for spoofing, tampering, repudiation, information disclosure, and/or escalation of priveledge.  
+That is, a STRIDE classification of "STRDE", with a possible DREAD rating as high as 10 if permissions are inappropriatedly assigned to the anonymous account.  
+If you do not specify a Username and Password, the end\-user will be prompted to ChangeSynergy to login.  However, the login screen will not correctly populate the database and role select inputs.  This is due to a documented bug in ChangeSynergy 4.3 SP4.  The bug case tracking number is 2067637; the change request is R21683.  
+
+
+{info:title=Automatically Generated}
+Documentation generated on Saturday, 22 Jan 2011 at 12:14:19 AM
+Using assembly version 1.6.7979.1
+{info}

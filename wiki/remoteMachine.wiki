@@ -1,0 +1,18 @@
+h1. Remote Build Machine Definition
+
+Defines a remote machine that can perform builds.  
+
+h2. Version
+
+Available from version 1.6
+
+h2. Configuration Elements
+
+|| Element || Description || Type || Required || Default || Version ||
+| address | The address of the remote machine.   | String | Yes | _n/a_ | 1.6 |
+| name | The name of the remote machine.   | String | Yes | _n/a_ | 1.6 |
+
+{info:title=Automatically Generated}
+Documentation generated on Tuesday, 16 Nov 2010 at 12:33:42 AM
+Using assembly version 1.6.7728.1
+{info}

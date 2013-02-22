@@ -1,0 +1,14 @@
+h1. xsltParameter
+
+Define an XSL\-T parameter.  
+
+h2. Configuration Elements
+
+|| Element || Description || Type || Required || Default || Version ||
+| name | The name.   | String | Yes |  |  |
+| value | The value.   | String | Yes |  |  |
+
+{info:title=Automatically Generated}
+Documentation generated on Saturday, 22 Jan 2011 at 12:14:24 AM
+Using assembly version 1.6.7979.1
+{info}

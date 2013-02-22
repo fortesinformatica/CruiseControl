@@ -1,0 +1,56 @@
+h1. Seapine Surround Source Control Block
+
+Source Controller for Seapine Surround SCM  
+{info}
+The Seapine Surround provider is designed to work with Surround 4.1. It may not work with earlier versions of Surround.  
+{info}
+
+
+h2. Version
+
+Available from version 1.0
+
+h2. Examples
+
+{code:xml|borderStyle=solid}
+<sourcecontrol type="surround">
+  <executable>C:\Program Files\Seapine\Surround SCM\sscm.exe</executable>
+  <serverconnect>127.0.0.1:4900</serverconnect>
+  <serverlogin>build:buildpw</serverlogin>
+  <branch>mybranch</branch>
+  <repository>myrepository/myproject</repository>
+  <workingDirectory>C:\myproject</workingDirectory>
+  <recursive>1</recursive>
+  <file>*.cpp</file>
+  <searchregexp>0</searchregexp>
+  <timeout units="minutes">10</timeout>
+</sourcecontrol>
+{code}
+
+
+h2. Configuration Elements
+
+|| Element || Description || Type || Required || Default || Version ||
+| type | The type of source control block. | String - must be pvcs | Yes | _n/a_ | 1.0 |
+| branch | The Surround SCM branch to monitor.   | String | Yes | _n/a_ | 1.0 |
+| dynamicValues | The dynamic values to use for the source control block.   | [Dynamic Values] array | No | _None_ | 1.5 |
+| executable | The local path for the Surround SCM command\-line client (eg. C:\Program Files\Seapine\Surround SCM\sscm.exe).   | String | Yes | sscm | 1.0 |
+| file | A filename pattern to match to monitor and retrieve files.   | String | No | _None_ | 1.0 |
+| issueUrlBuilder | Converts the comment (or parts from it) into an url pointing to the issue for this build. See [IssueUrlBuilder] for more details.   | [IssueUrlBuilder] | No | _None_ | 1.4 |
+| recursive | Monitor and retrieve all files in child repositories of the specified repository. (Value 1 = true, 0 = false).   | Int32 | No | 0 | 1.0 |
+| repository | The Surround SCM repository to monitor.   | String | Yes | _n/a_ | 1.0 |
+| searchregexp | Treat the filename pattern as a regular expression. (Value 1 = true, 0 = false)   | Int32 | No | 0 | 1.0 |
+| serverconnect | The IP address or machine name and port number of the Surround SCM server.   | String | No | 127.0.0.1:4900 | 1.0 |
+| serverlogin | Surround SCM login:password that CCNet should use.   | String | No | Administrator | 1.0 |
+| timeout | Sets the timeout period for the source control operation. See [Timeout Configuration] for details.   | [Timeout Configuration] | No | 10 minutes | 1.0 |
+| workingDirectory | The local path to get files from Surround SCM to.   | String | Yes | _n/a_ | 1.0 |
+
+h2. Notes
+
+Contributed by Yan Shapochnik and Pete Vasiliauskas at Seapine Software.  
+
+
+{info:title=Automatically Generated}
+Documentation generated on Saturday, 22 Jan 2011 at 12:14:18 AM
+Using assembly version 1.6.7979.1
+{info}

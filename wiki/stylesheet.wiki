@@ -1,0 +1,15 @@
+h1. stylesheet
+
+Defines the configuration for a stylesheet.  
+
+h2. Configuration Elements
+
+|| Element || Description || Type || Required || Default || Version ||
+| default | Whether this is the default stylesheet or not.   | Boolean | No |  |  |
+| location | The location of the stylesheet.   | String | Yes |  |  |
+| name | The name of the stylesheet.   | String | No |  |  |
+
+{info:title=Automatically Generated}
+Documentation generated on Saturday, 22 Jan 2011 at 12:14:24 AM
+Using assembly version 1.6.7979.1
+{info}

@@ -1,0 +1,953 @@
+<docGen command="generate" time="2011-01-21T18:14:13.4757500-06:00">
+<message type="Info" time="Fri, 21 Jan 2011 18:14:14 GMT">
+<![CDATA[Starting documentation generation for ThoughtWorks.CruiseControl.Core.dll]]>
+</message>
+<message type="Info" time="Fri, 21 Jan 2011 18:14:14 GMT">
+<![CDATA[Generating queue.wiki for ThoughtWorks.CruiseControl.Core.Config.DefaultQueueConfiguration]]>
+</message>
+<message type="Debug" time="Fri, 21 Jan 2011 18:14:14 GMT">
+<![CDATA[Documentation generated for queue in 0.10s]]>
+</message>
+<message type="Info" time="Fri, 21 Jan 2011 18:14:14 GMT">
+<![CDATA[Generating assemblyVersionLabeller.wiki for ThoughtWorks.CruiseControl.Core.Label.AssemblyVersionLabeller]]>
+</message>
+<message type="Debug" time="Fri, 21 Jan 2011 18:14:14 GMT">
+<![CDATA[Documentation generated for assemblyVersionLabeller in 0.06s]]>
+</message>
+<message type="Info" time="Fri, 21 Jan 2011 18:14:14 GMT">
+<![CDATA[Generating dateLabeller.wiki for ThoughtWorks.CruiseControl.Core.Label.DateLabeller]]>
+</message>
+<message type="Debug" time="Fri, 21 Jan 2011 18:14:14 GMT">
+<![CDATA[Documentation generated for dateLabeller in 0.04s]]>
+</message>
+<message type="Info" time="Fri, 21 Jan 2011 18:14:14 GMT">
+<![CDATA[Generating defaultlabeller.wiki for ThoughtWorks.CruiseControl.Core.Label.DefaultLabeller]]>
+</message>
+<message type="Debug" time="Fri, 21 Jan 2011 18:14:14 GMT">
+<![CDATA[Documentation generated for defaultlabeller in 0.07s]]>
+</message>
+<message type="Info" time="Fri, 21 Jan 2011 18:14:14 GMT">
+<![CDATA[Generating fileLabeller.wiki for ThoughtWorks.CruiseControl.Core.Label.FileLabeller]]>
+</message>
+<message type="Debug" time="Fri, 21 Jan 2011 18:14:14 GMT">
+<![CDATA[Documentation generated for fileLabeller in 0.03s]]>
+</message>
+<message type="Info" time="Fri, 21 Jan 2011 18:14:14 GMT">
+<![CDATA[Generating iterationlabeller.wiki for ThoughtWorks.CruiseControl.Core.Label.IterationLabeller]]>
+</message>
+<message type="Debug" time="Fri, 21 Jan 2011 18:14:14 GMT">
+<![CDATA[Documentation generated for iterationlabeller in 0.06s]]>
+</message>
+<message type="Info" time="Fri, 21 Jan 2011 18:14:14 GMT">
+<![CDATA[Generating lastChangeLabeller.wiki for ThoughtWorks.CruiseControl.Core.Label.LastChangeLabeller]]>
+</message>
+<message type="Debug" time="Fri, 21 Jan 2011 18:14:14 GMT">
+<![CDATA[Documentation generated for lastChangeLabeller in 0.03s]]>
+</message>
+<message type="Info" time="Fri, 21 Jan 2011 18:14:14 GMT">
+<![CDATA[Generating remoteProjectLabeller.wiki for ThoughtWorks.CruiseControl.Core.Label.RemoteProjectLabeller]]>
+</message>
+<message type="Debug" time="Fri, 21 Jan 2011 18:14:14 GMT">
+<![CDATA[Documentation generated for remoteProjectLabeller in 0.03s]]>
+</message>
+<message type="Info" time="Fri, 21 Jan 2011 18:14:14 GMT">
+<![CDATA[Generating stateFileLabeller.wiki for ThoughtWorks.CruiseControl.Core.Label.StateFileLabeller]]>
+</message>
+<message type="Debug" time="Fri, 21 Jan 2011 18:14:14 GMT">
+<![CDATA[Documentation generated for stateFileLabeller in 0.02s]]>
+</message>
+<message type="Info" time="Fri, 21 Jan 2011 18:14:14 GMT">
+<![CDATA[Generating project.wiki for ThoughtWorks.CruiseControl.Core.Project]]>
+</message>
+<message type="Debug" time="Fri, 21 Jan 2011 18:14:15 GMT">
+<![CDATA[Documentation generated for project in 0.20s]]>
+</message>
+<message type="Info" time="Fri, 21 Jan 2011 18:14:15 GMT">
+<![CDATA[Generating buildpublisher.wiki for ThoughtWorks.CruiseControl.Core.Publishers.BuildPublisher]]>
+</message>
+<message type="Debug" time="Fri, 21 Jan 2011 18:14:15 GMT">
+<![CDATA[Documentation generated for buildpublisher in 0.07s]]>
+</message>
+<message type="Info" time="Fri, 21 Jan 2011 18:14:15 GMT">
+<![CDATA[Generating conditionalPublisher.wiki for ThoughtWorks.CruiseControl.Core.Publishers.ConditionalPublisher]]>
+</message>
+<message type="Debug" time="Fri, 21 Jan 2011 18:14:15 GMT">
+<![CDATA[Documentation generated for conditionalPublisher in 0.05s]]>
+</message>
+<message type="Info" time="Fri, 21 Jan 2011 18:14:15 GMT">
+<![CDATA[Generating ldapConverter.wiki for ThoughtWorks.CruiseControl.Core.Publishers.EmailLDAPConverter]]>
+</message>
+<message type="Debug" time="Fri, 21 Jan 2011 18:14:15 GMT">
+<![CDATA[Documentation generated for ldapConverter in 0.05s]]>
+</message>
+<message type="Info" time="Fri, 21 Jan 2011 18:14:15 GMT">
+<![CDATA[Generating regexConverter.wiki for ThoughtWorks.CruiseControl.Core.Publishers.EmailRegexConverter]]>
+</message>
+<message type="Debug" time="Fri, 21 Jan 2011 18:14:15 GMT">
+<![CDATA[Documentation generated for regexConverter in 0.02s]]>
+</message>
+<message type="Info" time="Fri, 21 Jan 2011 18:14:15 GMT">
+<![CDATA[Generating group.wiki for ThoughtWorks.CruiseControl.Core.Publishers.EmailGroup]]>
+</message>
+<message type="Debug" time="Fri, 21 Jan 2011 18:14:15 GMT">
+<![CDATA[Documentation generated for group in 0.02s]]>
+</message>
+<message type="Info" time="Fri, 21 Jan 2011 18:14:15 GMT">
+<![CDATA[Generating email.wiki for ThoughtWorks.CruiseControl.Core.Publishers.EmailPublisher]]>
+</message>
+<message type="Debug" time="Fri, 21 Jan 2011 18:14:15 GMT">
+<![CDATA[Documentation generated for email in 0.13s]]>
+</message>
+<message type="Info" time="Fri, 21 Jan 2011 18:14:15 GMT">
+<![CDATA[Generating subject.wiki for ThoughtWorks.CruiseControl.Core.Publishers.EmailSubject]]>
+</message>
+<message type="Debug" time="Fri, 21 Jan 2011 18:14:15 GMT">
+<![CDATA[Documentation generated for subject in 0.02s]]>
+</message>
+<message type="Info" time="Fri, 21 Jan 2011 18:14:15 GMT">
+<![CDATA[Generating user.wiki for ThoughtWorks.CruiseControl.Core.Publishers.EmailUser]]>
+</message>
+<message type="Debug" time="Fri, 21 Jan 2011 18:14:15 GMT">
+<![CDATA[Documentation generated for user in 0.03s]]>
+</message>
+<message type="Info" time="Fri, 21 Jan 2011 18:14:15 GMT">
+<![CDATA[Generating forcebuild.wiki for ThoughtWorks.CruiseControl.Core.Publishers.ForceBuildPublisher]]>
+</message>
+<message type="Debug" time="Fri, 21 Jan 2011 18:14:15 GMT">
+<![CDATA[Documentation generated for forcebuild in 0.06s]]>
+</message>
+<message type="Info" time="Fri, 21 Jan 2011 18:14:15 GMT">
+<![CDATA[Generating defaultManifestGenerator.wiki for ThoughtWorks.CruiseControl.Core.Publishers.ManifestGenerator]]>
+</message>
+<message type="Debug" time="Fri, 21 Jan 2011 18:14:15 GMT">
+<![CDATA[Documentation generated for defaultManifestGenerator in 0.01s]]>
+</message>
+<message type="Info" time="Fri, 21 Jan 2011 18:14:15 GMT">
+<![CDATA[Generating importManifest.wiki for ThoughtWorks.CruiseControl.Core.Publishers.ManifestImporter]]>
+</message>
+<message type="Debug" time="Fri, 21 Jan 2011 18:14:15 GMT">
+<![CDATA[Documentation generated for importManifest in 0.02s]]>
+</message>
+<message type="Info" time="Fri, 21 Jan 2011 18:14:15 GMT">
+<![CDATA[Generating modificationHistory.wiki for ThoughtWorks.CruiseControl.Core.Publishers.ModificationHistoryPublisher]]>
+</message>
+<message type="Debug" time="Fri, 21 Jan 2011 18:14:15 GMT">
+<![CDATA[Documentation generated for modificationHistory in 0.04s]]>
+</message>
+<message type="Info" time="Fri, 21 Jan 2011 18:14:15 GMT">
+<![CDATA[Generating packageFile.wiki for ThoughtWorks.CruiseControl.Core.Publishers.PackageFile]]>
+</message>
+<message type="Debug" time="Fri, 21 Jan 2011 18:14:15 GMT">
+<![CDATA[Documentation generated for packageFile in 0.03s]]>
+</message>
+<message type="Info" time="Fri, 21 Jan 2011 18:14:15 GMT">
+<![CDATA[Generating packageFolder.wiki for ThoughtWorks.CruiseControl.Core.Publishers.PackageFolder]]>
+</message>
+<message type="Debug" time="Fri, 21 Jan 2011 18:14:16 GMT">
+<![CDATA[Documentation generated for packageFolder in 0.54s]]>
+</message>
+<message type="Info" time="Fri, 21 Jan 2011 18:14:16 GMT">
+<![CDATA[Generating package.wiki for ThoughtWorks.CruiseControl.Core.Publishers.PackagePublisher]]>
+</message>
+<message type="Debug" time="Fri, 21 Jan 2011 18:14:16 GMT">
+<![CDATA[Documentation generated for package in 0.09s]]>
+</message>
+<message type="Info" time="Fri, 21 Jan 2011 18:14:16 GMT">
+<![CDATA[Generating rss.wiki for ThoughtWorks.CruiseControl.Core.Publishers.RssPublisher]]>
+</message>
+<message type="Debug" time="Fri, 21 Jan 2011 18:14:16 GMT">
+<![CDATA[Documentation generated for rss in 0.04s]]>
+</message>
+<message type="Info" time="Fri, 21 Jan 2011 18:14:16 GMT">
+<![CDATA[Generating firstMatch.wiki for ThoughtWorks.CruiseControl.Core.Publishers.Statistics.FirstMatch]]>
+</message>
+<message type="Debug" time="Fri, 21 Jan 2011 18:14:16 GMT">
+<![CDATA[Documentation generated for firstMatch in 0.03s]]>
+</message>
+<message type="Info" time="Fri, 21 Jan 2011 18:14:16 GMT">
+<![CDATA[Generating statistic.wiki for ThoughtWorks.CruiseControl.Core.Publishers.Statistics.Statistic]]>
+</message>
+<message type="Debug" time="Fri, 21 Jan 2011 18:14:16 GMT">
+<![CDATA[Documentation generated for statistic in 0.03s]]>
+</message>
+<message type="Info" time="Fri, 21 Jan 2011 18:14:16 GMT">
+<![CDATA[Generating statistics.wiki for ThoughtWorks.CruiseControl.Core.Publishers.Statistics.StatisticsPublisher]]>
+</message>
+<message type="Debug" time="Fri, 21 Jan 2011 18:14:16 GMT">
+<![CDATA[Documentation generated for statistics in 0.04s]]>
+</message>
+<message type="Info" time="Fri, 21 Jan 2011 18:14:16 GMT">
+<![CDATA[Generating xmllogger.wiki for ThoughtWorks.CruiseControl.Core.Publishers.XmlLogPublisher]]>
+</message>
+<message type="Debug" time="Fri, 21 Jan 2011 18:14:16 GMT">
+<![CDATA[Documentation generated for xmllogger in 0.04s]]>
+</message>
+<message type="Info" time="Fri, 21 Jan 2011 18:14:16 GMT">
+<![CDATA[Generating impersonation.wiki for ThoughtWorks.CruiseControl.Core.Security.ImpersonationDetails]]>
+</message>
+<message type="Debug" time="Fri, 21 Jan 2011 18:14:16 GMT">
+<![CDATA[Documentation generated for impersonation in 0.03s]]>
+</message>
+<message type="Info" time="Fri, 21 Jan 2011 18:14:16 GMT">
+<![CDATA[Generating inheritedProjectSecurity.wiki for ThoughtWorks.CruiseControl.Core.Security.InheritedProjectAuthorisation]]>
+</message>
+<message type="Debug" time="Fri, 21 Jan 2011 18:14:16 GMT">
+<![CDATA[Documentation generated for inheritedProjectSecurity in 0.02s]]>
+</message>
+<message type="Info" time="Fri, 21 Jan 2011 18:14:16 GMT">
+<![CDATA[Generating permissions.wiki for ThoughtWorks.CruiseControl.Core.Security.Permissions]]>
+</message>
+<message type="Debug" time="Fri, 21 Jan 2011 18:14:16 GMT">
+<![CDATA[Documentation generated for permissions in 0.03s]]>
+</message>
+<message type="Info" time="Fri, 21 Jan 2011 18:14:16 GMT">
+<![CDATA[Generating projectSecurity.wiki for ThoughtWorks.CruiseControl.Core.Security.ProjectSecurityConfigurationInformation]]>
+</message>
+<message type="Debug" time="Fri, 21 Jan 2011 18:14:16 GMT">
+<![CDATA[Documentation generated for projectSecurity in 0.02s]]>
+</message>
+<message type="Info" time="Fri, 21 Jan 2011 18:14:16 GMT">
+<![CDATA[Generating encryptedChannel.wiki for ThoughtWorks.CruiseControl.Core.Security.SecureMessagesChannel]]>
+</message>
+<message type="Debug" time="Fri, 21 Jan 2011 18:14:16 GMT">
+<![CDATA[Documentation generated for encryptedChannel in 0.01s]]>
+</message>
+<message type="Info" time="Fri, 21 Jan 2011 18:14:16 GMT">
+<![CDATA[Generating xmlFolderData.wiki for ThoughtWorks.CruiseControl.Core.Storage.XmlFolderDataStore]]>
+</message>
+<message type="Debug" time="Fri, 21 Jan 2011 18:14:16 GMT">
+<![CDATA[Documentation generated for xmlFolderData in 0.02s]]>
+</message>
+<message type="Info" time="Fri, 21 Jan 2011 18:14:16 GMT">
+<![CDATA[Generating ldapUser.wiki for ThoughtWorks.CruiseControl.Core.Security.ActiveDirectoryAuthentication]]>
+</message>
+<message type="Debug" time="Fri, 21 Jan 2011 18:14:16 GMT">
+<![CDATA[Documentation generated for ldapUser in 0.02s]]>
+</message>
+<message type="Info" time="Fri, 21 Jan 2011 18:14:16 GMT">
+<![CDATA[Generating xmlFileAudit.wiki for ThoughtWorks.CruiseControl.Core.Security.Auditing.FileXmlLogger]]>
+</message>
+<message type="Debug" time="Fri, 21 Jan 2011 18:14:16 GMT">
+<![CDATA[Documentation generated for xmlFileAudit in 0.03s]]>
+</message>
+<message type="Info" time="Fri, 21 Jan 2011 18:14:16 GMT">
+<![CDATA[Generating xmlFileAuditReader.wiki for ThoughtWorks.CruiseControl.Core.Security.Auditing.FileXmlReader]]>
+</message>
+<message type="Debug" time="Fri, 21 Jan 2011 18:14:16 GMT">
+<![CDATA[Documentation generated for xmlFileAuditReader in 0.01s]]>
+</message>
+<message type="Info" time="Fri, 21 Jan 2011 18:14:16 GMT">
+<![CDATA[Generating defaultProjectSecurity.wiki for ThoughtWorks.CruiseControl.Core.Security.DefaultProjectAuthorisation]]>
+</message>
+<message type="Debug" time="Fri, 21 Jan 2011 18:14:16 GMT">
+<![CDATA[Documentation generated for defaultProjectSecurity in 0.02s]]>
+</message>
+<message type="Info" time="Fri, 21 Jan 2011 18:14:16 GMT">
+<![CDATA[Generating externalFileSecurity.wiki for ThoughtWorks.CruiseControl.Core.Security.ExternalFileSecurityManager]]>
+</message>
+<message type="Debug" time="Fri, 21 Jan 2011 18:14:16 GMT">
+<![CDATA[Documentation generated for externalFileSecurity in 0.05s]]>
+</message>
+<message type="Info" time="Fri, 21 Jan 2011 18:14:16 GMT">
+<![CDATA[Generating fileBasedCache.wiki for ThoughtWorks.CruiseControl.Core.Security.FileBasedSessionCache]]>
+</message>
+<message type="Debug" time="Fri, 21 Jan 2011 18:14:16 GMT">
+<![CDATA[Documentation generated for fileBasedCache in 0.02s]]>
+</message>
+<message type="Info" time="Fri, 21 Jan 2011 18:14:16 GMT">
+<![CDATA[Generating inMemoryCache.wiki for ThoughtWorks.CruiseControl.Core.Security.InMemorySessionCache]]>
+</message>
+<message type="Debug" time="Fri, 21 Jan 2011 18:14:16 GMT">
+<![CDATA[Documentation generated for inMemoryCache in 0.02s]]>
+</message>
+<message type="Info" time="Fri, 21 Jan 2011 18:14:16 GMT">
+<![CDATA[Generating internalSecurity.wiki for ThoughtWorks.CruiseControl.Core.Security.InternalSecurityManager]]>
+</message>
+<message type="Debug" time="Fri, 21 Jan 2011 18:14:16 GMT">
+<![CDATA[Documentation generated for internalSecurity in 0.06s]]>
+</message>
+<message type="Info" time="Fri, 21 Jan 2011 18:14:16 GMT">
+<![CDATA[Generating nullProjectSecurity.wiki for ThoughtWorks.CruiseControl.Core.Security.NullProjectAuthorisation]]>
+</message>
+<message type="Debug" time="Fri, 21 Jan 2011 18:14:16 GMT">
+<![CDATA[Documentation generated for nullProjectSecurity in 0.01s]]>
+</message>
+<message type="Info" time="Fri, 21 Jan 2011 18:14:16 GMT">
+<![CDATA[Generating nullSecurity.wiki for ThoughtWorks.CruiseControl.Core.Security.NullSecurityManager]]>
+</message>
+<message type="Debug" time="Fri, 21 Jan 2011 18:14:16 GMT">
+<![CDATA[Documentation generated for nullSecurity in 0.01s]]>
+</message>
+<message type="Info" time="Fri, 21 Jan 2011 18:14:16 GMT">
+<![CDATA[Generating rolePermission.wiki for ThoughtWorks.CruiseControl.Core.Security.RolePermission]]>
+</message>
+<message type="Debug" time="Fri, 21 Jan 2011 18:14:16 GMT">
+<![CDATA[Documentation generated for rolePermission in 0.06s]]>
+</message>
+<message type="Info" time="Fri, 21 Jan 2011 18:14:16 GMT">
+<![CDATA[Generating userName.wiki for ThoughtWorks.CruiseControl.Core.Security.UserName]]>
+</message>
+<message type="Debug" time="Fri, 21 Jan 2011 18:14:16 GMT">
+<![CDATA[Documentation generated for userName in 0.01s]]>
+</message>
+<message type="Info" time="Fri, 21 Jan 2011 18:14:16 GMT">
+<![CDATA[Generating simpleUser.wiki for ThoughtWorks.CruiseControl.Core.Security.UserNameAuthentication]]>
+</message>
+<message type="Debug" time="Fri, 21 Jan 2011 18:14:16 GMT">
+<![CDATA[Documentation generated for simpleUser in 0.02s]]>
+</message>
+<message type="Info" time="Fri, 21 Jan 2011 18:14:16 GMT">
+<![CDATA[Generating passwordUser.wiki for ThoughtWorks.CruiseControl.Core.Security.UserPasswordAuthentication]]>
+</message>
+<message type="Debug" time="Fri, 21 Jan 2011 18:14:17 GMT">
+<![CDATA[Documentation generated for passwordUser in 0.03s]]>
+</message>
+<message type="Info" time="Fri, 21 Jan 2011 18:14:17 GMT">
+<![CDATA[Generating userPermission.wiki for ThoughtWorks.CruiseControl.Core.Security.UserPermission]]>
+</message>
+<message type="Debug" time="Fri, 21 Jan 2011 18:14:17 GMT">
+<![CDATA[Documentation generated for userPermission in 0.04s]]>
+</message>
+<message type="Info" time="Fri, 21 Jan 2011 18:14:17 GMT">
+<![CDATA[Generating accurev.wiki for ThoughtWorks.CruiseControl.Core.Sourcecontrol.AccuRev]]>
+</message>
+<message type="Debug" time="Fri, 21 Jan 2011 18:14:17 GMT">
+<![CDATA[Documentation generated for accurev in 0.08s]]>
+</message>
+<message type="Info" time="Fri, 21 Jan 2011 18:14:17 GMT">
+<![CDATA[Generating actionFilter.wiki for ThoughtWorks.CruiseControl.Core.Sourcecontrol.ActionFilter]]>
+</message>
+<message type="Debug" time="Fri, 21 Jan 2011 18:14:17 GMT">
+<![CDATA[Documentation generated for actionFilter in 0.02s]]>
+</message>
+<message type="Info" time="Fri, 21 Jan 2011 18:14:17 GMT">
+<![CDATA[Generating alienbrain.wiki for ThoughtWorks.CruiseControl.Core.Sourcecontrol.Alienbrain]]>
+</message>
+<message type="Debug" time="Fri, 21 Jan 2011 18:14:17 GMT">
+<![CDATA[Documentation generated for alienbrain in 0.09s]]>
+</message>
+<message type="Info" time="Fri, 21 Jan 2011 18:14:17 GMT">
+<![CDATA[Generating bitkeeper.wiki for ThoughtWorks.CruiseControl.Core.Sourcecontrol.BitKeeper.BitKeeper]]>
+</message>
+<message type="Debug" time="Fri, 21 Jan 2011 18:14:17 GMT">
+<![CDATA[Documentation generated for bitkeeper in 0.08s]]>
+</message>
+<message type="Info" time="Fri, 21 Jan 2011 18:14:17 GMT">
+<![CDATA[Generating clearCase.wiki for ThoughtWorks.CruiseControl.Core.Sourcecontrol.ClearCase]]>
+</message>
+<message type="Debug" time="Fri, 21 Jan 2011 18:14:17 GMT">
+<![CDATA[Documentation generated for clearCase in 0.08s]]>
+</message>
+<message type="Info" time="Fri, 21 Jan 2011 18:14:17 GMT">
+<![CDATA[Generating commentFilter.wiki for ThoughtWorks.CruiseControl.Core.Sourcecontrol.CommentFilter]]>
+</message>
+<message type="Debug" time="Fri, 21 Jan 2011 18:14:17 GMT">
+<![CDATA[Documentation generated for commentFilter in 0.01s]]>
+</message>
+<message type="Info" time="Fri, 21 Jan 2011 18:14:17 GMT">
+<![CDATA[Generating cvs.wiki for ThoughtWorks.CruiseControl.Core.Sourcecontrol.Cvs]]>
+</message>
+<message type="Debug" time="Fri, 21 Jan 2011 18:14:17 GMT">
+<![CDATA[Documentation generated for cvs in 0.11s]]>
+</message>
+<message type="Info" time="Fri, 21 Jan 2011 18:14:17 GMT">
+<![CDATA[Generating external.wiki for ThoughtWorks.CruiseControl.Core.Sourcecontrol.ExternalSourceControl]]>
+</message>
+<message type="Debug" time="Fri, 21 Jan 2011 18:14:17 GMT">
+<![CDATA[Documentation generated for external in 0.07s]]>
+</message>
+<message type="Info" time="Fri, 21 Jan 2011 18:14:17 GMT">
+<![CDATA[Generating filesystem.wiki for ThoughtWorks.CruiseControl.Core.Sourcecontrol.FileSourceControl]]>
+</message>
+<message type="Debug" time="Fri, 21 Jan 2011 18:14:17 GMT">
+<![CDATA[Documentation generated for filesystem in 0.04s]]>
+</message>
+<message type="Info" time="Fri, 21 Jan 2011 18:14:17 GMT">
+<![CDATA[Generating filtered.wiki for ThoughtWorks.CruiseControl.Core.Sourcecontrol.FilteredSourceControl]]>
+</message>
+<message type="Debug" time="Fri, 21 Jan 2011 18:14:17 GMT">
+<![CDATA[Documentation generated for filtered in 0.04s]]>
+</message>
+<message type="Info" time="Fri, 21 Jan 2011 18:14:17 GMT">
+<![CDATA[Generating ftpSourceControl.wiki for ThoughtWorks.CruiseControl.Core.Sourcecontrol.FtpSourceControl]]>
+</message>
+<message type="Debug" time="Fri, 21 Jan 2011 18:14:17 GMT">
+<![CDATA[Documentation generated for ftpSourceControl in 0.06s]]>
+</message>
+<message type="Info" time="Fri, 21 Jan 2011 18:14:17 GMT">
+<![CDATA[Generating git.wiki for ThoughtWorks.CruiseControl.Core.Sourcecontrol.Git]]>
+</message>
+<message type="Debug" time="Fri, 21 Jan 2011 18:14:17 GMT">
+<![CDATA[Documentation generated for git in 0.12s]]>
+</message>
+<message type="Info" time="Fri, 21 Jan 2011 18:14:17 GMT">
+<![CDATA[Generating hgweb.wiki for ThoughtWorks.CruiseControl.Core.Sourcecontrol.Mercurial.HgWebUrlBuilder]]>
+</message>
+<message type="Debug" time="Fri, 21 Jan 2011 18:14:17 GMT">
+<![CDATA[Documentation generated for hgweb in 0.01s]]>
+</message>
+<message type="Info" time="Fri, 21 Jan 2011 18:14:17 GMT">
+<![CDATA[Generating hg.wiki for ThoughtWorks.CruiseControl.Core.Sourcecontrol.Mercurial.Mercurial]]>
+</message>
+<message type="Debug" time="Fri, 21 Jan 2011 18:14:18 GMT">
+<![CDATA[Documentation generated for hg in 0.14s]]>
+</message>
+<message type="Info" time="Fri, 21 Jan 2011 18:14:18 GMT">
+<![CDATA[Generating mks.wiki for ThoughtWorks.CruiseControl.Core.Sourcecontrol.Mks]]>
+</message>
+<message type="Debug" time="Fri, 21 Jan 2011 18:14:18 GMT">
+<![CDATA[Documentation generated for mks in 0.09s]]>
+</message>
+<message type="Info" time="Fri, 21 Jan 2011 18:14:18 GMT">
+<![CDATA[Generating multiIssueTracker.wiki for ThoughtWorks.CruiseControl.Core.Sourcecontrol.MultiIssueTrackerUrlBuilder]]>
+</message>
+<message type="Debug" time="Fri, 21 Jan 2011 18:14:18 GMT">
+<![CDATA[Documentation generated for multiIssueTracker in 0.02s]]>
+</message>
+<message type="Info" time="Fri, 21 Jan 2011 18:14:18 GMT">
+<![CDATA[Generating multi.wiki for ThoughtWorks.CruiseControl.Core.Sourcecontrol.MultiSourceControl]]>
+</message>
+<message type="Debug" time="Fri, 21 Jan 2011 18:14:18 GMT">
+<![CDATA[Documentation generated for multi in 0.03s]]>
+</message>
+<message type="Info" time="Fri, 21 Jan 2011 18:14:18 GMT">
+<![CDATA[Generating nullSourceControl.wiki for ThoughtWorks.CruiseControl.Core.Sourcecontrol.NullSourceControl]]>
+</message>
+<message type="Debug" time="Fri, 21 Jan 2011 18:14:18 GMT">
+<![CDATA[Documentation generated for nullSourceControl in 0.03s]]>
+</message>
+<message type="Info" time="Fri, 21 Jan 2011 18:14:18 GMT">
+<![CDATA[Generating pathFilter.wiki for ThoughtWorks.CruiseControl.Core.Sourcecontrol.PathFilter]]>
+</message>
+<message type="Debug" time="Fri, 21 Jan 2011 18:14:18 GMT">
+<![CDATA[Documentation generated for pathFilter in 0.02s]]>
+</message>
+<message type="Info" time="Fri, 21 Jan 2011 18:14:18 GMT">
+<![CDATA[Generating p4.wiki for ThoughtWorks.CruiseControl.Core.Sourcecontrol.Perforce.P4]]>
+</message>
+<message type="Debug" time="Fri, 21 Jan 2011 18:14:18 GMT">
+<![CDATA[Documentation generated for p4 in 0.14s]]>
+</message>
+<message type="Info" time="Fri, 21 Jan 2011 18:14:18 GMT">
+<![CDATA[Generating plasticscm.wiki for ThoughtWorks.CruiseControl.Core.Sourcecontrol.PlasticSCM]]>
+</message>
+<message type="Debug" time="Fri, 21 Jan 2011 18:14:18 GMT">
+<![CDATA[Documentation generated for plasticscm in 0.08s]]>
+</message>
+<message type="Info" time="Fri, 21 Jan 2011 18:14:18 GMT">
+<![CDATA[Generating pvcs.wiki for ThoughtWorks.CruiseControl.Core.Sourcecontrol.Pvcs]]>
+</message>
+<message type="Debug" time="Fri, 21 Jan 2011 18:14:18 GMT">
+<![CDATA[Documentation generated for pvcs in 0.11s]]>
+</message>
+<message type="Info" time="Fri, 21 Jan 2011 18:14:18 GMT">
+<![CDATA[Generating defaultIssueTracker.wiki for ThoughtWorks.CruiseControl.Core.Sourcecontrol.DefaultIssueTrackerUrlBuilder]]>
+</message>
+<message type="Debug" time="Fri, 21 Jan 2011 18:14:18 GMT">
+<![CDATA[Documentation generated for defaultIssueTracker in 0.02s]]>
+</message>
+<message type="Info" time="Fri, 21 Jan 2011 18:14:18 GMT">
+<![CDATA[Generating regexIssueTracker.wiki for ThoughtWorks.CruiseControl.Core.Sourcecontrol.RegExIssueTrackerUrlBuilder]]>
+</message>
+<message type="Debug" time="Fri, 21 Jan 2011 18:14:18 GMT">
+<![CDATA[Documentation generated for regexIssueTracker in 0.02s]]>
+</message>
+<message type="Info" time="Fri, 21 Jan 2011 18:14:18 GMT">
+<![CDATA[Generating robocopy.wiki for ThoughtWorks.CruiseControl.Core.Sourcecontrol.RobocopySourceControl]]>
+</message>
+<message type="Debug" time="Fri, 21 Jan 2011 18:14:18 GMT">
+<![CDATA[Documentation generated for robocopy in 0.06s]]>
+</message>
+<message type="Info" time="Fri, 21 Jan 2011 18:14:18 GMT">
+<![CDATA[Generating starteam.wiki for ThoughtWorks.CruiseControl.Core.Sourcecontrol.StarTeam]]>
+</message>
+<message type="Debug" time="Fri, 21 Jan 2011 18:14:18 GMT">
+<![CDATA[Documentation generated for starteam in 0.11s]]>
+</message>
+<message type="Info" time="Fri, 21 Jan 2011 18:14:18 GMT">
+<![CDATA[Generating surround.wiki for ThoughtWorks.CruiseControl.Core.Sourcecontrol.Surround]]>
+</message>
+<message type="Debug" time="Fri, 21 Jan 2011 18:14:18 GMT">
+<![CDATA[Documentation generated for surround in 0.09s]]>
+</message>
+<message type="Info" time="Fri, 21 Jan 2011 18:14:18 GMT">
+<![CDATA[Generating svn.wiki for ThoughtWorks.CruiseControl.Core.Sourcecontrol.Svn]]>
+</message>
+<message type="Debug" time="Fri, 21 Jan 2011 18:14:18 GMT">
+<![CDATA[Documentation generated for svn in 0.15s]]>
+</message>
+<message type="Info" time="Fri, 21 Jan 2011 18:14:18 GMT">
+<![CDATA[Generating changeSynergy.wiki for ThoughtWorks.CruiseControl.Core.Sourcecontrol.Telelogic.ChangeSynergyUrlBuilder]]>
+</message>
+<message type="Debug" time="Fri, 21 Jan 2011 18:14:19 GMT">
+<![CDATA[Documentation generated for changeSynergy in 0.04s]]>
+</message>
+<message type="Info" time="Fri, 21 Jan 2011 18:14:19 GMT">
+<![CDATA[Generating synergy.wiki for ThoughtWorks.CruiseControl.Core.Sourcecontrol.Telelogic.Synergy]]>
+</message>
+<message type="Debug" time="Fri, 21 Jan 2011 18:14:19 GMT">
+<![CDATA[Documentation generated for synergy in 0.05s]]>
+</message>
+<message type="Info" time="Fri, 21 Jan 2011 18:14:19 GMT">
+<![CDATA[Generating synergyConnection.wiki for ThoughtWorks.CruiseControl.Core.Sourcecontrol.Telelogic.SynergyConnectionInfo]]>
+</message>
+<message type="Debug" time="Fri, 21 Jan 2011 18:14:19 GMT">
+<![CDATA[Documentation generated for synergyConnection in 0.08s]]>
+</message>
+<message type="Info" time="Fri, 21 Jan 2011 18:14:19 GMT">
+<![CDATA[Generating synergyProject.wiki for ThoughtWorks.CruiseControl.Core.Sourcecontrol.Telelogic.SynergyProjectInfo]]>
+</message>
+<message type="Debug" time="Fri, 21 Jan 2011 18:14:19 GMT">
+<![CDATA[Documentation generated for synergyProject in 0.05s]]>
+</message>
+<message type="Info" time="Fri, 21 Jan 2011 18:14:19 GMT">
+<![CDATA[Generating userFilter.wiki for ThoughtWorks.CruiseControl.Core.Sourcecontrol.UserFilter]]>
+</message>
+<message type="Debug" time="Fri, 21 Jan 2011 18:14:19 GMT">
+<![CDATA[Documentation generated for userFilter in 0.01s]]>
+</message>
+<message type="Info" time="Fri, 21 Jan 2011 18:14:19 GMT">
+<![CDATA[Generating vault.wiki for ThoughtWorks.CruiseControl.Core.Sourcecontrol.VaultVersionChecker]]>
+</message>
+<message type="Debug" time="Fri, 21 Jan 2011 18:14:19 GMT">
+<![CDATA[Documentation generated for vault in 0.18s]]>
+</message>
+<message type="Info" time="Fri, 21 Jan 2011 18:14:19 GMT">
+<![CDATA[Generating viewcvs.wiki for ThoughtWorks.CruiseControl.Core.ViewCVSUrlBuilder]]>
+</message>
+<message type="Debug" time="Fri, 21 Jan 2011 18:14:19 GMT">
+<![CDATA[Documentation generated for viewcvs in 0.01s]]>
+</message>
+<message type="Info" time="Fri, 21 Jan 2011 18:14:19 GMT">
+<![CDATA[Generating vss.wiki for ThoughtWorks.CruiseControl.Core.Sourcecontrol.Vss]]>
+</message>
+<message type="Debug" time="Fri, 21 Jan 2011 18:14:19 GMT">
+<![CDATA[Documentation generated for vss in 0.10s]]>
+</message>
+<message type="Info" time="Fri, 21 Jan 2011 18:14:19 GMT">
+<![CDATA[Generating vsts.wiki for ThoughtWorks.CruiseControl.Core.Sourcecontrol.Vsts]]>
+</message>
+<message type="Debug" time="Fri, 21 Jan 2011 18:14:19 GMT">
+<![CDATA[Documentation generated for vsts in 0.12s]]>
+</message>
+<message type="Info" time="Fri, 21 Jan 2011 18:14:19 GMT">
+<![CDATA[Generating websvn.wiki for ThoughtWorks.CruiseControl.Core.Sourcecontrol.WebSVNUrlBuilder]]>
+</message>
+<message type="Debug" time="Fri, 21 Jan 2011 18:14:19 GMT">
+<![CDATA[Documentation generated for websvn in 0.02s]]>
+</message>
+<message type="Info" time="Fri, 21 Jan 2011 18:14:19 GMT">
+<![CDATA[Generating state.wiki for ThoughtWorks.CruiseControl.Core.State.FileStateManager]]>
+</message>
+<message type="Debug" time="Fri, 21 Jan 2011 18:14:19 GMT">
+<![CDATA[Documentation generated for state in 0.01s]]>
+</message>
+<message type="Info" time="Fri, 21 Jan 2011 18:14:19 GMT">
+<![CDATA[Generating antsPerformance.wiki for ThoughtWorks.CruiseControl.Core.Tasks.AntsPerformanceProfilerTask]]>
+</message>
+<message type="Debug" time="Fri, 21 Jan 2011 18:14:19 GMT">
+<![CDATA[Documentation generated for antsPerformance in 0.23s]]>
+</message>
+<message type="Info" time="Fri, 21 Jan 2011 18:14:19 GMT">
+<![CDATA[Generating artifactcleanup.wiki for ThoughtWorks.CruiseControl.Core.Tasks.ArtifactCleanUpTask]]>
+</message>
+<message type="Debug" time="Fri, 21 Jan 2011 18:14:19 GMT">
+<![CDATA[Documentation generated for artifactcleanup in 0.04s]]>
+</message>
+<message type="Info" time="Fri, 21 Jan 2011 18:14:19 GMT">
+<![CDATA[Generating codeItRight.wiki for ThoughtWorks.CruiseControl.Core.Tasks.CodeItRightTask]]>
+</message>
+<message type="Debug" time="Fri, 21 Jan 2011 18:14:20 GMT">
+<![CDATA[Documentation generated for codeItRight in 0.08s]]>
+</message>
+<message type="Info" time="Fri, 21 Jan 2011 18:14:20 GMT">
+<![CDATA[Generating commentTask.wiki for ThoughtWorks.CruiseControl.Core.Tasks.CommentTask]]>
+</message>
+<message type="Debug" time="Fri, 21 Jan 2011 18:14:20 GMT">
+<![CDATA[Documentation generated for commentTask in 0.05s]]>
+</message>
+<message type="Info" time="Fri, 21 Jan 2011 18:14:20 GMT">
+<![CDATA[Generating conditional.wiki for ThoughtWorks.CruiseControl.Core.Tasks.ConditionalTask]]>
+</message>
+<message type="Debug" time="Fri, 21 Jan 2011 18:14:20 GMT">
+<![CDATA[Documentation generated for conditional in 0.05s]]>
+</message>
+<message type="Info" time="Fri, 21 Jan 2011 18:14:20 GMT">
+<![CDATA[Generating andCondition.wiki for ThoughtWorks.CruiseControl.Core.Tasks.Conditions.AndTaskCondition]]>
+</message>
+<message type="Debug" time="Fri, 21 Jan 2011 18:14:20 GMT">
+<![CDATA[Documentation generated for andCondition in 0.02s]]>
+</message>
+<message type="Info" time="Fri, 21 Jan 2011 18:14:20 GMT">
+<![CDATA[Generating buildCondition.wiki for ThoughtWorks.CruiseControl.Core.Tasks.Conditions.BuildConditionTaskCondition]]>
+</message>
+<message type="Debug" time="Fri, 21 Jan 2011 18:14:20 GMT">
+<![CDATA[Documentation generated for buildCondition in 0.02s]]>
+</message>
+<message type="Info" time="Fri, 21 Jan 2011 18:14:20 GMT">
+<![CDATA[Generating compareCondition.wiki for ThoughtWorks.CruiseControl.Core.Tasks.Conditions.CompareValuesTaskCondition]]>
+</message>
+<message type="Debug" time="Fri, 21 Jan 2011 18:14:20 GMT">
+<![CDATA[Documentation generated for compareCondition in 0.04s]]>
+</message>
+<message type="Info" time="Fri, 21 Jan 2011 18:14:20 GMT">
+<![CDATA[Generating fileExistsCondition.wiki for ThoughtWorks.CruiseControl.Core.Tasks.Conditions.FileExistsTaskCondition]]>
+</message>
+<message type="Debug" time="Fri, 21 Jan 2011 18:14:20 GMT">
+<![CDATA[Documentation generated for fileExistsCondition in 0.02s]]>
+</message>
+<message type="Info" time="Fri, 21 Jan 2011 18:14:20 GMT">
+<![CDATA[Generating folderExistsCondition.wiki for ThoughtWorks.CruiseControl.Core.Tasks.Conditions.FolderExistsTaskCondition]]>
+</message>
+<message type="Debug" time="Fri, 21 Jan 2011 18:14:20 GMT">
+<![CDATA[Documentation generated for folderExistsCondition in 0.03s]]>
+</message>
+<message type="Info" time="Fri, 21 Jan 2011 18:14:20 GMT">
+<![CDATA[Generating lastStatusCondition.wiki for ThoughtWorks.CruiseControl.Core.Tasks.Conditions.LastBuildStatusTaskCondition]]>
+</message>
+<message type="Debug" time="Fri, 21 Jan 2011 18:14:20 GMT">
+<![CDATA[Documentation generated for lastStatusCondition in 0.02s]]>
+</message>
+<message type="Info" time="Fri, 21 Jan 2011 18:14:20 GMT">
+<![CDATA[Generating lastBuildTimeCondition.wiki for ThoughtWorks.CruiseControl.Core.Tasks.Conditions.LastBuildTimeTaskCondition]]>
+</message>
+<message type="Debug" time="Fri, 21 Jan 2011 18:14:20 GMT">
+<![CDATA[Documentation generated for lastBuildTimeCondition in 0.02s]]>
+</message>
+<message type="Info" time="Fri, 21 Jan 2011 18:14:20 GMT">
+<![CDATA[Generating orCondition.wiki for ThoughtWorks.CruiseControl.Core.Tasks.Conditions.OrTaskCondition]]>
+</message>
+<message type="Debug" time="Fri, 21 Jan 2011 18:14:20 GMT">
+<![CDATA[Documentation generated for orCondition in 0.02s]]>
+</message>
+<message type="Info" time="Fri, 21 Jan 2011 18:14:20 GMT">
+<![CDATA[Generating statusCondition.wiki for ThoughtWorks.CruiseControl.Core.Tasks.Conditions.StatusTaskCondition]]>
+</message>
+<message type="Debug" time="Fri, 21 Jan 2011 18:14:20 GMT">
+<![CDATA[Documentation generated for statusCondition in 0.02s]]>
+</message>
+<message type="Info" time="Fri, 21 Jan 2011 18:14:20 GMT">
+<![CDATA[Generating urlHeaderValueCondition.wiki for ThoughtWorks.CruiseControl.Core.Tasks.Conditions.UrlHeaderValueTaskCondition]]>
+</message>
+<message type="Debug" time="Fri, 21 Jan 2011 18:14:20 GMT">
+<![CDATA[Documentation generated for urlHeaderValueCondition in 0.03s]]>
+</message>
+<message type="Info" time="Fri, 21 Jan 2011 18:14:20 GMT">
+<![CDATA[Generating urlPingCondition.wiki for ThoughtWorks.CruiseControl.Core.Tasks.Conditions.UrlPingsTaskCondition]]>
+</message>
+<message type="Debug" time="Fri, 21 Jan 2011 18:14:20 GMT">
+<![CDATA[Documentation generated for urlPingCondition in 0.02s]]>
+</message>
+<message type="Info" time="Fri, 21 Jan 2011 18:14:20 GMT">
+<![CDATA[Generating coverageFilter.wiki for ThoughtWorks.CruiseControl.Core.Tasks.CoverageFilter]]>
+</message>
+<message type="Debug" time="Fri, 21 Jan 2011 18:14:20 GMT">
+<![CDATA[Documentation generated for coverageFilter in 0.03s]]>
+</message>
+<message type="Info" time="Fri, 21 Jan 2011 18:14:20 GMT">
+<![CDATA[Generating coverageThreshold.wiki for ThoughtWorks.CruiseControl.Core.Tasks.CoverageThreshold]]>
+</message>
+<message type="Debug" time="Fri, 21 Jan 2011 18:14:20 GMT">
+<![CDATA[Documentation generated for coverageThreshold in 0.03s]]>
+</message>
+<message type="Info" time="Fri, 21 Jan 2011 18:14:20 GMT">
+<![CDATA[Generating cruiseServerControl.wiki for ThoughtWorks.CruiseControl.Core.Tasks.CruiseServerControlTask]]>
+</message>
+<message type="Debug" time="Fri, 21 Jan 2011 18:14:20 GMT">
+<![CDATA[Documentation generated for cruiseServerControl in 0.05s]]>
+</message>
+<message type="Info" time="Fri, 21 Jan 2011 18:14:20 GMT">
+<![CDATA[Generating controlAction.wiki for ThoughtWorks.CruiseControl.Core.Tasks.CruiseServerControlTaskAction]]>
+</message>
+<message type="Debug" time="Fri, 21 Jan 2011 18:14:20 GMT">
+<![CDATA[Documentation generated for controlAction in 0.02s]]>
+</message>
+<message type="Info" time="Fri, 21 Jan 2011 18:14:20 GMT">
+<![CDATA[Generating directValue.wiki for ThoughtWorks.CruiseControl.Core.Tasks.DirectDynamicValue]]>
+</message>
+<message type="Debug" time="Fri, 21 Jan 2011 18:14:20 GMT">
+<![CDATA[Documentation generated for directValue in 0.03s]]>
+</message>
+<message type="Info" time="Fri, 21 Jan 2011 18:14:20 GMT">
+<![CDATA[Generating dupfinder.wiki for ThoughtWorks.CruiseControl.Core.Tasks.DupFinderTask]]>
+</message>
+<message type="Debug" time="Fri, 21 Jan 2011 18:14:20 GMT">
+<![CDATA[Documentation generated for dupfinder in 0.11s]]>
+</message>
+<message type="Info" time="Fri, 21 Jan 2011 18:14:20 GMT">
+<![CDATA[Generating fake.wiki for ThoughtWorks.CruiseControl.Core.Tasks.FakeTask]]>
+</message>
+<message type="Debug" time="Fri, 21 Jan 2011 18:14:20 GMT">
+<![CDATA[Documentation generated for fake in 0.06s]]>
+</message>
+<message type="Info" time="Fri, 21 Jan 2011 18:14:20 GMT">
+<![CDATA[Generating FBVariable.wiki for ThoughtWorks.CruiseControl.Core.Tasks.FBVariable]]>
+</message>
+<message type="Debug" time="Fri, 21 Jan 2011 18:14:20 GMT">
+<![CDATA[Documentation generated for FBVariable in 0.02s]]>
+</message>
+<message type="Info" time="Fri, 21 Jan 2011 18:14:20 GMT">
+<![CDATA[Generating ftp.wiki for ThoughtWorks.CruiseControl.Core.Tasks.FtpTask]]>
+</message>
+<message type="Debug" time="Fri, 21 Jan 2011 18:14:20 GMT">
+<![CDATA[Documentation generated for ftp in 0.10s]]>
+</message>
+<message type="Info" time="Fri, 21 Jan 2011 18:14:20 GMT">
+<![CDATA[Generating header.wiki for ThoughtWorks.CruiseControl.Core.Tasks.HttpRequestHeader]]>
+</message>
+<message type="Debug" time="Fri, 21 Jan 2011 18:14:20 GMT">
+<![CDATA[Documentation generated for header in 0.02s]]>
+</message>
+<message type="Info" time="Fri, 21 Jan 2011 18:14:20 GMT">
+<![CDATA[Generating httpRequest.wiki for ThoughtWorks.CruiseControl.Core.Tasks.HttpRequestSettings]]>
+</message>
+<message type="Debug" time="Fri, 21 Jan 2011 18:14:20 GMT">
+<![CDATA[Documentation generated for httpRequest in 0.07s]]>
+</message>
+<message type="Info" time="Fri, 21 Jan 2011 18:14:20 GMT">
+<![CDATA[Generating checkHttpStatus.wiki for ThoughtWorks.CruiseControl.Core.Tasks.HttpStatusTask]]>
+</message>
+<message type="Debug" time="Fri, 21 Jan 2011 18:14:21 GMT">
+<![CDATA[Documentation generated for checkHttpStatus in 0.07s]]>
+</message>
+<message type="Info" time="Fri, 21 Jan 2011 18:14:21 GMT">
+<![CDATA[Generating fileToMerge.wiki for ThoughtWorks.CruiseControl.Core.Tasks.MergeFileInfo]]>
+</message>
+<message type="Debug" time="Fri, 21 Jan 2011 18:14:21 GMT">
+<![CDATA[Documentation generated for fileToMerge in 0.02s]]>
+</message>
+<message type="Info" time="Fri, 21 Jan 2011 18:14:21 GMT">
+<![CDATA[Generating ncoverReport.wiki for ThoughtWorks.CruiseControl.Core.Tasks.NCoverReportTask]]>
+</message>
+<message type="Debug" time="Fri, 21 Jan 2011 18:14:21 GMT">
+<![CDATA[Documentation generated for ncoverReport in 0.17s]]>
+</message>
+<message type="Info" time="Fri, 21 Jan 2011 18:14:21 GMT">
+<![CDATA[Generating ncoverProfile.wiki for ThoughtWorks.CruiseControl.Core.Tasks.NCoverProfileTask]]>
+</message>
+<message type="Debug" time="Fri, 21 Jan 2011 18:14:21 GMT">
+<![CDATA[Documentation generated for ncoverProfile in 0.26s]]>
+</message>
+<message type="Info" time="Fri, 21 Jan 2011 18:14:21 GMT">
+<![CDATA[Generating devenv.wiki for ThoughtWorks.CruiseControl.Core.Tasks.DevenvTask]]>
+</message>
+<message type="Debug" time="Fri, 21 Jan 2011 18:14:21 GMT">
+<![CDATA[Documentation generated for devenv in 0.09s]]>
+</message>
+<message type="Info" time="Fri, 21 Jan 2011 18:14:21 GMT">
+<![CDATA[Generating exec.wiki for ThoughtWorks.CruiseControl.Core.Tasks.ExecutableTask]]>
+</message>
+<message type="Debug" time="Fri, 21 Jan 2011 18:14:21 GMT">
+<![CDATA[Documentation generated for exec in 0.08s]]>
+</message>
+<message type="Info" time="Fri, 21 Jan 2011 18:14:21 GMT">
+<![CDATA[Generating FinalBuilder.wiki for ThoughtWorks.CruiseControl.Core.Tasks.FinalBuilderTask]]>
+</message>
+<message type="Debug" time="Fri, 21 Jan 2011 18:14:21 GMT">
+<![CDATA[Documentation generated for FinalBuilder in 0.08s]]>
+</message>
+<message type="Info" time="Fri, 21 Jan 2011 18:14:21 GMT">
+<![CDATA[Generating gendarme.wiki for ThoughtWorks.CruiseControl.Core.Tasks.GendarmeTask]]>
+</message>
+<message type="Debug" time="Fri, 21 Jan 2011 18:14:21 GMT">
+<![CDATA[Documentation generated for gendarme in 0.13s]]>
+</message>
+<message type="Info" time="Fri, 21 Jan 2011 18:14:21 GMT">
+<![CDATA[Generating merge.wiki for ThoughtWorks.CruiseControl.Core.Tasks.MergeFilesTask]]>
+</message>
+<message type="Debug" time="Fri, 21 Jan 2011 18:14:21 GMT">
+<![CDATA[Documentation generated for merge in 0.06s]]>
+</message>
+<message type="Info" time="Fri, 21 Jan 2011 18:14:21 GMT">
+<![CDATA[Generating modificationReader.wiki for ThoughtWorks.CruiseControl.Core.Tasks.ModificationReaderTask]]>
+</message>
+<message type="Debug" time="Fri, 21 Jan 2011 18:14:21 GMT">
+<![CDATA[Documentation generated for modificationReader in 0.05s]]>
+</message>
+<message type="Info" time="Fri, 21 Jan 2011 18:14:21 GMT">
+<![CDATA[Generating modificationWriter.wiki for ThoughtWorks.CruiseControl.Core.Tasks.ModificationWriterTask]]>
+</message>
+<message type="Debug" time="Fri, 21 Jan 2011 18:14:22 GMT">
+<![CDATA[Documentation generated for modificationWriter in 0.05s]]>
+</message>
+<message type="Info" time="Fri, 21 Jan 2011 18:14:22 GMT">
+<![CDATA[Generating msbuild.wiki for ThoughtWorks.CruiseControl.Core.Tasks.MsBuildTask]]>
+</message>
+<message type="Debug" time="Fri, 21 Jan 2011 18:14:22 GMT">
+<![CDATA[Documentation generated for msbuild in 0.09s]]>
+</message>
+<message type="Info" time="Fri, 21 Jan 2011 18:14:22 GMT">
+<![CDATA[Generating nant.wiki for ThoughtWorks.CruiseControl.Core.Tasks.NAntTask]]>
+</message>
+<message type="Debug" time="Fri, 21 Jan 2011 18:14:22 GMT">
+<![CDATA[Documentation generated for nant in 0.11s]]>
+</message>
+<message type="Info" time="Fri, 21 Jan 2011 18:14:22 GMT">
+<![CDATA[Generating ndepend.wiki for ThoughtWorks.CruiseControl.Core.Tasks.NDependTask]]>
+</message>
+<message type="Debug" time="Fri, 21 Jan 2011 18:14:22 GMT">
+<![CDATA[Documentation generated for ndepend in 0.12s]]>
+</message>
+<message type="Info" time="Fri, 21 Jan 2011 18:14:22 GMT">
+<![CDATA[Generating updateConfig.wiki for ThoughtWorks.CruiseControl.Core.Tasks.UpdateConfigurationTask]]>
+</message>
+<message type="Debug" time="Fri, 21 Jan 2011 18:14:22 GMT">
+<![CDATA[Documentation generated for updateConfig in 0.07s]]>
+</message>
+<message type="Info" time="Fri, 21 Jan 2011 18:14:22 GMT">
+<![CDATA[Generating cronTrigger.wiki for ThoughtWorks.CruiseControl.Core.Triggers.CronTrigger]]>
+</message>
+<message type="Debug" time="Fri, 21 Jan 2011 18:14:22 GMT">
+<![CDATA[Documentation generated for cronTrigger in 0.03s]]>
+</message>
+<message type="Info" time="Fri, 21 Jan 2011 18:14:22 GMT">
+<![CDATA[Generating rollUpTrigger.wiki for ThoughtWorks.CruiseControl.Core.Triggers.RollUpTrigger]]>
+</message>
+<message type="Debug" time="Fri, 21 Jan 2011 18:14:22 GMT">
+<![CDATA[Documentation generated for rollUpTrigger in 0.03s]]>
+</message>
+<message type="Info" time="Fri, 21 Jan 2011 18:14:22 GMT">
+<![CDATA[Generating nullTask.wiki for ThoughtWorks.CruiseControl.Core.Tasks.NullTask]]>
+</message>
+<message type="Debug" time="Fri, 21 Jan 2011 18:14:22 GMT">
+<![CDATA[Documentation generated for nullTask in 0.05s]]>
+</message>
+<message type="Info" time="Fri, 21 Jan 2011 18:14:22 GMT">
+<![CDATA[Generating nunit.wiki for ThoughtWorks.CruiseControl.Core.Tasks.NUnitTask]]>
+</message>
+<message type="Debug" time="Fri, 21 Jan 2011 18:14:22 GMT">
+<![CDATA[Documentation generated for nunit in 0.08s]]>
+</message>
+<message type="Info" time="Fri, 21 Jan 2011 18:14:22 GMT">
+<![CDATA[Generating parallel.wiki for ThoughtWorks.CruiseControl.Core.Tasks.ParallelTask]]>
+</message>
+<message type="Debug" time="Fri, 21 Jan 2011 18:14:22 GMT">
+<![CDATA[Documentation generated for parallel in 0.04s]]>
+</message>
+<message type="Info" time="Fri, 21 Jan 2011 18:14:22 GMT">
+<![CDATA[Generating powershell.wiki for ThoughtWorks.CruiseControl.Core.Tasks.PowerShellTask]]>
+</message>
+<message type="Debug" time="Fri, 21 Jan 2011 18:14:22 GMT">
+<![CDATA[Documentation generated for powershell in 0.07s]]>
+</message>
+<message type="Info" time="Fri, 21 Jan 2011 18:14:22 GMT">
+<![CDATA[Generating rake.wiki for ThoughtWorks.CruiseControl.Core.Tasks.RakeTask]]>
+</message>
+<message type="Debug" time="Fri, 21 Jan 2011 18:14:22 GMT">
+<![CDATA[Documentation generated for rake in 0.10s]]>
+</message>
+<message type="Info" time="Fri, 21 Jan 2011 18:14:22 GMT">
+<![CDATA[Generating replacementValue.wiki for ThoughtWorks.CruiseControl.Core.Tasks.ReplacementDynamicValue]]>
+</message>
+<message type="Debug" time="Fri, 21 Jan 2011 18:14:22 GMT">
+<![CDATA[Documentation generated for replacementValue in 0.03s]]>
+</message>
+<message type="Info" time="Fri, 21 Jan 2011 18:14:22 GMT">
+<![CDATA[Generating sequential.wiki for ThoughtWorks.CruiseControl.Core.Tasks.SequentialTask]]>
+</message>
+<message type="Debug" time="Fri, 21 Jan 2011 18:14:22 GMT">
+<![CDATA[Documentation generated for sequential in 0.05s]]>
+</message>
+<message type="Info" time="Fri, 21 Jan 2011 18:14:22 GMT">
+<![CDATA[Generating synchronised.wiki for ThoughtWorks.CruiseControl.Core.Tasks.SynchronisationTask]]>
+</message>
+<message type="Debug" time="Fri, 21 Jan 2011 18:14:22 GMT">
+<![CDATA[Documentation generated for synchronised in 0.06s]]>
+</message>
+<message type="Info" time="Fri, 21 Jan 2011 18:14:22 GMT">
+<![CDATA[Generating filterTrigger.wiki for ThoughtWorks.CruiseControl.Core.Triggers.FilterTrigger]]>
+</message>
+<message type="Debug" time="Fri, 21 Jan 2011 18:14:22 GMT">
+<![CDATA[Documentation generated for filterTrigger in 0.03s]]>
+</message>
+<message type="Info" time="Fri, 21 Jan 2011 18:14:22 GMT">
+<![CDATA[Generating intervalTrigger.wiki for ThoughtWorks.CruiseControl.Core.Triggers.IntervalTrigger]]>
+</message>
+<message type="Debug" time="Fri, 21 Jan 2011 18:14:23 GMT">
+<![CDATA[Documentation generated for intervalTrigger in 0.03s]]>
+</message>
+<message type="Info" time="Fri, 21 Jan 2011 18:14:23 GMT">
+<![CDATA[Generating multiTrigger.wiki for ThoughtWorks.CruiseControl.Core.Triggers.MultipleTrigger]]>
+</message>
+<message type="Debug" time="Fri, 21 Jan 2011 18:14:23 GMT">
+<![CDATA[Documentation generated for multiTrigger in 0.02s]]>
+</message>
+<message type="Info" time="Fri, 21 Jan 2011 18:14:23 GMT">
+<![CDATA[Generating parameterTrigger.wiki for ThoughtWorks.CruiseControl.Core.Triggers.ParameterTrigger]]>
+</message>
+<message type="Debug" time="Fri, 21 Jan 2011 18:14:23 GMT">
+<![CDATA[Documentation generated for parameterTrigger in 0.02s]]>
+</message>
+<message type="Info" time="Fri, 21 Jan 2011 18:14:23 GMT">
+<![CDATA[Generating projectTrigger.wiki for ThoughtWorks.CruiseControl.Core.Triggers.ProjectTrigger]]>
+</message>
+<message type="Debug" time="Fri, 21 Jan 2011 18:14:23 GMT">
+<![CDATA[Documentation generated for projectTrigger in 0.05s]]>
+</message>
+<message type="Info" time="Fri, 21 Jan 2011 18:14:23 GMT">
+<![CDATA[Generating scheduleTrigger.wiki for ThoughtWorks.CruiseControl.Core.Triggers.ScheduleTrigger]]>
+</message>
+<message type="Debug" time="Fri, 21 Jan 2011 18:14:23 GMT">
+<![CDATA[Documentation generated for scheduleTrigger in 0.03s]]>
+</message>
+<message type="Info" time="Fri, 21 Jan 2011 18:14:23 GMT">
+<![CDATA[Generating urlTrigger.wiki for ThoughtWorks.CruiseControl.Core.Triggers.UrlTrigger]]>
+</message>
+<message type="Debug" time="Fri, 21 Jan 2011 18:14:23 GMT">
+<![CDATA[Documentation generated for urlTrigger in 0.04s]]>
+</message>
+<message type="Info" time="Fri, 21 Jan 2011 18:14:23 GMT">
+<![CDATA[Generating assemblyMatch.wiki for ThoughtWorks.CruiseControl.Core.Util.AssemblyMatch]]>
+</message>
+<message type="Debug" time="Fri, 21 Jan 2011 18:14:23 GMT">
+<![CDATA[Documentation generated for assemblyMatch in 0.01s]]>
+</message>
+<message type="Info" time="Fri, 21 Jan 2011 18:14:23 GMT">
+<![CDATA[Generating variable.wiki for ThoughtWorks.CruiseControl.Core.Util.EnvironmentVariable]]>
+</message>
+<message type="Debug" time="Fri, 21 Jan 2011 18:14:23 GMT">
+<![CDATA[Documentation generated for variable in 0.02s]]>
+</message>
+<message type="Info" time="Fri, 21 Jan 2011 18:14:23 GMT">
+<![CDATA[Documentation generation finished in 9.20s]]>
+</message>
+<message type="Warning" time="Fri, 21 Jan 2011 18:14:23 GMT">
+<![CDATA[Problems encountered : 12]]>
+</message>
+<message type="Warning" time="Fri, 21 Jan 2011 18:14:23 GMT">
+<![CDATA[No example tag for ThoughtWorks.CruiseControl.Core.Publishers.PackageFile file e:\sourcecontrols\sourceforge\ccnet\wiki\packageFile.wiki]]>
+</message>
+<message type="Warning" time="Fri, 21 Jan 2011 18:14:23 GMT">
+<![CDATA[No example tag for ThoughtWorks.CruiseControl.Core.Publishers.PackageFolder file e:\sourcecontrols\sourceforge\ccnet\wiki\packageFolder.wiki]]>
+</message>
+<message type="Warning" time="Fri, 21 Jan 2011 18:14:23 GMT">
+<![CDATA[No example tag for ThoughtWorks.CruiseControl.Core.Publishers.Statistics.FirstMatch file e:\sourcecontrols\sourceforge\ccnet\wiki\firstMatch.wiki]]>
+</message>
+<message type="Warning" time="Fri, 21 Jan 2011 18:14:23 GMT">
+<![CDATA[No example tag for ThoughtWorks.CruiseControl.Core.Publishers.Statistics.Statistic file e:\sourcecontrols\sourceforge\ccnet\wiki\statistic.wiki]]>
+</message>
+<message type="Warning" time="Fri, 21 Jan 2011 18:14:23 GMT">
+<![CDATA[No example tag for ThoughtWorks.CruiseControl.Core.Security.ImpersonationDetails file e:\sourcecontrols\sourceforge\ccnet\wiki\impersonation.wiki]]>
+</message>
+<message type="Warning" time="Fri, 21 Jan 2011 18:14:23 GMT">
+<![CDATA[No example tag for ThoughtWorks.CruiseControl.Core.Security.Permissions file e:\sourcecontrols\sourceforge\ccnet\wiki\permissions.wiki]]>
+</message>
+<message type="Warning" time="Fri, 21 Jan 2011 18:14:23 GMT">
+<![CDATA[No example tag for ThoughtWorks.CruiseControl.Core.Security.ProjectSecurityConfigurationInformation file e:\sourcecontrols\sourceforge\ccnet\wiki\projectSecurity.wiki]]>
+</message>
+<message type="Warning" time="Fri, 21 Jan 2011 18:14:23 GMT">
+<![CDATA[No example tag for ThoughtWorks.CruiseControl.Core.Security.SecureMessagesChannel file e:\sourcecontrols\sourceforge\ccnet\wiki\encryptedChannel.wiki]]>
+</message>
+<message type="Warning" time="Fri, 21 Jan 2011 18:14:23 GMT">
+<![CDATA[No example tag for ThoughtWorks.CruiseControl.Core.Storage.XmlFolderDataStore file e:\sourcecontrols\sourceforge\ccnet\wiki\xmlFolderData.wiki]]>
+</message>
+<message type="Warning" time="Fri, 21 Jan 2011 18:14:23 GMT">
+<![CDATA[No example tag for ThoughtWorks.CruiseControl.Core.Sourcecontrol.UserFilter file e:\sourcecontrols\sourceforge\ccnet\wiki\userFilter.wiki]]>
+</message>
+<message type="Warning" time="Fri, 21 Jan 2011 18:14:23 GMT">
+<![CDATA[No example tag for ThoughtWorks.CruiseControl.Core.Tasks.CoverageFilter file e:\sourcecontrols\sourceforge\ccnet\wiki\coverageFilter.wiki]]>
+</message>
+<message type="Warning" time="Fri, 21 Jan 2011 18:14:23 GMT">
+<![CDATA[No example tag for ThoughtWorks.CruiseControl.Core.Tasks.CoverageThreshold file e:\sourcecontrols\sourceforge\ccnet\wiki\coverageThreshold.wiki]]>
+</message>
+</docGen>

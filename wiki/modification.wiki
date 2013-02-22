@@ -1,0 +1,19 @@
+h1. modification
+
+
+
+h2. Configuration Elements
+
+|| Element || Description || Type || Required || Default || Version ||
+| rev | Gets or sets the change number.   | Int32 | Yes |  |  |
+| desc | Gets or sets the comment.   | String | Yes |  |  |
+| email | Gets or sets the email address.   | String | Yes |  |  |
+| files | Gets or sets the name of the file.   | String | Yes |  |  |
+| date | Gets or sets the modification time.   | String | Yes |  |  |
+| author | Gets or sets the name of the user.   | String | Yes |  |  |
+| node | Gets or sets the version.   | String | Yes |  |  |
+
+{info:title=Automatically Generated}
+Documentation generated on Wednesday, 19 Jan 2011 at 7:53:15 AM
+Using assembly version 1.6.7961.1
+{info}

@@ -1,0 +1,118 @@
+h1. Email Publisher
+
+Publishes results of integrations via email.  This implementation supports plain\-text, and Html email formats. Rules regarding who receives email are configurable.  
+The email publisher can be used to send email to any number of users. It is common to include one user who gets an email for every build and then also send email to every developer who checked code in for this build.  
+{tip}
+People tend to prefer to use [CCTray] rather than email for instant notification these days.  
+{tip}
+{warning}
+Make sure that all of the Merge Publishers, along with the [Xml Log Publisher] task are done before the <email> publisher, or else you won't be able to include output from the build in the email. A common mistake is to put the email task in the <tasks> section instead of the <publishers> section. If an error occurs in the <tasks> section, the remaining tasks in that section are skipped, and CC.Net goes right to the <publishers> section. So if you put the <email> tasks in the <tasks> section, you'll never get any failure messages.  
+{warning}
+
+
+h2. Version
+
+Available from version 1.0
+
+h2. Examples
+
+{code:xml|borderStyle=solid}
+<email mailport="25" includeDetails="TRUE" mailhostUsername="smtpuser" mailhostPassword="smtppassword" useSSL="FALSE">
+  <from>buildmaster@mycompany.com</from>
+  <mailhost>smtp.mycompany.com</mailhost>
+  <users>
+    <user name="BuildGuru" group="buildmaster" address="buildguru@mycompany.com" />
+    <user name="JoeDeveloper" group="developers" address="joedeveloper@thoughtworks.com" />
+  </users>
+  <groups>
+    <group name="developers">
+      <notifications>
+        <notificationType>Failed</notificationType>
+        <notificationType>Fixed</notificationType>
+      </notifications>
+    </group>
+    <group name="buildmaster">
+      <notifications>
+        <notificationType>Always</notificationType>
+      </notifications>
+    </group>
+  </groups>
+  <converters>
+    <regexConverter find="$" replace="@TheCompany.com" />
+  </converters>
+  <modifierNotificationTypes>
+    <NotificationType>Failed</NotificationType>
+    <NotificationType>Fixed</NotificationType>
+  </modifierNotificationTypes>
+  <subjectSettings>
+    <subject buildResult="StillBroken" value="Build is still broken for {CCNetProject}" />
+  </subjectSettings>
+  <xslFiles>
+    <file>xsl\header.xsl</file>
+    <file>xsl\compile.xsl</file>
+    <file>xsl\unittests.xsl</file>
+    <file>xsl\modifications.xsl</file>
+  </xslFiles>
+  <attachments>
+    <file>C:\Data\AFile.txt</file>
+    <file>Relative.txt</file>
+  </attachments>
+</email>
+{code}
+
+
+h2. Configuration Elements
+
+|| Element || Description || Type || Required || Default || Version ||
+| attachments | A list of files to attach to the e\-mail. If the full path is not specified, then it will be relative to the project working directory.   | String array | No | _None_ | 1.5 |
+| converters | A set of elements containing rules for creating email adresses based on the modifiers name. The converters will be used when the name of the modifier is not set in the users section.   | [Email Converter] array | No | _None_ | 1.0 |
+| description | Description used for the visualisation of the buildstage, if left empty the process name will be shown.   | String | No | The task/publisher name. | 1.5 |
+| dynamicValues | The dynamic values to use for the task.   | [Dynamic Values] array | No | _None_ | 1.5 |
+| groups | A set of <group> elements that identify which the notification policy for a set of users.   | [Email Group] array | Yes | _n/a_ | 1.3 |
+| users | A set of <user> elements that define who to send emails to.   | [Email User] array | Yes | _n/a_ | 1.0 |
+| environment |   A set of environment variables set for commands that are executed.  \\  Each variable should be specified as {code:xml|borderStyle=solid}
+<variable name="name" value="value" />
+{code}
+.   | [Environment Variable] array | No |  |  |
+| from | The e\-mail address that email will be marked as coming from.   | String | Yes | _n/a_ | 1.0 |
+| includeDetails | Whether to send a full report or not. If not, just sends a simple status message with a link to the build report.   | Boolean | No | false | 1.0 |
+| mailhost | The SMTP server that CruiseControl.NET will connect to to send email.   | String | Yes | _n/a_ | 1.0 |
+| mailhostPassword | The password to provide to the SMTP server.   | PrivateString | No | _None_ | 1.2 |
+| mailhostUsername | The user name to provide to the SMTP server.   | String | No | _None_ | 1.2 |
+| mailport | The SMTP server port number.   | Int32 | No | 25 | 1.0 |
+| modifierNotificationTypes | A set of <NotificationType> elements, specifying build states for which CruiseControl.Net should send an email to the comitters of the build.   | String array\\The following values are valid:
+* Always
+* Change
+* Failed
+* Success
+* Fixed
+* Exception | No | Always | 1.0 |
+| replyto | The e\-mail address to use for replies.   | String | No | _None_ | 1.0 |
+| subjectPrefix | A string that will be the first string of the subject.   | String | No | _None_ | 1.0 |
+| subjectSettings | A set of <subject> elements that define the subject of the email, according to the state of the build (broken, fixed, ...)   | [Email Subject] array | No | _None_ | 1.0 |
+| useSSL | Whether to use SSL or not for sending the e\-mail.   | Boolean | No | false | 1.0 |
+| xslFiles | A list of xsl files that will be used to fill up the message body, if left blank the list will be taken from ccnet.exe.config or ccservice.exe.config.   | String array | No | _None_ | 1.5 |
+
+h2. Notes
+
+h4. HTML E\-mails
+When includedDetails = True, the message body will contain more information. This detailed information is constructed from xsl transformations on the build log. If the xslFiles section is filled these files will be used, if not defined the xls files are defined in the ccnet.exe.config in the xslFiles section. (see also: [Server Application Config File]). When adjusting one of these, restart the console/service.  
+The benefits of defining the xsl files in the email publisher:  
+* the xsl files are automatically the same for the console as for the service (no more keeping these 2 in sync)  
+* it is possible to give projects different xsl transformations  
+{warning}
+The groups node may be empty, but the group section must exist.  
+{warning}
+h4. GMail
+For sending mail via gmail :  
+* mailhost="smtp.gmail.com"
+* mailport="587"
+* mailhostUsername="xxx.yyy@gmail.com"
+* mailhostPassword="yourpassword"
+* useSSL="TRUE"
+
+
+{info:title=Automatically Generated}
+Documentation generated on Saturday, 22 Jan 2011 at 12:14:15 AM
+Using assembly version 1.6.7979.1
+{info}

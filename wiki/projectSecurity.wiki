@@ -1,0 +1,14 @@
+h1. projectSecurity
+
+Pass the security information to a client.  
+
+h2. Configuration Elements
+
+|| Element || Description || Type || Required || Default || Version ||
+| name | Gets or sets the name.   | String | Yes |  |  |
+| authorisation | Gets or sets the security.   | [Project Level Security] | Yes |  |  |
+
+{info:title=Automatically Generated}
+Documentation generated on Saturday, 22 Jan 2011 at 12:14:16 AM
+Using assembly version 1.6.7979.1
+{info}

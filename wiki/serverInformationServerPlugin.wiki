@@ -1,0 +1,27 @@
+h1. Server Information Server Plugin
+
+The Server Information Server Plugin gives you information about a build server, for example the version of CruiseControl.NET the build server is running.  
+
+h2. Version
+
+Available from version 1.4.4
+
+h2. Examples
+
+{code:xml|borderStyle=solid|titleBGColor=#ADD6FF|title=Minimalist example}
+<serverInformationServerPlugin />
+{code}
+{code:xml|borderStyle=solid|titleBGColor=#ADD6FF|title=Full example}
+<serverInformationServerPlugin minFreeSpace="524288" />
+{code}
+
+
+h2. Configuration Elements
+
+|| Element || Description || Type || Required || Default || Version ||
+| minFreeSpace | The minimum required amount of free disk space in bytes. If the free disk space is less than this a warning will be displayed.   | Int64 | No | 1048576 | 1.4.4 |
+
+{info:title=Automatically Generated}
+Documentation generated on Saturday, 22 Jan 2011 at 12:14:25 AM
+Using assembly version 1.6.7979.1
+{info}

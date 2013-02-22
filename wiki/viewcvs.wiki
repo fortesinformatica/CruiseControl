@@ -1,0 +1,26 @@
+h1. ViewCVS URL Builder
+
+Generates a URL for ViewCVS.  
+
+h2. Version
+
+Available from version 1.0
+
+h2. Examples
+
+{code:xml|borderStyle=solid}
+<issueUrlBuilder type="defaultIssueTracker">
+  <url>http://jira.public.thoughtworks.org/browse/CCNET-{0}</url>
+</issueUrlBuilder>
+{code}
+
+
+h2. Configuration Elements
+
+|| Element || Description || Type || Required || Default || Version ||
+| url | The base URL.   | String | Yes | _n/a_ | 1.0 |
+
+{info:title=Automatically Generated}
+Documentation generated on Saturday, 22 Jan 2011 at 12:14:19 AM
+Using assembly version 1.6.7979.1
+{info}

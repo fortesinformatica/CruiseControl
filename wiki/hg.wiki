@@ -1,0 +1,66 @@
+h1.  Mercurial Source Control Block 
+
+Provides support for Mercurial repositories. Checking for changes, checking out or updating sources, committing build modifications and untracked files, tagging, pushing to the remote repository, reverting modifications and purging untracked and ignored files are supported.  
+
+h2. Version
+
+Available from version 1.5
+
+h2. Examples
+
+{code:xml|borderStyle=solid}
+<sourcecontrol type="hg">
+  <workingDirectory>c:\dev\ccnet\myproject</workingDirectory>
+  <timeout>60000</timeout>
+  <repo>http://hg.mycompany.com/hgwebdir.cgi/myproject/</repo>
+  <branch>trunk</branch>
+  <multipleHeadsFail>true</multipleHeadsFail>
+  <tagOnSuccess>true</tagOnSuccess>
+  <commitModifications>true</commitModifications>
+  <commitUntracked>true</commitUntracked>
+  <purgeModifications>true</purgeModifications>
+  <revertModifications>true</revertModifications>
+  <tagCommitMessage>Tagging CC.NET build {0}</tagCommitMessage>
+  <modificationsCommitMessage>Modifications of CC.NET build {0}</modificationsCommitMessage>
+  <tagNameFormat>ccnet_build_{0}</tagNameFormat>
+  <committerName>CruiseControl.NET</committerName>
+</sourcecontrol>
+{code}
+
+
+h2. Configuration Elements
+
+|| Element || Description || Type || Required || Default || Version ||
+| type | The type of source control block. | String - must be hg | Yes | _n/a_ | 1.5 |
+| autoGetSource | Whether to update the local working copy from the local repository for a particular build.   | Boolean | No | true | 1.5 |
+| branch | Repository branch.   | String | No | _None_ | 1.5 |
+| commitModifications | Whether to commit build modifications.   | Boolean | No | false | 1.6 |
+| committerName | User name used for commits.   | String | No | CruiseControl.NET | 1.6 |
+| commitUntracked | Whether to commit untracked and removed files along with build modifications.   | Boolean | No | false | 1.6 |
+| dynamicValues | The dynamic values to use for the source control block.   | [Dynamic Values] array | No | _None_ | 1.5 |
+| executable | The location of the hg executable.   | String | No | hg | 1.5 |
+| issueUrlBuilder | Converts the comment (or parts from it) into an url pointing to the issue for this build. See [IssueUrlBuilder] for more details.   | [IssueUrlBuilder] | No | _None_ | 1.5 |
+| modificationsCommitMessage | Log message used when committing build modifications.   | String | No | Modifications of CC.NET build \{0\} | 1.6 |
+| multipleHeadsFail | Whether the source control operation should fail if multiple heads exist in the repository.   | Boolean | No | false | 1.5 |
+| purgeModifications | Whether to purge untracked and ignored files before building.  \\The hg purge extension is activated and used for this feature. | Boolean | No | false | 1.6 |
+| pushModifications | Whether to push modifications to the remote repository.   | Boolean | No | false | 1.6 |
+| repo | The url for your repository (e.g., http://hgserver/myproject/).  \\This ReflectorProperty should really be named repository but is currently kept as repo for backwards compatibility | String | No | _None_ | 1.5 |
+| revertModifications | Whether to revert modifications in tracked files before building.   | Boolean | No | false | 1.6 |
+| tagCommitMessage | Log message format to be used for the tag commits.   | String | No | Tagging CC.NET build \{0\} | 1.5 |
+| tagNameFormat | String format for tags in your repository.   | String | No | ccnet\_build\_\{0\} | 1.6 |
+| tagOnSuccess | Indicates that the repository should be tagged if the build succeeds.   | Boolean | No | false | 1.5 |
+| timeout | Sets the timeout period for the source control operation. See [Timeout Configuration] for details.   | [Timeout Configuration] | No | 10 minutes | 1.5 |
+| webUrlBuilder | Generates a web URL.   | [IssueUrlBuilder] | No | _None_ | 1.5 |
+| workingDirectory | The directory containing the locally checked out workspace.   | String | No | Project Working Directory | 1.5 |
+
+h2. Notes
+
+You need to make sure your hg client settings are such that all authentication is automated. Typically you can do this by using anonymous access or appropriate SSH setups if using hg over SSH.  
+You can link the modifications detected by CruiseControl.NET to the appropriate hgweb page by adding the following additional configuration information to the Mercurial source control section by using the [Mercurial Issue Tracker URL Builder].  
+External contributors: Bill Barry (initial version), Aaron Jensen (new history parser)  
+
+
+{info:title=Automatically Generated}
+Documentation generated on Saturday, 22 Jan 2011 at 12:14:18 AM
+Using assembly version 1.6.7979.1
+{info}

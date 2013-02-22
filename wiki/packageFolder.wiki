@@ -1,0 +1,26 @@
+h1. packageFolder
+
+
+
+h2. Configuration Elements
+
+|| Element || Description || Type || Required || Default || Version ||
+| fileFilter | The filename filter to apply  \\Use this attribute to filter files that will be stored into the package. For example {code:borderStyle=solid}
+*.*
+{code}
+  will select all files (default), {code:borderStyle=solid}
+*.xml
+{code}
+ will only select xml files, {code:borderStyle=solid}
+test*.xml
+{code}
+ will select only files that start with the word test and have an extension of xml.   | String | Yes |  |  |
+| flatten | Flatten the hierachy  \\Use this attribute if you wish to save the files without folder information   | Boolean | No |  |  |
+| includeSubFolders | Recursively save files  \\Use this attribute if you wish to recursively add files to the package   | Boolean | No |  |  |
+| sourceFolder | The name of the folder to store into the package  \\This is the path to the folder that you wish to store in the package   | String | Yes |  |  |
+| targetFolder | The name of the folder in the package that the file will be saved under  \\Use this attribute if you wish to override the location of the files being saved in the package.   | String | No |  |  |
+
+{info:title=Automatically Generated}
+Documentation generated on Saturday, 22 Jan 2011 at 12:14:16 AM
+Using assembly version 1.6.7979.1
+{info}

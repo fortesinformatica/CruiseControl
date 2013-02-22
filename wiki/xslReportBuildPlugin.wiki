@@ -1,0 +1,16 @@
+h1. xslReportBuildPlugin
+
+h2. Configuration Elements
+
+|| Element || Description || Type || Required || Default || Version ||
+| actionName |  | String | Yes |  |  |
+| description |  | String | Yes |  |  |
+| excludedProjects | The projects to exclude from this plug\-in.  \\This is currently not implemented.   | String array | No | _None_ | 1.0 |
+| includedProjects | The projects to include in this plug\-in.  \\This is currently not implemented.   | String array | No | _None_ | 1.0 |
+| parameters | Optional parameters to pass into the XSL\-T.   | List`1 | No |  |  |
+| xslFileName |  | String | Yes |  |  |
+
+{info:title=Automatically Generated}
+Documentation generated on Saturday, 22 Jan 2011 at 12:14:25 AM
+Using assembly version 1.6.7979.1
+{info}

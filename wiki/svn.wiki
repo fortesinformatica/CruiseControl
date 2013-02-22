@@ -1,0 +1,130 @@
+h1. Subversion Source Control Block
+
+CruiseControl.NET provides basic support for Subversion repositories. Checking for changes, checking out or updating sources, and tagging\-by\-copying are supported, but more advanced features such as using Subversion revision numbers are not yet supported. Subversion support is under active development and will improve over time.  
+
+h2. Version
+
+Available from version 1.0
+
+h2. Examples
+
+{code:xml|borderStyle=solid}
+<sourcecontrol type="svn">
+  <trunkUrl>svn://svn.mycompany.com/myfirstproject/trunk</trunkUrl>
+  <workingDirectory>c:\dev\ccnet</workingDirectory>
+</sourcecontrol>
+{code}
+
+
+h2. Configuration Elements
+
+|| Element || Description || Type || Required || Default || Version ||
+| type | The type of source control block. | String - must be svn | Yes | _n/a_ | 1.0 |
+| authCaching | Defines the auth caching mode to use.   | String - one of:
+* None
+* ExternalsOnly
+* Always | No | _None_ | 1.5 |
+| autoGetSource | Whether to retrieve the updates from Subversion for a particular build.   | Boolean | No | true | 1.0 |
+| checkExternals | Whether to check the paths specified in the svn:externals property for modifications.   | Boolean | No | false | 1.0 |
+| checkExternalsRecursive | Whether to check for modifications of svn:externals recursively.   | Boolean | No | true | 1.0 |
+| cleanCopy | Whether to delete the working copy before updating the source.   | Boolean | No | false | 1.0 |
+| cleanUp | Recursively clean up the working copy, removing locks resuming unfinished operations. If you ever get a "working copy locked" error, run this command to remove stale locks and get your working copy into a usable state again.   | Boolean | No | false | 1.4.3 |
+| deleteObstructions | Should any detected obstructions be deleted prior to getting modifications?   | Boolean | No | false | 1.5 |
+| dynamicValues | The dynamic values to use for the source control block.   | [Dynamic Values] array | No | _None_ | 1.5 |
+| executable | The location of the svn executable.   | String | No | svn | 1.0 |
+| forceUpdate | Forces updating, overwriting modified files. See CCNET\-1351. This passes \-\-force to svn.exe.   | Boolean | No | false | 1.5 |
+| issueUrlBuilder | Converts the comment (or parts from it) into an url pointing to the issue for this build. See [IssueUrlBuilder] for more details.   | [IssueUrlBuilder] | No | _None_ | 1.4 |
+| password | The password to use for authentication when connecting to the repository.   | PrivateString | No | _None_ | 1.0 |
+| revert | Reverts any local changes to a file or directory and resolves any conflicted states. svn revert will not only revert the contents of an item in your working copy, but also any property changes. Finally, you can use it to undo any scheduling operations that you may have done (e.g. files scheduled for addition or deletion can be "unscheduled").   | Boolean | No | false | 1.4.3 |
+| tagBaseUrl | The base url for tags in your repository.   | String | No | _None_ | 1.0 |
+| tagOnSuccess | Indicates that the repository should be tagged if the build succeeds.   | Boolean | No | false | 1.0 |
+| tagWorkingCopy | Indicates that the Working Copy should always be used when Cruise Control creates a tag.   | Boolean | No | false | 1.6 |
+| timeout | Sets the timeout period for the source control operation. See [Timeout Configuration] for details.   | [Timeout Configuration] | No | 10 minutes | 1.0 |
+| trunkUrl | The url for your repository (e.g., svn://svnserver/).   | String | No | _None_ | 1.0 |
+| webUrlBuilder | The root url for the WebSVN site.   | [IssueUrlBuilder] | No | _None_ | 1.0 |
+| revisionNumbers | Whether to use revision numbers for fetching the modifications.   | Boolean | No | false | 1.4.4 |
+| username | The username to use for authentication when connecting to the repository.   | String | No | _None_ | 1.0 |
+| workingDirectory | The directory containing the locally checked out workspace.   | String | No | Project Working Directory | 1.0 |
+
+h2. Notes
+
+The <trunkUrl> tag should specify the URL to use to determine if changes have occurred in your repository.  
+You need to make sure your SVN client settings are such that all authentication is automated. Typically you can do this by using anonymous access or appropriate SSH setups if using SVN over SSH.  
+h4. Linking modifications to WebSVN
+You can link the modifications detected by CruiseControl.NET to the appropriate WebSVN page by adding the following additional configuration information to the Subversion source control section:  
+{code:xml|borderStyle=solid}
+<webUrlBuilder type="websvn">
+  <url>http://localhost:7899/websvn/diff.php?repname=MiniACE&amp;path={0}&amp;rev={1}&amp;sc=1</url>
+</webUrlBuilder>
+{code}
+Change the <url> element to point to the root url for the WebSVN site. The path and rev parameters will be filled in by CruiseControl.NET when it generates the link to the code file page.  
+The standard url for WebSVN 1.38 contains rep=3 r instead of repname=MiniACE. Adding a new repository to the SvnParentPath will change the number of the rep parameter, so you may need to make the following change to diff.php to decode the repname parameter:  
+{code:java|borderStyle=solid}
+
+            $repname = @$_REQUEST["repname"];
+            
+            if (isset($repname))
+            {
+            $rep = $config->findRepository($repname);
+            }
+            
+{code}
+The WebSVN WebUrlBuilder can also be used to connect to a ViewCV site. Here is an example used by CCNet to link to the file revision pages on SourceForge:  
+{code:xml|borderStyle=solid}
+<webUrlBuilder type="websvn">
+  <url>http://svn.sourceforge.net/viewvc/ccnet/{0}?view=markup&amp;pathrev={1}</url>
+</webUrlBuilder>
+{code}
+h4. SVN over SSL
+When connecting to a Subversion repository via SSL (https), you may be required to accept an issued server certificate. This generally requires responding to a command\-line prompt that the certificate should be accepted permanently. For CruiseControl.NET, all Subversion commands are executed using the \-\-non\-interactive switch, which will cause this prompt to be skipped and the subsequent Subversion command to fail with a message like this:  
+{code:none|borderStyle=solid}
+
+            svn: PROPFIND request failed on '/svnroot/ccnet'
+            svn: PROPFIND of '/svnroot/ccnet': Server certificate verification failed: issuer is not trusted (https://ccnet.svn.sourceforge.net)
+            
+{code}
+As the failure will happen on the first Subversion command to be executed, this failure will not show up as a broken build, but will instead show up in the server log.  
+One way to resolve this problem is to execute a command against the Subversion repository from the command\-line logged in as the user that you are using to run CCNet (certificates are cached by user account, so you must accept the certificate for the appropriate user). For example, try executing the following command (where trunk\_url is the svn url for your repository):  
+{code:none|borderStyle=solid}
+
+            svn list [trunk_url]
+            
+{code}
+When prompted to accept the certificate, type 'P' to permanently accept it.  
+If you are running CCService under the LocalSystem account, you will need to accept the certificate for this user. Check out the CCService page for information about how to diagnose problems as the LocalSystem account.  
+External contributors: Matt Petteys  
+h4. SVN over svn\+ssh
+To connect to Subversion with the svn\+ssh protocol, here is an excerpt from the article HowTo: Configure SVN\+SSH with Subclipse on Windows by Martin Woodward. For more details, see the complete article (http://www.woodwardweb.com/archive/200511.html).  
+ *HowTo: Configure SVN\+SSH with Subclipse on Windows*
+You need to create an environment variable called "SVN\_SSH" that points to an executable file that accepts the same command line arguments as ssh on unix. I did this by doing the following:\-  
+1: Set up ssh keys. Not going to cover that here as you can easily Google for that. You need to end up with your public key on the SVN server and your private key loaded into Paegent locally.  
+2: Download and installed the excellent TortoiseSVN client for Windows.  
+3: Set the following environment variable (by right\-clicking on My Computer, Properties, Advanced, Environment Variables, New):\-  
+{code:none|borderStyle=solid}
+
+            Variable name: SVN_SSH
+            Variable value: C:\\Program Files\\TortoiseSVN\\bin\\TortoisePlink.exe
+            
+{code}
+{info}
+The "\ \"(double\-back\-slash) is very important, otherwise it won't work. Equally, you cannot use the plink.exe that comes with putty as that fires up a command shell window which is really annoying. The TortoisePlink.exe is a windows implementation of plink that doesn't bring up any UI.  
+{info}
+h4. Known Issues
+ *CruiseControl.NET doesn't see my changes*The Subversion interface depends on the clocks of the CruiseControl.Net and Subversion servers being set within a small difference. Due to a long\-standing Subversion bug (Bugzilla #1642) that appears unlikely to ever be fixed, CruiseControl.Net must filter the list of modifications returned by Subversion, looking for only those that fall within a specific time range. When the clocks of the two servers are significantly different, the filter may ignore modifications that should not be ignored. To prevent this problem, keep the clocks of the two servers set as closely together as possible.  
+h4. Dashboard Localization (issues with SVN)
+I've found that svn has a trouble with \-\-xml parameter. My russian Log Messages were not readable.  
+I found a quick solution for it, next items could be customized to any languges. But be sure this is not the panacea. So in all .xsl files where comments or filename in Russian local I've added following "translation"  
+{code:borderStyle=solid}
+
+            <xsl:value-of select="translate(comment,'??????????????????????????????????????????????????????????????????',
+            '????????????????????????????????????????????????????????????????')"/>
+            
+{code}
+Where comment from /cruisecontrol/modifications/modification, and "??" in second parameter are symbols to delete, all others are mathed with third parameters. As I found xsl could only translate char strings , if some one know the way to translate double\-char symbols, please note about it. In this way you can help your self for modification for any charset.  
+I agree with everyone that it is a rude solution. But for my no time to wait untill svn or cc.net will be customized for that feature.  
+
+
+{info:title=Automatically Generated}
+Documentation generated on Saturday, 22 Jan 2011 at 12:14:18 AM
+Using assembly version 1.6.7979.1
+{info}

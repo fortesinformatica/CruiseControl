@@ -1,0 +1,13 @@
+h1. buildReportBuildPlugin
+
+h2. Configuration Elements
+
+|| Element || Description || Type || Required || Default || Version ||
+| excludedProjects | The projects to exclude from this plug\-in.  \\This is currently not implemented.   | String array | No | _None_ | 1.0 |
+| includedProjects | The projects to include in this plug\-in.  \\This is currently not implemented.   | String array | No | _None_ | 1.0 |
+| xslFileNames | Gets or sets the XSL file names.   | BuildReportXslFilename array | Yes |  |  |
+
+{info:title=Automatically Generated}
+Documentation generated on Saturday, 22 Jan 2011 at 12:14:25 AM
+Using assembly version 1.6.7979.1
+{info}

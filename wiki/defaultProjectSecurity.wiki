@@ -1,0 +1,39 @@
+h1. Default Project Security
+
+The project\-specific settings include a list of permissions. These permissions associate the users, roles, etc. from the server\-level security with the actions.  
+
+h2. Version
+
+Available from version 1.5
+
+h2. Examples
+
+{code:xml|borderStyle=solid}
+<security type="defaultProjectSecurity">
+  <permissions>
+    <rolePermission name="admin" ref="admin" />
+    <userPermission name="johndoe" forceBuild="Allow" startProject="Deny" stopProject="Deny" />
+  </permissions>
+</security>
+{code}
+
+
+h2. Configuration Elements
+
+|| Element || Description || Type || Required || Default || Version ||
+| type | The type of the project security. | String - must be defaultProjectSecurity | Yes | _n/a_ | 1.5 |
+| defaultRight | The default right to use.   | String - one of:
+* Allow
+* Deny
+* Inherit | No | Inherit | 1.5 |
+| guest | The name of the account to use for guests.   | String | No | _None_ | 1.5 |
+| permissions | The allowed permissions.   | [Security Permissions] array | No | _n/a_ | 1.5 |
+
+h2. Notes
+
+{include:General Security Permissions}
+
+{info:title=Automatically Generated}
+Documentation generated on Saturday, 22 Jan 2011 at 12:14:16 AM
+Using assembly version 1.6.7979.1
+{info}

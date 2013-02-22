@@ -1,0 +1,43 @@
+h1. Default Issue Tracker URL Builder
+
+It contains the url of the involved project, with the issue number as a parameter.  
+
+h2. Version
+
+Available from version 1.0
+
+h2. Examples
+
+{code:xml|borderStyle=solid}
+<issueUrlBuilder type="defaultIssueTracker">
+  <url>http://jira.public.thoughtworks.org/browse/CCNET-{0}</url>
+</issueUrlBuilder>
+{code}
+
+
+h2. Configuration Elements
+
+|| Element || Description || Type || Required || Default || Version ||
+| url | The base URL to use.  \\The issue number is held in \{0\}.   | String | Yes | _n/a_ | 1.0 |
+
+h2. Notes
+
+Whenever a checkin is done, the following logic is applied :  
+* Split the comment into a string array; separator is space
+* From the first part, take all the numeric parts, starting from the end of this part
+* Paste this number into the parameterFor example, with this configuration:  
+{code:xml|borderStyle=solid}
+<issueUrlBuilder type="defaultIssueTracker">
+  <url>http://jira.public.thoughtworks.org/browse/CCNET-{0}</url>
+</issueUrlBuilder>
+{code}
+The following comments would be converted into the URL http://jira.public.thoughtworks.org/browse/CCNET\-1223:  
+* CCNET\-1223: CCnet should foresee a way to transform the comments into hyperlinks for integration with issue tracking systems
+* CCNET\-1223 CCnet should foresee a way to transform the comments into hyperlinks for integration with issue tracking systems
+* CCNET\-1223
+* 1223
+
+{info:title=Automatically Generated}
+Documentation generated on Saturday, 22 Jan 2011 at 12:14:18 AM
+Using assembly version 1.6.7979.1
+{info}

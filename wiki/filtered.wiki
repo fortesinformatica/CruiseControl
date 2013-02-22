@@ -1,0 +1,70 @@
+h1. Filtered Source Control Block
+
+The FilteredSourceControl allows you to filter out modifications that are used to trigger a build. If for example, you have certain files (such as web pages or document files) under source control that you don't want to have trigger the build, you can use this class to ensure that their changes will keep a new build from launching.  
+The FilteredSourceControl works together with all of the source controls supported by CCNet (including the [Multi Source Control Block]). It can also be included under the [Multi Source Control Block] provider so that you could have multiple FilterSourceControls each filtering a different set of modifications from different source control providers. Essentially, it acts as a decorator (or an example of the pipes and filters pattern ), wrapping around the specific SourceControl provider that you want to use.  
+The FilteredSourceControl includes both inclusion and exclusion filters for specifying what modifications should be included/excluded. Multiple inclusion and exclusion filters can be specified or, alternately, no inclusion or exclusion filter could be specified. If a modification is matched by both the inclusion and exclusion filter, then the exclusion filter will take preference and the modification will not be included in the modification set. It is relatively straightforward to build new filters, (such as one to filter modifications based on email address).  
+
+
+h2. Version
+
+Available from version 1.0
+
+h2. Examples
+
+{code:xml|borderStyle=solid}
+<sourcecontrol type="filtered">
+  <sourceControlProvider type="vss" autoGetSource="true">
+    <project>$/Kunigunda/ServiceLocator</project>
+    <workingDirectory>C:\CCNet\Kunigunda\ServiceLocator</workingDirectory>
+    <username>urosn</username>
+    <password></password>
+    <ssdir>c:\localvss</ssdir>
+  </sourceControlProvider>
+  <inclusionFilters>
+    <pathFilter>
+      <pattern>$/Kunigunda/ServiceLocator/Sources/**/*.*</pattern>
+    </pathFilter>
+  </inclusionFilters>
+  <exclusionFilters>
+    <pathFilter>
+      <pattern>$/Kunigunda/ServiceLocator/Sources/Kunigunda.ServiceLocator/AssemblyInfo.cs</pattern>
+    </pathFilter>
+    <pathFilter>
+      <pattern>$/**/*.vssscc</pattern>
+    </pathFilter>
+    <userFilter>
+      <names>
+        <name>Perry</name>
+        <name>Joe</name>
+      </names>
+    </userFilter>
+    <actionFilter>
+      <actions>
+        <action>deleted</action>
+      </actions>
+    </actionFilter>
+    <commentFilter>
+      <pattern>Ignore: .*</pattern>
+    </commentFilter>
+  </exclusionFilters>
+</sourcecontrol>
+{code}
+
+
+h2. Configuration Elements
+
+|| Element || Description || Type || Required || Default || Version ||
+| type | The type of source control block. | String - must be filtered | Yes | _n/a_ | 1.0 |
+| dynamicValues | The dynamic values to use for the source control block.   | [Dynamic Values] array | No | _None_ | 1.5 |
+| exclusionFilters | The list of filters that decide what modifications to exclude.   | [Modification Filters] array | No | _None_ | 1.0 |
+| inclusionFilters | The list of filters that decide what modifications to include.   | [Modification Filters] array | No | _None_ | 1.0 |
+| sourceControlProvider | This element is used to specify the type of source control provider to retrieve modifications from. With the exception of the element name, the configuration for this element is identical to the xml configuration for the specific source control provider you intend to use.   | [Source Control Blocks] | Yes | _n/a_ | 1.0 |
+
+h2. Notes
+
+Implemented and contributed by Uros Novak.  
+
+{info:title=Automatically Generated}
+Documentation generated on Saturday, 22 Jan 2011 at 12:14:17 AM
+Using assembly version 1.6.7979.1
+{info}

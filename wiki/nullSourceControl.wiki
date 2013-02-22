@@ -1,0 +1,31 @@
+h1. Null Source Control Block
+
+Use the Null Source Control if you don't want to check a Source Control repository for changes. In this instance you would always want to either use a 'Force Build' Trigger or always manually start builds, from the [Web Dashboard] or [CCTray].  
+
+h2. Version
+
+Available from version 1.0
+
+h2. Examples
+
+{code:xml|borderStyle=solid}
+<sourcecontrol type="nullSourceControl" />
+{code}
+
+
+h2. Configuration Elements
+
+|| Element || Description || Type || Required || Default || Version ||
+| type | The type of source control block. | String - must be nullSourceControl | Yes | _n/a_ | 1.0 |
+| failGetModifications | Defines wheter or not to fail the checking for modifications.   | Boolean | No | false | 1.5 |
+| failGetSource | Defines wheter or not to fail the getting of the source.   | Boolean | No | false | 1.5 |
+| failLabelSourceControl | Defines wheter or not to fail the labeling.   | Boolean | No | false | 1.5 |
+
+h2. Notes
+
+Strictly speaking, this element isn't required. The build server will behave the same way if there are no Source Control Blocks. Still, it's useful to include this in configuration files to make it clear.  
+
+{info:title=Automatically Generated}
+Documentation generated on Saturday, 22 Jan 2011 at 12:14:18 AM
+Using assembly version 1.6.7979.1
+{info}

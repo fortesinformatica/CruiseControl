@@ -1,0 +1,27 @@
+h1. State File Labeller
+
+This labeller retrieves the last successful integration label for a project using the project's state file. You can use this labeller if you have split your build across multiple projects and you want to use a consistent version across all builds.  
+
+h2. Version
+
+Available from version 1.0
+
+h2. Examples
+
+{code:xml|borderStyle=solid}
+<labeller type="stateFileLabeller">
+  <project>Common</project>
+</labeller>
+{code}
+
+
+h2. Configuration Elements
+
+|| Element || Description || Type || Required || Default || Version ||
+| dynamicValues | The dynamic values to use for the labeller.   | [Dynamic Values] array | No | _None_ | 1.5 |
+| project | The project to retrieve the label from.   | String | Yes | _n/a_ | 1.0 |
+
+{info:title=Automatically Generated}
+Documentation generated on Saturday, 22 Jan 2011 at 12:14:14 AM
+Using assembly version 1.6.7979.1
+{info}

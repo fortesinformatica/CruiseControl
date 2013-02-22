@@ -1,0 +1,44 @@
+h1. Regex Issue Tracker URL Builder
+
+This will use regular expressions to convert the comment into an url.  
+
+h2. Version
+
+Available from version 1.0
+
+h2. Examples
+
+{code:xml|borderStyle=solid}
+<issueUrlBuilder type="regexIssueTracker">
+  <find>^.*(CCNET.?\d*).*$</find>
+  <replace>http://jira.public.thoughtworks.org/browse/$1</replace>
+</issueUrlBuilder>
+{code}
+
+
+h2. Configuration Elements
+
+|| Element || Description || Type || Required || Default || Version ||
+| find | The string to find.   | String | Yes | _n/a_ | 1.0 |
+| replace | The replacement string.   | String | Yes | _n/a_ | 1.0 |
+
+h2. Notes
+
+h4. Find Statement
+For people not familier with Regex, here are some examples:
+* Assert position at the beginning of a line (at beginning of the string or after a line break character): «^»
+* Match any single character that is not a line break character: «.»
+* Between zero and unlimited times, as many times as possible, giving back as needed (greedy): «\*»
+* Match the regular expression below and capture its match into backreference number 1: «(CCNET.?\d)»
+* Match the characters "CCNET" literally: «CCNET»
+* Between zero and one times, as many times as possible, giving back as needed (greedy): «?»
+* Match a single digit (i.e. 0..9): «\d»
+* Assert position at the end of a line (at the end of the string or before a line break character): «$»
+* Check without case sensitivity: «(?i)»h4. Replace Statement
+To reference a backreference use « *$1*».  
+
+
+{info:title=Automatically Generated}
+Documentation generated on Saturday, 22 Jan 2011 at 12:14:18 AM
+Using assembly version 1.6.7979.1
+{info}

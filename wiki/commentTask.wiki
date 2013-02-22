@@ -1,0 +1,33 @@
+h1. Comment Task
+
+Adds a comment to the log.  
+
+h2. Version
+
+Available from version 1.6
+
+h2. Examples
+
+{code:xml|borderStyle=solid}
+<commentTask>
+  <message>Hello World!</message>
+</commentTask>
+{code}
+
+
+h2. Configuration Elements
+
+|| Element || Description || Type || Required || Default || Version ||
+| description | Description used for the visualisation of the buildstage, if left empty the process name will be shown.   | String | No | The task/publisher name. | 1.6 |
+| dynamicValues | The dynamic values to use for the task.   | [Dynamic Values] array | No | _None_ | 1.6 |
+| environment |   A set of environment variables set for commands that are executed.  \\  Each variable should be specified as {code:xml|borderStyle=solid}
+<variable name="name" value="value" />
+{code}
+.   | [Environment Variable] array | No |  |  |
+| failure | Defines whether to fail the task or not.   | Boolean | No | false | 1.6 |
+| message | The message to add to the log.   | String | Yes | _n/a_ | 1.6 |
+
+{info:title=Automatically Generated}
+Documentation generated on Saturday, 22 Jan 2011 at 12:14:20 AM
+Using assembly version 1.6.7979.1
+{info}

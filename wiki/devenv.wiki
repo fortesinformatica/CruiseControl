@@ -1,0 +1,80 @@
+h1. Visual Studio Task
+
+Most complex build processes use [NAnt Task] or [MSBuild Task] to script the build. However, for simple projects that just need to build a Visual Studio.NET solution, the Visual Studio task <devenv> provides an easier method.  
+
+
+h2. Version
+
+Available from version 1.0
+
+h2. Examples
+
+{code:xml|borderStyle=solid|titleBGColor=#ADD6FF|title=Minimalist example}
+<devenv>
+  <solutionfile>src\MyProject.sln</solutionfile>
+  <configuration>Debug</configuration>
+</devenv>
+{code}
+{code:xml|borderStyle=solid|titleBGColor=#ADD6FF|title=Full example}
+<devenv>
+  <solutionfile>src\MyProject.sln</solutionfile>
+  <configuration>Debug</configuration>
+  <buildtype>Build</buildtype>
+  <project>MyProject</project>
+  <executable>c:\program files\Microsoft Visual Studio .NET\Common7\IDE\devenv.com</executable>
+  <buildTimeoutSeconds>600</buildTimeoutSeconds>
+  <version>VS2002</version>
+</devenv>
+{code}
+
+
+h2. Configuration Elements
+
+|| Element || Description || Type || Required || Default || Version ||
+| buildTimeoutSeconds | Number of seconds to wait before assuming that the process has hung and should be killed.   | Int32 | No | 600 (10 minutes) | 1.0 |
+| buildtype | The type of build.   | String - one of:
+* Rebuild
+* Build
+* Clean | No | rebuild | 1.0 |
+| configuration | The solution configuration to use (not case sensitive).   | String | Yes | _n/a_ | 1.0 |
+| description | Description used for the visualisation of the buildstage, if left empty the process name will be shown.   | String | No | The task/publisher name. | 1.5 |
+| dynamicValues | The dynamic values to use for the task.   | [Dynamic Values] array | No | _None_ | 1.5 |
+| environment |   A set of environment variables set for commands that are executed.  \\  Each variable should be specified as {code:xml|borderStyle=solid}
+<variable name="name" value="value" />
+{code}
+.   | [Environment Variable] array | No |  |  |
+| executable | The path to devenv.com.   | String | No | See below | 1.0 |
+| priority | The priority class of the spawned process.   | String - one of:
+* Normal
+* Idle
+* High
+* RealTime
+* BelowNormal
+* AboveNormal | No | Normal | 1.5 |
+| project | A specific project in the solution, if you only want to build one project (not case sensitive).   | String | No | All projects | 1.0 |
+| solutionfile | The path of the solution file to build. If relative, it is relative to the Project Working Directory.   | String | Yes | _n/a_ | 1.0 |
+| version | The version of Visual Studio.   | String - one of:
+* VS2002
+* VS2003
+* VS2005
+* VS2008
+* VS2010
+* 7.0
+* 7.1
+* 8.0
+* 9.0
+* 10.0 | No | See below | 1.0 |
+
+h2. Notes
+
+If executable and version are not specified, CC.NET will search the registry for VS.NET 2010, 2008, 2005, 2003, and 2002 in that order. If you need to use a specific version when a newer version is installed, you should specify the version property to identify it, or specify the executable property to point to the location of correct version of devenv.com.  
+{warning}
+This task requires you to have Visual Studio .NET installed on your integration server.  
+{warning}
+Often programmers like to use a centralised project to build an entire software system. They define specific dependencies and the build order on that specific project to reproduce the behaviours of an nmake build.  
+{include:Integration Properties}
+
+{info:title=Automatically Generated}
+Documentation generated on Saturday, 22 Jan 2011 at 12:14:21 AM
+Using assembly version 1.6.7979.1
+{info}

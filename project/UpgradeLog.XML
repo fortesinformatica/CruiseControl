@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type='text/xsl' href='_UpgradeReport_Files/UpgradeReport.xslt'?><UpgradeLog>
+<Properties><Property Name="Solution" Value="ccnet">
+</Property><Property Name="Solution File" Value="C:\Users\albertomonteiro\Desktop\CC\project\ccnet.sln">
+</Property><Property Name="Date" Value="quinta-feira, 21 de fevereiro de 2013">
+</Property><Property Name="Time" Value="13:57">
+</Property></Properties><Event ErrorLevel="0" Project="WebDashboard" Source="WebDashboard\WebDashboard.csproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="WebDashboard" Source="WebDashboard\WebDashboard.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="Remote" Source="Remote\Remote.csproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="Remote" Source="Remote\Remote.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="CCTray" Source="CCTray\CCTray.csproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="CCTray" Source="CCTray\CCTray.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="UnitTests" Source="UnitTests\UnitTests.csproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="UnitTests" Source="UnitTests\UnitTests.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="CCTrayLib" Source="CCTrayLib\CCTrayLib.csproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="CCTrayLib" Source="CCTrayLib\CCTrayLib.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="console" Source="console\console.csproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="console" Source="console\console.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="core" Source="core\core.csproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="core" Source="core\core.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="service" Source="service\service.csproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="service" Source="service\service.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="objection" Source="objection\objection.csproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="objection" Source="objection\objection.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="Validator" Source="Validator\Validator.csproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="Validator" Source="Validator\Validator.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="CCCmd" Source="CCCmd\CCCmd.csproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="CCCmd" Source="CCCmd\CCCmd.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="Core.Extensions" Source="Core.Extensions\Core.Extensions.csproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="Core.Extensions" Source="Core.Extensions\Core.Extensions.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="Communications.Extensions" Source="Communications.Extensions\Communications.Extensions.csproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="Communications.Extensions" Source="Communications.Extensions\Communications.Extensions.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="MSBuildLogger" Source="MSBuildLogger\MSBuildLogger.csproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="MSBuildLogger" Source="MSBuildLogger\MSBuildLogger.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="CCNet.CSharpDemos.Plugin" Source="CCNet.CSharpDemos.Plugin\CCNet.CSharpDemos.Plugin.csproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="CCNet.CSharpDemos.Plugin" Source="CCNet.CSharpDemos.Plugin\CCNet.CSharpDemos.Plugin.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="CCNet.VBDemos.Plugin" Source="CCNet.VBDemos.Plugin\CCNet.VBDemos.Plugin.vbproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="CCNet.VBDemos.Plugin" Source="CCNet.VBDemos.Plugin\CCNet.VBDemos.Plugin.vbproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="" Source="ccnet.sln" Description="Solution converted successfully">
+</Event><Event ErrorLevel="3" Project="" Source="ccnet.sln" Description="Converted">
+</Event><Event ErrorLevel="0" Project="WebDashboard" Source="WebDashboard\WebDashboard.csproj" Description="Scan complete: Upgrade not required for project files.">
+</Event><Event ErrorLevel="0" Project="Remote" Source="Remote\Remote.csproj" Description="Scan complete: Upgrade not required for project files.">
+</Event><Event ErrorLevel="0" Project="CCTray" Source="CCTray\CCTray.csproj" Description="Scan complete: Upgrade not required for project files.">
+</Event><Event ErrorLevel="0" Project="UnitTests" Source="UnitTests\UnitTests.csproj" Description="Scan complete: Upgrade not required for project files.">
+</Event><Event ErrorLevel="0" Project="CCTrayLib" Source="CCTrayLib\CCTrayLib.csproj" Description="Scan complete: Upgrade not required for project files.">
+</Event><Event ErrorLevel="0" Project="console" Source="console\console.csproj" Description="Scan complete: Upgrade not required for project files.">
+</Event><Event ErrorLevel="0" Project="core" Source="core\core.csproj" Description="Scan complete: Upgrade not required for project files.">
+</Event><Event ErrorLevel="0" Project="service" Source="service\service.csproj" Description="Scan complete: Upgrade not required for project files.">
+</Event><Event ErrorLevel="0" Project="objection" Source="objection\objection.csproj" Description="Scan complete: Upgrade not required for project files.">
+</Event><Event ErrorLevel="0" Project="Validator" Source="Validator\Validator.csproj" Description="Scan complete: Upgrade not required for project files.">
+</Event><Event ErrorLevel="0" Project="CCCmd" Source="CCCmd\CCCmd.csproj" Description="Scan complete: Upgrade not required for project files.">
+</Event><Event ErrorLevel="0" Project="Core.Extensions" Source="Core.Extensions\Core.Extensions.csproj" Description="Scan complete: Upgrade not required for project files.">
+</Event><Event ErrorLevel="0" Project="Communications.Extensions" Source="Communications.Extensions\Communications.Extensions.csproj" Description="Scan complete: Upgrade not required for project files.">
+</Event><Event ErrorLevel="0" Project="MSBuildLogger" Source="MSBuildLogger\MSBuildLogger.csproj" Description="Scan complete: Upgrade not required for project files.">
+</Event><Event ErrorLevel="0" Project="CCNet.CSharpDemos.Plugin" Source="CCNet.CSharpDemos.Plugin\CCNet.CSharpDemos.Plugin.csproj" Description="Scan complete: Upgrade not required for project files.">
+</Event><Event ErrorLevel="0" Project="CCNet.VBDemos.Plugin" Source="CCNet.VBDemos.Plugin\CCNet.VBDemos.Plugin.vbproj" Description="Scan complete: Upgrade not required for project files.">
+</Event></UpgradeLog>

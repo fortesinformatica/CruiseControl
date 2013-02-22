@@ -1,0 +1,76 @@
+h1. File Merge Task
+
+Merges external files into the build log.  
+Most build processes interact with external tools that write their output to file (e.g. NUnit, FxCop, or NCover). To make the output of these tools available to CruiseControl.NET to be used in the build process or displayed in the CruiseControl.NET web page or included in CruiseControl.NET emails, these files need to be merged into the CruiseControl.NET integration.  
+{tip}
+You should place your File Merge Tasks in the <publishers /> section of your [Project Configuration Block] before your [Xml Log Publisher].  
+{tip}
+
+
+h2. Version
+
+Available from version 1.0
+
+h2. Examples
+
+{code:xml|borderStyle=solid}
+<merge>
+  <files>
+    <file>
+      <!-- path to NUnit test file -->
+    </file>
+    <file>
+      <!-- path to FxCop file -->
+    </file>
+  </files>
+</merge>
+{code}
+
+
+h2. Configuration Elements
+
+|| Element || Description || Type || Required || Default || Version ||
+| description | Description used for the visualisation of the buildstage, if left empty the process name will be shown.   | String | No | The task/publisher name. | 1.5 |
+| dynamicValues | The dynamic values to use for the task.   | [Dynamic Values] array | No | _None_ | 1.5 |
+| environment |   A set of environment variables set for commands that are executed.  \\  Each variable should be specified as {code:xml|borderStyle=solid}
+<variable name="name" value="value" />
+{code}
+.   | [Environment Variable] array | No |  |  |
+| files | The files to merge.   | [Merge File] array | Yes | _n/a_ | 1.0 |
+| target | The folder to copy the files to.   | String | No | Project Artefact Directory | 1.0 |
+
+h2. Notes
+
+h4. Merge actions
+Prior to CruiseControl.NET 1.5.0, all files specified in this task are merged into the build log (this is the default behaviour if no action is specified.) Since the build log is XML data, all data that is merged needed to be treated as XML data. If the data was XML, it would be merged without any problems, otherwise the data would be embedded inside a CDATA block.  
+With CruiseControl.NET 1.5.0 it is now possible to control how the merge will work. There are three available actions:  
+* Merge: the default behaviour \- merge to the build log as XML if possible, as CDATA if not possible  
+* CData: always merge to the build log in a CDATA block  
+* Copy: instead of merging the data into the build log, it will copy the specified files into a "build" folder under the artefacts folder for the project  The following is an example of how to configure a "copy" action instead of merging:  
+{code:xml|borderStyle=solid}
+<merge>
+  <files>
+    <file>
+      <!-- path to NUnit test file -->
+    </file>
+    <file action="Copy">
+      <!-- path to NUnit images -->
+    </file>
+  </files>
+</merge>
+{code}
+The build folder will use the same name as the build label for the project. If this folder already exists, any files within this folder will be overwritten.  
+h4. Why are the merged results not showing up in the Web Dashboard?  
+If you have set up the configuration for the File Merge Task as described above and you are still not ending up with the appropriate results showing up within the web application, please try the following steps:  
+1. Click the original log link and check to see if the merged content is included in the xml. If it is missing then got onto step 2. If it is present and is still not showing up in the web page then try emailing the CCNet users list .  
+2. Have you put the File Merge Tasks in the <publishers /> section of your Project Configuration Block before your Xml Log Publisher?  
+3. Check the folder that contains the files that should be merged. If they are not there then you need to dig into your build script to find out why they aren't getting created.  
+4. If the files are there but aren't getting merged, double\-check your ccnet.config file. Is the configuration specified correctly as specified above? Remember that case matters in XML tag and attribute names.  
+5. Check the ccnet.log file. You should see Info\-level log messages stating that the files have been merged.  
+6. Does the file contain valid XML data? The File Merge Task only expects to process XML files. It will attempt to clean up non\-XML files and write errors to the ccnet.log file, but it isn't always successful.  
+
+
+{info:title=Automatically Generated}
+Documentation generated on Saturday, 22 Jan 2011 at 12:14:21 AM
+Using assembly version 1.6.7979.1
+{info}

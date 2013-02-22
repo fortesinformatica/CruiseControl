@@ -1,0 +1,54 @@
+h1. Schedule Trigger
+
+The Schedule Trigger is used to specify that an integration should be run at a certain time on certain days. By default, an integration will only be triggered if modifications have been detected since the last integration. The trigger can be configured to force a build even if have occurred to source control. The items to watch for modifications are specified with [Source Control Blocks].  
+{info}
+Like all triggers, the scheduleTrigger must be enclosed within a triggers element in the appropriate [Project Configuration Block].  
+{info}
+
+
+h2. Version
+
+Available from version 1.0
+
+h2. Examples
+
+{code:xml|borderStyle=solid}
+<scheduleTrigger time="23:30" buildCondition="ForceBuild" name="Scheduled">
+  <weekDays>
+    <weekDay>Monday</weekDay>
+  </weekDays>
+</scheduleTrigger>
+{code}
+
+
+h2. Configuration Elements
+
+|| Element || Description || Type || Required || Default || Version ||
+| buildCondition | The condition that should be used to launch the integration. By default, this value is  *IfModificationExists*, meaning that an integration will only be triggered if modifications have been detected. Set this attribute to  *ForceBuild* in order to ensure that a build should be launched regardless of whether new modifications are detected.   | String - one of:
+* NoBuild
+* IfModificationExists
+* ForceBuild | No | IfModificationExists | 1.0 |
+| name | The name of the trigger. This name is passed to external tools as a means to identify the trigger that requested the build.   | String | No | ScheduleTrigger | 1.1 |
+| randomOffSetInMinutesFromTime | Adds a random amount of minutes between 0 and set value to the time. This is mainly meant for spreading the load of actions to a central server. Value must be between 0 and 59.   | Int32 | No | 0 | 1.4 |
+| time | The time of day that the build should run at. The time should be specified in a locale\-specific format (ie. H:mm am/pm is acceptable for US locales.)   | String | Yes | _n/a_ | 1.0 |
+| weekDays | The week days on which the build should be run (eg. Monday, Tuesday). By default, all days of the week are set.   | String array\\The following values are valid:
+* Sunday
+* Monday
+* Tuesday
+* Wednesday
+* Thursday
+* Friday
+* Saturday | No | Monday\-Sunday | 1.0 |
+
+h2. Notes
+
+Use the  *buildCondition* property if you want to run a scheduled forced build.  
+{warning}
+this class replaces the  *PollingScheduleTrigger* and the  *ForceBuildScheduleTrigger*.  
+{warning}
+
+
+{info:title=Automatically Generated}
+Documentation generated on Saturday, 22 Jan 2011 at 12:14:23 AM
+Using assembly version 1.6.7979.1
+{info}

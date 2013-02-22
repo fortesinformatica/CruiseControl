@@ -1,0 +1,27 @@
+h1. External Links
+
+The <externalLinks> section can contain any number of <externalLink> sub\-sections. Each of these are used to display project related links on the project report page of the Web Dashboard, and are meant as a convenient shortcut to project\-related web sites outside of CruiseControl.NET.  
+
+h2. Version
+
+Available from version 1.0
+
+h2. Examples
+
+{code:xml|borderStyle=solid}
+<externalLinks>
+  <externalLink name="My Link" url="http://somewhere" />
+</externalLinks>
+{code}
+
+
+h2. Configuration Elements
+
+|| Element || Description || Type || Required || Default || Version ||
+| name | The name of the link.   | String | Yes | _n/a_ | 1.0 |
+| url | The URL for the link.   | String | Yes | _n/a_ | 1.0 |
+
+{info:title=Automatically Generated}
+Documentation generated on Saturday, 22 Jan 2011 at 12:14:13 AM
+Using assembly version 1.6.7979.1
+{info}

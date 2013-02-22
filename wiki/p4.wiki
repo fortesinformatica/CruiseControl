@@ -1,0 +1,68 @@
+h1. Perforce Source Control Block
+
+Perforce source control block.  
+
+h2. Version
+
+Available from version 1.0
+
+h2. Examples
+
+{code:xml|borderStyle=solid|titleBGColor=#ADD6FF|title=Minimalist example}
+<sourcecontrol type="p4">
+  <view>//projects/myproject/...</view>
+</sourcecontrol>
+{code}
+{code:xml|borderStyle=solid|titleBGColor=#ADD6FF|title=Full example}
+<sourcecontrol type="p4">
+  <view>//projects/ccnet/...,//tools/nant/...</view>
+  <executable>c:\perforce\p4.exe</executable>
+  <client>ccnet-buildhost</client>
+  <user>public</user>
+  <password>mypassword</password>
+  <port>perforce01.thoughtworks.net:1666</port>
+  <timeZoneOffset>-5</timeZoneOffset>
+  <applyLabel>true</applyLabel>
+  <autoGetSource>true</autoGetSource>
+  <forceSync>true</forceSync>
+  <p4WebURLFormat>http://perforceWebServer:8080/@md=d&amp;cd=//&amp;c=3IB@/{0}?ac=10</p4WebURLFormat>
+  <timeout units="minutes">10</timeout>
+</sourcecontrol>
+{code}
+
+
+h2. Configuration Elements
+
+|| Element || Description || Type || Required || Default || Version ||
+| type | The type of source control block. | String - must be p4 | Yes | _n/a_ | 1.0 |
+| acceptableErrors | The acceptable errors.   | String array | No | file\(s\) up\-to\-date\. | 1.0 |
+| applyLabel | Whether to apply a label on a successful build.   | Boolean | No | false | 1.0 |
+| autoGetSource | Whether to automatically 'sync' the latest changes from source control before performing the build. The sync target is the entire view exposed by the specified client \- the view has no effect on sycning.   | Boolean | No | true | 1.0 |
+| client | The perforce 'client' to use.   | String | No | Performance environment setting | 1.0 |
+| dynamicValues | The dynamic values to use for the source control block.   | [Dynamic Values] array | No | _None_ | 1.5 |
+| errorPattern | The error pattern to use.   | String | No | ^error: .\* | 1.0 |
+| executable | The location of the Perforce command line client executable.   | String | No | p4 | 1.0 |
+| forceSync | If autoGetSource is set to true, then whether to use the \-f option to sync. See http://www.perforce.com/perforce/doc.042/manuals/cmdref/sync.html for more details.   | Boolean | No | false | 1.0 |
+| issueUrlBuilder | Converts the comment (or parts from it) into an url pointing to the issue for this build.   | [IssueUrlBuilder] | No | _None_ | 1.0 |
+| p4WebURLFormat | Creates a link to the P4Web change list page for each detected modification. The specified value is transformed using String.Format where the first argument will be the substituted change list number.   | String | No | _None_ | 1.0 |
+| password | The perforce password to use.   | String | No | Performance environment setting | 1.0 |
+| port | The perforce hostname and port to use.   | String | No | Performance environment setting | 1.0 |
+| timeZoneOffset | How many hours ahead your Perforce Server is from your build server. E.g. if your build server is in London, and your Perforce server is in New York, this value would be '\-5'.   | Double | No | 0 | 1.0 |
+| useExitCode | Whether to use exit codes.   | Boolean | No | false | 1.0 |
+| user | The perforce user to use.   | String | No | Performance environment setting | 1.0 |
+| view | The perforce 'view' to check for changes. For 'multi\-line' views, use a comma\-separated list. 'Exclusionary' view lines starting with \- cannot be used. Use a [Filtered Source Control Block] to achieve this behaviour. Note that this view is not used for syncing (see below.)   | String | Yes | _n/a_ | 1.0 |
+| workingDirectory | The working directory to use.   | String | No | Project Working Directory | 1.0 |
+
+h2. Notes
+
+h4. Client / User / Password / Port usage
+You may specify any of the Perforce client, user, password and port (ie 'host:port' in Perforce standards) settings to use. If you don't specify them, then Cruise Control .NET will use the defaults in your registry (use 'p4 set' to view and edit these.)  
+Note that the client specification is only used for syncing and applying labels, it is not used when checking for changes. This is significant since it means that the view in the specified client does not effect the plugin's behaviour when checking for changes.  
+h4. Perforce Issues
+Perforce cannot apply purely numeric labels, which is what CCNet uses by default. Therefore, if you have 'applyLabel' set to true, you must also setup a custom Labeller in your project, e.g. by using the [Default Labeller].  
+
+
+{info:title=Automatically Generated}
+Documentation generated on Saturday, 22 Jan 2011 at 12:14:18 AM
+Using assembly version 1.6.7979.1
+{info}

@@ -1,0 +1,59 @@
+h1. Compare Values Condition
+
+Checks if two values are the same.  
+This is typically used with dynamic values.  
+
+
+h2. Version
+
+Available from version 1.6
+
+h2. Examples
+
+{code:xml|borderStyle=solid|titleBGColor=#ADD6FF|title=Basic example}
+<compareCondition>
+  <value1>${value1}</value1>
+  <value2>ToMatch</value2>
+  <evaluation>notEqual</evaluation>
+  <ignoreCase>true</ignoreCase>
+</compareCondition>
+{code}
+{code:xml|borderStyle=solid|titleBGColor=#ADD6FF|title=Example in context}
+<conditional>
+  <conditions>
+    <compareCondition>
+      <value1>${value1}</value1>
+      <value2>ToMatch</value2>
+      <evaluation>equal</evaluation>
+    </compareCondition>
+  </conditions>
+  <tasks>
+    <!-- Tasks to perform if condition passed -->
+  </tasks>
+  <elseTasks>
+    <!-- Tasks to perform if condition failed -->
+  </elseTasks>
+</conditional>
+{code}
+
+
+h2. Configuration Elements
+
+|| Element || Description || Type || Required || Default || Version ||
+| description | A description of the condition.   | String | No | _none_ | 1.6 |
+| evaluation | The type of evaluation.   | String - one of:
+* Equal
+* NotEqual | Yes | _n/a_ | 1.6 |
+| ignoreCase | Whether to ignore any case differences or not.   | Boolean | No | false | 1.6 |
+| value1 | The first value to evaluate.   | String | Yes | _n/a_ | 1.6 |
+| value2 | The second value to evaluate.   | String | Yes | _n/a_ | 1.6 |
+
+h2. Notes
+
+This condition has been kindly supplied by Lasse Sjørup. The original project is available from  [http://ccnetconditional.codeplex.com/].  
+
+
+{info:title=Automatically Generated}
+Documentation generated on Saturday, 22 Jan 2011 at 12:14:20 AM
+Using assembly version 1.6.7979.1
+{info}

@@ -1,0 +1,26 @@
+h1. Named Value
+
+A value with an associated name. This is a generic configuration item that is used in other configuration elements.  
+
+
+h2. Version
+
+Available from version 1.4.4
+
+h2. Examples
+
+{code:xml|borderStyle=solid}
+<namedValue name="The Name" value="something" />
+{code}
+
+
+h2. Configuration Elements
+
+|| Element || Description || Type || Required || Default || Version ||
+| name | The name of the value.   | String | Yes | _n/a_ | 1.4.4 |
+| value | The actual value.   | String | No | _n/a_ | 1.4.4 |
+
+{info:title=Automatically Generated}
+Documentation generated on Saturday, 22 Jan 2011 at 12:14:13 AM
+Using assembly version 1.6.7979.1
+{info}

@@ -1,0 +1,27 @@
+h1. Server Log Project Plugin
+
+The Server Log Project Plugin shows you recent activity that has been output to the server log for a specific project.  
+
+h2. Version
+
+Available from version 1.0
+
+h2. Examples
+
+{code:xml|borderStyle=solid}
+<serverLogProjectPlugin />
+{code}
+
+
+h2. Configuration Elements
+
+There is no configuration for this plugin.
+
+h2. Notes
+
+Read the [Server Application Config File] page for more help on build server logging.  
+
+{info:title=Automatically Generated}
+Documentation generated on Saturday, 22 Jan 2011 at 12:14:25 AM
+Using assembly version 1.6.7979.1
+{info}

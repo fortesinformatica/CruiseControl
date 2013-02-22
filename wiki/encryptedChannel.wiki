@@ -1,0 +1,16 @@
+h1. Encrypted Messages Channel
+
+Messages will be encrypted using this channel.  
+
+h2. Version
+
+Available from version 1.5
+
+h2. Configuration Elements
+
+There is no configuration for this plugin.
+
+{info:title=Automatically Generated}
+Documentation generated on Saturday, 22 Jan 2011 at 12:14:16 AM
+Using assembly version 1.6.7979.1
+{info}

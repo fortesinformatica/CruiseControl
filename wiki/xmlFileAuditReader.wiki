@@ -1,0 +1,27 @@
+h1. XML File Audit Reader
+
+Reads audit logging information from a file. The information must be stored in an XML format.  
+This reader handles reading audit information that has been written by the [XML File Audit Logger].  
+
+
+h2. Version
+
+Available from version 1.5
+
+h2. Examples
+
+{code:xml|borderStyle=solid}
+<auditReader type="xmlFileAuditReader" location="c:\Logs\ccnet_audit.log" />
+{code}
+
+
+h2. Configuration Elements
+
+|| Element || Description || Type || Required || Default || Version ||
+| type | The type of the audit reader. | String - must be xmlFileAuditReader | Yes | _n/a_ | 1.5 |
+| location | The location of the file to read the audit events from.   | String | No | 1.5\\SecurityAudit.xml |  |
+
+{info:title=Automatically Generated}
+Documentation generated on Saturday, 22 Jan 2011 at 12:14:16 AM
+Using assembly version 1.6.7979.1
+{info}

@@ -1,0 +1,31 @@
+h1. Ohloh Stats Display Plugin
+
+Display Ohloh stats for a project.  
+
+h2. Version
+
+Available from version 1.5
+
+h2. Examples
+
+{code:xml|borderStyle=solid}
+<ohlohProjectPlugin />
+{code}
+
+
+h2. Configuration Elements
+
+There is no configuration for this plugin.
+
+h2. Notes
+
+Configuration is done in ccnet.config via the linkedSites property  
+{tip}
+This can be installed using the "Ohloh" package.  
+{tip}
+
+
+{info:title=Automatically Generated}
+Documentation generated on Saturday, 22 Jan 2011 at 12:14:25 AM
+Using assembly version 1.6.7979.1
+{info}

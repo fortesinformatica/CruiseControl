@@ -1,0 +1,45 @@
+h1. Multiple Trigger
+
+The Multiple Trigger is used to support the execution of multiple nested triggers. Each trigger will be executed sequentially in the order specified in the configuration file. By default, if any of the triggers specify that a build should occur then a build will be triggered. The build condition will be ForceBuild if any trigger returns a ForceBuild condition. Otherwise, the build condition will be IfModificationsExist if any trigger returns that condition. Multiple Triggers can contain nested multiple triggers.  
+It is possible to change the logical operator applied to assessing the build conditions. If the Multiple Trigger's operator property is set to "And" then if any trigger says that a build should not happen, then the build will not happen. This is particularly useful when using multiple [Filter Trigger]s.  
+{info}
+Like all triggers, the multiTrigger must be enclosed within a triggers element in the appropriate [Project Configuration Block].  
+{info}
+
+
+h2. Version
+
+Available from version 1.0
+
+h2. Examples
+
+{code:xml|borderStyle=solid|titleBGColor=#ADD6FF|title=Minimalist example}
+<multiTrigger />
+{code}
+{code:xml|borderStyle=solid|titleBGColor=#ADD6FF|title=Full example}
+<multiTrigger operator="And">
+  <triggers>
+    <urlTrigger url="http://server/page.html" seconds="30" buildCondition="ForceBuild" />
+    <filterTrigger startTime="23:30" endTime="23:45">
+      <trigger type="intervalTrigger" seconds="60" />
+      <weekDays>
+        <weekDay>Sunday</weekDay>
+      </weekDays>
+    </filterTrigger>
+  </triggers>
+</multiTrigger>
+{code}
+
+
+h2. Configuration Elements
+
+|| Element || Description || Type || Required || Default || Version ||
+| operator | The logical operator to apply to the results of the nested triggers (And or Or).   | String - one of:
+* Or
+* And | No | Or | 1.1 |
+| triggers | The nested triggers.   | [Trigger Blocks] array | No | n/a/ | 1.0 |
+
+{info:title=Automatically Generated}
+Documentation generated on Saturday, 22 Jan 2011 at 12:14:23 AM
+Using assembly version 1.6.7979.1
+{info}

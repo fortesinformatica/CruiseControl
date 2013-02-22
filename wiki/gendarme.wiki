@@ -1,0 +1,77 @@
+h1. Gendarme Task
+
+Gendarme is a extensible rule\-based tool to find problems in .NET applications and libraries. Gendarme inspects programs and libraries that contain code in ECMA CIL format (Mono and .NET) and looks for common problems with the code, problems that compiler do not typically check or have not historically checked. Website: http://mono\-project.com/Gendarme  
+{tip}
+See [Using CruiseControl.NET with Gendarme] for more details.  
+{tip}
+
+
+h2. Version
+
+Available from version 1.4.3
+
+h2. Examples
+
+{code:xml|borderStyle=solid|titleBGColor=#ADD6FF|title=Minimalist example}
+<gendarme>
+  <assemblies>
+    <assemblyMatch expr="*.dll" />
+    <assemblyMatch expr="*.exe" />
+  </assemblies>
+</gendarme>
+{code}
+{code:xml|borderStyle=solid|titleBGColor=#ADD6FF|title=Full example}
+<gendarme>
+  <executable>Tools\gendarme.exe</executable>
+  <baseDirectory>C:\Build\Project1\Bin\Debug\</baseDirectory>
+  <configFile>rules.xml</configFile>
+  <ruleSet>*</ruleSet>
+  <ignoreFile>C:\Build\Project1\gendarme.ignore.list.txt</ignoreFile>
+  <limit>200</limit>
+  <severity>medium+</severity>
+  <confidence>normal+</confidence>
+  <quiet>FALSE</quiet>
+  <verbose>TRUE</verbose>
+  <failBuildOnFoundDefects>TRUE</failBuildOnFoundDefects>
+  <verifyTimeoutSeconds>600</verifyTimeoutSeconds>
+  <assemblyListFile>C:\Build\Project1\gendarme.assembly.list.txt</assemblyListFile>
+  <description>Test description</description>
+</gendarme>
+{code}
+
+
+h2. Configuration Elements
+
+|| Element || Description || Type || Required || Default || Version ||
+| assemblies | Specify the assemblies to verify. You can specify multiple filenames, including masks (? and \*).   | [Assembly Match] array | No | _None_ | 1.4.3 |
+| assemblyListFile | Specify a file that contains the assemblies to verify. You can specify multiple filenames, including masks (? and \*), one by line.   | String | No | _None_ | 1.4.3 |
+| confidence | Filter the reported defects to include the specified confidence levels.  \\ *"\-\-confidence \[all \| low\[\+\] \| normal\[\+\|\-\] \| high\[\+\|\-\] \| total\[\-\]\],..."* | String | No | normal\+ | 1.4.3 |
+| configFile | Specify the configuration file.  \\ *Maps to "\-\-config configfile"* | String | No | rules.xml | 1.4.3 |
+| baseDirectory | The directory to run Gendarme in.   | String | No | Project Working Directory | 1.4.3 |
+| description | Description used for the visualisation of the buildstage, if left empty the process name will be shown.   | String | No | The task/publisher name. | 1.5 |
+| dynamicValues | The dynamic values to use for the task.   | [Dynamic Values] array | No | _None_ | 1.5 |
+| environment |   A set of environment variables set for commands that are executed.  \\  Each variable should be specified as {code:xml|borderStyle=solid}
+<variable name="name" value="value" />
+{code}
+.   | [Environment Variable] array | No |  |  |
+| executable | The location of the Gendarme executable.   | String | No | gendarme | 1.4.3 |
+| failBuildOnFoundDefects | Specify whenver the build should fail if some defects are found by Gendarme.   | Boolean | No | false | 1.4.3 |
+| ignoreFile | Do not report the known defects that are part of the specified file.  \\ *Maps to "\-\-ignore ignore\-file"* | String | No | _None_ | 1.4.3 |
+| limit | Stop reporting after N defects are found.  \\ *Maps to "\-\-limit N"* | Int32 | No | \-1 | 1.4.3 |
+| priority | The priority class of the spawned process.   | String - one of:
+* Normal
+* Idle
+* High
+* RealTime
+* BelowNormal
+* AboveNormal | No | Normal | 1.5 |
+| quiet | If true, display minimal output (results) from the runner.   | Boolean | No | false | 1.4.3 |
+| ruleSet | Specify the set of rules to verify.  \\ *Maps to "\-\-set ruleset"* | String | No | \* | 1.4.3 |
+| severity | Filter the reported defects to include the specified severity levels.  \\ *Maps to "\-\-severity \[all \| audit\[\+\] \| low\[\+\|\-\] \| medium\[\+\|\-\] \| high\[\+\|\-\] \| critical\[\-\]\],..."* | String | No | Medium\+ | 1.4.3 |
+| verbose | Enable debugging output.   | Boolean | No | false | 1.4.3 |
+| verifyTimeoutSeconds | The maximum number of seconds that the build may take.  If the build process takes longer than this period, it will be killed.  Specify this value as zero to disable process timeouts.   | Int32 | No | 0 | 1.4.3 |
+
+{info:title=Automatically Generated}
+Documentation generated on Saturday, 22 Jan 2011 at 12:14:21 AM
+Using assembly version 1.6.7979.1
+{info}

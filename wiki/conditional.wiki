@@ -1,0 +1,47 @@
+h1. Conditional Task
+
+Checks to see if a condition is true before the contained tasks run.  
+
+h2. Version
+
+Available from version 1.6
+
+h2. Examples
+
+{code:xml|borderStyle=solid}
+<conditional>
+  <conditions>
+    <!-- Conditions -->
+  </conditions>
+  <tasks>
+    <!-- Tasks to run if conditions pass -->
+  </tasks>
+  <elseTasks>
+    <!-- Tasks to run if conditions fail -->
+  </elseTasks>
+</conditional>
+{code}
+
+
+h2. Configuration Elements
+
+|| Element || Description || Type || Required || Default || Version ||
+| description | Description used for the visualisation of the buildstage, if left empty the process name will be shown.   | String | No | The task/publisher name. | 1.6 |
+| dynamicValues | The dynamic values to use for the task.   | [Dynamic Values] array | No | _None_ | 1.6 |
+| elseTasks | The tasks to run if conditions evaluates to false.   | [Task And Publisher Blocks] array | No | _None_ | 1.6 |
+| environment |   A set of environment variables set for commands that are executed.  \\  Each variable should be specified as {code:xml|borderStyle=solid}
+<variable name="name" value="value" />
+{code}
+.   | [Environment Variable] array | No |  |  |
+| conditions | The conditions to check.  \\These conditions must all pass in order for the main tasks to run. Use an  [Or Condition] when only one condition is required.   | [Task Condition Blocks] array | Yes | _n/a_ | 1.6 |
+| tasks | The tasks to run if conditions evaluates to true.   | [Task And Publisher Blocks] array | No | _None_ | 1.6 |
+
+h2. Notes
+
+This task has been kindly supplied by Lasse Sjørup. The original project is available from  [http://ccnetconditional.codeplex.com/].  
+
+
+{info:title=Automatically Generated}
+Documentation generated on Saturday, 22 Jan 2011 at 12:14:20 AM
+Using assembly version 1.6.7979.1
+{info}

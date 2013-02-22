@@ -1,0 +1,12 @@
+h1. configurablePlugin
+
+h2. Configuration Elements
+
+|| Element || Description || Type || Required || Default || Version ||
+| description |  | String | Yes |  |  |
+| actions |  | INamedAction array | Yes |  |  |
+
+{info:title=Automatically Generated}
+Documentation generated on Saturday, 22 Jan 2011 at 12:14:25 AM
+Using assembly version 1.6.7979.1
+{info}

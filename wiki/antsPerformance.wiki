@@ -1,0 +1,76 @@
+h1. ANTS Performance Profiler Task
+
+Profiles the performance of an application using Reg Gate's ANTS Performance Profiler.  
+ANTS Performance Profiler is a tool to profile the performance of an application.  
+This application is available from http://www.red\-gate.com/. Pro edition of 1.6 or later is required.  
+
+
+h2. Version
+
+Available from version 1.6
+
+h2. Examples
+
+{code:xml|borderStyle=solid|titleBGColor=#ADD6FF|title=Minimalist example}
+<antsPerformance>
+  <app>someapp.exe</app>
+</antsPerformance>
+{code}
+
+
+h2. Configuration Elements
+
+|| Element || Description || Type || Required || Default || Version ||
+| inlining | Whether to allow .NET to inline functions.   | Boolean | No | true | 1.6 |
+| app | The application to profile.   | String | No | _none_ | 1.6 |
+| appArgs | The arguments to pass to the application.   | String | No | _none_ | 1.6 |
+| avoidTrivial | Whether to avoid trivial functions or not.   | Boolean | No | true | 1.6 |
+| baseDir | The base directory to use. If omitted this will default to the working directory of the project.   | String | No | Project Working Directory | 1.6 |
+| callTreeHtml | The location to write the calltree file to \- uses HTML format.   | String | No | _none_ | 1.6 |
+| callTreeXml | The location to write the calltree file to \- uses XML format.   | String | No | _none_ | 1.6 |
+| compensate | Whether to get the profiler to compensate for its own overhead.   | Boolean | No | true | 1.6 |
+| comPlus | The name of the COM\+ service to profile.   | String | No | _none_ | 1.6 |
+| data | The location to write the data file to (requires desktop application to view).   | String | No | _none_ | 1.6 |
+| description | Description used for the visualisation of the buildstage, if left empty the process name will be shown.   | String | No | The task/publisher name. | 1.6 |
+| dynamicValues | The dynamic values to use for the task.   | [Dynamic Values] array | No | _None_ | 1.6 |
+| environment |   A set of environment variables set for commands that are executed.  \\  Each variable should be specified as {code:xml|borderStyle=solid}
+<variable name="name" value="value" />
+{code}
+.   | [Environment Variable] array | No |  |  |
+| executable | The executable to use.   | String | No | Profile | 1.6 |
+| overwrite | Whether to overwrite any existing files or not.   | Boolean | No | true | 1.6 |
+| includeSource | Whether to include source code in the results.   | Boolean | No | true | 1.6 |
+| subProcesses | Whether to include sub\-processes.   | Boolean | No | false | 1.6 |
+| methodLevel | Perform method level profiling.   | Boolean | No | true | 1.6 |
+| onlyWithSource | Only profile methods that have source code.   | Boolean | No | false | 1.6 |
+| output | The output analysis file.   | String | No | AntsPerformanceAnalysis.txt | 1.6 |
+| priority | The priority class of the spawned process.   | String - one of:
+* Normal
+* Idle
+* High
+* RealTime
+* BelowNormal
+* AboveNormal | No | Normal | 1.6 |
+| profilerTimeout | The time\-out period in seconds for the profiler.   | Int32 | No | 120 | 1.6 |
+| publish | Whether to publish all files generated from this task.  \\If the files are not published then they will not be viewable in the dashboard unless copied over by another mechanism.   | Boolean | No | true | 1.6 |
+| quiet | Whether to disable all output or not.   | Boolean | No | false | 1.6 |
+| sqlIO | Whether to try to record SQL and File I/O events.   | Boolean | No | false | 1.6 |
+| service | The name of the windows service to profile.   | String | No | _none_ | 1.6 |
+| silverlight | The URL of a site containing a silverlight application to profile.   | String | No | _none_ | 1.6 |
+| simplify | Whether to simplify certain complicated stack traces.   | Boolean | No | true | 1.6 |
+| summaryCsv | The location to write the summary file to \- uses CSV format.   | String | No | _none_ | 1.6 |
+| summaryHtml | The location to write the summary file to \- uses HTML format.   | String | No | _none_ | 1.6 |
+| summaryXml | The location to write the summary file to \- uses XML format.   | String | No | _none_ | 1.6 |
+| threshold | The threshold level.   | Nullable`1 | No | _none_ | 1.6 |
+| timeout | The time\-out period in seconds for the entire task.   | Int32 | No | 600 | 1.6 |
+| level | The level to trace at.   | String - one of:
+* Line
+* Method | No | Method | 1.6 |
+| useSampling | Whether to use sampling for generating approximate results quickly.   | Boolean | No | false | 1.6 |
+| verbose | Whether to display verbose output or not.   | Boolean | No | false | 1.6 |
+| xmlArgs | A file containing the args for the profiler in an XML specification.   | String | No | _none_ | 1.6 |
+
+{info:title=Automatically Generated}
+Documentation generated on Saturday, 22 Jan 2011 at 12:14:19 AM
+Using assembly version 1.6.7979.1
+{info}

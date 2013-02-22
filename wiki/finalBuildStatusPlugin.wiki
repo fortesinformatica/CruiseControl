@@ -1,0 +1,31 @@
+h1. Final Build Status Display Plugin
+
+Display the final status of a project after a build.  
+
+h2. Version
+
+Available from version 1.6
+
+h2. Examples
+
+{code:xml|borderStyle=solid}
+<finalBuildStatusPlugin />
+{code}
+
+
+h2. Configuration Elements
+
+There is no configuration for this plugin.
+
+h2. Notes
+
+This requires that the project on the server has been configured with a data store.  
+{tip}
+This can be installed using the "FinalBuildStatus" package.  
+{tip}
+
+
+{info:title=Automatically Generated}
+Documentation generated on Saturday, 22 Jan 2011 at 12:14:25 AM
+Using assembly version 1.6.7979.1
+{info}

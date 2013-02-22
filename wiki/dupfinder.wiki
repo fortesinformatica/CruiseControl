@@ -1,0 +1,74 @@
+h1. Duplicate Finder Task
+
+Check for duplicates using dupfinder (http://duplicatefinder.codeplex.com/).  
+
+
+h2. Version
+
+Available from version 1.5
+
+h2. Examples
+
+{code:xml|borderStyle=solid|titleBGColor=#ADD6FF|title=Minimalist example}
+<dupfinder>
+  <fileMask>*.cs</fileMask>
+  <inputDir>Code</inputDir>
+</dupfinder>
+{code}
+{code:xml|borderStyle=solid|titleBGColor=#ADD6FF|title=Full example}
+<dupfinder>
+  <dynamicValues />
+  <fileMask>*.cs</fileMask>
+  <includeCode>False</includeCode>
+  <inputDir>Code</inputDir>
+  <recurse>False</recurse>
+  <shortenNames>False</shortenNames>
+  <threshold>5</threshold>
+  <timeout>600</timeout>
+  <width>2</width>
+</dupfinder>
+{code}
+
+
+h2. Configuration Elements
+
+|| Element || Description || Type || Required || Default || Version ||
+| description | Description used for the visualisation of the buildstage, if left empty the process name will be shown.   | String | No | The task/publisher name. | 1.5 |
+| dynamicValues | The dynamic values to use for the task.   | [Dynamic Values] array | No | _None_ | 1.5 |
+| environment |   A set of environment variables set for commands that are executed.  \\  Each variable should be specified as {code:xml|borderStyle=solid}
+<variable name="name" value="value" />
+{code}
+.   | [Environment Variable] array | No |  |  |
+| executable | The executable to use.   | String | No | dupfinder | 1.5 |
+| fileMask | The file mask to use.   | String | Yes | _n/a_ | 1.5 |
+| excludeFiles | The files to exclude.   | String array | No | _None_ | 1.5 |
+| focus | The name of the file to focus on.   | String | No | _None_ | 1.5 |
+| includeCode | Whether to include the code that has been duplicated.   | Boolean | No | false | 1.5 |
+| inputDir | The input directory to scan. If relative, this will be relative to the project working directory.   | String | Yes | _n/a_ | 1.5 |
+| excludeLines | The lines to exclude.   | String array | No | _None_ | 1.5 |
+| priority | The priority class of the spawned process.   | String - one of:
+* Normal
+* Idle
+* High
+* RealTime
+* BelowNormal
+* AboveNormal | No | Normal | 1.5 |
+| recurse | To find files that match the filemask in current directory and subdirectories.   | Boolean | No | false | 1.5 |
+| shortenNames | Whether to shorten filenames.   | Boolean | No | false | 1.5 |
+| threshold | The threshold is the number of consecutive lines that have to be the same before it is considered a duplicate.   | Int32 | No | 5 | 1.5 |
+| timeout | The time\-out period in seconds.   | Int32 | No | 600 | 1.5 |
+| width | The first line of a duplicate must contain at least this many non\-white\-space characters.   | Int32 | No | 2 | 1.5 |
+
+h2. Notes
+
+h4. Extended Functionality
+This task offers some extended functionality over what the base dupfinder executable offers. This extended functionality is primarily intended to add extra value to the web dashboard display. The extended options are:  
+ *<shortenNames>*: This will remove the <inputDir> value from the file names. This means the filenames only contain the relative path to the file, which makes it easier to see where the file is.  
+ *<includeCode>*: This will include the lines of code that were duplicated into the output. These can then be seen in the web dashboard. This meakes it easy to see the code that has been duplicated.  
+These features work by post\-processing the XML output from dupfinder. That is, once dupfinder has finished, the task loads the XML file, finds all the elements that need changing and changes them as required. For the code inclusion, it will also open the relevant code files and extract the lines of code as needed.  
+
+
+{info:title=Automatically Generated}
+Documentation generated on Saturday, 22 Jan 2011 at 12:14:20 AM
+Using assembly version 1.6.7979.1
+{info}

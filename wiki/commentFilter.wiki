@@ -1,0 +1,26 @@
+h1. CommentFilter
+
+A FilteredSourceControl filter that compares modification comments to a specified regular expression.  
+
+h2. Version
+
+Available from version 1.3
+
+h2. Examples
+
+{code:xml|borderStyle=solid}
+<commentFilter>
+  <pattern>Ignore: .*</pattern>
+</commentFilter>
+{code}
+
+
+h2. Configuration Elements
+
+|| Element || Description || Type || Required || Default || Version ||
+| pattern | This is the pattern used to compare the modification comment against. The pattern is specified according to the rules of the .net System.Text.RegularExpressions.Regex class. Each CommentFilter contains a single pattern element.   | String | Yes | _n/a_ | 1.3 |
+
+{info:title=Automatically Generated}
+Documentation generated on Saturday, 22 Jan 2011 at 12:14:17 AM
+Using assembly version 1.6.7979.1
+{info}

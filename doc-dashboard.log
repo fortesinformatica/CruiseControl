@@ -1,0 +1,413 @@
+<docGen command="generate" time="2011-01-21T18:14:23.4445000-06:00">
+<message type="Info" time="Fri, 21 Jan 2011 18:14:23 GMT">
+<![CDATA[Starting documentation generation for ThoughtWorks.CruiseControl.WebDashboard.dll]]>
+</message>
+<message type="Info" time="Fri, 21 Jan 2011 18:14:24 GMT">
+<![CDATA[Generating plugins.wiki for ThoughtWorks.CruiseControl.WebDashboard.Configuration.NetReflectorPluginConfiguration]]>
+</message>
+<message type="Error" time="Fri, 21 Jan 2011 18:14:24 GMT">
+<![CDATA[XML docs for ThoughtWorks.CruiseControl.WebDashboard.Configuration.NetReflectorPluginConfiguration are badly formed XML or missing.]]>
+</message>
+<message type="Debug" time="Fri, 21 Jan 2011 18:14:24 GMT">
+<![CDATA[Documentation generated for plugins in 0.11s]]>
+</message>
+<message type="Info" time="Fri, 21 Jan 2011 18:14:24 GMT">
+<![CDATA[Generating remoteServices.wiki for ThoughtWorks.CruiseControl.WebDashboard.Configuration.NetReflectorRemoteServicesConfiguration]]>
+</message>
+<message type="Error" time="Fri, 21 Jan 2011 18:14:24 GMT">
+<![CDATA[XML docs for ThoughtWorks.CruiseControl.WebDashboard.Configuration.NetReflectorRemoteServicesConfiguration are badly formed XML or missing.]]>
+</message>
+<message type="Debug" time="Fri, 21 Jan 2011 18:14:24 GMT">
+<![CDATA[Documentation generated for remoteServices in 0.02s]]>
+</message>
+<message type="Info" time="Fri, 21 Jan 2011 18:14:24 GMT">
+<![CDATA[Generating server.wiki for ThoughtWorks.CruiseControl.WebDashboard.Configuration.ServerLocation]]>
+</message>
+<message type="Error" time="Fri, 21 Jan 2011 18:14:24 GMT">
+<![CDATA[XML docs for ThoughtWorks.CruiseControl.WebDashboard.Configuration.ServerLocation are badly formed XML or missing.]]>
+</message>
+<message type="Debug" time="Fri, 21 Jan 2011 18:14:24 GMT">
+<![CDATA[Documentation generated for server in 0.08s]]>
+</message>
+<message type="Info" time="Fri, 21 Jan 2011 18:14:24 GMT">
+<![CDATA[Generating stylesheet.wiki for ThoughtWorks.CruiseControl.WebDashboard.Configuration.StylesheetConfiguration]]>
+</message>
+<message type="Debug" time="Fri, 21 Jan 2011 18:14:24 GMT">
+<![CDATA[Documentation generated for stylesheet in 0.03s]]>
+</message>
+<message type="Info" time="Fri, 21 Jan 2011 18:14:24 GMT">
+<![CDATA[Generating xsltParameter.wiki for ThoughtWorks.CruiseControl.Remote.XsltParameter]]>
+</message>
+<message type="Debug" time="Fri, 21 Jan 2011 18:14:24 GMT">
+<![CDATA[Documentation generated for xsltParameter in 0.02s]]>
+</message>
+<message type="Info" time="Fri, 21 Jan 2011 18:14:24 GMT">
+<![CDATA[Generating cookieStore.wiki for ThoughtWorks.CruiseControl.WebDashboard.Dashboard.CookieSessionStore]]>
+</message>
+<message type="Debug" time="Fri, 21 Jan 2011 18:14:24 GMT">
+<![CDATA[Documentation generated for cookieStore in 0.01s]]>
+</message>
+<message type="Info" time="Fri, 21 Jan 2011 18:14:24 GMT">
+<![CDATA[Generating htmlReportPlugin.wiki for ThoughtWorks.CruiseControl.WebDashboard.Dashboard.GenericPlugins.HtmlReportPlugin]]>
+</message>
+<message type="Debug" time="Fri, 21 Jan 2011 18:14:24 GMT">
+<![CDATA[Documentation generated for htmlReportPlugin in 0.04s]]>
+</message>
+<message type="Info" time="Fri, 21 Jan 2011 18:14:24 GMT">
+<![CDATA[Generating administrationPlugin.wiki for ThoughtWorks.CruiseControl.WebDashboard.Plugins.Administration.AdministerPlugin]]>
+</message>
+<message type="Debug" time="Fri, 21 Jan 2011 18:14:24 GMT">
+<![CDATA[Documentation generated for administrationPlugin in 0.01s]]>
+</message>
+<message type="Info" time="Fri, 21 Jan 2011 18:14:24 GMT">
+<![CDATA[Generating multipleXslReportAction.wiki for ThoughtWorks.CruiseControl.WebDashboard.Dashboard.Actions.MultipleXslReportBuildAction]]>
+</message>
+<message type="Error" time="Fri, 21 Jan 2011 18:14:24 GMT">
+<![CDATA[XML docs for ThoughtWorks.CruiseControl.WebDashboard.Dashboard.Actions.MultipleXslReportBuildAction are badly formed XML or missing.]]>
+</message>
+<message type="Debug" time="Fri, 21 Jan 2011 18:14:24 GMT">
+<![CDATA[Documentation generated for multipleXslReportAction in 0.01s]]>
+</message>
+<message type="Info" time="Fri, 21 Jan 2011 18:14:24 GMT">
+<![CDATA[Generating xslReportBuildAction.wiki for ThoughtWorks.CruiseControl.WebDashboard.Dashboard.Actions.XslReportBuildAction]]>
+</message>
+<message type="Error" time="Fri, 21 Jan 2011 18:14:24 GMT">
+<![CDATA[XML docs for ThoughtWorks.CruiseControl.WebDashboard.Dashboard.Actions.XslReportBuildAction are badly formed XML or missing.]]>
+</message>
+<message type="Debug" time="Fri, 21 Jan 2011 18:14:24 GMT">
+<![CDATA[Documentation generated for xslReportBuildAction in 0.01s]]>
+</message>
+<message type="Info" time="Fri, 21 Jan 2011 18:14:24 GMT">
+<![CDATA[Generating namedAction.wiki for ThoughtWorks.CruiseControl.WebDashboard.Dashboard.ConfigurableNamedAction]]>
+</message>
+<message type="Error" time="Fri, 21 Jan 2011 18:14:24 GMT">
+<![CDATA[XML docs for ThoughtWorks.CruiseControl.WebDashboard.Dashboard.ConfigurableNamedAction are badly formed XML or missing.]]>
+</message>
+<message type="Debug" time="Fri, 21 Jan 2011 18:14:25 GMT">
+<![CDATA[Documentation generated for namedAction in 0.02s]]>
+</message>
+<message type="Info" time="Fri, 21 Jan 2011 18:14:25 GMT">
+<![CDATA[Generating configurablePlugin.wiki for ThoughtWorks.CruiseControl.WebDashboard.Dashboard.GenericPlugins.ConfigurablePlugin]]>
+</message>
+<message type="Error" time="Fri, 21 Jan 2011 18:14:25 GMT">
+<![CDATA[XML docs for ThoughtWorks.CruiseControl.WebDashboard.Dashboard.GenericPlugins.ConfigurablePlugin are badly formed XML or missing.]]>
+</message>
+<message type="Debug" time="Fri, 21 Jan 2011 18:14:25 GMT">
+<![CDATA[Documentation generated for configurablePlugin in 0.02s]]>
+</message>
+<message type="Info" time="Fri, 21 Jan 2011 18:14:25 GMT">
+<![CDATA[Generating xslMultiReportBuildPlugin.wiki for ThoughtWorks.CruiseControl.WebDashboard.Dashboard.GenericPlugins.XslMultiReportBuildPlugin]]>
+</message>
+<message type="Debug" time="Fri, 21 Jan 2011 18:14:25 GMT">
+<![CDATA[Documentation generated for xslMultiReportBuildPlugin in 0.04s]]>
+</message>
+<message type="Info" time="Fri, 21 Jan 2011 18:14:25 GMT">
+<![CDATA[Generating xslReportBuildPlugin.wiki for ThoughtWorks.CruiseControl.WebDashboard.Dashboard.GenericPlugins.XslReportBuildPlugin]]>
+</message>
+<message type="Error" time="Fri, 21 Jan 2011 18:14:25 GMT">
+<![CDATA[XML docs for ThoughtWorks.CruiseControl.WebDashboard.Dashboard.GenericPlugins.XslReportBuildPlugin are badly formed XML or missing.]]>
+</message>
+<message type="Debug" time="Fri, 21 Jan 2011 18:14:25 GMT">
+<![CDATA[Documentation generated for xslReportBuildPlugin in 0.05s]]>
+</message>
+<message type="Info" time="Fri, 21 Jan 2011 18:14:25 GMT">
+<![CDATA[Generating buildLogBuildPlugin.wiki for ThoughtWorks.CruiseControl.WebDashboard.Plugins.BuildReport.BuildLogBuildPlugin]]>
+</message>
+<message type="Error" time="Fri, 21 Jan 2011 18:14:25 GMT">
+<![CDATA[XML docs for ThoughtWorks.CruiseControl.WebDashboard.Plugins.BuildReport.BuildLogBuildPlugin are badly formed XML or missing.]]>
+</message>
+<message type="Debug" time="Fri, 21 Jan 2011 18:14:25 GMT">
+<![CDATA[Documentation generated for buildLogBuildPlugin in 0.02s]]>
+</message>
+<message type="Info" time="Fri, 21 Jan 2011 18:14:25 GMT">
+<![CDATA[Generating buildReportBuildPlugin.wiki for ThoughtWorks.CruiseControl.WebDashboard.Plugins.BuildReport.BuildReportBuildPlugin]]>
+</message>
+<message type="Error" time="Fri, 21 Jan 2011 18:14:25 GMT">
+<![CDATA[XML docs for ThoughtWorks.CruiseControl.WebDashboard.Plugins.BuildReport.BuildReportBuildPlugin are badly formed XML or missing.]]>
+</message>
+<message type="Debug" time="Fri, 21 Jan 2011 18:14:25 GMT">
+<![CDATA[Documentation generated for buildReportBuildPlugin in 0.03s]]>
+</message>
+<message type="Info" time="Fri, 21 Jan 2011 18:14:25 GMT">
+<![CDATA[Generating finalBuildStatusPlugin.wiki for ThoughtWorks.CruiseControl.WebDashboard.Plugins.ProjectReport.FinalBuildStatusPlugin]]>
+</message>
+<message type="Debug" time="Fri, 21 Jan 2011 18:14:25 GMT">
+<![CDATA[Documentation generated for finalBuildStatusPlugin in 0.01s]]>
+</message>
+<message type="Info" time="Fri, 21 Jan 2011 18:14:25 GMT">
+<![CDATA[Generating latestBuildReportProjectPlugin.wiki for ThoughtWorks.CruiseControl.WebDashboard.Plugins.BuildReport.LatestBuildReportProjectPlugin]]>
+</message>
+<message type="Error" time="Fri, 21 Jan 2011 18:14:25 GMT">
+<![CDATA[XML docs for ThoughtWorks.CruiseControl.WebDashboard.Plugins.BuildReport.LatestBuildReportProjectPlugin are badly formed XML or missing.]]>
+</message>
+<message type="Debug" time="Fri, 21 Jan 2011 18:14:25 GMT">
+<![CDATA[Documentation generated for latestBuildReportProjectPlugin in 0.01s]]>
+</message>
+<message type="Info" time="Fri, 21 Jan 2011 18:14:25 GMT">
+<![CDATA[Generating cctrayDownloadPlugin.wiki for ThoughtWorks.CruiseControl.WebDashboard.Plugins.CCTray.CCTrayDownloadPlugin]]>
+</message>
+<message type="Error" time="Fri, 21 Jan 2011 18:14:25 GMT">
+<![CDATA[XML docs for ThoughtWorks.CruiseControl.WebDashboard.Plugins.CCTray.CCTrayDownloadPlugin are badly formed XML or missing.]]>
+</message>
+<message type="Debug" time="Fri, 21 Jan 2011 18:14:25 GMT">
+<![CDATA[Documentation generated for cctrayDownloadPlugin in 0.01s]]>
+</message>
+<message type="Info" time="Fri, 21 Jan 2011 18:14:25 GMT">
+<![CDATA[Generating categorizedFarmReportFarmPlugin.wiki for ThoughtWorks.CruiseControl.WebDashboard.Plugins.FarmReport.CategorizedFarmReportFarmPlugin]]>
+</message>
+<message type="Error" time="Fri, 21 Jan 2011 18:14:25 GMT">
+<![CDATA[XML docs for ThoughtWorks.CruiseControl.WebDashboard.Plugins.FarmReport.CategorizedFarmReportFarmPlugin are badly formed XML or missing.]]>
+</message>
+<message type="Debug" time="Fri, 21 Jan 2011 18:14:25 GMT">
+<![CDATA[Documentation generated for categorizedFarmReportFarmPlugin in 0.01s]]>
+</message>
+<message type="Info" time="Fri, 21 Jan 2011 18:14:25 GMT">
+<![CDATA[Generating farmReportFarmPlugin.wiki for ThoughtWorks.CruiseControl.WebDashboard.Plugins.FarmReport.FarmReportFarmPlugin]]>
+</message>
+<message type="Error" time="Fri, 21 Jan 2011 18:14:25 GMT">
+<![CDATA[XML docs for ThoughtWorks.CruiseControl.WebDashboard.Plugins.FarmReport.FarmReportFarmPlugin are badly formed XML or missing.]]>
+</message>
+<message type="Debug" time="Fri, 21 Jan 2011 18:14:25 GMT">
+<![CDATA[Documentation generated for farmReportFarmPlugin in 0.02s]]>
+</message>
+<message type="Info" time="Fri, 21 Jan 2011 18:14:25 GMT">
+<![CDATA[Generating ohlohProjectPlugin.wiki for ThoughtWorks.CruiseControl.WebDashboard.Plugins.ProjectReport.OhlohProjectPlugin]]>
+</message>
+<message type="Debug" time="Fri, 21 Jan 2011 18:14:25 GMT">
+<![CDATA[Documentation generated for ohlohProjectPlugin in 0.01s]]>
+</message>
+<message type="Info" time="Fri, 21 Jan 2011 18:14:25 GMT">
+<![CDATA[Generating packageListPlugin.wiki for ThoughtWorks.CruiseControl.WebDashboard.Plugins.ProjectReport.PackageListPlugin]]>
+</message>
+<message type="Debug" time="Fri, 21 Jan 2011 18:14:25 GMT">
+<![CDATA[Documentation generated for packageListPlugin in 0.01s]]>
+</message>
+<message type="Info" time="Fri, 21 Jan 2011 18:14:25 GMT">
+<![CDATA[Generating viewProjectStatusPlugin.wiki for ThoughtWorks.CruiseControl.WebDashboard.Plugins.ProjectReport.ProjectStatusPlugin]]>
+</message>
+<message type="Debug" time="Fri, 21 Jan 2011 18:14:25 GMT">
+<![CDATA[Documentation generated for viewProjectStatusPlugin in 0.01s]]>
+</message>
+<message type="Info" time="Fri, 21 Jan 2011 18:14:25 GMT">
+<![CDATA[Generating projectReportProjectPlugin.wiki for ThoughtWorks.CruiseControl.WebDashboard.Plugins.ProjectReport.ProjectReportProjectPlugin]]>
+</message>
+<message type="Debug" time="Fri, 21 Jan 2011 18:14:25 GMT">
+<![CDATA[Documentation generated for projectReportProjectPlugin in 0.01s]]>
+</message>
+<message type="Info" time="Fri, 21 Jan 2011 18:14:25 GMT">
+<![CDATA[Generating projectTimelinePlugin.wiki for ThoughtWorks.CruiseControl.WebDashboard.Plugins.ProjectReport.ProjectTimelinePlugin]]>
+</message>
+<message type="Debug" time="Fri, 21 Jan 2011 18:14:25 GMT">
+<![CDATA[Documentation generated for projectTimelinePlugin in 0.01s]]>
+</message>
+<message type="Info" time="Fri, 21 Jan 2011 18:14:25 GMT">
+<![CDATA[Generating serverAuditHistoryProjectPlugin.wiki for ThoughtWorks.CruiseControl.WebDashboard.Plugins.ProjectReport.ServerAuditHistoryProjectPlugin]]>
+</message>
+<message type="Debug" time="Fri, 21 Jan 2011 18:14:25 GMT">
+<![CDATA[Documentation generated for serverAuditHistoryProjectPlugin in 0.01s]]>
+</message>
+<message type="Info" time="Fri, 21 Jan 2011 18:14:25 GMT">
+<![CDATA[Generating serverLogProjectPlugin.wiki for ThoughtWorks.CruiseControl.WebDashboard.Plugins.ProjectReport.ServerLogProjectPlugin]]>
+</message>
+<message type="Debug" time="Fri, 21 Jan 2011 18:14:25 GMT">
+<![CDATA[Documentation generated for serverLogProjectPlugin in 0.01s]]>
+</message>
+<message type="Info" time="Fri, 21 Jan 2011 18:14:25 GMT">
+<![CDATA[Generating serverSecurityConfigurationProjectPlugin.wiki for ThoughtWorks.CruiseControl.WebDashboard.Plugins.ProjectReport.ServerSecurityConfigurationProjectPlugin]]>
+</message>
+<message type="Debug" time="Fri, 21 Jan 2011 18:14:25 GMT">
+<![CDATA[Documentation generated for serverSecurityConfigurationProjectPlugin in 0.01s]]>
+</message>
+<message type="Info" time="Fri, 21 Jan 2011 18:14:25 GMT">
+<![CDATA[Generating serverUserListProjectPlugin.wiki for ThoughtWorks.CruiseControl.WebDashboard.Plugins.ProjectReport.ServerUserListProjectPlugin]]>
+</message>
+<message type="Debug" time="Fri, 21 Jan 2011 18:14:25 GMT">
+<![CDATA[Documentation generated for serverUserListProjectPlugin in 0.01s]]>
+</message>
+<message type="Info" time="Fri, 21 Jan 2011 18:14:25 GMT">
+<![CDATA[Generating viewConfigurationProjectPlugin.wiki for ThoughtWorks.CruiseControl.WebDashboard.Plugins.ProjectReport.ViewConfigurationProjectPlugin]]>
+</message>
+<message type="Debug" time="Fri, 21 Jan 2011 18:14:25 GMT">
+<![CDATA[Documentation generated for viewConfigurationProjectPlugin in 0.01s]]>
+</message>
+<message type="Info" time="Fri, 21 Jan 2011 18:14:25 GMT">
+<![CDATA[Generating simpleSecurity.wiki for ThoughtWorks.CruiseControl.WebDashboard.Plugins.Security.UserNameSecurityPlugin]]>
+</message>
+<message type="Debug" time="Fri, 21 Jan 2011 18:14:25 GMT">
+<![CDATA[Documentation generated for simpleSecurity in 0.01s]]>
+</message>
+<message type="Info" time="Fri, 21 Jan 2011 18:14:25 GMT">
+<![CDATA[Generating queueStatusServerPlugin.wiki for ThoughtWorks.CruiseControl.WebDashboard.Plugins.ServerReport.QueueStatusServerPlugin]]>
+</message>
+<message type="Debug" time="Fri, 21 Jan 2011 18:14:25 GMT">
+<![CDATA[Documentation generated for queueStatusServerPlugin in 0.01s]]>
+</message>
+<message type="Info" time="Fri, 21 Jan 2011 18:14:25 GMT">
+<![CDATA[Generating projectConfigurationServerPlugin.wiki for ThoughtWorks.CruiseControl.WebDashboard.Plugins.ServerReport.ProjectConfigurationServerPlugin]]>
+</message>
+<message type="Debug" time="Fri, 21 Jan 2011 18:14:25 GMT">
+<![CDATA[Documentation generated for projectConfigurationServerPlugin in 0.01s]]>
+</message>
+<message type="Info" time="Fri, 21 Jan 2011 18:14:25 GMT">
+<![CDATA[Generating serverAuditHistoryServerPlugin.wiki for ThoughtWorks.CruiseControl.WebDashboard.Plugins.ServerReport.ServerAuditHistoryServerPlugin]]>
+</message>
+<message type="Debug" time="Fri, 21 Jan 2011 18:14:25 GMT">
+<![CDATA[Documentation generated for serverAuditHistoryServerPlugin in 0.01s]]>
+</message>
+<message type="Info" time="Fri, 21 Jan 2011 18:14:25 GMT">
+<![CDATA[Generating serverInformationServerPlugin.wiki for ThoughtWorks.CruiseControl.WebDashboard.Plugins.ServerReport.ServerInformationServerPlugin]]>
+</message>
+<message type="Debug" time="Fri, 21 Jan 2011 18:14:25 GMT">
+<![CDATA[Documentation generated for serverInformationServerPlugin in 0.01s]]>
+</message>
+<message type="Info" time="Fri, 21 Jan 2011 18:14:25 GMT">
+<![CDATA[Generating serverLogServerPlugin.wiki for ThoughtWorks.CruiseControl.WebDashboard.Plugins.ServerReport.ServerLogServerPlugin]]>
+</message>
+<message type="Debug" time="Fri, 21 Jan 2011 18:14:25 GMT">
+<![CDATA[Documentation generated for serverLogServerPlugin in 0.01s]]>
+</message>
+<message type="Info" time="Fri, 21 Jan 2011 18:14:25 GMT">
+<![CDATA[Generating serverReportServerPlugin.wiki for ThoughtWorks.CruiseControl.WebDashboard.Plugins.ServerReport.ServerReportServerPlugin]]>
+</message>
+<message type="Debug" time="Fri, 21 Jan 2011 18:14:25 GMT">
+<![CDATA[Documentation generated for serverReportServerPlugin in 0.01s]]>
+</message>
+<message type="Info" time="Fri, 21 Jan 2011 18:14:25 GMT">
+<![CDATA[Generating serverSecurityConfigurationServerPlugin.wiki for ThoughtWorks.CruiseControl.WebDashboard.Plugins.ServerReport.ServerSecurityConfigurationServerPlugin]]>
+</message>
+<message type="Debug" time="Fri, 21 Jan 2011 18:14:25 GMT">
+<![CDATA[Documentation generated for serverSecurityConfigurationServerPlugin in 0.01s]]>
+</message>
+<message type="Info" time="Fri, 21 Jan 2011 18:14:25 GMT">
+<![CDATA[Generating serverUserListServerPlugin.wiki for ThoughtWorks.CruiseControl.WebDashboard.Plugins.ServerReport.ServerUserListServerPlugin]]>
+</message>
+<message type="Debug" time="Fri, 21 Jan 2011 18:14:25 GMT">
+<![CDATA[Documentation generated for serverUserListServerPlugin in 0.02s]]>
+</message>
+<message type="Info" time="Fri, 21 Jan 2011 18:14:25 GMT">
+<![CDATA[Generating projectStatisticsPlugin.wiki for ThoughtWorks.CruiseControl.WebDashboard.Plugins.Statistics.ProjectStatisticsPlugin]]>
+</message>
+<message type="Error" time="Fri, 21 Jan 2011 18:14:25 GMT">
+<![CDATA[XML docs for ThoughtWorks.CruiseControl.WebDashboard.Plugins.Statistics.ProjectStatisticsPlugin are badly formed XML or missing.]]>
+</message>
+<message type="Debug" time="Fri, 21 Jan 2011 18:14:25 GMT">
+<![CDATA[Documentation generated for projectStatisticsPlugin in 0.01s]]>
+</message>
+<message type="Info" time="Fri, 21 Jan 2011 18:14:25 GMT">
+<![CDATA[Generating viewAllBuildsProjectPlugin.wiki for ThoughtWorks.CruiseControl.WebDashboard.Plugins.ViewAllBuilds.ViewAllBuildsProjectPlugin]]>
+</message>
+<message type="Debug" time="Fri, 21 Jan 2011 18:14:25 GMT">
+<![CDATA[Documentation generated for viewAllBuildsProjectPlugin in 0.01s]]>
+</message>
+<message type="Info" time="Fri, 21 Jan 2011 18:14:25 GMT">
+<![CDATA[Documentation generation finished in 1.92s]]>
+</message>
+<message type="Warning" time="Fri, 21 Jan 2011 18:14:25 GMT">
+<![CDATA[Problems encountered : 35]]>
+</message>
+<message type="Warning" time="Fri, 21 Jan 2011 18:14:25 GMT">
+<![CDATA[No Summary tag for ThoughtWorks.CruiseControl.WebDashboard.Configuration.NetReflectorPluginConfiguration file e:\sourcecontrols\sourceforge\ccnet\wiki\plugins.wiki]]>
+</message>
+<message type="Warning" time="Fri, 21 Jan 2011 18:14:25 GMT">
+<![CDATA[No example tag for ThoughtWorks.CruiseControl.WebDashboard.Configuration.NetReflectorPluginConfiguration file e:\sourcecontrols\sourceforge\ccnet\wiki\plugins.wiki]]>
+</message>
+<message type="Warning" time="Fri, 21 Jan 2011 18:14:25 GMT">
+<![CDATA[No Summary tag for ThoughtWorks.CruiseControl.WebDashboard.Configuration.NetReflectorRemoteServicesConfiguration file e:\sourcecontrols\sourceforge\ccnet\wiki\remoteServices.wiki]]>
+</message>
+<message type="Warning" time="Fri, 21 Jan 2011 18:14:25 GMT">
+<![CDATA[No example tag for ThoughtWorks.CruiseControl.WebDashboard.Configuration.NetReflectorRemoteServicesConfiguration file e:\sourcecontrols\sourceforge\ccnet\wiki\remoteServices.wiki]]>
+</message>
+<message type="Warning" time="Fri, 21 Jan 2011 18:14:25 GMT">
+<![CDATA[No Summary tag for ThoughtWorks.CruiseControl.WebDashboard.Configuration.ServerLocation file e:\sourcecontrols\sourceforge\ccnet\wiki\server.wiki]]>
+</message>
+<message type="Warning" time="Fri, 21 Jan 2011 18:14:25 GMT">
+<![CDATA[No example tag for ThoughtWorks.CruiseControl.WebDashboard.Configuration.ServerLocation file e:\sourcecontrols\sourceforge\ccnet\wiki\server.wiki]]>
+</message>
+<message type="Warning" time="Fri, 21 Jan 2011 18:14:25 GMT">
+<![CDATA[No example tag for ThoughtWorks.CruiseControl.WebDashboard.Configuration.StylesheetConfiguration file e:\sourcecontrols\sourceforge\ccnet\wiki\stylesheet.wiki]]>
+</message>
+<message type="Warning" time="Fri, 21 Jan 2011 18:14:25 GMT">
+<![CDATA[No example tag for ThoughtWorks.CruiseControl.Remote.XsltParameter file e:\sourcecontrols\sourceforge\ccnet\wiki\xsltParameter.wiki]]>
+</message>
+<message type="Warning" time="Fri, 21 Jan 2011 18:14:25 GMT">
+<![CDATA[No example tag for ThoughtWorks.CruiseControl.WebDashboard.Dashboard.CookieSessionStore file e:\sourcecontrols\sourceforge\ccnet\wiki\cookieStore.wiki]]>
+</message>
+<message type="Warning" time="Fri, 21 Jan 2011 18:14:25 GMT">
+<![CDATA[No example tag for ThoughtWorks.CruiseControl.WebDashboard.Plugins.Administration.AdministerPlugin file e:\sourcecontrols\sourceforge\ccnet\wiki\administrationPlugin.wiki]]>
+</message>
+<message type="Warning" time="Fri, 21 Jan 2011 18:14:25 GMT">
+<![CDATA[No Summary tag for ThoughtWorks.CruiseControl.WebDashboard.Dashboard.Actions.MultipleXslReportBuildAction file e:\sourcecontrols\sourceforge\ccnet\wiki\multipleXslReportAction.wiki]]>
+</message>
+<message type="Warning" time="Fri, 21 Jan 2011 18:14:25 GMT">
+<![CDATA[No example tag for ThoughtWorks.CruiseControl.WebDashboard.Dashboard.Actions.MultipleXslReportBuildAction file e:\sourcecontrols\sourceforge\ccnet\wiki\multipleXslReportAction.wiki]]>
+</message>
+<message type="Warning" time="Fri, 21 Jan 2011 18:14:25 GMT">
+<![CDATA[No Summary tag for ThoughtWorks.CruiseControl.WebDashboard.Dashboard.Actions.XslReportBuildAction file e:\sourcecontrols\sourceforge\ccnet\wiki\xslReportBuildAction.wiki]]>
+</message>
+<message type="Warning" time="Fri, 21 Jan 2011 18:14:25 GMT">
+<![CDATA[No example tag for ThoughtWorks.CruiseControl.WebDashboard.Dashboard.Actions.XslReportBuildAction file e:\sourcecontrols\sourceforge\ccnet\wiki\xslReportBuildAction.wiki]]>
+</message>
+<message type="Warning" time="Fri, 21 Jan 2011 18:14:25 GMT">
+<![CDATA[No Summary tag for ThoughtWorks.CruiseControl.WebDashboard.Dashboard.ConfigurableNamedAction file e:\sourcecontrols\sourceforge\ccnet\wiki\namedAction.wiki]]>
+</message>
+<message type="Warning" time="Fri, 21 Jan 2011 18:14:25 GMT">
+<![CDATA[No example tag for ThoughtWorks.CruiseControl.WebDashboard.Dashboard.ConfigurableNamedAction file e:\sourcecontrols\sourceforge\ccnet\wiki\namedAction.wiki]]>
+</message>
+<message type="Warning" time="Fri, 21 Jan 2011 18:14:25 GMT">
+<![CDATA[No Summary tag for ThoughtWorks.CruiseControl.WebDashboard.Dashboard.GenericPlugins.ConfigurablePlugin file e:\sourcecontrols\sourceforge\ccnet\wiki\configurablePlugin.wiki]]>
+</message>
+<message type="Warning" time="Fri, 21 Jan 2011 18:14:25 GMT">
+<![CDATA[No example tag for ThoughtWorks.CruiseControl.WebDashboard.Dashboard.GenericPlugins.ConfigurablePlugin file e:\sourcecontrols\sourceforge\ccnet\wiki\configurablePlugin.wiki]]>
+</message>
+<message type="Warning" time="Fri, 21 Jan 2011 18:14:25 GMT">
+<![CDATA[No example tag for ThoughtWorks.CruiseControl.WebDashboard.Dashboard.GenericPlugins.XslMultiReportBuildPlugin file e:\sourcecontrols\sourceforge\ccnet\wiki\xslMultiReportBuildPlugin.wiki]]>
+</message>
+<message type="Warning" time="Fri, 21 Jan 2011 18:14:25 GMT">
+<![CDATA[No Summary tag for ThoughtWorks.CruiseControl.WebDashboard.Dashboard.GenericPlugins.XslReportBuildPlugin file e:\sourcecontrols\sourceforge\ccnet\wiki\xslReportBuildPlugin.wiki]]>
+</message>
+<message type="Warning" time="Fri, 21 Jan 2011 18:14:25 GMT">
+<![CDATA[No example tag for ThoughtWorks.CruiseControl.WebDashboard.Dashboard.GenericPlugins.XslReportBuildPlugin file e:\sourcecontrols\sourceforge\ccnet\wiki\xslReportBuildPlugin.wiki]]>
+</message>
+<message type="Warning" time="Fri, 21 Jan 2011 18:14:25 GMT">
+<![CDATA[No Summary tag for ThoughtWorks.CruiseControl.WebDashboard.Plugins.BuildReport.BuildLogBuildPlugin file e:\sourcecontrols\sourceforge\ccnet\wiki\buildLogBuildPlugin.wiki]]>
+</message>
+<message type="Warning" time="Fri, 21 Jan 2011 18:14:25 GMT">
+<![CDATA[No example tag for ThoughtWorks.CruiseControl.WebDashboard.Plugins.BuildReport.BuildLogBuildPlugin file e:\sourcecontrols\sourceforge\ccnet\wiki\buildLogBuildPlugin.wiki]]>
+</message>
+<message type="Warning" time="Fri, 21 Jan 2011 18:14:25 GMT">
+<![CDATA[No Summary tag for ThoughtWorks.CruiseControl.WebDashboard.Plugins.BuildReport.BuildReportBuildPlugin file e:\sourcecontrols\sourceforge\ccnet\wiki\buildReportBuildPlugin.wiki]]>
+</message>
+<message type="Warning" time="Fri, 21 Jan 2011 18:14:25 GMT">
+<![CDATA[No example tag for ThoughtWorks.CruiseControl.WebDashboard.Plugins.BuildReport.BuildReportBuildPlugin file e:\sourcecontrols\sourceforge\ccnet\wiki\buildReportBuildPlugin.wiki]]>
+</message>
+<message type="Warning" time="Fri, 21 Jan 2011 18:14:25 GMT">
+<![CDATA[No Summary tag for ThoughtWorks.CruiseControl.WebDashboard.Plugins.BuildReport.LatestBuildReportProjectPlugin file e:\sourcecontrols\sourceforge\ccnet\wiki\latestBuildReportProjectPlugin.wiki]]>
+</message>
+<message type="Warning" time="Fri, 21 Jan 2011 18:14:25 GMT">
+<![CDATA[No example tag for ThoughtWorks.CruiseControl.WebDashboard.Plugins.BuildReport.LatestBuildReportProjectPlugin file e:\sourcecontrols\sourceforge\ccnet\wiki\latestBuildReportProjectPlugin.wiki]]>
+</message>
+<message type="Warning" time="Fri, 21 Jan 2011 18:14:25 GMT">
+<![CDATA[No Summary tag for ThoughtWorks.CruiseControl.WebDashboard.Plugins.CCTray.CCTrayDownloadPlugin file e:\sourcecontrols\sourceforge\ccnet\wiki\cctrayDownloadPlugin.wiki]]>
+</message>
+<message type="Warning" time="Fri, 21 Jan 2011 18:14:25 GMT">
+<![CDATA[No example tag for ThoughtWorks.CruiseControl.WebDashboard.Plugins.CCTray.CCTrayDownloadPlugin file e:\sourcecontrols\sourceforge\ccnet\wiki\cctrayDownloadPlugin.wiki]]>
+</message>
+<message type="Warning" time="Fri, 21 Jan 2011 18:14:25 GMT">
+<![CDATA[No Summary tag for ThoughtWorks.CruiseControl.WebDashboard.Plugins.FarmReport.CategorizedFarmReportFarmPlugin file e:\sourcecontrols\sourceforge\ccnet\wiki\categorizedFarmReportFarmPlugin.wiki]]>
+</message>
+<message type="Warning" time="Fri, 21 Jan 2011 18:14:25 GMT">
+<![CDATA[No example tag for ThoughtWorks.CruiseControl.WebDashboard.Plugins.FarmReport.CategorizedFarmReportFarmPlugin file e:\sourcecontrols\sourceforge\ccnet\wiki\categorizedFarmReportFarmPlugin.wiki]]>
+</message>
+<message type="Warning" time="Fri, 21 Jan 2011 18:14:25 GMT">
+<![CDATA[No Summary tag for ThoughtWorks.CruiseControl.WebDashboard.Plugins.FarmReport.FarmReportFarmPlugin file e:\sourcecontrols\sourceforge\ccnet\wiki\farmReportFarmPlugin.wiki]]>
+</message>
+<message type="Warning" time="Fri, 21 Jan 2011 18:14:25 GMT">
+<![CDATA[No example tag for ThoughtWorks.CruiseControl.WebDashboard.Plugins.FarmReport.FarmReportFarmPlugin file e:\sourcecontrols\sourceforge\ccnet\wiki\farmReportFarmPlugin.wiki]]>
+</message>
+<message type="Warning" time="Fri, 21 Jan 2011 18:14:25 GMT">
+<![CDATA[No Summary tag for ThoughtWorks.CruiseControl.WebDashboard.Plugins.Statistics.ProjectStatisticsPlugin file e:\sourcecontrols\sourceforge\ccnet\wiki\projectStatisticsPlugin.wiki]]>
+</message>
+<message type="Warning" time="Fri, 21 Jan 2011 18:14:25 GMT">
+<![CDATA[No example tag for ThoughtWorks.CruiseControl.WebDashboard.Plugins.Statistics.ProjectStatisticsPlugin file e:\sourcecontrols\sourceforge\ccnet\wiki\projectStatisticsPlugin.wiki]]>
+</message>
+</docGen>

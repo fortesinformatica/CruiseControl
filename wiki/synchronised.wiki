@@ -1,0 +1,47 @@
+h1.  Synchronisation Context Task 
+
+A sychronisation context across multiple tasks or projects.  
+Only one task can be in a synchronisation context at any time. This provides a mechanism for locking, either within a project or inbetween projects.  
+
+
+h2. Version
+
+Available from version 1.5
+
+h2. Examples
+
+{code:xml|borderStyle=solid|titleBGColor=#ADD6FF|title=Minimalist example}
+<sequential>
+  <tasks>
+    <!-- Tasks defined here -->
+  </tasks>
+</sequential>
+{code}
+{code:xml|borderStyle=solid|titleBGColor=#ADD6FF|title=Full example}
+<sequential continueOnFailure="true" context="thereCanBeOnlyOne" timeout="1200">
+  <description>Example of how to run multiple tasks in a synchronisation context.</description>
+  <tasks>
+    <!-- Tasks defined here -->
+  </tasks>
+</sequential>
+{code}
+
+
+h2. Configuration Elements
+
+|| Element || Description || Type || Required || Default || Version ||
+| context | The name of the synchronisation context. This is only needed if multiple synchronisation contexts are desired.   | String | No | DefaultSynchronisationContext | 1.5 |
+| continueOnFailure | Should the tasks continue to run, even if there is a failure?   | Boolean | No | false | 1.5 |
+| description | Description used for the visualisation of the buildstage, if left empty the process name will be shown.   | String | No | The task/publisher name. | 1.5 |
+| dynamicValues | The dynamic values to use for the task.   | [Dynamic Values] array | No | _None_ | 1.5 |
+| environment |   A set of environment variables set for commands that are executed.  \\  Each variable should be specified as {code:xml|borderStyle=solid}
+<variable name="name" value="value" />
+{code}
+.   | [Environment Variable] array | No |  |  |
+| tasks | The tasks to run within the synchronisation context. These tasks will be run in the order they are defined.   | [Task And Publisher Blocks] array | Yes | _n/a_ | 1.5 |
+| timeout | The timeout period (in seconds).  \\The time\-out is only used for attempting to aquire the context. If the task cannot acquire the context within this period, it will time out and throw an error. Once the context has been acquired, there is no time limit on how long it can be held.   | Nullable`1 | No | 300 | 1.5 |
+
+{info:title=Automatically Generated}
+Documentation generated on Saturday, 22 Jan 2011 at 12:14:22 AM
+Using assembly version 1.6.7979.1
+{info}

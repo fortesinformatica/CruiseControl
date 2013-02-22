@@ -1,0 +1,24 @@
+h1. Null Project Security
+
+This element turns off security at the project level. A project with this security will give all rights to all users.  
+
+h2. Version
+
+Available from version 1.5
+
+h2. Examples
+
+{code:xml|borderStyle=solid}
+<security type="nullProjectSecurity" />
+{code}
+
+
+h2. Configuration Elements
+
+|| Element || Description || Type || Required || Default || Version ||
+| type | The type of the project security. | String - must be nullProjectSecurity | Yes | _n/a_ | 1.5 |
+
+{info:title=Automatically Generated}
+Documentation generated on Saturday, 22 Jan 2011 at 12:14:16 AM
+Using assembly version 1.6.7979.1
+{info}

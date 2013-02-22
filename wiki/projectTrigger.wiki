@@ -1,0 +1,52 @@
+h1. Project Trigger
+
+The Project Trigger is used to trigger a build when the specified dependent project has completed its build. This trigger can help you split your build process across projects and servers. For example, you could have a CCNet project that will trigger the regression test suite once the main development build has completed successfully. This dependent build could be running on either a local or a remote CCNet server.  
+The Project Trigger works by using .NET remoting to poll the status of the dependent project. Whenever it detects that the dependent project has completed a build, the Project Trigger will fire. The Project Trigger can be configured to fire when the dependent project build succeeded, failed or threw an exception. In order to avoid hammering the remote project through polling, the Project Trigger is composed of an [Interval Trigger  ]that will set a polling interval to 5 seconds. This inner trigger can be adjusted through changing the configuration.  
+{info}
+Like all triggers, the projectTrigger must be enclosed within a triggers element in the appropriate [Project Configuration Block].  
+{info}
+
+
+h2. Version
+
+Available from version 1.0
+
+h2. Examples
+
+{code:xml|borderStyle=solid|titleBGColor=#ADD6FF|title=Minimalist example}
+<projectTrigger project="Core" />
+{code}
+{code:xml|borderStyle=solid|titleBGColor=#ADD6FF|title=Full example}
+<projectTrigger serverUri="tcp://server:21234/CruiseManager.rem" project="Server">
+  <triggerStatus>Success</triggerStatus>
+  <innerTrigger type="intervalTrigger" seconds="30" buildCondition="ForceBuild" />
+</projectTrigger>
+{code}
+
+
+h2. Configuration Elements
+
+|| Element || Description || Type || Required || Default || Version ||
+| innerTrigger | The trigger used to modulate the polling interval for the ProjectTrigger. By default, this is set to a ForceBuild IntervalTrigger that will cause the trigger to check the status of the dependent project every 5 seconds.   | [Trigger Blocks] | No | 5 second ForceBuild intervalTrigger | 1.0 |
+| project | The name of the dependent project to trigger a build from.   | String | Yes | _n/a_ | 1.0 |
+| security | The security credentials to pass through to the remote server.  \\These are only needed if the remote project has security applied. If credentials are passed to the remote server, then the enforcerName will be ignored. Valid security tokens are: "username" and "password" (this list may be expanded in future).   | [Named Value] array | No | _None_ | 1.6 |
+| serverUri | The URI for the CCNet server containing the dependent project.   | String | No | tcp://localhost:21234/CruiseManager.rem | 1.0 |
+| triggerFirstTime | Whether to trigger on the first time or not.   | Boolean | No | false | 1.0 |
+| triggerStatus | The status of the dependent project that will be used to trigger the build. For example, if this value is set to Success then a build will be triggered when the dependent project completes a successful build.   | String - one of:
+* Success
+* Failure
+* Exception
+* Unknown
+* Cancelled | No | Success | 1.0 |
+
+h2. Notes
+
+{warning}
+There is currently a limitation in the Project Trigger in that it will always trigger a build when the inner trigger fires (at the end of the first interval for an Interval Trigger). This is because the Project Trigger has no way to save its state from a previous server run. So the last time that the build was triggered is not retrievable when the server restarts.  
+{warning}
+
+
+{info:title=Automatically Generated}
+Documentation generated on Saturday, 22 Jan 2011 at 12:14:23 AM
+Using assembly version 1.6.7979.1
+{info}

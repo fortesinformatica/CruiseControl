@@ -1,0 +1,44 @@
+h1. Update Configuration Task
+
+Updates the configuration for the server.  
+
+h2. Version
+
+Available from version 1.6
+
+h2. Examples
+
+{code:xml|borderStyle=solid|titleBGColor=#ADD6FF|title=Minimalist example}
+<updateConfig />
+{code}
+{code:xml|borderStyle=solid|titleBGColor=#ADD6FF|title=Full example}
+<updateConfig />
+{code}
+
+
+h2. Configuration Elements
+
+|| Element || Description || Type || Required || Default || Version ||
+| always | Whether to always update the file, even if there are no changes.   | Boolean | No | false | 1.6 |
+| description | Description used for the visualisation of the buildstage, if left empty the process name will be shown.   | String | No | The task/publisher name. | 1.6 |
+| dynamicValues | The dynamic values to use for the task.   | [Dynamic Values] array | No | _None_ | 1.6 |
+| environment |   A set of environment variables set for commands that are executed.  \\  Each variable should be specified as {code:xml|borderStyle=solid}
+<variable name="name" value="value" />
+{code}
+.   | [Environment Variable] array | No |  |  |
+| executable | The executable to use.   | String | No | ccvalidator | 1.6 |
+| priority | The priority class of the spawned process.   | String - one of:
+* Normal
+* Idle
+* High
+* RealTime
+* BelowNormal
+* AboveNormal | No | Normal | 1.6 |
+| source | The source of the configuration file.   | String | Yes | _none_ | 1.6 |
+| timeout | The time\-out period in seconds.   | Int32 | No | 600 | 1.6 |
+| validate | Whether to validate the file before it is applied or not.   | Boolean | No | true | 1.6 |
+
+{info:title=Automatically Generated}
+Documentation generated on Saturday, 22 Jan 2011 at 12:14:22 AM
+Using assembly version 1.6.7979.1
+{info}

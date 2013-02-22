@@ -1,0 +1,11 @@
+h1. multipleXslReportAction
+
+h2. Configuration Elements
+
+|| Element || Description || Type || Required || Default || Version ||
+| xslFileNames | Gets or sets the XSL file names.   | BuildReportXslFilename array | Yes |  |  |
+
+{info:title=Automatically Generated}
+Documentation generated on Saturday, 22 Jan 2011 at 12:14:24 AM
+Using assembly version 1.6.7979.1
+{info}

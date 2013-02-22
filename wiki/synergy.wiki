@@ -1,0 +1,100 @@
+h1. Telelogic Synergy  Source Control Block
+
+CruiseControl.NET SCM plugin for CM Synergy.  
+Detection of modifications is entirely task based rather than object based, which may present problems for pre\-6.3 lifecycles. Successful integration may be published through shared manual task folders and/or baselining.  
+
+
+h2. Version
+
+Available from version 1.0
+
+h2. Examples
+
+{code:xml|borderStyle=solid|titleBGColor=#ADD6FF|title=Example using Defaults}
+<sourcecontrol type="synergy">
+  <connection>
+    <host>myserver</host>
+    <database>\\myserver\share\mydatabase</database>
+  </connection>
+  <project>
+    <release>Product/1.0</release>
+    <projectSpecification>Product-1</projectSpecification>
+    <taskFolder>1234</taskFolder>
+  </project>
+  <changeSynergy>
+    <url>http://myserver:8060</url>
+  </changeSynergy>
+</sourcecontrol>
+{code}
+{code:xml|borderStyle=solid|titleBGColor=#ADD6FF|title=Full Example}
+<sourcecontrol type="synergy">
+  <connection>
+    <host>myserver</host>
+    <database>\\myserver\share\mydatabase</database>
+    <!-- store values in an environmental variable-->
+    <username>%CCM_USER%</username>
+    <password>%CCM_PWD%</password>
+    <role>build_mgr</role>
+    <homeDirectory>D:\cmsynergy\%CCM_USER%</homeDirectory>
+    <clientDatabaseDirectory>D:\cmsynergy\uidb</clientDatabaseDirectory>
+    <polling>true</polling>
+    <timeout>3600</timeout>
+  </connection>
+  <project>
+    <release>Product/1.0</release>
+    <projectSpecification>Product-1</projectSpecification>
+    <taskFolder>1234</taskFolder>
+    <baseline>false</baseline>
+    <purpose>Integration Testing</purpose>
+    <template>true</template>
+  </project>
+  <changeSynergy>
+    <role>User</role>
+    <url>http://myserver:8060</url>
+    <username>%CS_USER%</username>
+    <password>%CS_PWD%</password>
+  </changeSynergy>
+</sourcecontrol>
+{code}
+
+
+h2. Configuration Elements
+
+|| Element || Description || Type || Required || Default || Version ||
+| type | The type of source control block. | String - must be synergy | Yes | _n/a_ | 1.0 |
+| connection | Connection info to create a session.   | [Synergy Client Session] | Yes | _n/a_ | 1.0 |
+| dynamicValues | The dynamic values to use for the source control block.   | [Dynamic Values] array | No | _None_ | 1.5 |
+| issueUrlBuilder | The issue URL builder to use.   | [IssueUrlBuilder] | No | _n/a_ | 1.0 |
+| project | The info for the integration testing project.   | [Synergy Project] | Yes | _n/a_ | 1.0 |
+| changeSynergy | The Web Url builder to use.   | [IssueUrlBuilder] | No | _None_ | 1.0 |
+
+h2. Notes
+
+{info}
+This integration has been thoroughly tested against CM Synergy 6.3 SP4 and ChangeSynergy 4.3 SP3 Windows/Informix with the DCM option enabled. While untested, CM Synergy installations on Unix/Informix or Unix/Oracle should function properly.  
+{info}
+h4. Background
+CM Synergy Concepts (http://confluence.public.thoughtworks.org//display/CC/CMSynergyConcepts) is arguably one of the best conceptual explanations of CM Synergy. Consider it a prerequisite for implementing continuous integration with CM Synergy. Robert Smith (http://confluence.public.thoughtworks.org//display/~rjmpsmith), from the CruiseControl for Java site, deserves a great deal of credit for explaining the product better than Telelogic ever has.  
+h4. Methodology of integration with CCNET
+Certain assumptions have been made about the integration of CruiseControl.NET and CM Synergy. First, it is assumed that all projects use a task based reconfigure template, rather than an object based.  
+* The reconfigure template for all projects is task based, not object status based.  
+* Developers have there own projects with purpose "Insulated Development"  
+* There's no real point to continuous integration for "Collaborative Development" purpose projects, since Synergy is not a label based system.  
+* Build Managers test completed tasks in a project with purpose "Integration Testing" (or similar).  
+* We could create a baseline in the integration project to push completed tasks to the developers; however, this is less than ideal. Baselines in Synergy are expensive and were intended for milestone events like completion of a feature, or a configuration used for a QA testing round.  
+* The more efficient approach is to have a shared task folder that is included in each developer's reconfigure template/properties.  
+* Successfully integrated tasks can be manually added to this folder.  
+* This will push newly completed and integrated tasks to developers when they reconfigure (i.e., "update members").  
+
+h4. Configuration Reuse
+By creating separate child nodes for the <connection>, <project>, and <changeSynergy> configuration elements, it is very easy to create reusable blocks of XML. For more information on XML DTD entities and reusable configuration blocks, see JIRA issue CCNET\-239 and Nithy Palanivelu's Weblog (http://peeps.dallas.focus\-technologies.com/roller/page/nithy/20040128#using\_the\_entity\_includes\_in).  
+h4. The Polling Feature
+The polling feature is useful if your Synergy installation routinely goes offline (i.e., "protected mode"). Long runing builds may inadventently conflict with the routine downtime schedules. For example, polling allows your build to queue CM Synergy commands until the nightly backup completes.  
+h4. Environmental Variables
+Environmental variable support enables you to keep your sensitive build manager credentials out of the CCNET configuration file. This is especially important if the configuration file is under source control, whereby it would be readable by all CM Synergy users.  
+
+
+{info:title=Automatically Generated}
+Documentation generated on Saturday, 22 Jan 2011 at 12:14:19 AM
+Using assembly version 1.6.7979.1
+{info}

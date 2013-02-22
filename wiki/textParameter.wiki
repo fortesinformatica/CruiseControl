@@ -1,0 +1,72 @@
+h1. Text Parameter
+
+This will prompt the user to enter a text value when a force build is requested.  
+This parameter can then be used by a dynamic value in a task.  
+
+
+h2. Version
+
+Available from version 1.5
+
+h2. Examples
+
+{code:xml|borderStyle=solid|titleBGColor=#ADD6FF|title=Minimalist example}
+<textParameter>
+  <name>Target</name>
+</textParameter>
+{code}
+{code:xml|borderStyle=solid|titleBGColor=#ADD6FF|title=Full example}
+<textParameter>
+  <name>Target</name>
+  <display>Target to Build</display>
+  <description>Which target do you want to build?</description>
+  <default>DEV</default>
+  <minimum>3</minimum>
+  <maximum>10</maximum>
+  <required>false</required>
+</textParameter>
+{code}
+{code:xml|borderStyle=solid|titleBGColor=#ADD6FF|title=Example in Context}
+<project name="Test Project">
+  <sourcecontrol type="svn">
+    <!-- Omitted for brevity -->
+  </sourcecontrol>
+  <triggers>
+    <intervalTrigger />
+  </triggers>
+  <tasks>
+    <!-- Omitted for brevity -->
+  </tasks>
+  <publishers>
+    <!-- Omitted for brevity -->
+  </publishers>
+  <parameters>
+    <textParameter>
+      <name>Target</name>
+      <display>Target to Build</display>
+      <description>Which target do you want to build?</description>
+      <default>DEV</default>
+      <minimum>3</minimum>
+      <maximum>10</maximum>
+      <required>false</required>
+    </textParameter>
+  </parameters>
+</project>
+{code}
+
+
+h2. Configuration Elements
+
+|| Element || Description || Type || Required || Default || Version ||
+| default | The default value to use.   | String | No | _None_ | 1.5 |
+| description | The description of the parameter.   | String | No | _None_ | 1.5 |
+| display | The display name of the parameter.   | String | No | _None_ | 1.5 |
+| required | Is the parameter required?   | Boolean | No | false | 1.5 |
+| maximum | The maximum allowed length of the parameter.   | Int32 | No | 2147483647 | 1.5 |
+| minimum | The minimum allowed length.   | Int32 | No | 0 | 1.5 |
+| name | The name of the parameter.   | String | Yes | _n/a_ | 1.5 |
+
+{info:title=Automatically Generated}
+Documentation generated on Saturday, 22 Jan 2011 at 12:14:13 AM
+Using assembly version 1.6.7979.1
+{info}

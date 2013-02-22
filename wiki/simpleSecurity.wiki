@@ -1,0 +1,31 @@
+h1. Simple Security Plugin
+
+Allows the user to send a user name and password to the server for authentication.  
+
+h2. Version
+
+Available from version 1.5
+
+h2. Examples
+
+{code:xml|borderStyle=solid|titleBGColor=#ADD6FF|title=Minimalist Example}
+<simpleSecurity />
+{code}
+{code:xml|borderStyle=solid|titleBGColor=#ADD6FF|title=Full Example}
+<simpleSecurity hidePassword="true" />
+{code}
+
+
+h2. Configuration Elements
+
+|| Element || Description || Type || Required || Default || Version ||
+| hidePassword | Whether to hide the password field or not.   | Boolean | No | false | 1.5 |
+
+h2. Notes
+
+
+
+{info:title=Automatically Generated}
+Documentation generated on Saturday, 22 Jan 2011 at 12:14:25 AM
+Using assembly version 1.6.7979.1
+{info}

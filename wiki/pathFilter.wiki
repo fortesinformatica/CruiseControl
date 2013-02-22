@@ -1,0 +1,31 @@
+h1. PathFilter
+
+The PathFilter can be used to filter modifications on the basis of their file path.  
+
+h2. Version
+
+Available from version 1.0
+
+h2. Examples
+
+{code:xml|borderStyle=solid}
+<pathFilter>
+  <pattern>$/Kunigunda/ServiceLocator/Sources/Kunigunda.ServiceLocator/AssemblyInfo.cs</pattern>
+</pathFilter>
+{code}
+
+
+h2. Configuration Elements
+
+|| Element || Description || Type || Required || Default || Version ||
+| caseSensitive | Sets casesensitive searching on or off.   | Boolean | No | true | 1.0 |
+| pattern | This is the pattern used to compare the modification path against. The pattern should match the path of the files in the repository (not the path of the files in the working directory). See below for examples of the syntax for this element. Each PathFilter contains a single pattern element.   | String | Yes | _n/a_ | 1.0 |
+
+h2. Notes
+
+{include: PathFilter Wildcards}
+
+{info:title=Automatically Generated}
+Documentation generated on Saturday, 22 Jan 2011 at 12:14:18 AM
+Using assembly version 1.6.7979.1
+{info}

@@ -1,0 +1,17 @@
+h1. plugins
+
+h2. Configuration Elements
+
+|| Element || Description || Type || Required || Default || Version ||
+| buildPlugins | Gets or sets the build plugins.   | IBuildPlugin array | Yes |  |  |
+| farmPlugins | Gets or sets the farm plugins.   | IPlugin array | Yes |  |  |
+| projectPlugins | Gets or sets the project plugins.   | IPlugin array | Yes |  |  |
+| securityPlugins | Gets or sets the security plugins.   | ISecurityPlugin array | No |  |  |
+| serverPlugins | Gets or sets the server plugins.   | IPlugin array | Yes |  |  |
+| sessionStore | Gets or sets the session store.   | ISessionStore | No |  |  |
+| customTemplates | Gets or sets the template location.   | String | No |  |  |
+
+{info:title=Automatically Generated}
+Documentation generated on Saturday, 22 Jan 2011 at 12:14:24 AM
+Using assembly version 1.6.7979.1
+{info}

@@ -1,0 +1,37 @@
+h1. LDAP Email Converter
+
+Looks up the email address via LDAP.  
+
+
+h2. Version
+
+Available from version 1.4.1
+
+h2. Examples
+
+This will search the LDAP for source control userid "js" , using default settings.  
+{code:xml|borderStyle=solid}
+<converters>
+  <ldapConverter domainName="TheCompany" />
+</converters>
+{code}
+This will search the LDAP for source control userid "js" , specifying a user for querying the LDAP.  
+{code:xml|borderStyle=solid}
+<converters>
+  <ldapConverter domainName="TheCompany" ldapLogOnUser="LdapQuery" ldapLogOnPassword="LdapQueryPW" />
+</converters>
+{code}
+
+
+h2. Configuration Elements
+
+|| Element || Description || Type || Required || Default || Version ||
+| domainName | The domain to query for the LDAP service.   | String | Yes | _n/a_ | 1.0 |
+| ldapLogOnPassword | The password to use for connecting to the LDAP service.   | PrivateString | No | _None_ | 1.0 |
+| ldapLogOnUser | Username for logging into the LDAP service.   | String | No | _None_ | 1.0 |
+| ldapQueryField | The field in the LDAP service to use for mapping the source control userid.   | String | No | MailNickName | 1.0 |
+
+{info:title=Automatically Generated}
+Documentation generated on Saturday, 22 Jan 2011 at 12:14:15 AM
+Using assembly version 1.6.7979.1
+{info}

@@ -1,0 +1,80 @@
+h1. Executable Task
+
+The Executable Task lets you invoke any command line executable. It doesn't offer as much specific integration as (for example) the [NAnt Task], but does allow you to hook almost anything up as a build process to CCNet. CCNet will examine the exit code when the executable ends and act accordingly.  
+
+
+h2. Version
+
+Available from version 1.0
+
+h2. Examples
+
+{code:xml|borderStyle=solid|titleBGColor=#ADD6FF|title=Minimalist example}
+<exec executable="c:\projects\myproject\build.bat" />
+{code}
+{code:xml|borderStyle=solid|titleBGColor=#ADD6FF|title=Full example}
+<exec>
+  <executable>make</executable>
+  <baseDirectory>D:\dev\MyProject</baseDirectory>
+  <buildArgs>all</buildArgs>
+  <buildTimeoutSeconds>10</buildTimeoutSeconds>
+  <successExitCodes>0,1,3,5</successExitCodes>
+  <environment>
+    <variable>
+      <name>MyVar1</name>
+      <value>Var1Value</value>
+    </variable>
+    <variable name="MyVar2" value="Var2Value" />
+  </environment>
+</exec>
+{code}
+
+
+h2. Configuration Elements
+
+|| Element || Description || Type || Required || Default || Version ||
+| buildArgs | Any command line arguments to pass in.   | String | No | _None_ | 1.0 |
+| buildTimeoutSeconds | Number of seconds to wait before assuming that the process has hung and should be killed.  If the build process takes longer than this period, it will be killed.  Specify this value as zero to disable process timeouts.   | Int32 | No | 600 | 1.0 |
+| baseDirectory | The directory to run the process in. If relative, is a subdirectory of the Project Working Directory.   | String | No | Project working directory | 1.0 |
+| description | Description used for the visualisation of the buildstage, if left empty the process name will be shown.   | String | No | The task/publisher name. | 1.5 |
+| dynamicValues | The dynamic values to use for the task.   | [Dynamic Values] array | No | _None_ | 1.5 |
+| environment |   A set of environment variables set for commands that are executed.  \\  Each variable should be specified as {code:xml|borderStyle=solid}
+<variable name="name" value="value" />
+{code}
+.   | [Environment Variable] array | No |  |  |
+| executable | The path of the program to run. If this is relative, then must be relative to either (a) the base directory, (b) the CCNet Server application, or (c) if the path doesn't contain any directory details then can be available in the system or application's 'path' environment variable.   | String | Yes | _n/a_ | 1.0 |
+| priority | The priority class of the spawned process.   | String - one of:
+* Normal
+* Idle
+* High
+* RealTime
+* BelowNormal
+* AboveNormal | No | Normal | 1.5 |
+| successExitCodes | The list of exit codes that indicate success, separated by commas.   | String | No | _None_ | 1.0 |
+
+h2. Notes
+
+{note}
+An exit code of \-1 is always treated as the operation has timed out. This will fail the build.  
+{note}
+{warning}
+Windows seems to change the case of environment variables occasionally. If your task target doesn't find one of these properties, try using all upper case or all lower case versions of these properties.  
+{warning}
+h4. Frequently Asked Questions
+ *Does the exec task pass the integration properties via the command line?*
+No. The integration properties are only available as environment variables. As there is no way of knowing the way in which the external program expects these properties to be formatted as command line arguments, environment variables are a simple, common medium for making these values accessible. To pass these environment variables into an external program, have the exec task call a batch file instead that will pick up the environment variables, format them and pass them as command line arguments to the external program.  
+ *Using built in shell commands*
+In Windows use cmd.exe as the executable, and pass the wanted command as an argument, preceded with /c. This allows to execute del \*.\* and the like. For example :  
+{code:xml|borderStyle=solid}
+<exec>
+  <executable>c:\Windows\System32\cmd.exe</executable>
+  <buildArgs>/C NET STOP "Service name"</buildArgs>
+</exec>
+{code}
+The following parameters are passed to the external program using environment variables, in addition to those you specify in the <environment> element.:  
+{include:Integration Properties}
+
+{info:title=Automatically Generated}
+Documentation generated on Saturday, 22 Jan 2011 at 12:14:21 AM
+Using assembly version 1.6.7979.1
+{info}

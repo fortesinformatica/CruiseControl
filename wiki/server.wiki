@@ -1,0 +1,16 @@
+h1. server
+
+h2. Configuration Elements
+
+|| Element || Description || Type || Required || Default || Version ||
+| allowForceBuild |  | Boolean | No |  |  |
+| allowStartStopBuild |  | Boolean | No |  |  |
+| backwardsCompatible |  | Boolean | No |  |  |
+| name |  | String | Yes |  |  |
+| compressLogs | Gets or sets a value indicating whether the transfer should use compressed logs.   | Boolean | No |  |  |
+| url |  | String | Yes |  |  |
+
+{info:title=Automatically Generated}
+Documentation generated on Saturday, 22 Jan 2011 at 12:14:24 AM
+Using assembly version 1.6.7979.1
+{info}

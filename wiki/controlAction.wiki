@@ -1,0 +1,27 @@
+h1. CruiseServer Control Action
+
+An action to perform on a CruiseControl.NET server.  
+
+h2. Version
+
+Available from version 1.5
+
+h2. Examples
+
+{code:xml|borderStyle=solid}
+<controlAction type="StartProject" project="CCNet" />
+{code}
+
+
+h2. Configuration Elements
+
+|| Element || Description || Type || Required || Default || Version ||
+| project | The project to run the command on.   | String | No | _None_ | 1.5 |
+| type | The type of command.   | String - one of:
+* StartProject
+* StopProject | Yes | _n/a_ | 1.5 |
+
+{info:title=Automatically Generated}
+Documentation generated on Saturday, 22 Jan 2011 at 12:14:20 AM
+Using assembly version 1.6.7979.1
+{info}

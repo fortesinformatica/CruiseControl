@@ -1,0 +1,37 @@
+h1. Synergy Project
+
+A CM Synergy project (which is similar to a "view" in other SCM packages).  
+
+h2. Version
+
+Available from version 1.0
+
+h2. Examples
+
+{code:xml|borderStyle=solid}
+<project>
+  <release>Product/1.0</release>
+  <projectSpecification>Product-1</projectSpecification>
+  <taskFolder>1234</taskFolder>
+  <baseline>false</baseline>
+  <purpose>Integration Testing</purpose>
+  <template>true</template>
+</project>
+{code}
+
+
+h2. Configuration Elements
+
+|| Element || Description || Type || Required || Default || Version ||
+| baseline | If true, creates a new baseline for the project configuration after a successful integration.  \\Realistically, a successful continuous integration does not justify creation of a baseline.  Baselines should be used to create a snapshot of a configuration, so that anyone can  usually based on a project mileston   | Boolean | No | 0 | 1.0 |
+| projectSpecification | The configured Synergy project specification for all source control operations.   | String | Yes | _n/a_ | 1.0 |
+| purpose | Synergy purpose specification for the project and any created baselines.   | String | No | Integration Testing | 1.0 |
+| reconcile | If enabled, updates the work area from the database, discarding all uncontrolled files in the work area and changes to static objects.  \\Useful if your build process adds or modifies files in the source tree.   | String array | No | false | 1.0 |
+| release | The configured Synergy release value for the given project.  \\The component \+ version specification.   | String | Yes | _n/a_ | 1.0 |
+| taskFolder | The folder specification for the shared folder which will be used to "manually" add successfully integrated tasks added to.  \\This should be a shared folder added to the reconfigure template/properties for all developer's projects (i.e., projects for purpose "Insulated Development" or "Colloborative Development").  The easiset way to do this is by creating a "folder template", which is then added to the "Default Release" reconfigure templates "Default Release:Insulated Development" or "Default Release:Colloborative Development". Adding integrated tasks to a shared task folder is an alternative to creating a new baseline for every successful integration build.  Most source control providers implemented by CruiseControl.NET use labels for grouping change sets.  However, Synergy is an activity based SCM tool that groups changes by ...   | Int32 | No | 0 | 1.0 |
+| template | If true, resets the reconfigure properties for this project and all subprojects to use the reconfigure template.  \\Do not set to true if you have manually set the template to reconfigure with specific settings (e.g., reconfigure by object status, with a manually added set of tasks, etc).   | Boolean | No | false | 1.0 |
+
+{info:title=Automatically Generated}
+Documentation generated on Saturday, 22 Jan 2011 at 12:14:19 AM
+Using assembly version 1.6.7979.1
+{info}

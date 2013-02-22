@@ -1,0 +1,27 @@
+h1. Server Audit History Server Plugin
+
+The Server Audit History Server Plugin displays the audit log from the server. server is running.  
+
+h2. Version
+
+Available from version 1.5
+
+h2. Examples
+
+{code:xml|borderStyle=solid}
+<serverAuditHistoryServerPlugin />
+{code}
+
+
+h2. Configuration Elements
+
+There is no configuration for this plugin.
+
+h2. Notes
+
+This requires that the currently logged in user has the required permissions on the server.  
+
+{info:title=Automatically Generated}
+Documentation generated on Saturday, 22 Jan 2011 at 12:14:25 AM
+Using assembly version 1.6.7979.1
+{info}

@@ -1,0 +1,48 @@
+h1. PVCS Source Control Block
+
+CruiseControl.NET supports integrating with the PVCS Source Control system via the pcli client.  
+
+h2. Version
+
+Available from version 1.0
+
+h2. Examples
+
+{code:xml|borderStyle=solid}
+<sourcecontrol type="pvcs">
+  <executable>c:\pvcs\pvcs.exe</executable>
+  <project>ccnet</project>
+  <subproject>ccnet1.0</subproject>
+</sourcecontrol>
+{code}
+
+
+h2. Configuration Elements
+
+|| Element || Description || Type || Required || Default || Version ||
+| type | The type of source control block. | String - must be pvcs | Yes | _n/a_ | 1.0 |
+| autoGetSource | Specifies whether the CCNet should take responsibility for retrieving the current version of the source from the repository.   | Boolean | No | true | 1.0 |
+| dynamicValues | The dynamic values to use for the source control block.   | [Dynamic Values] array | No | _None_ | 1.5 |
+| executable | The PVCS client executable.   | String | Yes | pcli.exe | 1.0 |
+| issueUrlBuilder | Converts the comment (or parts from it) into an url pointing to the issue for this build. See [IssueUrlBuilder] for more details.   | [IssueUrlBuilder] | No | _None_ | 1.4 |
+| labelOnSuccess | Whether or not to apply a label to the repository after each successful build.   | Boolean | No | false | 1.0 |
+| labelOrPromotionName | The label to use as your code\-base. If this is specified, this label will be called to get all code associated with it when a get is done. When the build is successful, the good code will have this base label associated with it in turn promoting it into the label. Label to apply to repository. If a value is specified, labelOnSuccess will automatically be set to true.   | String | No | _none_ | 1.0 |
+| manuallyAdjustForDaylightSavings | In PVCS 7.5.1, the client does not automatically adjust dates to accommodate daylight savings time. Setting this flag to true will make CCNet compensate for it.   | Boolean | No | false | 1.2.2 |
+| password | Password for the PVCS user account.   | String | No | _None_ | 1.0 |
+| project | The location of the PVCS project database.   | String | Yes | _n/a_ | 1.0 |
+| recursive | Whether to monitor all subfolders of the specified subproject.   | Boolean | No | true | 1.0 |
+| subproject | One ore more projects in PVCS that you wish to monitor. As long as each subproject is separated with a space and a "/", you can monitor more than one subproject at a time.   | String | Yes | _n/a_ | 1.0 |
+| timeout | Sets the timeout period for the source control operation. See [Timeout Configuration] for details.   | [Timeout Configuration] | No | 10 minutes | 1.0 |
+| username | Username for the user account to use to connect to PVCS.   | String | No | _None_ | 1.0 |
+| workingdirectory | The local directory containing the source from the repository.   | String | No | Project Working Directory | 1.0 |
+| workspace | The workspace to use.   | String | No | /@/RootWorkspace | 1.0 |
+
+h2. Notes
+
+Contributed by James Bolles.  
+
+
+{info:title=Automatically Generated}
+Documentation generated on Saturday, 22 Jan 2011 at 12:14:18 AM
+Using assembly version 1.6.7979.1
+{info}

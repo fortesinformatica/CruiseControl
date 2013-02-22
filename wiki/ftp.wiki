@@ -1,0 +1,53 @@
+h1. FTP Task / Publisher 
+
+The ftp task / publisher allows to download or upload files/ folders, for example, uploading a new version of a web page to ftp site of an ISP.  
+
+
+h2. Version
+
+Available from version 1.5
+
+h2. Examples
+
+{code:xml|borderStyle=solid}
+<ftp>
+  <serverName>ftp.isp.com</serverName>
+  <userName>john</userName>
+  <password>doe</password>
+  <action>UploadFolder</action>
+  <ftpFolderName>site/config</ftpFolderName>
+  <localFolderName>d:\website\config</localFolderName>
+  <recursiveCopy>true</recursiveCopy>
+</ftp>
+{code}
+
+
+h2. Configuration Elements
+
+|| Element || Description || Type || Required || Default || Version ||
+| action | The action to perform.   | String - one of:
+* UploadFolder
+* DownloadFolder | No | DownloadFolder | 1.5 |
+| description | Description used for the visualisation of the buildstage, if left empty the process name will be shown.   | String | No | The task/publisher name. | 1.5 |
+| dynamicValues | The dynamic values to use for the task.   | [Dynamic Values] array | No | _None_ | 1.5 |
+| environment |   A set of environment variables set for commands that are executed.  \\  Each variable should be specified as {code:xml|borderStyle=solid}
+<variable name="name" value="value" />
+{code}
+.   | [Environment Variable] array | No |  |  |
+| ftpFolderName | The path to the folder to use on the FTP server.   | String | Yes | _n/a_ | 1.5 |
+| localFolderName | The to the folder to use on the local machine.   | String | Yes | _n/a_ | 1.5 |
+| password | The password to use.   | String | Yes | _n/a_ | 1.5 |
+| recursiveCopy | Whether to perform a recursive copy or not.   | Boolean | No | true | 1.5 |
+| serverName | The name of the server to connect to.   | String | Yes | _n/a_ | 1.5 |
+| timeDifference | Time difference between server and client (relative to client) in hours.   | Int32 | No | 0 | 1.6 |
+| useActiveConnectionMode | Whether to use active connection mode or not.   | Boolean | No | true | 1.5 |
+| userName | The username to log in with.   | String | Yes | _n/a_ | 1.5 |
+
+h2. Notes
+
+{include:Integration Properties}
+
+{info:title=Automatically Generated}
+Documentation generated on Saturday, 22 Jan 2011 at 12:14:20 AM
+Using assembly version 1.6.7979.1
+{info}

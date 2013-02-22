@@ -1,0 +1,42 @@
+h1. External File Server Security
+
+Defines a security manager implementation that implements security with configuration in external files.  
+
+h2. Version
+
+Available from version 1.5
+
+h2. Examples
+
+{code:xml|borderStyle=solid}
+<externalFileSecurity>
+  <cache type="inMemoryCache" duration="10" mode="sliding" />
+  <files>
+    <file>users.xml</file>
+    <file>permissions.xml</file>
+  </files>
+</externalFileSecurity>
+{code}
+
+
+h2. Configuration Elements
+
+|| Element || Description || Type || Required || Default || Version ||
+| audit | The audit loggers.   | [Security Audit Loggers] array | No | _None_ | 1.5 |
+| auditReader | The audit reader.   | [Security Audit Readers] | No | _None_ | 1.5 |
+| channel | The channel security requirements.   | [Channel Security] | No | _None_ | 1.5 |
+| defaults | The default permissions.   | [General Security Permissions] | No | _None_ | 1.5 |
+| files | The files to load.   | String array | Yes | _n/a_ | 1.5 |
+| cache | The associated session cache.   | [Security Caches] | No | [In Memory Security Cache] | 1.5 |
+
+h2. Notes
+
+h4. External File Format
+The elementsin the external file uses the standard user ([Security Users]) and permission definitions ([Security Permissions]).  
+It is possible to define multiple external security files. Each file can define the users and/or permissions for different areas (e.g. different departments).  
+{include:General Security Permissions}
+
+{info:title=Automatically Generated}
+Documentation generated on Saturday, 22 Jan 2011 at 12:14:16 AM
+Using assembly version 1.6.7979.1
+{info}

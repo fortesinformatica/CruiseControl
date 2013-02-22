@@ -1,0 +1,49 @@
+h1. Cron Trigger
+
+A crontab expression are a very compact way to express a recurring schedule. A single expression is composed of 5 space\-delimited fields :   MINUTES HOURS DAYS MONTHS DAYS\-OF\-WEEK
+* A single wildcard (\*), which covers all values for the field. So a \* in days means all days of a month (which varies with month and year). 
+* A single value, e.g. 5. Naturally, the set of values that are valid for each field varies. 
+* A comma\-delimited list of values, e.g. 1,2,3,4. The list can be unordered as in 3,4,2,6,1. 
+* A range where the minimum and maximum are separated by a dash, e.g. 1\-10. You can also specify these in the wrong order and they will be fixed. So 10\-5 will be treated as 5\-10. 
+* An interval specification using a slash, e.g. \*/4. This means every 4th value of the field. You can also use it in a range, as in 1\-6/2. 
+* You can also mix all of the above, as in: 1\-5,10,12,20\-30/5 
+
+h2. Version
+
+Available from version 1.6
+
+h2. Examples
+
+1st januari of each year  {code:xml|borderStyle=solid}
+<cronTrigger>
+  <cronExpression>* * 1 1 *</cronExpression>
+</cronTrigger>
+{code}
+
+12th of every month at 8 am  {code:xml|borderStyle=solid}
+<cronTrigger>
+  <cronExpression>0 8 12 * *</cronExpression>
+</cronTrigger>
+{code}
+
+Every 5 minutes between 06:00 and 18:00  {code:xml|borderStyle=solid}
+<cronTrigger>
+  <cronExpression>0/5 6-18 * * *</cronExpression>
+</cronTrigger>
+{code}
+
+
+h2. Configuration Elements
+
+|| Element || Description || Type || Required || Default || Version ||
+| buildCondition | The condition that should be used to launch the integration. By default, this value is  *IfModificationExists*, meaning that an integration will only be triggered if modifications have been detected. Set this attribute to  *ForceBuild* in order to ensure that a build should be launched regardless of whether new modifications are detected.   | String - one of:
+* NoBuild
+* IfModificationExists
+* ForceBuild | No | IfModificationExists | 1.6 |
+| cronExpression | The expression in Cron format when to trigger the build see http://code.google.com/p/ncrontab/wiki/CrontabExpression for an example   | String | Yes |  |  |
+| name | The name of the trigger. This name is passed to external tools as a means to identify the trigger that requested the build.   | String | No | ScheduleTrigger | 1.6 |
+
+{info:title=Automatically Generated}
+Documentation generated on Saturday, 22 Jan 2011 at 12:14:22 AM
+Using assembly version 1.6.7979.1
+{info}

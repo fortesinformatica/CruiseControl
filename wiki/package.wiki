@@ -1,0 +1,49 @@
+h1. Package Publisher
+
+Generates a ZIP file package containing the specified files.  
+This will generate a "package" of files in a compressed format. The files must be specified, plus an optional manifest can be included.  
+This publisher also allows the generation of a "manifest" to include in the package. A manifest contains additional details on the package, both at a general level and at a file level.  
+
+
+h2. Version
+
+Available from version 1.4.4
+
+h2. Examples
+
+{code:xml|borderStyle=solid|titleBGColor=#ADD6FF|title=Full example}
+<package>
+  <name>Example</name>
+  <compression>9</compression>
+  <always>true</always>
+  <flatten>true</flatten>
+  <baseDirectory>C:\Builds\CC.Net</baseDirectory>
+  <manifest type="defaultManifestGenerator" />
+  <files>
+    <file>Results.txt</file>
+  </files>
+</package>
+{code}
+
+
+h2. Configuration Elements
+
+|| Element || Description || Type || Required || Default || Version ||
+| always | Whether the package should always be generated or not.  \\By default a package will only be generated for a successful build. Setting this property to true, and including it in the publishers section means the package will always be generated, irrespective of the outcome of the build.   | Boolean | No | false | 1.4.4 |
+| compression | The level of compression to use. The valid range is from zero to nine, zero is no compression and nine is maximum compression.   | Int32 | No | 5 | 1.4.4 |
+| description | Description used for the visualisation of the buildstage, if left empty the process name will be shown.   | String | No | The task/publisher name. | 1.5 |
+| dynamicValues | The dynamic values to use for the task.   | [Dynamic Values] array | No | _None_ | 1.5 |
+| environment |   A set of environment variables set for commands that are executed.  \\  Each variable should be specified as {code:xml|borderStyle=solid}
+<variable name="name" value="value" />
+{code}
+.   | [Environment Variable] array | No |  |  |
+| flatten | Should the file structure be flattened or not.  \\By default, the folder structure will also be included in the package. Setting this property to true will flatten (omit) the folder information.   | Boolean | No | false | 1.4.4 |
+| manifest | The manifest generator to be used.  \\If this property is not set no manifest will be generated.   | [Manifest Generators] | No | _None_ | 1.4.4 |
+| outputDir | The location to output the package to.   | String | No | Project Artifact Directory | 1.4.4 |
+| packageList | The list of files and folders to include in the package.  \\All relative files will be relative to the baseDirectory.   | IPackageItem array | Yes | _n/a_ | 1.6 |
+| name | The name of the package file.  \\This will be the filename of the package. If the extension zip is omitted, it will be added automatically.   | String | Yes | _n/a_ | 1.4.4 |
+
+{info:title=Automatically Generated}
+Documentation generated on Saturday, 22 Jan 2011 at 12:14:16 AM
+Using assembly version 1.6.7979.1
+{info}

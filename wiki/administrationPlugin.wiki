@@ -1,0 +1,13 @@
+h1. administrationPlugin
+
+A plugin for administering the dashboard.  
+
+h2. Configuration Elements
+
+|| Element || Description || Type || Required || Default || Version ||
+| password | The password to lock down the administration plugin.   | String | No |  |  |
+
+{info:title=Automatically Generated}
+Documentation generated on Saturday, 22 Jan 2011 at 12:14:24 AM
+Using assembly version 1.6.7979.1
+{info}

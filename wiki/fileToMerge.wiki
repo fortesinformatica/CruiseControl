@@ -1,0 +1,39 @@
+h1. Merge File
+
+Details on a file to merge.  
+
+h2. Version
+
+Available from version 1.0
+
+h2. Examples
+
+{code:xml|borderStyle=solid|titleBGColor=#ADD6FF|title=Minimalist Example}
+<file>
+  <!-- path to file -->
+</file>
+{code}
+{code:xml|borderStyle=solid|titleBGColor=#ADD6FF|title=Full Example}
+<file action="Copy" deleteAfterMerge="false">
+  <path>
+    <!-- path to file -->
+  </path>
+</file>
+{code}
+
+
+h2. Configuration Elements
+
+|| Element || Description || Type || Required || Default || Version ||
+| deleteAfterMerge | Delete the file after merging if set to true.   | Boolean | No | false | 1.5 |
+| path | The name of the file to merge.   | String | Yes | _n/a_ | 1.0 |
+| action | The type of the file to merge.   | String - one of:
+* Merge
+* Copy
+* CData
+* IndexCopy | No | Merge | 1.5 |
+
+{info:title=Automatically Generated}
+Documentation generated on Saturday, 22 Jan 2011 at 12:14:21 AM
+Using assembly version 1.6.7979.1
+{info}

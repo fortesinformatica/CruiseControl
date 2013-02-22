@@ -1,0 +1,37 @@
+h1. Server Report Server Plugin
+
+The Server Report Server Plugin shows you status information for all projects on a specific server. If the Dashboard cannot connect to the server then an errors table is shown detailing the problem..  
+
+h2. Version
+
+Available from version 1.0
+
+h2. Examples
+
+{code:xml|borderStyle=solid|titleBGColor=#ADD6FF|title=Minimalist example}
+<serverReportServerPlugin />
+{code}
+{code:xml|borderStyle=solid|titleBGColor=#ADD6FF|title=Full example}
+<serverReportServerPlugin defaultSort="Name" />
+{code}
+
+
+h2. Configuration Elements
+
+|| Element || Description || Type || Required || Default || Version ||
+| defaultSort | The default column to sort by.   | String - one of:
+* Name
+* BuildStatus
+* LastBuildDate
+* ServerName
+* Category | No | Name | 1.4.4 |
+| successBar | Gets or sets the success indicator bar location.   | String - one of:
+* None
+* Top
+* Bottom
+* TopAndBottom | No |  |  |
+
+{info:title=Automatically Generated}
+Documentation generated on Saturday, 22 Jan 2011 at 12:14:25 AM
+Using assembly version 1.6.7979.1
+{info}

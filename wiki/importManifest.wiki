@@ -1,0 +1,29 @@
+h1. Manifest Importer
+
+Imports a manifest from an existing file.  
+
+h2. Version
+
+Available from version 1.4.4
+
+h2. Examples
+
+{code:xml|borderStyle=solid}
+<manifest type="importManifest" file="ExistingManifest.xml" />
+{code}
+
+
+h2. Configuration Elements
+
+|| Element || Description || Type || Required || Default || Version ||
+| type | The type of generator. | String - must be importManifest | Yes | _n/a_ | 1.4.4 |
+| filename | The name of the file to import.  \\If this is a relative file, it will be based relative to the working directory of the project.   | String | Yes | _n/a_ | 1.4.4 |
+
+h2. Notes
+
+This "generator" is not a true generator, instead it will import an existing file to use as the package manifest.  
+
+{info:title=Automatically Generated}
+Documentation generated on Saturday, 22 Jan 2011 at 12:14:15 AM
+Using assembly version 1.6.7979.1
+{info}

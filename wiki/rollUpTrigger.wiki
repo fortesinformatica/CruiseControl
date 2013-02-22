@@ -1,0 +1,30 @@
+h1. Roll-up Trigger
+
+A trigger that will "roll\-up" multiple changes into a single trigger.  
+This trigger can be used to reduce the load on a build server for in very active development environment.  
+
+
+h2. Version
+
+Available from version 1.6
+
+h2. Examples
+
+{code:xml|borderStyle=solid|titleBGColor=#ADD6FF|title=Time Period Example}
+<rollUpTrigger>
+  <trigger type="intervalTrigger" seconds="60" />
+  <time units="hours">1</time>
+</rollUpTrigger>
+{code}
+
+
+h2. Configuration Elements
+
+|| Element || Description || Type || Required || Default || Version ||
+| trigger | The inner trigger to filter.   | [Trigger Blocks] | Yes | _n/a_ | 1.6 |
+| time | The minimum allowed time between builds.   | [Timeout Configuration] | Yes | _none_ | 1.6 |
+
+{info:title=Automatically Generated}
+Documentation generated on Saturday, 22 Jan 2011 at 12:14:22 AM
+Using assembly version 1.6.7979.1
+{info}

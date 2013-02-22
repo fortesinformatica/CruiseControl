@@ -1,0 +1,71 @@
+h1. CodeItRight Analysis Task
+
+Perform a code analysis using SubMain.CodeItRight.  
+{tip}
+SubMain.CodeItRight is a commerical application that will analyse the code for any standards violations. The tool is available from http://submain.com/products/codeit.right.aspx.  
+{tip}
+{info:title=Supported Versions}
+CruiseControl.NET only supports CodeItRight 1.9 currently.  
+{info}
+
+
+h2. Version
+
+Available from version 1.5
+
+h2. Examples
+
+{code:xml|borderStyle=solid}
+<codeItRight>
+  <solution>myproject.*.sln</solution>
+</codeItRight>
+{code}
+
+
+h2. Configuration Elements
+
+|| Element || Description || Type || Required || Default || Version ||
+| crData | The name of the CodeIt.Right .crdata file. When specified, CodeItRight.Cmd will use the exclusion list (violations, rules and files) saved using the Visual Studio version of CodeIt.Right.   | String | No | _none_ | 1.5 |
+| description | Description used for the visualisation of the buildstage, if left empty the process name will be shown.   | String | No | The task/publisher name. | 1.5 |
+| dynamicValues | The dynamic values to use for the task.   | [Dynamic Values] array | No | _None_ | 1.5 |
+| environment |   A set of environment variables set for commands that are executed.  \\  Each variable should be specified as {code:xml|borderStyle=solid}
+<variable name="name" value="value" />
+{code}
+.   | [Environment Variable] array | No |  |  |
+| executable | The executable to use.   | String | No | SubMain.CodeItRight.Cmd | 1.5 |
+| failureThreshold | Severity value to fail the build on. When omitted, the the lowest Severity is used \- None.   | String - one of:
+* None
+* Information
+* Warning
+* CriticalWarning
+* Error
+* CriticalError | No | _None_ | 1.5 |
+| priority | The priority class of the spawned process.   | String - one of:
+* Normal
+* Idle
+* High
+* RealTime
+* BelowNormal
+* AboveNormal | No | Normal | 1.5 |
+| profile | The name of the User Profile that defines active rule set for the analysis. When omitted, the built\-in profile is used.   | String | No | _none_ | 1.5 |
+| project | The project to analyse.  \\Either the solution or the project must be specified.   | String | No | _none_ | 1.5 |
+| reportingThreshold | Severity Threshold value to limit the output violation set. When omitted, the the lowest Severity is used \- None.   | String - one of:
+* None
+* Information
+* Warning
+* CriticalWarning
+* Error
+* CriticalError | No | _None_ | 1.5 |
+| solution | The solution to analyse.  \\Either the solution or the project must be specified.   | String | No | _none_ | 1.5 |
+| timeout | The time\-out period in seconds. If the task does no finish running in this time it will be terminated.   | Int32 | No | 600 | 1.5 |
+| xsl | The name of the XSL file to override the default XSL.   | String | No | _none_ | 1.5 |
+
+h2. Notes
+
+This task calls CodeItRight.Cmd to perform the analysis. Full details on this tool is available at http://community.submain.com/blogs/tutorials/archive/2008/03/23/codeitright\-cmd\-exe\-command\-line\-parameters.aspx. Additional details on the mapped arguments can be found there.  
+
+
+{info:title=Automatically Generated}
+Documentation generated on Saturday, 22 Jan 2011 at 12:14:20 AM
+Using assembly version 1.6.7979.1
+{info}

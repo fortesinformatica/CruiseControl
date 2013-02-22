@@ -1,0 +1,119 @@
+h1. NAnt Task
+
+Runs a NAnt script.  
+{tip}
+See [Using CruiseControl.NET with NAnt] for more information on working with NAnt and CruiseControl.Net.  
+{tip}
+{tip}
+To see build progress information in the CCNet 1.5 WebDashboard remove any listener arguments from <buildArgs> and leave the <listener> property on the default value.  
+{tip}
+
+
+h2. Version
+
+Available from version 1.0
+
+h2. Examples
+
+{code:xml|borderStyle=solid|titleBGColor=#ADD6FF|title=Minimalist example}
+<nant />
+{code}
+{code:xml|borderStyle=solid|titleBGColor=#ADD6FF|title=Full example}
+<nant>
+  <executable>c:\fromcvs\myrepo\myproject\tools\nant\nant.exe</executable>
+  <baseDirectory>c:\fromcvs\myrepo\myproject</baseDirectory>
+  <buildArgs>-D:cvs.executable=c:\putty\cvswithplinkrsh.bat</buildArgs>
+  <nologo>false</nologo>
+  <buildFile>cruise.build</buildFile>
+  <logger>My.Other.XmlLogger</logger>
+  <targetList>
+    <target>run</target>
+  </targetList>
+  <buildTimeoutSeconds>1200</buildTimeoutSeconds>
+</nant>
+{code}
+
+
+h2. Configuration Elements
+
+|| Element || Description || Type || Required || Default || Version ||
+| buildArgs | Any arguments to pass through to NAnt (e.g to specify build properties).   | String | No | _None_ | 1.0 |
+| buildFile | The name of the build file to run, relative to the baseDirectory.   | String | No | Default build field in the working directory | 1.0 |
+| buildTimeoutSeconds | The maximum number of seconds that the build may take.  If the build process takes longer than this period, it will be killed. Specify this value as zero to disable process timeouts.   | Int32 | No | 600 | 1.0 |
+| baseDirectory | The directory to run the NAnt process in. If relative, is a subdirectory of the Project Working Directory.   | String | No | Project working directory | 1.0 |
+| description | Description used for the visualisation of the buildstage, if left empty the process name will be shown.   | String | No | The task/publisher name. | 1.5 |
+| dynamicValues | The dynamic values to use for the task.   | [Dynamic Values] array | No | _None_ | 1.5 |
+| environment |   A set of environment variables set for commands that are executed.  \\  Each variable should be specified as {code:xml|borderStyle=solid}
+<variable name="name" value="value" />
+{code}
+.   | [Environment Variable] array | No |  |  |
+| executable | The path of the version of nant.exe you want to run. If this is relative, then must be relative to either (a) the base directory, (b) the CCNet Server application, or (c) if the path doesn't contain any directory details then can be available in the system or application's 'path' environment variable   | String | No | nant | 1.0 |
+| listener | The NAnt listener to use.   | String | No | NAnt.Core.DefaultLogger | 1.5 |
+| logger | The NAnt logger to use.   | String | No | NAnt.Core.XmlLogger | 1.0 |
+| nologo | Whether to use the \-nologo argument when calling NAnt.   | Boolean | No | true | 1.0 |
+| priority | The priority class of the spawned process.   | String - one of:
+* Normal
+* Idle
+* High
+* RealTime
+* BelowNormal
+* AboveNormal | No | Normal | 1.5 |
+| targetList | A list of targets to be called. CruiseControl.NET does not call NAnt once for each target, it uses the NAnt feature of being able to specify multiple targets.   | String array | No | Default build target | 1.0 |
+
+h2. Notes
+
+h4. NAnt output in Xml
+CruiseControl.NET expects NAnt to generate its output as Xml so that the build results can be parsed and rendered appropriately. To accomplish this, CruiseControl.NET will, by default, launch NAnt using the "\-logger:NAnt.Core.XmlLogger" argument. If you want to override this behaviour, specify the logger property in the NAntBuilder configuration in the ccnet.config file. If this element is specified but is empty then NAnt will be started with the default logger (though this may cause some problems for CCNet). It is also possible to instruct NAnt to log its output to an Xml file and then merge the file into the build using the File Merge Task.  
+{warning}
+The configuration of which NAnt logger to use was orginally specified in the ccnet.exe.config file. This has now been deprecated, and the "NAnt.Logger" element in the <appSettings> section can now be removed.  
+{warning}
+h4. NUnit and NAnt
+CruiseControl.NET uses xsl to process the build log and produce html for display on the web page. Since xml is so easy to parse the nunit2 task in NAnt can produce xml output. The tasks must be configured to do that in order for test results to show up on the web page. Typically this is done by adding a formatter element to the nunit2 task and setting the type to be "Xml". Additionally the usefile flag of the formatter element must be set to "false". If it isn't the nunit2 task will try and save the output to a file and not write it out to the build log.  
+{include:Integration Properties}{code:xml|borderStyle=solid}
+<target name="test.unit" depends="compile" description="runs unit tests">
+  <nunit2>
+    <formatter type="Xml" usefile="false" />
+    <test assemblyname="${build.dir}\${core.dll}" fork="true" />
+    <test assemblyname="${build.dir}\${console.exe}" fork="true" />
+  </nunit2>
+</target>
+{code}
+It would be pretty tedious for developers to read the xml output when they run the build locally. Define a property for the build output type and set it to "Plain" and use the property in the formatter element..  
+{code:xml|borderStyle=solid}
+<build>
+  <property name="outputType" value="Plain" />
+  <!-- ... -->
+  <formatter type="${outputType}" usefile="false" />
+  <!-- ... -->
+</build>
+{code}
+Then in the ccnet.config file pass in a different value for outputType.  
+{code:xml|borderStyle=solid}
+<nant>
+  <!-- ... -->
+  <buildArgs>"-DoutputType=Xml"</buildArgs>
+  <!-- ... -->
+</nant>
+{code}
+h4. Accessing CruiseControl.NET build labels in NAnt
+CCNet will pass the current build label to NAnt via the NAnt property CCNetLabel. This means that you can access use this property to, for example, archive the newly built assemblies in a folder with the same name as the build label (this is what we do on CCNetLive. Here's an example NAnt script demonstrating how to do this:  
+{code:xml|borderStyle=solid}
+<target name="dist.publish" depends="dist">
+  <ifnot propertyexists="CCNetLabel">
+    <fail message="CCNetLabel property not set, so can't create labelled distribution files" />
+  </ifnot>
+  <property name="publish.dir" value="D:\download-area\CCNet-Builds\${CCNetLabel}" />
+  <mkdir dir="${publish.dir}" />
+  <copy todir="${publish.dir}">
+    <fileset basedir="dist">
+      <includes name="*" />
+    </fileset>
+  </copy>
+</target>
+{code}
+
+
+{info:title=Automatically Generated}
+Documentation generated on Saturday, 22 Jan 2011 at 12:14:22 AM
+Using assembly version 1.6.7979.1
+{info}

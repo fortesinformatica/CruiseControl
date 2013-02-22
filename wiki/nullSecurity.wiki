@@ -1,0 +1,23 @@
+h1. Null Server Security
+
+A default implementation of a security manager where there is no security (e.g. every right is allowed);  
+
+h2. Version
+
+Available from version 1.5
+
+h2. Examples
+
+{code:xml|borderStyle=solid}
+<nullSecurity />
+{code}
+
+
+h2. Configuration Elements
+
+There is no configuration for this plugin.
+
+{info:title=Automatically Generated}
+Documentation generated on Saturday, 22 Jan 2011 at 12:14:16 AM
+Using assembly version 1.6.7979.1
+{info}

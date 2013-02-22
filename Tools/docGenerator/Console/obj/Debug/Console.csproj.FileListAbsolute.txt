@@ -1,0 +1,8 @@
+e:\sourcecontrols\sourceforge\ccnet\Tools\docGenerator\Console\bin\Debug\GenDoc.cmd
+e:\sourcecontrols\sourceforge\ccnet\Tools\docGenerator\Console\bin\Debug\Console.exe.config
+e:\sourcecontrols\sourceforge\ccnet\Tools\docGenerator\Console\bin\Debug\Console.exe
+e:\sourcecontrols\sourceforge\ccnet\Tools\docGenerator\Console\bin\Debug\Console.pdb
+e:\sourcecontrols\sourceforge\ccnet\Tools\docGenerator\Console\bin\Debug\NetReflector.dll
+e:\sourcecontrols\sourceforge\ccnet\Tools\docGenerator\Console\obj\Debug\ResolveAssemblyReference.cache
+e:\sourcecontrols\sourceforge\ccnet\Tools\docGenerator\Console\obj\Debug\Console.exe
+e:\sourcecontrols\sourceforge\ccnet\Tools\docGenerator\Console\obj\Debug\Console.pdb

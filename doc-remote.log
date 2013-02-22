@@ -1,0 +1,50 @@
+<docGen command="generate" time="2011-01-21T18:14:12.3038750-06:00">
+<message type="Info" time="Fri, 21 Jan 2011 18:14:12 GMT">
+<![CDATA[Starting documentation generation for ThoughtWorks.CruiseControl.Remote.dll]]>
+</message>
+<message type="Info" time="Fri, 21 Jan 2011 18:14:12 GMT">
+<![CDATA[Generating dateParameter.wiki for ThoughtWorks.CruiseControl.Remote.Parameters.DateParameter]]>
+</message>
+<message type="Debug" time="Fri, 21 Jan 2011 18:14:13 GMT">
+<![CDATA[Documentation generated for dateParameter in 0.22s]]>
+</message>
+<message type="Info" time="Fri, 21 Jan 2011 18:14:13 GMT">
+<![CDATA[Generating booleanParameter.wiki for ThoughtWorks.CruiseControl.Remote.Parameters.BooleanParameter]]>
+</message>
+<message type="Debug" time="Fri, 21 Jan 2011 18:14:13 GMT">
+<![CDATA[Documentation generated for booleanParameter in 0.02s]]>
+</message>
+<message type="Info" time="Fri, 21 Jan 2011 18:14:13 GMT">
+<![CDATA[Generating externalLink.wiki for ThoughtWorks.CruiseControl.Remote.ExternalLink]]>
+</message>
+<message type="Debug" time="Fri, 21 Jan 2011 18:14:13 GMT">
+<![CDATA[Documentation generated for externalLink in 0.00s]]>
+</message>
+<message type="Info" time="Fri, 21 Jan 2011 18:14:13 GMT">
+<![CDATA[Generating selectParameter.wiki for ThoughtWorks.CruiseControl.Remote.Parameters.SelectParameter]]>
+</message>
+<message type="Debug" time="Fri, 21 Jan 2011 18:14:13 GMT">
+<![CDATA[Documentation generated for selectParameter in 0.01s]]>
+</message>
+<message type="Info" time="Fri, 21 Jan 2011 18:14:13 GMT">
+<![CDATA[Generating textParameter.wiki for ThoughtWorks.CruiseControl.Remote.Parameters.TextParameter]]>
+</message>
+<message type="Debug" time="Fri, 21 Jan 2011 18:14:13 GMT">
+<![CDATA[Documentation generated for textParameter in 0.01s]]>
+</message>
+<message type="Info" time="Fri, 21 Jan 2011 18:14:13 GMT">
+<![CDATA[Generating numericParameter.wiki for ThoughtWorks.CruiseControl.Remote.Parameters.NumericParameter]]>
+</message>
+<message type="Debug" time="Fri, 21 Jan 2011 18:14:13 GMT">
+<![CDATA[Documentation generated for numericParameter in 0.01s]]>
+</message>
+<message type="Info" time="Fri, 21 Jan 2011 18:14:13 GMT">
+<![CDATA[Generating namedValue.wiki for ThoughtWorks.CruiseControl.Remote.NameValuePair]]>
+</message>
+<message type="Debug" time="Fri, 21 Jan 2011 18:14:13 GMT">
+<![CDATA[Documentation generated for namedValue in 0.00s]]>
+</message>
+<message type="Info" time="Fri, 21 Jan 2011 18:14:13 GMT">
+<![CDATA[Documentation generation finished in 0.40s]]>
+</message>
+</docGen>

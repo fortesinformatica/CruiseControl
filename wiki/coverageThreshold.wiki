@@ -1,0 +1,29 @@
+h1. Coverage Threshold
+
+A threshold for a coverage report.  
+
+h2. Version
+
+Available from version 1.5
+
+h2. Configuration Elements
+
+|| Element || Description || Type || Required || Default || Version ||
+| type | The type of item.   | String - one of:
+* Default
+* View
+* Module
+* Namespace
+* Class | No | _None_ | 1.5 |
+| metric | The coverage metric.   | String - one of:
+* SymbolCoverage
+* BranchCoverage
+* MethodCoverage
+* CyclomaticComplexity | Yes | _n/a_ | 1.5 |
+| value | The minimum coverage value.   | Int32 | No | _None_ | 1.5 |
+| pattern | The matching pattern to use.   | String | No | _None_ | 1.5 |
+
+{info:title=Automatically Generated}
+Documentation generated on Saturday, 22 Jan 2011 at 12:14:20 AM
+Using assembly version 1.6.7979.1
+{info}

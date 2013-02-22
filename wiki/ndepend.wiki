@@ -1,0 +1,79 @@
+h1. NDepend Task
+
+Runs an NDepend analysis.  
+NDepend is a tool that simplifies managing a complex .NET code base. Architects and developers can analyze code structure, specify design rules, plan massive refactoring, do effective code reviews and master evolution by comparing different versions of the code.  
+This application is available from www.ndepend.com. There is both an open source/academic/evaluation version and a professional version.  
+
+
+h2. Version
+
+Available from version 1.4.4
+
+h2. Examples
+
+{code:xml|borderStyle=solid|titleBGColor=#ADD6FF|title=Minimalist example}
+<ndepend>
+  <project>NDepend-Project.xml</project>
+</ndepend>
+{code}
+{code:xml|borderStyle=solid|titleBGColor=#ADD6FF|title=Full example}
+<ndepend>
+  <project>NDepend-Project.xml</project>
+  <executable>tools\NDepend.Console.exe</executable>
+  <description>Run the NDepend analysis.</description>
+  <emitXml>true</emitXml>
+  <outputDir>NDepend-Reports</outputDir>
+  <inputDirs>
+    <inputDir>bin\</inputDir>
+    <inputDir>deploy\</inputDir>
+  </inputDirs>
+  <silent>false</silent>
+  <reportXslt>custom-report.xsl</reportXslt>
+  <timeout>120</timeout>
+  <baseDir>project\</baseDir>
+  <publish>true</publish>
+</ndepend>
+{code}
+
+
+h2. Configuration Elements
+
+|| Element || Description || Type || Required || Default || Version ||
+| baseDir | The base directory to use. If omitted this will default to the working directory of the project.   | String | No | Project Working Directory | 1.4.4 |
+| description | Description used for the visualisation of the buildstage, if left empty the process name will be shown.   | String | No | The task/publisher name. | 1.5 |
+| dynamicValues | The dynamic values to use for the task.   | [Dynamic Values] array | No | _None_ | 1.5 |
+| emitXml | Whether to emit the XML report data or not.   | Boolean | No | false | 1.4.4 |
+| environment |   A set of environment variables set for commands that are executed.  \\  Each variable should be specified as {code:xml|borderStyle=solid}
+<variable name="name" value="value" />
+{code}
+.   | [Environment Variable] array | No |  |  |
+| executable | The executable to use.   | String | No | NDepend.Console | 1.4.4 |
+| inputDirs | The input directories to use.   | String array | No | _None_ | 1.4.4 |
+| outputDir | The output directory to use.   | String | No | NDependResults | 1.4.4 |
+| priority | The priority class of the spawned process.   | String - one of:
+* Normal
+* Idle
+* High
+* RealTime
+* BelowNormal
+* AboveNormal | No | Normal | 1.5 |
+| project | The NDepend project file. This is generated from VisualNDepend.   | String | Yes | _n/a_ | 1.4.4 |
+| publish | Whether to publish the output files or not.   | Boolean | No | true | 1.4.4 |
+| reportXslt | The location of a custom report XSL\-T.   | String | No | _None_ | 1.4.4 |
+| silent | Whether to hide any output or not.   | Boolean | No | false | 1.4.4 |
+| timeout | The time\-out period in seconds.   | Int32 | No | false | 1.4.4 |
+
+h2. Notes
+
+This task works in two stages:  
+1. Run the NDepend executable  
+2. Publish the results  
+Running the NDepend executable is what generates the actual analysis, and as such cannot be skipped (otherwise there is no point to this task.) The results of the analysis will be saved in the folder specified by outputDir. If this parameter is omitted, then the results will be stored in a folder called NDependResults under the baseDir.  
+In order for these results to be displayed in the dashboard they must be stored in a folder in the artefacts directory. To achieve this, this task will publish the results. This involves copying all the results files from the output directory to a folder in the artefacts directory. This folder will have the same name as the build label. Additionally any XML files will be merged with the build log (this makes them available for the dashboard plugins).  
+If the publishing behaviour is not required it can be turned off by setting the publish property to false. By default this is set to true so the results can be displayed in the dashboard.  
+
+
+{info:title=Automatically Generated}
+Documentation generated on Saturday, 22 Jan 2011 at 12:14:22 AM
+Using assembly version 1.6.7979.1
+{info}

@@ -1,0 +1,43 @@
+h1. FTP Source control
+
+The Ftp Soure control block allows to detect new and changed files at an Ftp site.  
+{warning}
+Deleted files are  *NOT* detected.  
+{warning}
+
+
+h2. Version
+
+Available from version 1.4.4
+
+h2. Examples
+
+{code:xml|borderStyle=solid}
+<sourcecontrol type="ftpSourceControl">
+  <serverName>ftp.isp.com</serverName>
+  <userName>john</userName>
+  <password>doe</password>
+  <ftpFolderName>config</ftpFolderName>
+  <localFolderName>d:\temp\config</localFolderName>
+  <recursiveCopy>true</recursiveCopy>
+</sourcecontrol>
+{code}
+
+
+h2. Configuration Elements
+
+|| Element || Description || Type || Required || Default || Version ||
+| type | The type of source control block. | String - must be ftpSourceControl | Yes | _n/a_ | 1.4.4 |
+| dynamicValues | The dynamic values to use for the source control block.   | [Dynamic Values] array | No | _None_ | 1.5 |
+| ftpFolderName | The folder name of on the ftp site.   | String | Yes | _n/a_ | 1.4.4 |
+| localFolderName | The folder name on the local system.   | String | Yes | _n/a_ | 1.4.4 |
+| password | The password for the user.   | PrivateString | Yes | _n/a_ | 1.4.4 |
+| recursiveCopy | Whether to recurse into subfolders or not.   | Boolean | Yes | true | 1.4.4 |
+| serverName | The name of the server to connect to.   | String | Yes | _n/a_ | 1.4.4 |
+| useActiveConnectionMode | Whether to use active connection mode or not.   | Boolean | No | true | 1.4.4 |
+| userName | The user name to log in with.   | String | Yes | _n/a_ | 1.4.4 |
+
+{info:title=Automatically Generated}
+Documentation generated on Saturday, 22 Jan 2011 at 12:14:17 AM
+Using assembly version 1.6.7979.1
+{info}

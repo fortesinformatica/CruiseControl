@@ -1,0 +1,27 @@
+h1. File State Manager
+
+The File State Manager is a State Manager that saves the state for one project to a file. The filename should be stored in either the working directory for the project or in the explicitly specified directory. The filename will match the project name, but will have the extension .state.  
+
+h2. Version
+
+Available from version 1.0
+
+h2. Examples
+
+{code:xml|borderStyle=solid|titleBGColor=#ADD6FF|title=Minimalist example}
+<state type="state" />
+{code}
+{code:xml|borderStyle=solid|titleBGColor=#ADD6FF|title=Full example}
+<state type="state" directory="C:\CCNetState" />
+{code}
+
+
+h2. Configuration Elements
+
+|| Element || Description || Type || Required || Default || Version ||
+| directory | The directory to save the state file to.   | String | No | The directory CCNet was launched from. | 1.0 |
+
+{info:title=Automatically Generated}
+Documentation generated on Saturday, 22 Jan 2011 at 12:14:19 AM
+Using assembly version 1.6.7979.1
+{info}

@@ -1,0 +1,70 @@
+h1. Filter Trigger
+
+The Filter Trigger allows you to prevent builds from occurring at certain times or on certain days (such as when your source control repository is undergoing backup). It is used to decorate an existing trigger. For example, if you have set up a [Interval Trigger] to cause a new build every 5 minutes, you can use the Filter Trigger to create a window during which the build will not run. The filter will exclude modifications that occur between the start time and the end time on the days specified. If the start time is greater than the end time then the filtered time will span across midnight. For example, if the start time is 23:00 and the end time is 3:00 then builds will be suppressed from 23:00\-23:59 and 0:00\-3:00 on the days specified.  
+{info}
+Like all triggers, the scheduleTrigger must be enclosed within a triggers element in the appropriate [Project Configuration Block].  
+{info}
+{warning:title=Nested trigger syntax is different}
+As shown below, the configuration of the nested trigger is not the same as when using that trigger outside a filter trigger. When using the <filterTrigger> element, the inner trigger must be specified with the <trigger> element. You could not use the <intervalTrigger> trigger element in this example.  
+{warning}
+
+
+h2. Version
+
+Available from version 1.0
+
+h2. Examples
+
+{code:xml|borderStyle=solid}
+<filterTrigger startTime="23:30" endTime="23:45">
+  <trigger type="intervalTrigger" seconds="60" />
+  <weekDays>
+    <weekDay>Sunday</weekDay>
+  </weekDays>
+</filterTrigger>
+{code}
+
+
+h2. Configuration Elements
+
+|| Element || Description || Type || Required || Default || Version ||
+| buildCondition | The condition that will be returned if a build is requested during the filter window. The default value is  *NoBuild*indicating that no build will be performed   | String - one of:
+* NoBuild
+* IfModificationExists
+* ForceBuild | No | NoBuild | 1.0 |
+| endTime | The end of the filter window. Builds will not occur before this time and after the start time.   | String | No | 23:59:59 | 1.0 |
+| trigger | The inner trigger to filter.   | [Trigger Blocks] | Yes | _n/a_ | 1.0 |
+| startTime | The start of the filter window. Builds will not occur after this time and before the end time.   | String | No | 00:00:00 | 1.0 |
+| weekDays | The week days on which the filter should be applied (eg. Monday, Tuesday). By default, all days of the week are set. The filter will have no effect on other days.   | String array\\The following values are valid:
+* Sunday
+* Monday
+* Tuesday
+* Wednesday
+* Thursday
+* Friday
+* Saturday | No | Monday\-Sunday | 1.0 |
+
+h2. Notes
+
+{info}
+Times should be specified in hh:mm or hh:mm:ss 24 hour format (i.e., ranging from 00:00:00 to 23:59:59).  
+{info}
+h4. Nested Filter Triggers
+Sometimes you would like to suppress builds that occur either between certain times or on certain days or in multiple combinations of dates and times. To acheive this, you can nest multiple filter triggers. For example, the following xml configures a trigger to filter builds between 7pm and 7am on weekdays and at any time on Saturdays and Sundays.  
+{code:xml|borderStyle=solid}
+<filterTrigger startTime="19:00" endTime="07:00">
+  <trigger type="filterTrigger" startTime="0:00" endTime="23:59:59">
+    <trigger type="intervalTrigger" name="continuous" seconds="900" buildCondition="ForceBuild" />
+    <weekDays>
+      <weekDay>Saturday</weekDay>
+      <weekDay>Sunday</weekDay>
+    </weekDays>
+  </trigger>
+</filterTrigger>
+{code}
+
+
+{info:title=Automatically Generated}
+Documentation generated on Saturday, 22 Jan 2011 at 12:14:22 AM
+Using assembly version 1.6.7979.1
+{info}

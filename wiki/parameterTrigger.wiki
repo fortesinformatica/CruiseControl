@@ -1,0 +1,37 @@
+h1. Parameter Trigger
+
+Trigger to add build parameters to an integration request.  
+{info}
+Like all triggers, the parameterTrigger must be enclosed within a triggers element in the appropriate [Project Configuration Block].  
+{info}
+{warning:title=Nested trigger syntax is different}
+As shown below, the configuration of the nested trigger is not the same as when using that trigger outside a filter trigger. When using the <parameterTrigger> element, the inner trigger must be specified with the <trigger> element. You could not use the <intervalTrigger> trigger element in this example.  
+{warning}
+
+
+h2. Version
+
+Available from version 1.5
+
+h2. Examples
+
+{code:xml|borderStyle=solid}
+<parameterTrigger>
+  <trigger type="intervalTrigger" seconds="60" />
+  <parameters>
+    <!-- Parameters here-->
+  </parameters>
+</parameterTrigger>
+{code}
+
+
+h2. Configuration Elements
+
+|| Element || Description || Type || Required || Default || Version ||
+| trigger | The inner trigger to filter.   | [Trigger Blocks] | Yes | _n/a_ | 1.5 |
+| parameters | The parameters to pass onto the inner trigger.   | [Named Value] array | Yes | _n/a_ | 1.5 |
+
+{info:title=Automatically Generated}
+Documentation generated on Saturday, 22 Jan 2011 at 12:14:23 AM
+Using assembly version 1.6.7979.1
+{info}

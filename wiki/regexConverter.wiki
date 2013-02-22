@@ -1,0 +1,29 @@
+h1. Regular Expression Email Converter
+
+Matches the username against a regular expression pattern and modifies it according to a specified replacement. Uses the .NET regular expression language.  
+The find attribute contains a regular expression that is matched against the source control userid. The replace attribute contains a replacement expression that is used to modify the address. Example : Appending "@TheCompany.com" to the username  
+
+
+h2. Version
+
+Available from version 1.0
+
+h2. Examples
+
+{code:xml|borderStyle=solid}
+<converters>
+  <regexConverter find="$" replace="@TheCompany.com" />
+</converters>
+{code}
+
+
+h2. Configuration Elements
+
+|| Element || Description || Type || Required || Default || Version ||
+| find | A regular expression to match against the username and identify parts to be replaced.   | String | Yes | _n/a_ | 1.0 |
+| replace | A string to replace the matched pattern in the username.   | String | Yes | _n/a_ | 1.0 |
+
+{info:title=Automatically Generated}
+Documentation generated on Saturday, 22 Jan 2011 at 12:14:15 AM
+Using assembly version 1.6.7979.1
+{info}

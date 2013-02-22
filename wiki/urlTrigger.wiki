@@ -1,0 +1,50 @@
+h1. URL Trigger
+
+The Url Trigger is used to trigger a CCNet build when the page at a particular url changes. The Url Trigger will poll the specified url according to a configured polling interval to detect if the last modified date of the page has changed since the last integration.  
+This trigger is especially useful in reducing the load on your source control system caused by the polling for modifications performed by an Interval Trigger. If your source control system supports trigger scripts (such as the use of commitinfo scripts in CVS), you can use create a trigger to touch the page that is being monitored by CCNet to start a new integration.  
+{info}
+Like all triggers, the urlTrigger must be enclosed within a triggers element in the appropriate [Project Configuration Block].  
+{info}
+
+
+h2. Version
+
+Available from version 1.0
+
+h2. Examples
+
+{code:xml|borderStyle=solid|titleBGColor=#ADD6FF|title=Minimalist example}
+<urlTrigger url="http://server/page.html" />
+{code}
+{code:xml|borderStyle=solid|titleBGColor=#ADD6FF|title=Full example}
+<urlTrigger url="http://server/page.html" seconds="30" buildCondition="ForceBuild" />
+{code}
+
+
+h2. Configuration Elements
+
+|| Element || Description || Type || Required || Default || Version ||
+| buildCondition | The condition that should be used to launch the integration. By default, this value is  *IfModificationExists*, meaning that an integration will only be triggered if modifications have been detected. Set this attribute to  *ForceBuild* in order to ensure that a build should be launched regardless of whether new modifications are detected.   | String - one of:
+* NoBuild
+* IfModificationExists
+* ForceBuild | No | IfModificationExists | 1.0 |
+| initialSeconds | The delay (in seconds) from CCNet startup to the first check for modifications.   | Double | No | Defaults to the IntervalSettings value. | 1.4 |
+| seconds | The number of seconds after an integration cycle completes before triggering the next integration cycle.   | Double | No | 60 | 1.0 |
+| name | The name of the trigger. This name is passed to external tools as a means to identify the trigger that requested the build.   | String | No | IntervalTrigger | 1.1 |
+| url | The url to poll for changes.   | String | Yes | _n/a_ | 1.0 |
+
+h2. Notes
+
+{warning}
+There is currently a limitation in this trigger such that it will not persist the url's last modified date when the server restarts. This means that the trigger will always attempt to start a new integration when the first interval expires after the server starts up.  
+{warning}
+{warning}
+The UrlTrigger will only work with pages that return a reliable LastModified date HTTP Header, such as static html pages or well\-behaved dynamic pages. Using static html pages is the most reliable way to use this trigger.  
+{warning}
+This trigger has been contributed by Steve Norman.  
+
+
+{info:title=Automatically Generated}
+Documentation generated on Saturday, 22 Jan 2011 at 12:14:23 AM
+Using assembly version 1.6.7979.1
+{info}

@@ -1,0 +1,51 @@
+h1. HTML Report Plugin
+
+A generic plug\-in to display a report from an HTML file.  
+
+h2. Version
+
+Available from version 1.5
+
+h2. Examples
+
+{code:xml|borderStyle=solid|titleBGColor=#ADD6FF|title=Minimalist}
+<htmlReportPlugin description="Document Report" actionName="viewReport" htmlFileName="reports\document.html" />
+{code}
+{code:xml|borderStyle=solid|titleBGColor=#ADD6FF|title=In Context}
+<buildPlugins>
+  <buildReportBuildPlugin>
+    <xslFileNames>
+      <xslFile>xsl\header.xsl</xslFile>
+      <xslFile>xsl\modifications.xsl</xslFile>
+    </xslFileNames>
+  </buildReportBuildPlugin>
+  <buildLogBuildPlugin />
+  <htmlReportPlugin description="Document Report" actionName="viewReport" htmlFileName="reports\document.html" />
+</buildPlugins>
+{code}
+
+
+h2. Configuration Elements
+
+|| Element || Description || Type || Required || Default || Version ||
+| actionName | The name of the action \- this will be used in the URL for the plug\-in.  \\This must be unique for the dashboard (e.g. there cannot be another action or plug\-in with the same name.   | String | Yes | _n/a_ | 1.5 |
+| description | The description of the plug\-in.  \\This will be displayed as the title of the link.   | String | Yes | _n/a_ | 1.5 |
+| excludedProjects | The projects to exclude from this plug\-in.  \\This is currently not implemented.   | String array | No | _None_ | 1.5 |
+| htmlFileName | The name of the file to display.  \\See the notes below on what are valid names.   | String | Yes | _n/a_ | 1.5 |
+| includedProjects | The projects to include in this plug\-in.  \\This is currently not implemented.   | String array | No | _None_ | 1.5 |
+
+h2. Notes
+
+h4. HTML Source Location
+This plug\-in can display any file that is in the build folder under artefacts folder for the project. It cannot display files from any other location (for security reasons).  
+Files can be published to a build folder using the [File Merge Task]. This will automatically generate the correct folder structure for the HTML reports.  
+h4. File Names
+All file names are relative to the build folder. Files directly in the folder can be specified, as well as folders in sub\-folders. For example both report.html and documents\report.html are valid file names.  
+Absolute filepaths are not allowed (e.g. c:\somewhere\report.html).  
+If the project's artefact folder was d:\data\ and the build label was 1.0.1, then report.html would come from d:\data\1.0.1\report.html.  
+
+
+{info:title=Automatically Generated}
+Documentation generated on Saturday, 22 Jan 2011 at 12:14:24 AM
+Using assembly version 1.6.7979.1
+{info}

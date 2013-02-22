@@ -1,0 +1,60 @@
+h1. FinalBuilder Task
+
+The FinalBuilder Task allows you to invoke FinalBuilder build projects as part of a CruiseControl.NET integration project. FinalBuilder is a commercial build and release management solution for Windows software developers and SCM professionals, developed and marketed by VSoft Technologies (http://www.finalbuilder.com/finalbuilder.aspx).  
+
+
+h2. Version
+
+Available from version 1.3
+
+h2. Examples
+
+{code:xml|borderStyle=solid|titleBGColor=#ADD6FF|title=Minimalist example}
+<FinalBuilder>
+  <ProjectFile>C:\Projects\BuildProject\Build Process.fbz5</ProjectFile>
+</FinalBuilder>
+{code}
+{code:xml|borderStyle=solid|titleBGColor=#ADD6FF|title=Full example}
+<FinalBuilder>
+  <ProjectFile>C:\Projects\BuildProject\Build Process.fbz5</ProjectFile>
+  <FBVersion>5</FBVersion>
+  <ShowBanner>false</ShowBanner>
+  <FBVariables>
+    <FBVariable name="IsContinuousIntegrationBuild" value="True" />
+  </FBVariables>
+  <Timeout>3600</Timeout>
+  <DontWriteToLog>true</DontWriteToLog>
+</FinalBuilder>
+{code}
+
+
+h2. Configuration Elements
+
+|| Element || Description || Type || Required || Default || Version ||
+| description | Description used for the visualisation of the buildstage, if left empty the process name will be shown.   | String | No | The task/publisher name. | 1.5 |
+| DontWriteToLog | Disable output to the FinalBuilder project log file.   | Boolean | No | false | 1.3 |
+| dynamicValues | The dynamic values to use for the task.   | [Dynamic Values] array | No | _None_ | 1.5 |
+| environment |   A set of environment variables set for commands that are executed.  \\  Each variable should be specified as {code:xml|borderStyle=solid}
+<variable name="name" value="value" />
+{code}
+.   | [Environment Variable] array | No |  |  |
+| FBCMDPath | The absolute path to FBCMD.EXE.  \\If this value is not set, then the value will be generated using either FBVersion or the project file.   | String | No | Generated | 1.3 |
+| FBVariables | One or more FBVariable elements to pass to FinalBuilder.   | [FBVariable] array | No | _None_ | 1.3 |
+| FBVersion | Use this element to explicitly specify a version of FinalBuilder to run (for instance, you could force a FinalBuilder 4 project to run in FinalBuilder 5.)  \\If this element is not specified, the FinalBuilder version is determined automatically from the project file name (recommended.)   | Int32 | No | Generated | 1.3 |
+| ProjectFile | The full path of the FinalBuilder project to run.   | String | Yes | _n/a_ | 1.3 |
+| ShowBanner | Specify 'true' to enable the "banner" at the top of the FinalBuilder console output.   | Boolean | No | false | 1.3 |
+| Timeout | The number of seconds to wait before assuming that the FinalBuilder project has hung and should be killed.   | Int32 | No | 0 | 1.3 |
+| UseTemporaryLogFile | Log to a temporary log file which is deleted when the project closes. Overrides DontWriteToLog.  \\Use this option instead of DontWriteToLog if you still want to be able to use the Export Log action, but don't want the log file to be updated.   | Boolean | No | false | 1.3 |
+
+h2. Notes
+
+h4. Frequently Asked Questions
+ *Can I format output to the CruiseControl.NET web dashboard?*
+At the moment, output from the FinalBuilder Task is plain text. We are planning to change this so that the task outputs XML which can be easily used with the various CruiseControl.NET publishers. In the meantime, it is possible to use the FinalBuilder Export Log Action to export an XML file, which can then be incorporated via the File Merge Task.  
+ *Which FinalBuilder version do I need?*The task will work with FinalBuilder versions 3, 4, and 5. However, because the task uses the FBCMD command line utility, users of FinalBuilder 3 and 4 will need the Professional Edition. FinalBuilder 5 users can use either the Standard or Professional editions. A free 30 day trial download is available.  
+{include:Integration Properties}
+
+{info:title=Automatically Generated}
+Documentation generated on Saturday, 22 Jan 2011 at 12:14:21 AM
+Using assembly version 1.6.7979.1
+{info}

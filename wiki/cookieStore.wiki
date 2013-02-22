@@ -1,0 +1,12 @@
+h1. cookieStore
+
+Use a cookie as the store for the session token.  
+
+h2. Configuration Elements
+
+There is no configuration for this plugin.
+
+{info:title=Automatically Generated}
+Documentation generated on Saturday, 22 Jan 2011 at 12:14:24 AM
+Using assembly version 1.6.7979.1
+{info}

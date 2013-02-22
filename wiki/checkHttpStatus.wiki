@@ -1,0 +1,58 @@
+h1. HTTP Status Task
+
+Sends an HTTP request to the specified URL.  
+
+
+h2. Version
+
+Available from version 1.5
+
+h2. Examples
+
+{code:xml|borderStyle=solid|titleBGColor=#ADD6FF|title=Minimalist example}
+<checkHttpStatus>
+  <httpRequest>
+    <uri>http://somewhere.com</uri>
+  </httpRequest>
+</checkHttpStatus>
+{code}
+{code:xml|borderStyle=solid|titleBGColor=#ADD6FF|title=Full example}
+<checkHttpStatus>
+  <dynamicValues />
+  <includeContent>False</includeContent>
+  <httpRequest>
+    <method>GET</method>
+    <uri>http://somewhere.com/</uri>
+    <useDefaultCredentials>false</useDefaultCredentials>
+  </httpRequest>
+  <retries>3</retries>
+  <successStatusCodes>200</successStatusCodes>
+</checkHttpStatus>
+{code}
+
+
+h2. Configuration Elements
+
+|| Element || Description || Type || Required || Default || Version ||
+| description | Description used for the visualisation of the buildstage, if left empty the process name will be shown.   | String | No | The task/publisher name. | 1.5 |
+| dynamicValues | The dynamic values to use for the task.   | [Dynamic Values] array | No | _None_ | 1.5 |
+| environment |   A set of environment variables set for commands that are executed.  \\  Each variable should be specified as {code:xml|borderStyle=solid}
+<variable name="name" value="value" />
+{code}
+.   | [Environment Variable] array | No |  |  |
+| includeContent | Whether to include the content of the call in the log.   | Boolean | No | false | 1.5 |
+| httpRequest | The request settings.   | [HTTP Settings] | Yes | _n/a_ | 1.5 |
+| retries | The number of retries to allow.   | Int32 | No | 3 | 1.5 |
+| retryDelay | Gets or sets the retry delay.   | [Timeout Configuration] | No |  |  |
+| successStatusCodes | The list of exit codes that indicate success, separated by commas.   | String | No | 200 | 1.5 |
+| taskTimeout | The timeout period to allow.   | [Timeout Configuration] | No | 5 seconds | 1.5 |
+
+h2. Notes
+
+Task supplied by Patrik Husfloen.  
+
+
+{info:title=Automatically Generated}
+Documentation generated on Saturday, 22 Jan 2011 at 12:14:21 AM
+Using assembly version 1.6.7979.1
+{info}

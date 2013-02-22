@@ -1,0 +1,128 @@
+h1. NCover Report Task
+
+Generate a code coverage report using NCover.  
+{tip}
+NCover is a commerical application that will profile code while unit tests are running. The tool is available from http://www.ncover.com/.  
+{tip}
+{info:title=Supported Versions}
+CruiseControl.NET only supports NCover 3.x currently.  
+{info}
+
+
+h2. Version
+
+Available from version 1.5
+
+h2. Examples
+
+{code:xml|borderStyle=solid|titleBGColor=#ADD6FF|title=To produce a summary report with a minimum coverage of 95%}
+<ncoverReport>
+  <executable>C:\Program Files\NCover\NCover.Reporting.exe</executable>
+  <outputDir>ncover\reports</outputDir>
+  <reports>
+    <report>Summary</report>
+  </reports>
+  <minimumThresholds>
+    <coverageThreshold metric="SymbolCoverage" value="95" />
+  </minimumThresholds>
+</ncoverReport>
+{code}
+{code:xml|borderStyle=solid|titleBGColor=#ADD6FF|title=To generate a full report that is ordered by coverage percentage in a descending order}
+<ncoverReport>
+  <executable>C:\Program Files\NCover\NCover.Reporting.exe</executable>
+  <outputDir>ncover\reports</outputDir>
+  <reports>
+    <report>FullCoverageReport</report>
+  </reports>
+  <sortBy>CoveragePercentageDescending</sortBy>
+</ncoverReport>
+{code}
+
+
+h2. Configuration Elements
+
+|| Element || Description || Type || Required || Default || Version ||
+| baseDir | The base directory to use. All relative parameters will be relative to this parameter.   | String | No | Project Working Directory | 1.5 |
+| buildId | A custom build id to attach.  \\ *Maps to //bi* | String | No | The build label | 1.5 |
+| clearFilters | Should the coverage filters be cleared.  \\ *Maps to //ccf* | Boolean | No | false | 1.5 |
+| coverageFile | The location to read the coverage date from. If relative, this will be relative to baseDir.   | String | No | coverage.xml | 1.5 |
+| filters | The filters to apply.  \\ *Maps to //cf* | [Coverage Filter] array | No | _None_ | 1.5 |
+| description | Description used for the visualisation of the buildstage, if left empty the process name will be shown.   | String | No | The task/publisher name. | 1.5 |
+| dynamicValues | The dynamic values to use for the task.   | [Dynamic Values] array | No | _None_ | 1.5 |
+| environment |   A set of environment variables set for commands that are executed.  \\  Each variable should be specified as {code:xml|borderStyle=solid}
+<variable name="name" value="value" />
+{code}
+.   | [Environment Variable] array | No |  |  |
+| executable | The executable to use.   | String | No | NCover.Reporting | 1.5 |
+| hide | The elements to hide.  \\ *Maps to //hi* | String | No | _None_ | 1.5 |
+| mergeFile | The file to store the merged data in. If relative, this will be relative to baseDir.  \\ *Maps to //s* | String | No | _None_ | 1.5 |
+| mergeMode | The merge mode to use.  \\ *Maps to //mfm* | String - one of:
+* Default
+* KeepSourceFilters
+* Destructive
+* AppendFilters | No | Default | 1.5 |
+| minimumThresholds | The minimum coverage thresholds.  \\ *Maps to //mc* | [Coverage Threshold] array | No | _None_ | 1.5 |
+| numberToReport | The maximum number of items to report.  \\ *Maps to //smf* | Int32 | No | \-1 | 1.5 |
+| outputDir | The directory to output the reports to. If relative, this will be relative to baseDir.   | String | No | _None_ | 1.5 |
+| priority | The priority class of the spawned process.   | String - one of:
+* Normal
+* Idle
+* High
+* RealTime
+* BelowNormal
+* AboveNormal | No | Normal | 1.5 |
+| projectName | The project name to use.  \\ *Maps to //p* | String | No | _None_ | 1.5 |
+| reports | The type of report to generate.  \\ *Maps to //or* | String array\\The following values are valid:
+* FullCoverageReport
+* Summary
+* UncoveredCodeSections
+* SymbolSourceCode
+* SymbolSourceCodeClass
+* SymbolSourceCodeClassMethod
+* MethodSourceCode
+* MethodSourceCodeClass
+* MethodSourceCodeClassMethod
+* SymbolModule
+* SymbolModuleNamespace
+* SymbolModuleNamespaceClass
+* SymbolModuleNamespaceClassMethod
+* SymbolCCModuleClassFailedCoverageTop
+* SymbolCCModuleClassCoverageTop
+* MethodModuleNamespaceClass
+* MethodModuleNamespaceClassMethod
+* MethodCCModuleClassFailedCoverageTop
+* MethodCCModuleClassCoverageTop | No | FullCoverageReport | 1.5 |
+| satisfactory | The satisfactory coverage thresholds.  \\ *Maps to //sct* | [Coverage Threshold] array | No | _None_ | 1.5 |
+| sortBy | The sort order to use.  \\ *Maps to //so* | String - one of:
+* None
+* Name
+* ClassLine
+* CoveragePercentageAscending
+* CoveragePercentageDescending
+* UnvisitedSequencePointsAscending
+* UnvisitedSequencePointsDescending
+* VisitCountAscending
+* VisitCountDescending
+* FunctionCoverageAscending
+* FunctionCoverageDescending | No | _None_ | 1.5 |
+| timeout | The time\-out period in seconds. If the task does no finish running in this time it will be terminated.   | Int32 | No | 600 | 1.5 |
+| uncoveredAmount | The amount of uncovered items to cover.  \\ *Maps to //tu* | Int32 | No | _None_ | 1.5 |
+| trendInput | The file to import the trend from.  \\ *Maps to //lt* | String | No | _None_ | 1.5 |
+| trendOutput | The file to append the trend to.  \\ *Maps to //at* | String | No | _None_ | 1.5 |
+| minimumCoverage | Whether to use minimum coverage or not.  \\ *Maps to //mcsc* | Boolean | No | false | 1.5 |
+| workingDir | The working directory for the executable. If relative, this will be relative to baseDir.  \\ *Maps to //w* | String | No | _None_ | 1.5 |
+| xmlReportFilter | The type of report filtering to use.  \\ *Maps to //rdf* | String - one of:
+* Default
+* Assembly
+* Namespace | No | Default | 1.5 |
+
+h2. Notes
+
+This task requires a profile to be completed before running. See the [NCover Profiler Task].  
+This task calls NCover.Reporting to generate the reports. Full details on this tool is available at http://docs.ncover.com/ref/3\-0/ncover\-reporting/. Additional details on the mapped arguments can be found there.  
+
+
+{info:title=Automatically Generated}
+Documentation generated on Saturday, 22 Jan 2011 at 12:14:21 AM
+Using assembly version 1.6.7979.1
+{info}

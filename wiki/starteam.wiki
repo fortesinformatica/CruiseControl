@@ -1,0 +1,67 @@
+h1. StarTeam Source Control Block
+
+Source Controller for StarTeam SCM.  
+
+
+h2. Version
+
+Available from version 1.0
+
+h2. Examples
+
+{code:xml|borderStyle=solid}
+<sourcecontrol type="starteam">
+  <executable>c:\starteam\stcmd.exe</executable>
+  <project>ccnet</project>
+  <username>buildguy</username>
+  <password>buildguypw</password>
+  <host>thebuildmachine</host>
+  <port>49201</port>
+  <path>release2.0</path>
+  <autoGetSource>true</autoGetSource>
+  <folderRegEx>customRegEx</folderRegEx>
+  <fileRegEx>customRegEx</fileRegEx>
+  <fileHistoryRegEx>customRegEx</fileHistoryRegEx>
+  <timeout units="minutes">10</timeout>
+</sourcecontrol>
+{code}
+
+
+h2. Configuration Elements
+
+|| Element || Description || Type || Required || Default || Version ||
+| type | The type of source control block. | String - must be starteam | Yes | _n/a_ | 1.0 |
+| autoGetSource | Instruct CCNet whether or not you want it to automatically retrieve the latest source from the repository.   | Boolean | No | true | 1.0 |
+| dynamicValues | The dynamic values to use for the source control block.   | [Dynamic Values] array | No | _None_ | 1.5 |
+| executable | The local path for the StarTeam command\-line client (eg. c:\starteam\stcmd.exe).   | String | Yes | _n/a_ | 1.0 |
+| fileHistoryRegEx | Allows you to use your own RegEx to parse StarTeam's file history.   | String | No | _n/a_ | 1.0 |
+| fileRegEx | Allows you to use your own RegEx to parse StarTeam's file output.   | String | No | _None_ | 1.0 |
+| folderRegEx | Allows you to use your own RegEx to parse StarTeam's folder output.   | String | No | _None_ | 1.0 |
+| host | The IP address or machine name of the StarTeam server.   | String | No | 127.0.0.1 | 1.0 |
+| issueUrlBuilder | Converts the comment (or parts from it) into an url pointing to the issue for this build. See [IssueUrlBuilder] for more details.   | [IssueUrlBuilder] | No | _None_ | 1.4 |
+| overrideFolderWorkingDir | If set, use the \-rp option to use a different View Working Directory.   | String | No | _None_ | 1.0 |
+| overrideViewWorkingDir | Instruct CCNet whether or not you want it to automatically retrieve the latest source from the repository.   | String | No | _n/a_ | 1.0 |
+| password | Password for the StarTeam user ID.   | String | Yes | _n/a_ | 1.0 |
+| path | The path to monitor.   | String | No | _None_ | 1.0 |
+| port | The port on the StarTeam server to connect to.   | Int32 | No | 49201 | 1.0 |
+| project | The StarTeam project (and view) to monitor (eg. project/view).   | String | Yes | _n/a_ | 1.0 |
+| timeout | Sets the timeout period for the source control operation. See [Timeout Configuration] for details.   | [Timeout Configuration] | No | 10 minutes | 1.0 |
+| username | StarTeam ID that CCNet should use.   | String | Yes | _n/a_ | 1.0 |
+
+h2. Notes
+
+h4. RegEx Configuration
+CruiseControl.NET uses StarTeam's command line interface to find changes submitted to Source Control. 3 regular expressions are used in doing this, as specified above. You have the option of changing these regular expressions to choose how your instance of CruiseControl.NET parses StarTeam output. It is recommended if you do this that you download the source version of CruiseControl.NET to see the default RegEx's and how they are used.  
+One suggested alternative RegEx so far is for the fileHistoryRegEx, as follows:  
+{code:None|borderStyle=solid}
+
+            ^Revision: (?<file_revision>\S+) View: (?<view_name>.+) Branch Revision: (?<branch_revision>\S+).\nAuthor: (?<author_name>.*) Date: (?<date_string>.*) \w+\r\n(?<change_comment>.*)
+            
+{code}
+(Note that this is all one line)  
+
+
+{info:title=Automatically Generated}
+Documentation generated on Saturday, 22 Jan 2011 at 12:14:18 AM
+Using assembly version 1.6.7979.1
+{info}

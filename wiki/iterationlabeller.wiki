@@ -1,0 +1,41 @@
+h1. Iteration Labeller
+
+The Iteration Labeller is similar to the [Default Labeller]; however, it maintains a revision number that is incremented by one for each iteration from the release start date. For example, if the release start date was June 1, 2005 and the iteration duration was 2 weeks, the iteration number on July 1, 2005 would be 3. This would create a label of <prefix>.3.<build number>.  
+
+h2. Version
+
+Available from version 1.0
+
+h2. Examples
+
+{code:xml|borderStyle=solid}
+<labeller type="iterationlabeller">
+  <prefix>1.2</prefix>
+  <duration>1</duration>
+  <releaseStartDate>2005/6/24</releaseStartDate>
+  <separator>_</separator>
+</labeller>
+{code}
+
+
+h2. Configuration Elements
+
+|| Element || Description || Type || Required || Default || Version ||
+| duration | The duration of the iteration in weeks.   | Int32 | No | 2 | 1.0 |
+| dynamicValues | The dynamic values to use for the labeller.   | [Dynamic Values] array | No | _None_ | 1.5 |
+| incrementOnFailure | If true, the label will be incremented even if the build fails. Otherwise it will only be incremented if the build succeeds.   | Boolean | No | false | 1.1 |
+| initialBuildLabel | Allows you to set the initial build number.   | Int32 | No | 1 | 1.5 |
+| labelFormat | A format applied to the buildnumber.   | String | No | 0 | 1.0 |
+| postfix | Any string to be put at the end of all labels.   | String | No | _None_ | 1.0 |
+| prefix | Any string to be put in front of all labels.   | String | No | _None_ | 1.0 |
+| releaseStartDate | The start date for the release (the start date of iteration one).   | DateTime | Yes | _n/a_ | 1.0 |
+| separator | The separator between the iteration number and the build number.   | String | No | . | 1.0 |
+
+h2. Notes
+
+Contributed by Craig Campbell.  
+
+{info:title=Automatically Generated}
+Documentation generated on Saturday, 22 Jan 2011 at 12:14:14 AM
+Using assembly version 1.6.7979.1
+{info}

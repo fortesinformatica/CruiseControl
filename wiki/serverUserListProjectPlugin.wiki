@@ -1,0 +1,30 @@
+h1. User List Project Plugin
+
+Displays all the users in the system, plus the security rights they have for the project.  
+
+h2. Version
+
+Available from version 1.5
+
+h2. Examples
+
+{code:xml|borderStyle=solid}
+<serverUserListProjectPlugin />
+{code}
+
+
+h2. Configuration Elements
+
+There is no configuration for this plugin.
+
+h2. Notes
+
+{tip}
+This can be installed using the "User List" package.  
+{tip}
+
+
+{info:title=Automatically Generated}
+Documentation generated on Saturday, 22 Jan 2011 at 12:14:25 AM
+Using assembly version 1.6.7979.1
+{info}

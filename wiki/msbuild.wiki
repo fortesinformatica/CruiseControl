@@ -1,0 +1,64 @@
+h1. MSBuild Task
+
+The <msbuild> task is used to execute MsBuild projects, which are the default project format for Visual Studio 2005 projects and can also be compiled by using the MSBuild application that ships with the .NET 2 Framework.  
+In order to work with the results of MsBuild it is important to use a custom xml logger to format the build results. For details on this, and a tutorial on how to use the task, see [Using CruiseControl.NET with MSBuild].  
+{tip}
+To see build progress information in the CCNet 1.5 WebDashboard remove the "/noconsolelogger" argument.  
+{tip}
+
+
+h2. Version
+
+Available from version 1.0
+
+h2. Examples
+
+{code:xml|borderStyle=solid|titleBGColor=#ADD6FF|title=Minimalist example}
+<msbuild />
+{code}
+{code:xml|borderStyle=solid|titleBGColor=#ADD6FF|title=Full example}
+<msbuild>
+  <executable>C:\WINDOWS\Microsoft.NET\Framework\v2.0.50727\MSBuild.exe</executable>
+  <workingDirectory>C:\dev\ccnet</workingDirectory>
+  <projectFile>CCNet.sln</projectFile>
+  <buildArgs>/p:Configuration=Debug /v:diag</buildArgs>
+  <targets>Build;Test</targets>
+  <timeout>900</timeout>
+  <logger>C:\Program Files\CruiseControl.NET\server\ThoughtWorks.CruiseControl.MsBuild.dll</logger>
+</msbuild>
+{code}
+
+
+h2. Configuration Elements
+
+|| Element || Description || Type || Required || Default || Version ||
+| buildArgs | Any extra arguments to pass through to MSBuild.   | String | No | _None_ | 1.0 |
+| description | Description used for the visualisation of the buildstage, if left empty the process name will be shown.   | String | No | The task/publisher name. | 1.5 |
+| dynamicValues | The dynamic values to use for the task.   | [Dynamic Values] array | No | _None_ | 1.5 |
+| environment |   A set of environment variables set for commands that are executed.  \\  Each variable should be specified as {code:xml|borderStyle=solid}
+<variable name="name" value="value" />
+{code}
+.   | [Environment Variable] array | No |  |  |
+| executable | The location of the MSBuild.exe executable.   | String | No | MSBuild with .NET Framework, xbuild on Unix with Mono. | 1.0 |
+| logger | The full path to the assembly containing the custom logger to use. Arguments can be passed to the logger by appending them after the logger name separated by a semicolon. Only if the assembly contains more than one logger implementation you need to specify the logger class (see MSBuild reference): \[LoggerClass,\]LoggerAssembly\[;LoggerParameters\]   | String | No | ThoughtWorks.CruiseControl.MsBuild.XmlLogger, ThoughtWorks.CruiseControl.MsBuild.dll | 1.0 |
+| priority | The priority class of the spawned process.   | String - one of:
+* Normal
+* Idle
+* High
+* RealTime
+* BelowNormal
+* AboveNormal | No | Normal | 1.5 |
+| projectFile | The name of the build project to run, relative to the workingDirectory.   | String | No | Default MSBuild file. | 1.0 |
+| targets | A semicolon\-separated list of the targets to run.   | String | No | Default project target. | 1.0 |
+| timeout | Number of seconds to wait before assuming that the process has hung and should be killed.   | Int32 | No | 600 | 1.0 |
+| workingDirectory | The directory to run MSBuild in \- this is generally the directory containing your build project. If relative, is a subdirectory of the Project Working Directory.   | String | No | Project Working Directory | 1.0 |
+
+h2. Notes
+
+{include:Integration Properties}Many thanks to Szymon Kobalczyk for helping out with this part of CruiseControl.NET.  
+
+
+{info:title=Automatically Generated}
+Documentation generated on Saturday, 22 Jan 2011 at 12:14:22 AM
+Using assembly version 1.6.7979.1
+{info}

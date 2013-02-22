@@ -1,0 +1,55 @@
+h1. FAKE - F# Make Task
+
+Runs a FAKE \- F# Make script.
+"FAKE \- F# Make" is a build automation system. Due to its integration in F#, all benets of the .NET Framework and functional programming can be used, including the extensive class library, powerful debuggers and integrated development environments like Visual Studio 2008 or SharpDevelop, which provide syntax highlighting and code completion.  
+
+* The Google group can be found at: http://groups.google.com/group/fsharpMake  
+* More information on: http://bitbucket.org/forki/fake/wiki/Home  
+
+
+h2. Version
+
+Available from version 1.6
+
+h2. Examples
+
+{code:xml|borderStyle=solid|titleBGColor=#ADD6FF|title=Minimalist example}
+<fake>
+  <buildFile>build.fsx</buildFile>
+</fake>
+{code}
+{code:xml|borderStyle=solid|titleBGColor=#ADD6FF|title=Full example}
+<fake>
+  <executable>Tools\FAKE.exe</executable>
+  <baseDirectory>C:\Build\Project1\</baseDirectory>
+  <buildFile>build.fsx</buildFile>
+  <buildTimeoutSeconds>1200</buildTimeoutSeconds>
+</fake>
+{code}
+
+
+h2. Configuration Elements
+
+|| Element || Description || Type || Required || Default || Version ||
+| buildFile | The name of the build file to run, relative to the baseDirectory.   | String | No | Default build field in the working directory | 1.6 |
+| buildTimeoutSeconds | The maximum number of seconds that the build may take.  If the build process takes longer than this period, it will be killed. Specify this value as zero to disable process timeouts.   | Int32 | No | 600 | 1.6 |
+| baseDirectory | The directory to run FAKE in.   | String | No | Project Working Directory | 1.6 |
+| description | Description used for the visualisation of the buildstage, if left empty the process name will be shown.   | String | No | The task/publisher name. | 1.6 |
+| dynamicValues | The dynamic values to use for the task.   | [Dynamic Values] array | No | _None_ | 1.6 |
+| environment |   A set of environment variables set for commands that are executed.  \\  Each variable should be specified as {code:xml|borderStyle=solid}
+<variable name="name" value="value" />
+{code}
+.   | [Environment Variable] array | No |  |  |
+| executable | The location of the FAKE executable.   | String | No | FAKE.exe | 1.6 |
+| priority | The priority class of the spawned process.   | String - one of:
+* Normal
+* Idle
+* High
+* RealTime
+* BelowNormal
+* AboveNormal | No | Normal | 1.6 |
+
+{info:title=Automatically Generated}
+Documentation generated on Saturday, 22 Jan 2011 at 12:14:20 AM
+Using assembly version 1.6.7979.1
+{info}

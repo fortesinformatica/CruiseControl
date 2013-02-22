@@ -1,0 +1,48 @@
+h1. Email Subject
+
+This element  allows to set specific subject messages according to the state of the build. When a certain state is not specified, a default will be entered.  
+
+h2. Version
+
+Available from version 1.0
+
+h2. Examples
+
+{code:xml|borderStyle=solid}
+<subject buildResult="StillBroken" value="Build is still broken for {CCNetProject}" />
+{code}
+
+
+h2. Configuration Elements
+
+|| Element || Description || Type || Required || Default || Version ||
+| buildResult | A build result state, see below for the possible values.   | String - one of:
+* Success
+* Broken
+* StillBroken
+* Fixed
+* Exception | Yes | _n/a_ | 1.0 |
+| value | The value of the subject line, the text to be used for the subject. This may contain variables, see below.   | String | Yes | _n/a_ | 1.0 |
+
+h2. Notes
+
+It is also possible to use [Integration Properties] in this section. For example:  
+{code:xml|borderStyle=solid}
+<subjectSettings>
+  <subject buildResult="StillBroken" value="Build is still broken for ${CCNetProject}, please check again" />
+</subjectSettings>
+{code}
+or:  
+{code:xml|borderStyle=solid}
+<subjectSettings>
+  <subject buildResult="StillBroken" value="Build is still broken for ${CCNetProject}, the fix failed." />
+  <subject buildResult="Broken" value="{CCNetProject} broke at ${CCNetBuildDate} ${CCNetBuildTime } , last checkin(s) by ${CCNetFailureUsers}" />
+  <subject buildResult="Exception" value="Serious problem for ${CCNetProject}, it is now in Exception! Check status of network / sourcecontrol" />
+</subjectSettings>
+{code}
+
+
+{info:title=Automatically Generated}
+Documentation generated on Saturday, 22 Jan 2011 at 12:14:15 AM
+Using assembly version 1.6.7979.1
+{info}

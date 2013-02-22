@@ -1,0 +1,28 @@
+h1. LDAP User Authentication
+
+Stores a user name \- authentication will come from Active Directory.  
+
+h2. Version
+
+Available from version 1.5
+
+h2. Examples
+
+{code:xml|borderStyle=solid|titleBGColor=#ADD6FF|title=Simple Example}
+<ldapUser name="johndoe" domain="somewhere.com" />
+{code}
+{code:xml|borderStyle=solid|titleBGColor=#ADD6FF|title=Wildcard Example}
+<ldapUser name="*" domain="somewhere.com" />
+{code}
+
+
+h2. Configuration Elements
+
+|| Element || Description || Type || Required || Default || Version ||
+| domain | The AD domain to use.   | String | Yes | _n/a_ | 1.5 |
+| name | The user name for this user.   | String | Yes | _n/a_ | 1.5 |
+
+{info:title=Automatically Generated}
+Documentation generated on Saturday, 22 Jan 2011 at 12:14:16 AM
+Using assembly version 1.6.7979.1
+{info}

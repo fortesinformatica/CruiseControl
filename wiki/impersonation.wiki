@@ -1,0 +1,19 @@
+h1. Impersonation
+
+Defines the details to use for impersonating another user account.  
+
+h2. Version
+
+Available from version 1.5
+
+h2. Configuration Elements
+
+|| Element || Description || Type || Required || Default || Version ||
+| domain | The name of the domain to use.   | String | Yes | _n/a_ | 1.5 |
+| password | The password of the user.   | PrivateString | Yes | _n/a_ | 1.5 |
+| user | The name of the user to impersonate.   | String | Yes | _n/a_ | 1.5 |
+
+{info:title=Automatically Generated}
+Documentation generated on Saturday, 22 Jan 2011 at 12:14:16 AM
+Using assembly version 1.6.7979.1
+{info}

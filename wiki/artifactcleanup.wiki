@@ -1,0 +1,48 @@
+h1.  Artifact Cleanup Publisher 
+
+The artifact CleanUp publisher allows for automatic removal of the buildlogs according to the choosen setting. It relies on the build log folder, so the XML publisher must be specified before this publisher can run. For technical reasons this publisher MUST reside in the publisher section, it will not work in the tasks section. Be sure to specify the [Xml Log Publisher] before this one.  
+
+h2. Version
+
+Available from version 1.5
+
+h2. Examples
+
+{code:xml|borderStyle=solid}
+<artifactcleanup cleanUpMethod="KeepLastXBuilds" cleanUpValue="50" />
+{code}
+
+
+h2. Configuration Elements
+
+|| Element || Description || Type || Required || Default || Version ||
+| cleanUpMethod | Defines the procedure to use for cleaning up the artifact folder.   | String - one of:
+* KeepLastXBuilds
+* DeleteBuildsOlderThanXDays
+* KeepMaximumXHistoryDataEntries
+* DeleteSubDirsOlderThanXDays
+* KeepLastXSubDirs | Yes | _n/a_ | 1.5 |
+| cleanUpValue | Defines the value for the cleanup procedure.   | Int32 | Yes | _n/a_ | 1.5 |
+| description | Description used for the visualisation of the buildstage, if left empty the process name will be shown.   | String | No | The task/publisher name. | 1.5 |
+| dynamicValues | The dynamic values to use for the task.   | [Dynamic Values] array | No | _None_ | 1.5 |
+| environment |   A set of environment variables set for commands that are executed.  \\  Each variable should be specified as {code:xml|borderStyle=solid}
+<variable name="name" value="value" />
+{code}
+.   | [Environment Variable] array | No |  |  |
+
+h2. Notes
+
+Supported cleaning up methods :  
+* KeepLastXBuilds : keeps the last specified amount of builds  
+* DeleteBuildsOlderThanXDays  : Deletes the builds older than the specifed amount of days  
+* KeepMaximumXHistoryDataEntries : Clears the History Data file (for the ModificationHistory), keeping maximum the specified amount of builds.  
+* DeleteSubDirsOlderThanXDays : Deletes subfolders of the artifact folder if they are older than the specified amount of days. (Buildlogfolder excluded)  
+* KeepLastXSubDirs : Keeps the last specified amount of subfolders in the artifacts folder, sorting is done on creation time of the folder (Buildlogfolder excluded)  {warning}
+ *DeleteSubDirsOlderThanXDays* and  *KeepLastXSubDirs* are mainly meant for cleaning up published builds (done via the [Build Publisher]).  
+{warning}
+
+
+{info:title=Automatically Generated}
+Documentation generated on Saturday, 22 Jan 2011 at 12:14:19 AM
+Using assembly version 1.6.7979.1
+{info}

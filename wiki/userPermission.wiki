@@ -1,0 +1,68 @@
+h1. User Permission
+
+Defines the permissions for a user.  
+
+h2. Version
+
+Available from version 1.5
+
+h2. Examples
+
+{code:xml|borderStyle=solid|titleBGColor=#ADD6FF|title=User Definition Example}
+<userPermission name="johndoe" forceBuild="Allow" startProject="Deny" defaultRight="Inherit" />
+{code}
+{code:xml|borderStyle=solid|titleBGColor=#ADD6FF|title=Reference Example}
+<userPermission name="johndoe" ref="johndoe" />
+{code}
+
+
+h2. Configuration Elements
+
+|| Element || Description || Type || Required || Default || Version ||
+| changeProject | The right to change the configuration of projects.   | String - one of:
+* Allow
+* Deny
+* Inherit | No | Inherit | 1.5 |
+| defaultRight | The default right to use.   | String - one of:
+* Allow
+* Deny
+* Inherit | No | Inherit | 1.5 |
+| forceBuild | The right for force or abort builds.   | String - one of:
+* Allow
+* Deny
+* Inherit | No | Inherit | 1.5 |
+| modifySecurity | The right to modify security.   | String - one of:
+* Allow
+* Deny
+* Inherit | No | Inherit | 1.5 |
+| ref | The identifier of the referenced permission.   | String | No | _None_ | 1.5 |
+| sendMessage | The right to send messages.   | String - one of:
+* Allow
+* Deny
+* Inherit | No | Inherit | 1.5 |
+| startProject | The right to stop and start projects.   | String - one of:
+* Allow
+* Deny
+* Inherit | No | Inherit | 1.5 |
+| user | The user name.   | String | Yes | _n/a_ | 1.5 |
+| viewConfiguration | The right to view configuration and logs.   | String - one of:
+* Allow
+* Deny
+* Inherit | No | Inherit | 1.5 |
+| viewProject | The right to view a project.   | String - one of:
+* Allow
+* Deny
+* Inherit | No | Inherit | 1.5 |
+| viewSecurity | The right to view security.   | String - one of:
+* Allow
+* Deny
+* Inherit | No | Inherit | 1.5 |
+
+h2. Notes
+
+{include:General Security Permissions}
+
+{info:title=Automatically Generated}
+Documentation generated on Saturday, 22 Jan 2011 at 12:14:17 AM
+Using assembly version 1.6.7979.1
+{info}

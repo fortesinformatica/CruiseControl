@@ -1,0 +1,30 @@
+h1. Queue Status Server Plugin
+
+The Queue Status Server Plugin displays the status of the queues on the specified server.  
+
+h2. Version
+
+Available from version 1.4.3
+
+h2. Examples
+
+{code:xml|borderStyle=solid}
+<queueStatusServerPlugin />
+{code}
+
+
+h2. Configuration Elements
+
+There is no configuration for this plugin.
+
+h2. Notes
+
+{tip}
+This can be installed using the "Queue Status Display" package.  
+{tip}
+
+
+{info:title=Automatically Generated}
+Documentation generated on Saturday, 22 Jan 2011 at 12:14:25 AM
+Using assembly version 1.6.7979.1
+{info}

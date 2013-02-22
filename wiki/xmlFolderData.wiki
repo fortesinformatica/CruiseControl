@@ -1,0 +1,14 @@
+h1. xmlFolderData
+
+Stores project data in XML files in a folder.  
+
+h2. Configuration Elements
+
+|| Element || Description || Type || Required || Default || Version ||
+| base | The base folder to store the XML in.  \\If this is not an absolute folder then it will be rooted in the project's artefacts folder.   | String | No | snapshots | 1.6 |
+| snapshot | The folder to store snapshots.  \\If this is not an absolute folder then it will be relative to the base folder.   | String | No | snapshots | 1.6 |
+
+{info:title=Automatically Generated}
+Documentation generated on Saturday, 22 Jan 2011 at 12:14:16 AM
+Using assembly version 1.6.7979.1
+{info}
